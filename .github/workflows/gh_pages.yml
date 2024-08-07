@@ -46,7 +46,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          PUBLISH_BRANCH: master
+          PUBLISH_BRANCH: master  
           PUBLISH_DIR: ./public  
         # cname:
         
