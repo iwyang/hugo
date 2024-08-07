@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Excel on Bore's Notes</title><link>/tags/excel/</link><description>Recent content in Excel on Bore's Notes</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 26 Aug 2021 11:34:14 +0000</lastBuildDate><atom:link href="/tags/excel/index.xml" rel="self" type="application/rss+xml"/><item><title>怎样才能把A3文档打印到A4纸上</title><link>/archives/%E6%80%8E%E6%A0%B7%E6%89%8D%E8%83%BD%E6%8A%8Aa3%E6%96%87%E6%A1%A3%E6%89%93%E5%8D%B0%E5%88%B0a4%E7%BA%B8%E4%B8%8A/</link><pubDate>Thu, 26 Aug 2021 11:34:14 +0000</pubDate><guid>/archives/%E6%80%8E%E6%A0%B7%E6%89%8D%E8%83%BD%E6%8A%8Aa3%E6%96%87%E6%A1%A3%E6%89%93%E5%8D%B0%E5%88%B0a4%E7%BA%B8%E4%B8%8A/</guid><description>&lt;p>今天才知道怎样才能把A3文档打印到A4纸上，真的是孤陋寡闻。 有必要记录一下。这里可以用Word提供的“复印机”缩放功能来打印，就是说可以通过“缩放”命令，让Word为文档设置格式，使其符合打印机的纸张尺寸。操作步骤如下：
+点击“文件→打印”，系统弹出“打印”对话框，“缩放”，在“按纸型缩放”下拉列表框中，选择要使用的纸型，比如选择A4纸型。单击“确定”按钮。
+这时，Word将调整文档的页面使其适合所选纸型，在此Word将原本需要打印在A3纸张上的文档，通过自动缩小字号和图形打印在A4幅面的纸上。这类似于复印机的“缩小／放大”功能。&lt;/p>
+&lt;p>参考链接：&lt;a class="link" href="https://wap.zol.com.cn/ask/x_4496525.html" target="_blank" rel="noopener"
+>怎样设置才能把A3文档打印到A4纸上&lt;/a>&lt;/p></description></item><item><title>Excel查找重复项</title><link>/archives/excel%E6%9F%A5%E6%89%BE%E9%87%8D%E5%A4%8D%E9%A1%B9/</link><pubDate>Mon, 29 Jun 2020 05:54:25 +0000</pubDate><guid>/archives/excel%E6%9F%A5%E6%89%BE%E9%87%8D%E5%A4%8D%E9%A1%B9/</guid><description>&lt;p>这里以Excel 2019为例。&lt;/p>
+&lt;ol>
+&lt;li>首先选中表格相应区域。&lt;/li>
+&lt;li>依次选择&lt;code>开始—条件格式—突出显示单元格规则—重复值&lt;/code>。&lt;/li>
+&lt;/ol>
+&lt;p>重复的单元格会突出显示，修改重复项后，突出显示自动消失。&lt;/p>
+&lt;p>参考链接：&lt;a class="link" href="https://www.zhihu.com/question/20085802" target="_blank" rel="noopener"
+>excel一列中如何找出重复的数据？&lt;/a>&lt;/p></description></item><item><title>Excel如何随机排</title><link>/archives/excel%E5%A6%82%E4%BD%95%E9%9A%8F%E6%9C%BA%E6%8E%92/</link><pubDate>Sat, 23 May 2020 03:38:25 +0000</pubDate><guid>/archives/excel%E5%A6%82%E4%BD%95%E9%9A%8F%E6%9C%BA%E6%8E%92/</guid><description>&lt;ol>
+&lt;li>首先打开需要操作的知excel表格。&lt;/li>
+&lt;li>然后在E2单元个中输入“=”号，添加辅助函数rand。&lt;/li>
+&lt;li>在E2单元格回车，专在E2单元格右下角下拉复制函数。&lt;/li>
+&lt;li>选择属排序和筛选升序、降序都可以。&lt;/li>
+&lt;li>最后可看到随机排序完成。&lt;/li>
+&lt;/ol>
+&lt;p>参考：&lt;a class="link" href="https://zhidao.baidu.com/question/814731344583893012.html" target="_blank" rel="noopener"
+>excel如何随机排序&lt;/a>&lt;/p></description></item><item><title>Excel表格调整分页打印内容</title><link>/archives/excel%E8%A1%A8%E6%A0%BC%E8%B0%83%E6%95%B4%E5%88%86%E9%A1%B5%E6%89%93%E5%8D%B0%E5%86%85%E5%AE%B9/</link><pubDate>Mon, 18 May 2020 13:31:25 +0000</pubDate><guid>/archives/excel%E8%A1%A8%E6%A0%BC%E8%B0%83%E6%95%B4%E5%88%86%E9%A1%B5%E6%89%93%E5%8D%B0%E5%86%85%E5%AE%B9/</guid><description>&lt;p>依次选择&lt;code>视图—分页预览&lt;/code>，单击选中后，我们看到文档多出了几条蓝色的实线，分出了第1页、第2页。如果我们想要调整打印的内容，只需要按住鼠标左键，拖动蓝色实线，上下左右移动到合适位置即可，最后查看打印预览，作最后的调整。&lt;/p></description></item></channel></rss>

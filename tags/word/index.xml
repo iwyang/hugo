@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Word on Bore's Notes</title><link>/tags/word/</link><description>Recent content in Word on Bore's Notes</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 20 Jan 2022 09:01:18 +0000</lastBuildDate><atom:link href="/tags/word/index.xml" rel="self" type="application/rss+xml"/><item><title>去掉试卷图片灰色背景的方法</title><link>/archives/%E5%8E%BB%E6%8E%89%E8%AF%95%E5%8D%B7%E5%9B%BE%E7%89%87%E7%81%B0%E8%89%B2%E8%83%8C%E6%99%AF%E7%9A%84%E6%96%B9%E6%B3%95/</link><pubDate>Thu, 20 Jan 2022 09:01:18 +0000</pubDate><guid>/archives/%E5%8E%BB%E6%8E%89%E8%AF%95%E5%8D%B7%E5%9B%BE%E7%89%87%E7%81%B0%E8%89%B2%E8%83%8C%E6%99%AF%E7%9A%84%E6%96%B9%E6%B3%95/</guid><description>&lt;ol>
+&lt;li>使用qq浏览器等软件的&lt;code>扫描文档&lt;/code>功能。&lt;/li>
+&lt;li>word中，右键依次选择&lt;code>设置图片格式—图片—图片校正—调高对比度（100%）和清晰度&lt;/code>（50%）。&lt;/li>
+&lt;li>WPS中，依次点击&lt;code>图片工具—调高对比度&lt;/code>。&lt;/li>
+&lt;/ol>
+&lt;p>PS里的操作：&lt;/p>
+&lt;p>1.先按快捷键&lt;code>Ctrl+Shift+U&lt;/code>去色。&lt;/p>
+&lt;p>2.&lt;code>Ctrl+L&lt;/code>调出色阶，白色吸管点背景。如果对比不够，继续调整色阶的滑块。&lt;/p>
+&lt;p>3.&lt;code>Ctrl+J&lt;/code>复制一个图层，点击&lt;code>滤镜—其它—高反差保留&lt;/code>，设置为2个像素。&lt;/p>
+&lt;p>4.图层混合模式改成&lt;code>线性光&lt;/code>（或者&lt;code>柔光&lt;/code>）。&lt;/p></description></item></channel></rss>

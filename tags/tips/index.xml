@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tips on Bore's Notes</title><link>/tags/tips/</link><description>Recent content in Tips on Bore's Notes</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Mon, 11 Apr 2022 21:32:56 +0000</lastBuildDate><atom:link href="/tags/tips/index.xml" rel="self" type="application/rss+xml"/><item><title>观看IPTV的方法</title><link>/archives/%E8%A7%82%E7%9C%8Biptv%E7%9A%84%E6%96%B9%E6%B3%95/</link><pubDate>Mon, 11 Apr 2022 21:32:56 +0000</pubDate><guid>/archives/%E8%A7%82%E7%9C%8Biptv%E7%9A%84%E6%96%B9%E6%B3%95/</guid><description>&lt;p>1.搜索&lt;code>2022 直播源&lt;/code>。&lt;/p>
+&lt;p>2.如果不支持txt格式的直播源，使用&lt;code>TeleList&lt;/code>转换为&lt;code>m3u&lt;/code>格式。&lt;/p>
+&lt;p>3.直播源检测：有的时候，部分直播源可能会失效，这个时候最好使用工具检测一下直播源的有效性，及时剔除失效的直播源，以免影响后续电视直播的观看！&lt;/p>
+&lt;p>我们要用到的检测工具名为&lt;code>IPTV检查器&lt;/code>，导入直播源之后，点击左侧的“检查”开始检测，有效的直播源会标记为在线，失效的直播源标记为离线。最后以状态列出离线列表，然后通过快捷键&lt;code>ctrl+a&lt;/code>全选并删除，最后保存有效直播源。&lt;/p>
+&lt;p>参考链接：&lt;/p>
+&lt;p>&lt;a class="link" href="https://www.toutiao.com/article/6858829883263418884/?wid=1649684170853" target="_blank" rel="noopener"
+>1.上千个境内外4K高清直播源，配合播放器，看电视贼爽&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://www.haah.net/archives/5209.html" target="_blank" rel="noopener"
+>2.2022-2月最新稳定全球频道蓝光直播源，稳定播放&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://tyson.cool/index.php/1215/" target="_blank" rel="noopener"
+>3.2022年IPTV最新有效直播源，上万频道（每天更新）&lt;/a>&lt;/p></description></item><item><title>希沃电子白板学习笔记</title><link>/archives/%E5%B8%8C%E6%B2%83%E7%94%B5%E5%AD%90%E7%99%BD%E6%9D%BF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link><pubDate>Mon, 22 Mar 2021 15:54:25 +0000</pubDate><guid>/archives/%E5%B8%8C%E6%B2%83%E7%94%B5%E5%AD%90%E7%99%BD%E6%9D%BF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid><description>&lt;h2 id="希沃白板5">希沃白板5&lt;/h2>
+&lt;ol>
+&lt;li>播放PPT时，如果PPT大小与屏幕不兼容，长按“设置”键可快速调整使其适应屏幕大小。&lt;/li>
+&lt;li>翻页按钮位于左右下角，点击数字预览。&lt;/li>
+&lt;li>桌面两侧悬浮按钮（快速调出白板、笔、半屏等）&lt;/li>
+&lt;li>手背、手心快速调出板擦。&lt;/li>
+&lt;li>选择几何图形后，双击屏幕可快速画出图形。出现红点是正方形（正方体）。&lt;/li>
+&lt;li>蒙层的使用（刮刮乐）&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="/img/%E5%B8%8C%E6%B2%83%E7%94%B5%E5%AD%90%E7%99%BD%E6%9D%BF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/20210418203212.jpg"
+loading="lazy"
+>&lt;/p>
+&lt;p>要实现以上效果，切记首先要画两个矩形，然后双击输入文字，将需要设置蒙层这一形状置于顶层。千万不要先输入两个文本框，这样无法形成遮挡效果。&lt;/p>
+&lt;ol start="7">
+&lt;li>
+&lt;p>二维码分享课件。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>导入PPT按钮在“云课件”最低端，如果扩展名是.ppt仅以背景形式导入，所以.ppt格式要转化为.pptx再导入。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>超链接可以快速调出授课工具、网盘存储常用的文件，超链接网页地址可以设为本地目录，超链接切换到公众号文章。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>如果背景图片使文字显示不清，可添加一个白色圆角矩形的形状，将其置于底层，然后调整其透明度。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>圆柱高矮的变化： 先画一个圆柱，再画一个能与圆柱底重合的椭圆，填充为白色，边框为黑色。再画一个填充和边框都是白色的长方形，接着将椭圆调整到合适位置后置顶层，最后将椭圆和长方形组合。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>课堂活动（超级分类）隐藏文字：（1）文字透明度设置为100%（2）字号调为1&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>色差的应用：将文字颜色设置成背景相同的颜色，可起到“隐藏文字”的效果；拉到另外一色块即可呈现。（注意图层之间的顺序，色块应该置于底层）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>希沃白板5的圆规可以自动生成半径，授课时只要拖拽出圆规，就可以给学生演示圆有无数条半径。&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="硬件相关">硬件相关&lt;/h2>
+&lt;ol>
+&lt;li>视频展台对比讲评。（要先拍照）&lt;/li>
+&lt;li>希沃智能笔：现将笔头USB接头插入白板USB接口，然后依次点击“希沃管家—智能笔—智能笔配对”&lt;/li>
+&lt;li>重装系统：&lt;/li>
+&lt;/ol>
+&lt;p>方法一（利用出厂备份的系统还原）：切换到安装系统—设备信息—连续点击Android版本，直到出现N图片—出现N图片后点击侧边的返回按钮—然后连续点击内核版本—然后在左上角可以看到一个电视复位，点击电视复位确认就可以了。（问“希沃”公众号）&lt;/p>
+&lt;p>方法二（PE）：开机连续按F7（遥控器上），出现菜单后选择U盘就可以了。&lt;/p>
+&lt;h2 id="希沃授课助手">希沃授课助手&lt;/h2>
+&lt;ol>
+&lt;li>&lt;del>使用授课助手时，必须使平板和手机连接同一个局域网，如果教室没有wifi，则利用白板创建一个热点，手机再连接此wifi热点。&lt;/del>&lt;/li>
+&lt;/ol>
+&lt;p>(希沃白板5 APP已经可以完全取代授课助手了。)&lt;/p>
+&lt;h2 id="数学画板">数学画板&lt;/h2>
+&lt;ol>
+&lt;li>怎样标记角：选择&lt;code>绘图|标注&lt;/code>工具，将&lt;code>绘图|标注工具&lt;/code>移至角的顶点，鼠标后面会出现一个角的符号，按住鼠标左键可拖动角。右侧可改变标记的样式。（除了标记角，&lt;code>绘图|标注&lt;/code>工具还可以标注线）&lt;/li>
+&lt;li>怎样测量角：接上一步先要标记角，然后选择角的符号，鼠标右键选择&lt;code>测量—标注角&lt;/code>。&lt;/li>
+&lt;li>&lt;code>文本|命名&lt;/code>工具可以插入文本，选择此工具直接点击点或者线段即可给点或者线段命名。&lt;/li>
+&lt;li>&lt;code>智能画笔&lt;/code>工具：根据已知图形对象，智能绘制与已知图形相关图形功能（如交点，相等线段，平行，垂直等， 圆的切点、切线）&lt;/li>
+&lt;/ol></description></item><item><title>快手抖音视频中的背景音乐怎么提取下载</title><link>/archives/%E5%BF%AB%E6%89%8B%E6%8A%96%E9%9F%B3%E8%A7%86%E9%A2%91%E4%B8%AD%E7%9A%84%E8%83%8C%E6%99%AF%E9%9F%B3%E4%B9%90%E6%80%8E%E4%B9%88%E6%8F%90%E5%8F%96%E4%B8%8B%E8%BD%BD/</link><pubDate>Sat, 16 Jan 2021 14:28:25 +0000</pubDate><guid>/archives/%E5%BF%AB%E6%89%8B%E6%8A%96%E9%9F%B3%E8%A7%86%E9%A2%91%E4%B8%AD%E7%9A%84%E8%83%8C%E6%99%AF%E9%9F%B3%E4%B9%90%E6%80%8E%E4%B9%88%E6%8F%90%E5%8F%96%E4%B8%8B%E8%BD%BD/</guid><description>&lt;ul>
+&lt;li>1.下载抖音视频&lt;/li>
+&lt;/ul>
+&lt;p>方法：前往 &lt;a class="link" href="http://www.dy114.com/douyin" target="_blank" rel="noopener"
+>dy114短视频解析下载在线小工具&lt;/a>，输入你的小视频分享链接地址，下载视频&lt;/p>
+&lt;p>ps：该小工具支持解析下载目前主流的抖音、快手、微博、微视、皮皮虾、皮皮搞笑、火山小视频、最右、西瓜视频、今日头条、秒拍小视频，而且是无水印下载原版高清视频哦。值得大家收藏。&lt;/p>
+&lt;ul>
+&lt;li>2.下载视频音频提取工具&lt;/li>
+&lt;/ul>
+&lt;p>方法：电脑上下载按照QQ音影软件，软件地址：&lt;a class="link" href="https://player.qq.com/" target="_blank" rel="noopener"
+>https://player.qq.com/&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>3.提取视频中的背景音乐与歌曲&lt;/li>
+&lt;/ul>
+&lt;p>方法：用安装好的软件打开你下载好的抖音等短视频，点击右下角的“音影工具箱”，选择“转码压缩”，格式选择为“音频”，设置好提取的音频保存地址，即可提取获取视频的歌曲、背景音和独白。&lt;/p>
+&lt;p>操作截图提示如下：&lt;/p>
+&lt;p>（1）点击右下角的“音影工具箱”&lt;/p>
+&lt;p>（2）选择“转码压缩”&lt;/p>
+&lt;p>（3）设置格式，提取视频中的歌曲、背景音影、对白等音频。&lt;/p>
+&lt;hr>
+&lt;p>参考链接：&lt;a class="link" href="http://www.dy114.com/1582.html" target="_blank" rel="noopener"
+>快手抖音视频中的背景音乐怎么提取下载&lt;/a>&lt;/p></description></item><item><title>一加5T救砖备忘</title><link>/archives/%E4%B8%80%E5%8A%A05t%E6%95%91%E7%A0%96%E5%A4%87%E5%BF%98/</link><pubDate>Sat, 18 Jul 2020 06:27:25 +0000</pubDate><guid>/archives/%E4%B8%80%E5%8A%A05t%E6%95%91%E7%A0%96%E5%A4%87%E5%BF%98/</guid><description>&lt;p>主要教程查看：&lt;a class="link" href="https://www.oneplusbbs.com/forum.php?mod=viewthread&amp;amp;tid=4446250" target="_blank" rel="noopener"
+>一加手机全系列⑮机型线刷救砖资源★附教程&lt;/a>，这里要注意以下几点：&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>1.救砖后系统恢复为安卓7。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>2.要升级系统好像只能逐级升级（安卓7—安卓8—安卓9—安卓10），将下载好的官方全量包—安卓8、安卓9、安卓10放在根目录依次升级，如果想直接从安卓7升级到安卓10，会失败。这里用官方&lt;code>recovery&lt;/code>即可。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>3.升级到安卓9，出现bug—WiFi开关打不开；升级到安卓10，出现bug—相机、手电筒不能用。于是乎就卡刷了第三方ROM：&lt;a class="link" href="https://www.oneplusbbs.com/thread-4723496-1.html" target="_blank" rel="noopener"
+>终结之作-5T Beta30 纯净优化包&lt;/a>，刷这个包用到的&lt;code>recovery&lt;/code>是用&lt;code>一加手机5T工具箱 _2.2.1&lt;/code>刷的自选&lt;code>Recovery&lt;/code>—&lt;code>twrp-3.3.1&lt;/code>。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>4.&lt;code>root&lt;/code>后可以利用&lt;code>link2sd&lt;/code>这个软件，冻结或者卸载系统应用，安卓10好像只能冻结，卸载不了。具体使用方法，例如：搜索更新，将自动更新冻结，以后就收不到更新了。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>5.网上还有线刷的方法：&lt;a class="link" href="https://www.oneplusbbs.com/thread-4330832-1.html" target="_blank" rel="noopener"
+>【任意升降级】一加系统任意升级降级 7.1/8.0/8.1 新手福利&lt;/a>，不过测试未成功，不想再折腾了。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>6.不知为什么升级到安卓10后，相机不能用了。以后就暂且用这个包：&lt;a class="link" href="https://www.oneplusbbs.com/thread-4723496-1.html" target="_blank" rel="noopener"
+>终结之作-5T Beta30 纯净优化包&lt;/a>。（这里好像是在升级到安卓10出现问题后，再卡刷这个包的，不知道能否直接从安卓7卡刷，以后有机会再测试吧，当然要注意&lt;code>recovery&lt;/code>版本不能太低了，用&lt;code>twrp-3.3.1&lt;/code>应该没问题）。&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>我的一加5T是18年2月份买的，看样子还能用几年。&lt;/p></description></item><item><title>用PC Logo画五环</title><link>/archives/%E7%94%A8pc-logo%E7%94%BB%E4%BA%94%E7%8E%AF/</link><pubDate>Sun, 12 Jul 2020 01:16:25 +0000</pubDate><guid>/archives/%E7%94%A8pc-logo%E7%94%BB%E4%BA%94%E7%8E%AF/</guid><description>&lt;p>记得这是一次青年教师什么考试的题目，当然没能够做出来，有必要记录一下，代码如下：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">cs
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">repeat 36+18&lt;span class="o">[&lt;/span>rt &lt;span class="m">5&lt;/span> fd &lt;span class="m">10&lt;/span> rt 5&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">repeat 36+18&lt;span class="o">[&lt;/span>lt &lt;span class="m">5&lt;/span> fd &lt;span class="m">10&lt;/span> lt 5&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">repeat 36&lt;span class="o">[&lt;/span>rt &lt;span class="m">5&lt;/span> fd &lt;span class="m">10&lt;/span> rt 5&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">repeat 36&lt;span class="o">[&lt;/span>rt &lt;span class="m">5&lt;/span> fd &lt;span class="m">10&lt;/span> rt 5&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">rt &lt;span class="m">90&lt;/span> repeat 36&lt;span class="o">[&lt;/span>rt &lt;span class="m">5&lt;/span> fd &lt;span class="m">10&lt;/span> rt 5&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">pu bk &lt;span class="m">115&lt;/span> pd
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">repeat 36&lt;span class="o">[&lt;/span>rt &lt;span class="m">5&lt;/span> fd &lt;span class="m">10&lt;/span> rt 5&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>参考链接：&lt;a class="link" href="https://zhidao.baidu.com/question/160053860.html" target="_blank" rel="noopener"
+>用嵌套repeat画奥运五环 是pc logo 里的&lt;/a>&lt;/p></description></item><item><title>一加5T(安卓10)root&amp;EdXposed框架</title><link>/archives/%E4%B8%80%E5%8A%A05t%E5%AE%89%E5%8D%9310rootedxposed%E6%A1%86%E6%9E%B6/</link><pubDate>Fri, 10 Jul 2020 10:34:25 +0000</pubDate><guid>/archives/%E4%B8%80%E5%8A%A05t%E5%AE%89%E5%8D%9310rootedxposed%E6%A1%86%E6%9E%B6/</guid><description>&lt;p>首先保障手机已解锁，一加5T解锁教程：&lt;a class="link" href="https://www.oneplusbbs.com/forum.php?mod=viewthread&amp;amp;tid=3829403" target="_blank" rel="noopener"
+>一加5T解锁、root、刷机教程&lt;/a>&lt;/p>
+&lt;h2 id="准备以下6个文件">准备以下6个文件&lt;/h2>
+&lt;p>注意要先把2—6号文件放在手机根目录（如果放在文件夹里，文件夹名不能有中文）。&lt;/p>
+&lt;ol>
+&lt;li>一加手机5T工具箱 _2.2.1&lt;/li>
+&lt;li>twrp-3.3.1-0-dumpling.img （第三方recovery镜像）&lt;/li>
+&lt;li>Magisk-v20.4(20400).zip （集root管理、模块安装等功能）&lt;/li>
+&lt;li>MM管理器(叶子修改版)v1.8.zip&lt;/li>
+&lt;/ol>
+&lt;div class="note info">可在TWRP下对Magisk模块进行管理、卸载。一定要先安装这个，再安装EdXposed的两个模块，防止安装模块后手机变砖无法开机，这时就可以通过MM管理器来删除安装的模块，使用方法：在第三方rec下，点击高级→终端，输入/data/media/mm，然后回车，就可以禁用该模块了。&lt;/div>
+&lt;ol start="5">
+&lt;li>
+&lt;p>Riru_(Riru_-&lt;em>Core)-v21.2(35).zip和Riru&lt;/em>-&lt;em>EdXposed-v0.4.6.1&lt;/em>(4510)_(YAHFA)(4510).zip （EdXposed两个模块包）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>EdXposedManager.apk （EdXposed管理器）&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="刷入第三方recoverroot">刷入第三方recover&amp;amp;root&lt;/h2>
+&lt;ul>
+&lt;li>打开一加手机5T工具箱，选择选项8—刷写自选Recovery，按照提示把下载好的rec拖入工具箱随后回车刷入。（如果无法拖入，直接输入rec路径即可）&lt;/li>
+&lt;li>刷完会自动进入第三方Recovery（TWRP），这时候可以一次性选择2—5号文件刷入，当然如果只想root则只用刷入Magisk。&lt;/li>
+&lt;li>&lt;code>root&lt;/code>后可以利用&lt;code>link2sd&lt;/code>这个软件，冻结或者卸载系统应用，安卓10好像只能冻结，卸载不了。具体使用方法，例如：搜索更新，将自动更新冻结，以后就收不到更新了。&lt;/li>
+&lt;/ul>
+&lt;h2 id="刷入edxposed模块">刷入EdXposed模块&lt;/h2>
+&lt;p>选择MM管理器以及两个模块刷入。（如果模块无法刷入，可能是命名格式问题，将模块重命名为1.zip、2.zip即可，同理上面Magisk无法刷入，也重命名一下；实在不行就在&lt;code>Magisk&lt;/code>里刷入模块）&lt;/p>
+&lt;h2 id="安装edxposed管理器">安装EdXposed管理器&lt;/h2>
+&lt;p>重启手机安装EdXposed管理器。之后就是安装各种使用的模块了。&lt;/p>
+&lt;h2 id="参考链接">参考链接&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://www.oneplusbbs.com/thread-5460360-1.html" target="_blank" rel="noopener"
+>1.OnePlus 5T Android 10 root亲测教程&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://www.oneplusbbs.com/forum.php?mod=viewthread&amp;amp;tid=4662409" target="_blank" rel="noopener"
+>2.完美支持安卓10Xposed框架★EdXposed&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>笔记本硬盘改移动硬盘&amp;分区安装PE</title><link>/archives/%E7%AC%94%E8%AE%B0%E6%9C%AC%E7%A1%AC%E7%9B%98%E6%94%B9%E7%A7%BB%E5%8A%A8%E7%A1%AC%E7%9B%98%E5%88%86%E5%8C%BA%E5%AE%89%E8%A3%85pe/</link><pubDate>Tue, 16 Jun 2020 05:51:25 +0000</pubDate><guid>/archives/%E7%AC%94%E8%AE%B0%E6%9C%AC%E7%A1%AC%E7%9B%98%E6%94%B9%E7%A7%BB%E5%8A%A8%E7%A1%AC%E7%9B%98%E5%88%86%E5%8C%BA%E5%AE%89%E8%A3%85pe/</guid><description>&lt;p>笔记本换SSD后，原来机械硬盘没用了。这时可以将原来的硬盘改成移动硬盘。方法是买一个移动硬盘盒子。下面着重记一下在移动硬盘安装PE的方法。&lt;/p>
+&lt;p>1.用&lt;code>DiskGenius&lt;/code>给移动硬盘分区：新建一个5G大小的&lt;code>FAT32&lt;/code>格式的分区，用来安装PE；硬盘其他空间新建一个&lt;code>NTFS&lt;/code>格式的分区，用来存放文件。&lt;/p>
+&lt;p>2.打开&lt;a class="link" href="http://www.wepe.com.cn/download.html" target="_blank" rel="noopener"
+>微PE工具箱&lt;/a>，右下角选择&lt;code>安装PE到移动硬盘&lt;/code>，第一主分区选择刚才建立的&lt;code>FAT32&lt;/code>分区，然后点击&lt;code>立即安装进移动硬盘&lt;/code>。&lt;/p>
+&lt;p>3.将操作系统等相关文件复制到&lt;code>FAT32&lt;/code>分区里，便于安装系统使用。&lt;/p></description></item><item><title>人声伴奏分离分离神器：Spleeter GUI_v2.5</title><link>/archives/%E4%BA%BA%E5%A3%B0%E4%BC%B4%E5%A5%8F%E5%88%86%E7%A6%BB%E5%88%86%E7%A6%BB%E7%A5%9E%E5%99%A8spleeter-gui_v2.5/</link><pubDate>Mon, 15 Jun 2020 05:09:25 +0000</pubDate><guid>/archives/%E4%BA%BA%E5%A3%B0%E4%BC%B4%E5%A5%8F%E5%88%86%E7%A6%BB%E5%88%86%E7%A6%BB%E7%A5%9E%E5%99%A8spleeter-gui_v2.5/</guid><description>&lt;p>使用方法：&lt;/p>
+&lt;p>1.首先安装&lt;code>SpleeterGUI_v2.5.msi&lt;/code>，安装到任意位置即可。&lt;/p>
+&lt;p>2.然后进入&lt;code>训练模型&lt;/code>目录，以管理员模式运行&lt;code>安装SpleeterGUI之后右键管理员模式运行这个.bat&lt;/code>。最后相应文件夹会被拷贝到&lt;code>C:\Users\Admin\AppData\Roaming&lt;/code>目录下，如果卸载该软件，也要手动删除此文件夹。&lt;/p>
+&lt;p>总结：此软件除了消音乐伴奏外，还可以去视频（例如MTV）里的人声。&lt;/p></description></item><item><title>提高搜索效率的7个小技巧</title><link>/archives/%E6%8F%90%E9%AB%98%E6%90%9C%E7%B4%A2%E6%95%88%E7%8E%87%E7%9A%847%E4%B8%AA%E5%B0%8F%E6%8A%80%E5%B7%A7/</link><pubDate>Wed, 27 May 2020 08:54:25 +0000</pubDate><guid>/archives/%E6%8F%90%E9%AB%98%E6%90%9C%E7%B4%A2%E6%95%88%E7%8E%87%E7%9A%847%E4%B8%AA%E5%B0%8F%E6%8A%80%E5%B7%A7/</guid><description>&lt;h2 id="排除关键词">排除关键词&lt;/h2>
+&lt;p>方法是：减号+关键词&lt;/p>
+&lt;p>功能是：排除一些 不想要的关键词&lt;/p>
+&lt;p>例如：&lt;code>锤子 -锤子手机&lt;/code>&lt;/p>
+&lt;h2 id="精确搜索">精确搜索&lt;/h2>
+&lt;p>方法是：给关键词加引号&lt;/p>
+&lt;p>功能是：只搜索引号里的字&lt;/p>
+&lt;h2 id="指定网站内搜索">指定网站内搜索&lt;/h2>
+&lt;p>方法是：site:域名+关键词（此处加号代表空格）&lt;/p>
+&lt;p>功能是：在指定网站内搜索&lt;/p>
+&lt;h2 id="指定文件格式">指定文件格式&lt;/h2>
+&lt;p>方法是：filetype:文件格式+关键词（此处加号代表关键词）&lt;/p>
+&lt;p>功能是：指定文件格式&lt;/p>
+&lt;h2 id="指定标题搜索">指定标题搜索&lt;/h2>
+&lt;p>方法是：intitle:关键词&lt;/p>
+&lt;p>功能是：搜索结果必须在标题中&lt;/p>
+&lt;h2 id="两种指定范围搜索">两种指定范围搜索&lt;/h2>
+&lt;p>&lt;code>锤子 intext:苹果&lt;/code>:要求搜索结果中有这个关键词。&lt;/p>
+&lt;p>&lt;code>allintext:认知心理学 发展心理学 积极心理学&lt;/code> ：要求三个关键词都包括在搜索结果中。&lt;/p>
+&lt;p>&lt;code>inurl:关键字&lt;/code>：要求在网页url中包含关键词。&lt;/p>
+&lt;h2 id="叠加使用">叠加使用&lt;/h2>
+&lt;p>&lt;code>site:douban.com 亲密关系 intext:罗兰米勒&lt;/code>&lt;/p>
+&lt;h2 id="注意事项">注意事项&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>所有的冒号都是半角，也就是英文的冒号而不是中文的冒号。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>空格很重要，关键词之间一定要有空格。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>提取关键词很重要。&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="参考链接">参考链接&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://www.bilibili.com/video/BV1YK4y1t7bg" target="_blank" rel="noopener"
+>搜索效率提升200%！8个小技巧助你快速查资料&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Flash小技巧</title><link>/archives/flash%E5%B0%8F%E6%8A%80%E5%B7%A7/</link><pubDate>Sun, 17 May 2020 04:32:25 +0000</pubDate><guid>/archives/flash%E5%B0%8F%E6%8A%80%E5%B7%A7/</guid><description>&lt;p>1.按住alt键，拖动直线，会拉出一个尖点。&lt;/p>
+&lt;p>2.&lt;code>Ctrl+g&lt;/code> 将绘图对象变成组，就不会覆盖；&lt;code>Ctrl+b&lt;/code>将组打散。&lt;/p>
+&lt;p>3.flash中只有两种绘画对象：线条、填充。所有绘画对象都是由线条和填充组成的。&lt;/p></description></item></channel></rss>

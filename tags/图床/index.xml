@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>图床 on Bore's Notes</title><link>/tags/%E5%9B%BE%E5%BA%8A/</link><description>Recent content in 图床 on Bore's Notes</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 21 Jul 2020 08:32:00 +0000</lastBuildDate><atom:link href="/tags/%E5%9B%BE%E5%BA%8A/index.xml" rel="self" type="application/rss+xml"/><item><title>GitHub+jsDelivr+PicGo+typecho打造免费高速图床</title><link>/archives/github-jsdelivr-picgo-typecho%E6%89%93%E9%80%A0%E5%85%8D%E8%B4%B9%E9%AB%98%E9%80%9F%E5%9B%BE%E5%BA%8A/</link><pubDate>Tue, 21 Jul 2020 08:32:00 +0000</pubDate><guid>/archives/github-jsdelivr-picgo-typecho%E6%89%93%E9%80%A0%E5%85%8D%E8%B4%B9%E9%AB%98%E9%80%9F%E5%9B%BE%E5%BA%8A/</guid><description>&lt;blockquote>
+&lt;p>2022.5.17 因为&lt;code>jsdelivr&lt;/code>不再稳定，此法已失效。现在还是利用&lt;code>typecho&lt;/code>将插入到文章的图片自动复制到&lt;code>/source/img/&lt;/code>文件夹下，方法如下:&lt;/p>
+&lt;p>1.在&lt;code>typora&lt;/code>菜单栏点击 &lt;code>格式-&amp;gt;图像-&amp;gt;设置图片根目录&lt;/code>，将&lt;code>hexo/source&lt;/code>作为其根目录即可。&lt;/p>
+&lt;p>2.首先在 hexo &amp;gt; source目录下建一个文件夹叫img，用来保存博客中的图片。然后打开Typora的 文件 &amp;gt; 偏好设置，进行如下设置。&lt;/p>
+&lt;p>&lt;img src="/img/GitHub&amp;#43;jsDelivr&amp;#43;PicGo&amp;#43;typecho%E6%89%93%E9%80%A0%E5%85%8D%E8%B4%B9%E9%AB%98%E9%80%9F%E5%9B%BE%E5%BA%8A/QQ%E6%88%AA%E5%9B%BE20220517225839.jpg"
+loading="lazy"
+>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">复制到制定路径
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">../img/${filename}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">勾选所有选项：
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">对本地位置的图片应用上述规则
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">对网络位置的图片应用上述规则
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">优先使用相对路径
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">允许根据YAML设置自动上传图片
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">插入时自动转义图片URL
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>这样的话所有插入到md的图片都将会保存到 &lt;code>/source/img/该博客md文件名/图片名称&lt;/code>。&lt;/p>
+&lt;p>PS： &lt;a class="link" href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener"
+>Butterfly&lt;/a>主题相册：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">{% gallery %}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">![](../../img/2022春季趣味运动会/1.jpg)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">![](../../img/2022春季趣味运动会/2.jpg)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">![](../../img/2022春季趣味运动会/3.jpg)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">![](../../img/2022春季趣味运动会/4.jpg)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">![](../../img/2022春季趣味运动会/5.jpg)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">![](../../img/2022春季趣味运动会/6.jpg)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{% endgallery %}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;span class="lnt">25
+&lt;/span>&lt;span class="lnt">26
+&lt;/span>&lt;span class="lnt">27
+&lt;/span>&lt;span class="lnt">28
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">&amp;lt;style&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">.page-title {
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> display: none;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> }
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;/style&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">## 骑行
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;div class=&amp;#34;gallery-group-main&amp;#34;&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{% galleryGroup &amp;#39;荆州行&amp;#39; &amp;#39;第一个100Km（2019.5）&amp;#39; &amp;#39;/gallery/jing-zhou-ride&amp;#39; ../img/荆州行/2.jpg %}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;/div&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">## 太和小学2019级
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;div class=&amp;#34;gallery-group-main&amp;#34;&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{% galleryGroup &amp;#39;2022春季趣味运动会&amp;#39; &amp;#39;那些精彩的瞬间&amp;#39; &amp;#39;/gallery/sport2022spring&amp;#39; ../img/2022春季趣味运动会/1.jpg %}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{% galleryGroup &amp;#39;2021秋季趣味运动会&amp;#39; &amp;#39;那些精彩的瞬间&amp;#39; &amp;#39;/gallery/sport2021autumn&amp;#39; ../img/2021秋季趣味运动会/1.jpg %}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{% galleryGroup &amp;#39;2021春季趣味运动会&amp;#39; &amp;#39;那些精彩的瞬间&amp;#39; &amp;#39;/gallery/sport2021spring&amp;#39; ../img/2021春季趣味运动会/3.jpg %}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{% galleryGroup &amp;#39;2019秋季趣味运动会&amp;#39; &amp;#39;那些精彩的瞬间&amp;#39; &amp;#39;/gallery/sport2019autumn&amp;#39; ../img/2019秋季趣味运动会/1.jpg %}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;/div&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">## 湖大教技2010级
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;div class=&amp;#34;gallery-group-main&amp;#34;&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{% galleryGroup &amp;#39;那些花儿&amp;#39; &amp;#39;那些人，那些事&amp;#39; &amp;#39;/gallery/hubei-university&amp;#39; ../img/那些花儿/3.jpg %}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{% galleryGroup &amp;#39;2012年木兰天池春游&amp;#39; &amp;#39;大学里的一次春游&amp;#39; &amp;#39;/gallery/mulan-great-lake&amp;#39; ../img/2012年木兰天池春游/4.jpg %}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;/div&amp;gt;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>手动将图片文件夹放到上述文件夹下，然后在源码模式，一个个输入图片相对路径。&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="配置github">配置github&lt;/h2>
+&lt;h3 id="新建公共仓库">新建公共仓库&lt;/h3>
+&lt;p>新建一个公共仓库，例如我建的仓库地址：&lt;code>https://github.com/iwyang/pic&lt;/code>，注意一定要勾选&lt;strong>使用Readme文件初始化这个仓库&lt;/strong>，否则后面会无法上传图片。&lt;/p>
+&lt;h3 id="获取私人令牌">获取私人令牌&lt;/h3>
+&lt;p>&lt;a class="link" href="https://github.com/settings/tokens" target="_blank" rel="noopener"
+>前往设置&lt;/a>，作用：授权仓库的操作权限，通过API实现自动化。然后填写 &lt;code>Token&lt;/code> 描述，勾选 repo、write、read然后点击 &lt;code>Generate token&lt;/code> 生成一个 &lt;code>Token&lt;/code>。因为 Token 只会显示一次，所以先保存笔记本等。&lt;/p>
+&lt;h2 id="安装配置picgo">安装&amp;amp;配置PicGo&lt;/h2>
+&lt;h3 id="安装picgo">安装PicGo&lt;/h3>
+&lt;p>访问&lt;a class="link" href="https://github.com/Molunerfinn/PicGo/releases" target="_blank" rel="noopener"
+>PicGo Releases&lt;/a>直接下载你的操作系统对应的安装包并完成安装。&lt;/p>
+&lt;blockquote>
+&lt;p>注：在安装的时候安装目录千万不能选C:\Program Files\下的任何地方，因为PicGo无法解析这一路径，如果你不知道安装在哪里的话，选择仅为我安装，否则在设置Typora时会出现错误。&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="配置picgo">配置PicGo&lt;/h3>
+&lt;p>在PicGo设置里作如下修改：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">设置日志文件：日志记录等级选择&lt;span class="s2">&amp;#34;错误-Error&amp;#34;&lt;/span>和&lt;span class="s2">&amp;#34;提醒-Warn&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">时间戳重命名：开
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">开启上传提示：开
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">上传后自动复制URL：开
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">选择显示的图床：只勾选Github图床
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="配置github插件">配置&lt;code>GitHub&lt;/code>插件&lt;/h3>
+&lt;p>安装好后开始配置&lt;code>GitHub&lt;/code>图床&lt;/p>
+&lt;ol>
+&lt;li>设定仓库名：按照 用户名/仓库名 的格式填写（iwyang/pic）&lt;/li>
+&lt;li>设定分支名：master&lt;/li>
+&lt;li>设定 Token：粘贴之前叫你保存的Token。（在网盘里搜索&lt;code>图床&lt;/code>会找到Token）&lt;/li>
+&lt;li>设定自定义域名：它的的作用是，在图片上传后，PicGo 会按照自定义域名+上传的图片名的方式生成访问链接，放到粘贴板上。 &lt;code>https://cdn.jsdelivr.net/gh/用户名/仓库名&lt;/code>（&lt;code>https://cdn.jsdelivr.net/gh/iwyang/pic&lt;/code>）&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="/img/GitHub&amp;#43;jsDelivr&amp;#43;PicGo&amp;#43;typecho%E6%89%93%E9%80%A0%E5%85%8D%E8%B4%B9%E9%AB%98%E9%80%9F%E5%9B%BE%E5%BA%8A/8.jpg"
+loading="lazy"
+>&lt;/p>
+&lt;ol start="5">
+&lt;li>点击&lt;code>设为默认图床&lt;/code>&lt;/li>
+&lt;/ol>
+&lt;h3 id="上传和管理图片">上传和管理图片&lt;/h3>
+&lt;ul>
+&lt;li>单击上传区，选择链接格式，使用点击上传或剪贴板图片上传，PicGo会自动上传图片并将符合链接格式的链接复制到剪贴板，你只要按下Ctrl+v即可粘贴图片的链接。&lt;/li>
+&lt;li>单击相册，你可以看到你上传的所有图片，你可以对所有图片进行复制链接，修改图片URL与删除操作，并可以批量复制或批量删除。&lt;/li>
+&lt;/ul>
+&lt;h2 id="配置typora">配置Typora&lt;/h2>
+&lt;ul>
+&lt;li>点击Typora左上角的文件-&amp;gt;偏好设置&lt;/li>
+&lt;li>在弹出的界面中点击图像，选择插入图片时选项为&lt;code>上传图片&lt;/code>，并勾选&lt;code>对本地位置的图片应用上述规则&lt;/code>和&lt;code>对网络位置的图片应用上述规则&lt;/code>。&lt;/li>
+&lt;li>&lt;code>上传服务&lt;/code>选项里选择&lt;code>PicGo(app)&lt;/code>，&lt;code>PicGo路径&lt;/code>选择&lt;code>PicGo.exe&lt;/code>的绝对路径。&lt;/li>
+&lt;/ul>
+&lt;p>以后在Typora里插入本地图片时，它会利用PicGo自动帮你上传到github，并替换本地图片地址为github地址。&lt;/p>
+&lt;h2 id="参考链接">参考链接&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://my.oschina.net/u/3990666/blog/4371252" target="_blank" rel="noopener"
+>1.GitHub + jsDelivr + PicGo 打造稳定快速、高效免费图床&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://blog.csdn.net/disILLL/article/details/104944710" target="_blank" rel="noopener"
+>2.手把手教你用Typora自动上传到picgo图床&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://yinyoupoet.github.io/2019/09/03/hexo%E5%8D%9A%E5%AE%A2%E4%B8%AD%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/" target="_blank" rel="noopener"
+>3.typora + hexo博客中插入图片&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Gitee+Picgo+Typecho搭建图床</title><link>/archives/gitee-picgo-typecho%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A/</link><pubDate>Sat, 06 Jun 2020 00:59:25 +0000</pubDate><guid>/archives/gitee-picgo-typecho%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A/</guid><description>&lt;h2 id="配置gitee">配置gitee&lt;/h2>
+&lt;h3 id="新建公共仓库">新建公共仓库&lt;/h3>
+&lt;p>新建一个公共仓库，例如我建的仓库地址：&lt;code>https://gitee.com/iwyang/pics&lt;/code>，注意一定要勾选&lt;strong>使用Readme文件初始化这个仓库&lt;/strong>，否则后面会无法上传图片。&lt;/p>
+&lt;h3 id="获取私人令牌">获取私人令牌&lt;/h3>
+&lt;p>依次点击&lt;code>右上角设置—私人令牌&lt;/code>，在私人令牌描述中写上便于你了解该令牌用处的文字，并勾选需要的权限，PicGo要使用的私人令牌只需要&lt;code>user_info&lt;/code>和&lt;code>projects&lt;/code>权限，勾选上后提交，gitee将会返回私人令牌的token，保存该token，因为该token只会出现一次，离开页面过后再不会出现。&lt;/p>
+&lt;h2 id="安装配置picgo">安装&amp;amp;配置PicGo&lt;/h2>
+&lt;h3 id="安装picgo">安装PicGo&lt;/h3>
+&lt;p>访问&lt;a class="link" href="https://github.com/Molunerfinn/PicGo/releases" target="_blank" rel="noopener"
+>PicGo Releases&lt;/a>直接下载你的操作系统对应的安装包并完成安装。&lt;/p>
+&lt;blockquote>
+&lt;p>注：在安装的时候安装目录千万不能选C:\Program Files\下的任何地方，因为PicGo无法解析这一路径，如果你不知道安装在哪里的话，选择仅为我安装，否则在设置Typora时会出现错误。&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="配置picgo">配置PicGo&lt;/h3>
+&lt;p>在PicGo设置里作如下修改：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">设置日志文件：日志记录等级选择&lt;span class="s2">&amp;#34;错误-Error&amp;#34;&lt;/span>和&lt;span class="s2">&amp;#34;提醒-Warn&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">时间戳重命名：开
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">开启上传提示：开
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">上传后自动复制URL：开
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">选择显示的图床：只勾选githubPlus
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="安装npm">安装npm&lt;/h3>
+&lt;p>由于PicGo的插件需要使用npm进行安装，如果你的电脑上没有安装npm，那么你是无法安装PicGo插件的，而我们接下来要使用一个额外的插件获得gitee支持，所以在此之前先完成npm的安装。访问node.js的&lt;a class="link" href="https://nodejs.org/en/" target="_blank" rel="noopener"
+>官网&lt;/a>，根据官网的指导下载并安装node.js。安装为了解决npm速度过慢问题，需更换镜像源：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">npm config &lt;span class="nb">set&lt;/span> registry https://registry.npm.taobao.org
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="安装github-plus插件">安装github-plus插件&lt;/h3>
+&lt;p>运行PicGo，单击插件设置，在搜索中输入github，安装搜索结果中的&lt;a class="link" href="https://github.com/zWingz/picgo-plugin-github-plus" target="_blank" rel="noopener"
+>github-plus&lt;/a>。&lt;/p>
+&lt;h3 id="配置ithub-plus插件">配置ithub-plus插件&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">repo&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">iwyang/pics&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">branch&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">master&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">token&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">输入私人令牌&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">customUrl&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">不用填&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">origin&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">gitee &lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="上传和管理图片">上传和管理图片&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;p>单击上传区，选择链接格式，使用点击上传或剪贴板图片上传，PicGo会自动上传图片并将符合链接格式的链接复制到剪贴板，你只要按下Ctrl+v即可粘贴图片的链接。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>单击相册，你可以看到你上传的所有图片，你可以对所有图片进行复制链接，修改图片URL与删除操作，并可以批量复制或批量删除。&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>要注意的是，gitee支持外部链接的文件大小限制为1M（不过我也没试过）。&lt;/p>
+&lt;h2 id="配置typora">配置Typora&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>点击Typora左上角的文件-&amp;gt;偏好设置&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>在弹出的界面中点击图像，选择插入图片时选项为&lt;code>上传图片&lt;/code>，并勾选&lt;code>对本地位置的图片应用上述规则&lt;/code>和&lt;code>对网络位置的图片应用上述规则&lt;/code>。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;code>上传服务&lt;/code>选项里选择&lt;code>PicGo(app)&lt;/code>，&lt;code>PicGo路径&lt;/code>选择&lt;code>PicGo.exe&lt;/code>的绝对路径。&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>以后在Typora里插入本地图片时，它会利用PicGo自动帮你上传到gitee，并替换本地图片地址为gitee地址。&lt;/p>
+&lt;h2 id="参考链接">参考链接&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a class="link" href="https://www.cnblogs.com/focksor/p/12402471.html" target="_blank" rel="noopener"
+>1.Gitee图床+PicGo+Typora便捷在博客中使用图片 &lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a class="link" href="https://www.jianshu.com/p/fad1dacbf535" target="_blank" rel="noopener"
+>2.PicGo+Gitee(码云)搭建自己的图床&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a class="link" href="https://blog.csdn.net/disILLL/article/details/104944710" target="_blank" rel="noopener"
+>3.手把手教你用Typora自动上传到picgo图床&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul></description></item></channel></rss>

@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Linux on Bore's Notes</title><link>/tags/linux/</link><description>Recent content in Linux on Bore's Notes</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sun, 29 May 2022 01:12:45 +0000</lastBuildDate><atom:link href="/tags/linux/index.xml" rel="self" type="application/rss+xml"/><item><title>Debian使用备忘</title><link>/archives/debian%E4%BD%BF%E7%94%A8%E5%A4%87%E5%BF%98/</link><pubDate>Sun, 29 May 2022 01:12:45 +0000</pubDate><guid>/archives/debian%E4%BD%BF%E7%94%A8%E5%A4%87%E5%BF%98/</guid><description>&lt;p>由于一些原因，之前服务器上用的Centos换成了Debian。Debian虽然和Centos大同小异，但是还是有些东西要记一下。&lt;/p>
+&lt;h2 id="putty保存登录账号和密码">putty保存登录账号和密码&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>创建一个桌面快捷方式。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>进入快捷方式属性，修改目标，在后面加上 -ssh -l 用户名 -pw 密码 -i session标识 -P 端口号 IP地址。例如 &amp;ldquo;C:\Program Files\PuTTY\putty.exe&amp;rdquo; -ssh -l root -pw 123456 -i &amp;ldquo;yuanchengserver1&amp;rdquo; -P 22 142.16.187.129&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">E:\软件\putty.exe -ssh -l root -pw password -i &amp;#34;yansvps&amp;#34; -P 22 ip
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="3">
+&lt;li>然后，通过快捷方式就可以直接登录了~&lt;/li>
+&lt;/ol>
+&lt;p>PS：&lt;code>putty&lt;/code>没有&lt;a class="link" href="https://www.hostbuf.com/" target="_blank" rel="noopener"
+>FinalShell&lt;/a>好用。&lt;/p>
+&lt;h2 id="vi无法正常使用">&lt;code>vi&lt;/code>无法正常使用&lt;/h2>
+&lt;ol>
+&lt;li>先安装&lt;code>vim&lt;/code>：&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">apt install vim -y
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="2">
+&lt;li>修改&lt;code>vimrc.tiny&lt;/code>
+&lt;code>vi /etc/vim/vimrc.tiny&lt;/code> 将其中的语句 &lt;code>set compatible&lt;/code> 修改为 &lt;code>set nocompatible&lt;/code> ，非兼容模式下可以解决方向键变ABCD的问题。&lt;/li>
+&lt;/ol>
+&lt;p>在刚才那句话后面再加一句 &lt;code>set backspace=2&lt;/code> 来解决退格键无法使用的问题。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">vi /etc/vim/vimrc.tiny
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">set&lt;/span> nocompatible
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">set&lt;/span> &lt;span class="nv">backspace&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="m">2&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="3">
+&lt;li>卸载&lt;code>vim&lt;/code>
+vim颜色太花眼了，所以最后把它卸载：&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">apt remove vim -y
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="debian安装vsftpd">Debian安装vsftpd&lt;/h2>
+&lt;ol>
+&lt;li>安装命令：&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo apt install vsftpd -y
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="2">
+&lt;li>安装软件包后，启动vsftpd，并使其能够在引导时自动启动：&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo systemctl start vsftpd
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo systemctl &lt;span class="nb">enable&lt;/span> vsftpd
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="3">
+&lt;li>编辑&lt;code>vsftpd.conf&lt;/code>&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">vi /etc/vsftpd.conf
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>去掉&lt;code>write_enable=YES&lt;/code>前面的注释，使用户可以上传文件。&lt;/p>
+&lt;ol start="4">
+&lt;li>设置允许root登录&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">vi /etc/ftpusers
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>文件中的root前加&lt;code>#&lt;/code>&lt;/p>
+&lt;ol start="5">
+&lt;li>重启vsftpd服务&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo systemctl restart vsftpd
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="6">
+&lt;li>解决Nginx出现403 forbidden&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">chmod -R &lt;span class="m">777&lt;/span> /data/www/
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="7">
+&lt;li>限制用户登录（未启用）&lt;/li>
+&lt;/ol>
+&lt;p>要仅允许某些用户登录FTP服务器，请在文件末尾添加以下几行：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">vi /etc/vsftpd.conf
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-diff" data-lang="diff">&lt;span class="line">&lt;span class="cl">userlist_enable=YES
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">userlist_file=/etc/vsftpd/user_list
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">userlist_deny=NO
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>启用此选项后，您需要通过将用户名添加到/etc/vsftpd.user_list文件（每行一个用户）来明确指定哪些用户可以登录。使用以下命令：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;admin&amp;#34;&lt;/span> &lt;span class="p">|&lt;/span> sudo tee -a /etc/vsftpd/user_list
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="debian-9上安装和配置postfix邮件">Debian 9上安装和配置Postfix邮件&lt;/h2>
+&lt;ol>
+&lt;li>安装 mailtuils:&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo apt install mailutils -y
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="2">
+&lt;li>安装postfix后缀:&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo apt install postfix
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>在安装过程即将结束时，您将看到一个类似于下图中的窗口的窗口。默认选项是&lt;code>Internet Site&lt;/code>。这是本教程的推荐选项，请按&lt;code>TAB&lt;/code>，然后按&lt;code>ENTER&lt;/code>。
+之后，您将获得另一个窗口，就像下一个图像中的窗口一样。该系统邮件名称应该是一样的，你分配给服务器，当你在创造它的名字。如果它显示子域&lt;code>subdomain.example.com&lt;/code>，请将其更改为&lt;code>ust example.com&lt;/code>。完成后，按&lt;code>TAB&lt;/code>，然后&lt;code>ENTER&lt;/code>。&lt;/p>
+&lt;ol start="3">
+&lt;li>配置Postfix&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">vi /etc/postfix/main.cf
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>打开文件后，向下滚动，直到看到以下部分：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">. . .
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">mailbox_size_limit&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="m">0&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">recipient_delimiter&lt;/span> &lt;span class="o">=&lt;/span> +
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">inet_interfaces&lt;/span> &lt;span class="o">=&lt;/span> all
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">. . .
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>将读取的inet_interfaces = all行更改为inet_interfaces = loopback-only：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">. . .
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">mailbox_size_limit&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="m">0&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">recipient_delimiter&lt;/span> &lt;span class="o">=&lt;/span> +
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">inet_interfaces&lt;/span> &lt;span class="o">=&lt;/span> loopback-only
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">. . .
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>您需要修改的另一个指令是mydestination，用于指定通过local_transport邮件传递传输传递的域列表。默认情况下，值类似于：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">. . .
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">mydestination&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nv">$myhostname&lt;/span>, example.com, localhost.com, , localhost
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">. . .
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>此指令的建议默认值在下面的代码块中给出，因此请修改以匹配：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">. . .
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">mydestination&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nv">$myhostname&lt;/span>, localhost.&lt;span class="nv">$your_domain&lt;/span>, &lt;span class="nv">$your_domain&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">. . .
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="4">
+&lt;li>重启Postfix。&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo systemctl restart postfix
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="5">
+&lt;li>测试SMTP服务器&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;This is the body of the email&amp;#34;&lt;/span> &lt;span class="p">|&lt;/span> mail -s &lt;span class="s2">&amp;#34;This is the subject line&amp;#34;&lt;/span> your_email_address
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="6">
+&lt;li>debian 彻底删除posfix 然后重新安装&lt;/li>
+&lt;/ol>
+&lt;ul>
+&lt;li>关闭 service postfix start&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">service postfix stop
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ul>
+&lt;li>卸载postfix&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">apt-get remove postfix -y
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">dpkg --purge postfix
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">apt autoremove
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ul>
+&lt;li>查看配置文件是否已经删除&lt;/li>
+&lt;/ul>
+&lt;p>查看 /etc/postfix是否已经删除掉&lt;/p>
+&lt;h2 id="参考链接">参考链接&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://www.uskvm.com/p/32.html" target="_blank" rel="noopener"
+>1.解决 Debian 下使用 vi 时方向键乱码，退格键不能使用的问题&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://shixiongfei.com/debian-vsftpd.html" target="_blank" rel="noopener"
+>2.Debian安装vsftpd&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://blog.fish2bird.com/?p=706" target="_blank" rel="noopener"
+>3.Debian下vsftpd设置允许root登录分析&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://zhuanlan.zhihu.com/p/83730878" target="_blank" rel="noopener"
+>4.putty保存登录账号和密码&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://www.myfreax.com/how-to-setup-ftp-server-with-vsftpd-on-debian-9/" target="_blank" rel="noopener"
+>5.如何在Debian 9上使用VSFTPD设置FTP服务器&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>linux利用crontab设置定时任务</title><link>/archives/linux%E5%88%A9%E7%94%A8crontab%E8%AE%BE%E7%BD%AE%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/</link><pubDate>Mon, 10 Aug 2020 10:52:25 +0000</pubDate><guid>/archives/linux%E5%88%A9%E7%94%A8crontab%E8%AE%BE%E7%BD%AE%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/</guid><description>&lt;h2 id="查看定时任务">查看定时任务&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">crontab -l
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="编辑定时任务">编辑定时任务&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">crontab -e
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>第一个*是分钟&lt;/p>
+&lt;p>第二个*是小时&lt;/p>
+&lt;p>第三个*是日期&lt;/p>
+&lt;p>第四个*是月份&lt;/p>
+&lt;p>第五个*是星期(0-6)&lt;/p>
+&lt;p>例如：每个星期一凌晨3点自动重启&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="m">0&lt;/span> &lt;span class="m">3&lt;/span> * * &lt;span class="m">1&lt;/span> /sbin/reboot
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="使用实例">使用实例&lt;/h2>
+&lt;p>每天，每月，每年 定时启动:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-js" data-lang="js">&lt;span class="line">&lt;span class="cl">&lt;span class="nx">每五分钟执行&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="err">/5 * * * *&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">每小时执行&lt;/span> &lt;span class="mi">0&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="o">*&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">每天执行&lt;/span> &lt;span class="mi">0&lt;/span> &lt;span class="mi">0&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="o">*&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">每周执行&lt;/span> &lt;span class="mi">0&lt;/span> &lt;span class="mi">0&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="mi">0&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">每月执行&lt;/span> &lt;span class="mi">0&lt;/span> &lt;span class="mi">0&lt;/span> &lt;span class="mi">1&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="o">*&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">每年执行&lt;/span> &lt;span class="mi">0&lt;/span> &lt;span class="mi">0&lt;/span> &lt;span class="mi">1&lt;/span> &lt;span class="mi">1&lt;/span> &lt;span class="o">*&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>crontab时间举例：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;span class="lnt">25
+&lt;/span>&lt;span class="lnt">26
+&lt;/span>&lt;span class="lnt">27
+&lt;/span>&lt;span class="lnt">28
+&lt;/span>&lt;span class="lnt">29
+&lt;/span>&lt;span class="lnt">30
+&lt;/span>&lt;span class="lnt">31
+&lt;/span>&lt;span class="lnt">32
+&lt;/span>&lt;span class="lnt">33
+&lt;/span>&lt;span class="lnt">34
+&lt;/span>&lt;span class="lnt">35
+&lt;/span>&lt;span class="lnt">36
+&lt;/span>&lt;span class="lnt">37
+&lt;/span>&lt;span class="lnt">38
+&lt;/span>&lt;span class="lnt">39
+&lt;/span>&lt;span class="lnt">40
+&lt;/span>&lt;span class="lnt">41
+&lt;/span>&lt;span class="lnt">42
+&lt;/span>&lt;span class="lnt">43
+&lt;/span>&lt;span class="lnt">44
+&lt;/span>&lt;span class="lnt">45
+&lt;/span>&lt;span class="lnt">46
+&lt;/span>&lt;span class="lnt">47
+&lt;/span>&lt;span class="lnt">48
+&lt;/span>&lt;span class="lnt">49
+&lt;/span>&lt;span class="lnt">50
+&lt;/span>&lt;span class="lnt">51
+&lt;/span>&lt;span class="lnt">52
+&lt;/span>&lt;span class="lnt">53
+&lt;/span>&lt;span class="lnt">54
+&lt;/span>&lt;span class="lnt">55
+&lt;/span>&lt;span class="lnt">56
+&lt;/span>&lt;span class="lnt">57
+&lt;/span>&lt;span class="lnt">58
+&lt;/span>&lt;span class="lnt">59
+&lt;/span>&lt;span class="lnt">60
+&lt;/span>&lt;span class="lnt">61
+&lt;/span>&lt;span class="lnt">62
+&lt;/span>&lt;span class="lnt">63
+&lt;/span>&lt;span class="lnt">64
+&lt;/span>&lt;span class="lnt">65
+&lt;/span>&lt;span class="lnt">66
+&lt;/span>&lt;span class="lnt">67
+&lt;/span>&lt;span class="lnt">68
+&lt;/span>&lt;span class="lnt">69
+&lt;/span>&lt;span class="lnt">70
+&lt;/span>&lt;span class="lnt">71
+&lt;/span>&lt;span class="lnt">72
+&lt;/span>&lt;span class="lnt">73
+&lt;/span>&lt;span class="lnt">74
+&lt;/span>&lt;span class="lnt">75
+&lt;/span>&lt;span class="lnt">76
+&lt;/span>&lt;span class="lnt">77
+&lt;/span>&lt;span class="lnt">78
+&lt;/span>&lt;span class="lnt">79
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-js" data-lang="js">&lt;span class="line">&lt;span class="cl">&lt;span class="err">#&lt;/span> &lt;span class="nx">每天早上6点&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="mi">0&lt;/span> &lt;span class="mi">6&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="nx">echo&lt;/span> &lt;span class="s2">&amp;#34;Good morning.&amp;#34;&lt;/span> &lt;span class="o">&amp;gt;&amp;gt;&lt;/span> &lt;span class="err">/tmp/test.txt //注意单纯echo，从屏幕上看不到任何输出，因为cron把任何输出都email到root的信箱了。&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">#&lt;/span> &lt;span class="nx">每两个小时&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="mi">0&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="err">/2 * * * echo &amp;#34;Have a break now.&amp;#34; &amp;gt;&amp;gt; /tmp/test.txt &lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">#&lt;/span> &lt;span class="nx">晚上11点到早上8点之间每两个小时和早上八点&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="mi">0&lt;/span> &lt;span class="mi">23&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="mi">7&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="mi">2&lt;/span>&lt;span class="err">，&lt;/span>&lt;span class="mi">8&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="nx">echo&lt;/span> &lt;span class="s2">&amp;#34;Have a good dream&amp;#34;&lt;/span> &lt;span class="o">&amp;gt;&amp;gt;&lt;/span> &lt;span class="err">/tmp/test.txt&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">#&lt;/span> &lt;span class="nx">每个月的4号和每个礼拜的礼拜一到礼拜三的早上11点&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="mi">0&lt;/span> &lt;span class="mi">11&lt;/span> &lt;span class="mi">4&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="mi">3&lt;/span> &lt;span class="nx">command&lt;/span> &lt;span class="nx">line&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">#&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="nx">月1日早上4点&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="mi">0&lt;/span> &lt;span class="mi">4&lt;/span> &lt;span class="mi">1&lt;/span> &lt;span class="mi">1&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="nx">command&lt;/span> &lt;span class="nx">line&lt;/span> &lt;span class="nx">SHELL&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="err">/bin/bash PATH=/sbin:/bin:/usr/sbin:/usr/bin MAILTO=root //如果出现错误，或者有数据输出，数据作为邮件发给这个帐号 HOME=/ &lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">#&lt;/span> &lt;span class="nx">每小时&lt;/span>&lt;span class="err">（&lt;/span>&lt;span class="nx">第一分钟&lt;/span>&lt;span class="err">）&lt;/span>&lt;span class="nx">执行&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="nx">etc&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="nx">cron&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">hourly内的脚本&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="mi">01&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="nx">root&lt;/span> &lt;span class="nx">run&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">parts&lt;/span> &lt;span class="o">/&lt;/span>&lt;span class="nx">etc&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="nx">cron&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">hourly&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">#&lt;/span> &lt;span class="nx">每天&lt;/span>&lt;span class="err">（&lt;/span>&lt;span class="nx">凌晨4&lt;/span>&lt;span class="err">：&lt;/span>&lt;span class="mi">02&lt;/span>&lt;span class="err">）&lt;/span>&lt;span class="nx">执行&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="nx">etc&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="nx">cron&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">daily内的脚本&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="mi">02&lt;/span> &lt;span class="mi">4&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="nx">root&lt;/span> &lt;span class="nx">run&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">parts&lt;/span> &lt;span class="o">/&lt;/span>&lt;span class="nx">etc&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="nx">cron&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">daily&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">#&lt;/span> &lt;span class="nx">每星期&lt;/span>&lt;span class="err">（&lt;/span>&lt;span class="nx">周日凌晨4&lt;/span>&lt;span class="err">：&lt;/span>&lt;span class="mi">22&lt;/span>&lt;span class="err">）&lt;/span>&lt;span class="nx">执行&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="nx">etc&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="nx">cron&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">weekly内的脚本&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="mi">22&lt;/span> &lt;span class="mi">4&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="mi">0&lt;/span> &lt;span class="nx">root&lt;/span> &lt;span class="nx">run&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">parts&lt;/span> &lt;span class="o">/&lt;/span>&lt;span class="nx">etc&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="nx">cron&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">weekly&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">#&lt;/span> &lt;span class="nx">每月&lt;/span>&lt;span class="err">（&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="nx">号凌晨4&lt;/span>&lt;span class="err">：&lt;/span>&lt;span class="mi">42&lt;/span>&lt;span class="err">）&lt;/span>&lt;span class="nx">去执行&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="nx">etc&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="nx">cron&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">monthly内的脚本&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="mi">42&lt;/span> &lt;span class="mi">4&lt;/span> &lt;span class="mi">1&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="nx">root&lt;/span> &lt;span class="nx">run&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">parts&lt;/span> &lt;span class="o">/&lt;/span>&lt;span class="nx">etc&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="nx">cron&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">monthly&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">#&lt;/span> &lt;span class="nx">注意&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s2">&amp;#34;run-parts&amp;#34;&lt;/span>&lt;span class="nx">这个参数了&lt;/span>&lt;span class="err">，&lt;/span>&lt;span class="nx">如果去掉这个参数的话&lt;/span>&lt;span class="err">，&lt;/span>&lt;span class="nx">后面就可以写要运行的某个脚本名&lt;/span>&lt;span class="err">，&lt;/span>&lt;span class="nx">而不是文件夹名&lt;/span>&lt;span class="err">。&lt;/span> 　
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">#&lt;/span> &lt;span class="nx">每天的下午4点&lt;/span>&lt;span class="err">、&lt;/span>&lt;span class="mi">5&lt;/span>&lt;span class="nx">点&lt;/span>&lt;span class="err">、&lt;/span>&lt;span class="mi">6&lt;/span>&lt;span class="nx">点的5&lt;/span> &lt;span class="nx">min&lt;/span>&lt;span class="err">、&lt;/span>&lt;span class="mi">15&lt;/span> &lt;span class="nx">min&lt;/span>&lt;span class="err">、&lt;/span>&lt;span class="mi">25&lt;/span> &lt;span class="nx">min&lt;/span>&lt;span class="err">、&lt;/span>&lt;span class="mi">35&lt;/span> &lt;span class="nx">min&lt;/span>&lt;span class="err">、&lt;/span>&lt;span class="mi">45&lt;/span> &lt;span class="nx">min&lt;/span>&lt;span class="err">、&lt;/span>&lt;span class="mi">55&lt;/span> &lt;span class="nx">min时执行命令&lt;/span>&lt;span class="err">。&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="mi">5&lt;/span>&lt;span class="err">，&lt;/span>&lt;span class="mi">15&lt;/span>&lt;span class="err">，&lt;/span>&lt;span class="mi">25&lt;/span>&lt;span class="err">，&lt;/span>&lt;span class="mi">35&lt;/span>&lt;span class="err">，&lt;/span>&lt;span class="mi">45&lt;/span>&lt;span class="err">，&lt;/span>&lt;span class="mi">55&lt;/span> &lt;span class="mi">16&lt;/span>&lt;span class="err">，&lt;/span>&lt;span class="mi">17&lt;/span>&lt;span class="err">，&lt;/span>&lt;span class="mi">18&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="nx">command&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">#&lt;/span> &lt;span class="nx">每周一&lt;/span>&lt;span class="err">，&lt;/span>&lt;span class="nx">三&lt;/span>&lt;span class="err">，&lt;/span>&lt;span class="nx">五的下午3&lt;/span>&lt;span class="err">：&lt;/span>&lt;span class="mi">00&lt;/span>&lt;span class="nx">系统进入维护状态&lt;/span>&lt;span class="err">，&lt;/span>&lt;span class="nx">重新启动系统&lt;/span>&lt;span class="err">。&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="mi">00&lt;/span> &lt;span class="mi">15&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="err">，&lt;/span>&lt;span class="mi">3&lt;/span>&lt;span class="err">，&lt;/span>&lt;span class="mi">5&lt;/span> &lt;span class="nx">shutdown&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="nx">r&lt;/span> &lt;span class="o">+&lt;/span>&lt;span class="mi">5&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">#&lt;/span> &lt;span class="nx">每小时的10分&lt;/span>&lt;span class="err">，&lt;/span>&lt;span class="mi">40&lt;/span>&lt;span class="nx">分执行用户目录下的innd&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="nx">bbslin这个指令&lt;/span>&lt;span class="err">：&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="mi">10&lt;/span>&lt;span class="err">，&lt;/span>&lt;span class="mi">40&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="nx">innd&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="nx">bbslink&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">#&lt;/span> &lt;span class="nx">每小时的1分执行用户目录下的bin&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="nx">account这个指令&lt;/span>&lt;span class="err">：&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="mi">1&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="nx">bin&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="nx">account&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">#&lt;/span> &lt;span class="nx">每天早晨三点二十分执行用户目录下如下所示的两个指令&lt;/span>&lt;span class="err">（&lt;/span>&lt;span class="nx">每个指令以&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="nx">分隔&lt;/span>&lt;span class="err">）：&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="mi">203&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="err">（&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="nx">bin&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="nx">rm&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="nx">f&lt;/span> &lt;span class="nx">expire&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">ls&lt;/span> &lt;span class="nx">logins&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">bad&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="nx">bin&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="nx">expire$&lt;/span>&lt;span class="err">#@&lt;/span>&lt;span class="mi">62&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="nx">expire&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="nx">st&lt;/span>&lt;span class="err">）&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">#&lt;/span> &lt;span class="nx">每1分钟执行一次myCommand&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">*&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="nx">myCommand&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">#&lt;/span> &lt;span class="nx">每小时的第3和第15分钟执行&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="mi">3&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="mi">15&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="nx">myCommand&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">#&lt;/span> &lt;span class="nx">在上午8点到11点的第3和第15分钟执行&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="mi">3&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="mi">15&lt;/span> &lt;span class="mi">8&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="mi">11&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="nx">myCommand&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">#&lt;/span> &lt;span class="nx">每隔两天的上午8点到11点的第3和第15分钟执行&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="mi">3&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="mi">15&lt;/span> &lt;span class="mi">8&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="mi">11&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="err">/2 * * myCommand&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">#&lt;/span> &lt;span class="nx">每周一上午8点到11点的第3和第15分钟执行&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="mi">3&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="mi">15&lt;/span> &lt;span class="mi">8&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="mi">11&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="mi">1&lt;/span> &lt;span class="nx">myCommand&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">#&lt;/span> &lt;span class="nx">每晚的21&lt;/span>&lt;span class="o">:&lt;/span>&lt;span class="mi">30&lt;/span>&lt;span class="nx">重启smb&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="mi">30&lt;/span> &lt;span class="mi">21&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="err">/etc/init.d/smb restart&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">#&lt;/span> &lt;span class="nx">每月1&lt;/span>&lt;span class="err">、&lt;/span>&lt;span class="mi">10&lt;/span>&lt;span class="err">、&lt;/span>&lt;span class="mi">22&lt;/span>&lt;span class="nx">日的4&lt;/span> &lt;span class="o">:&lt;/span> &lt;span class="mi">45&lt;/span>&lt;span class="nx">重启smb&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="mi">45&lt;/span> &lt;span class="mi">4&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="mi">10&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="mi">22&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="err">/etc/init.d/smb restart&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">#&lt;/span> &lt;span class="nx">每周六&lt;/span>&lt;span class="err">、&lt;/span>&lt;span class="nx">周日的1&lt;/span> &lt;span class="o">:&lt;/span> &lt;span class="mi">10&lt;/span>&lt;span class="nx">重启smb&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="mi">10&lt;/span> &lt;span class="mi">1&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="mi">6&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="mi">0&lt;/span> &lt;span class="o">/&lt;/span>&lt;span class="nx">etc&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="nx">init&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">d&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="nx">smb&lt;/span> &lt;span class="nx">restart&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">#&lt;/span> &lt;span class="nx">每天18&lt;/span> &lt;span class="o">:&lt;/span> &lt;span class="mi">00&lt;/span>&lt;span class="nx">至23&lt;/span> &lt;span class="o">:&lt;/span> &lt;span class="mi">00&lt;/span>&lt;span class="nx">之间每隔30分钟重启smb&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="mi">30&lt;/span> &lt;span class="mi">18&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="mi">23&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="err">/etc/init.d/smb restart&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">#&lt;/span> &lt;span class="nx">每星期六的晚上11&lt;/span> &lt;span class="o">:&lt;/span> &lt;span class="mi">00&lt;/span> &lt;span class="nx">pm重启smb&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="mi">0&lt;/span> &lt;span class="mi">23&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="mi">6&lt;/span> &lt;span class="o">/&lt;/span>&lt;span class="nx">etc&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="nx">init&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">d&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="nx">smb&lt;/span> &lt;span class="nx">restart&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">#&lt;/span> &lt;span class="nx">每一小时重启smb&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">*&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="err">/1 * * * /etc/init.d/smb restart&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">#&lt;/span> &lt;span class="nx">晚上11点到早上7点之间&lt;/span>&lt;span class="err">，&lt;/span>&lt;span class="nx">每隔一小时重启smb&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="mi">0&lt;/span> &lt;span class="mi">23&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="mi">7&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="err">/etc/init.d/smb restart&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="参考链接">参考链接&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://blog.csdn.net/qq_22823581/article/details/80783835" target="_blank" rel="noopener"
+>1.Linux之crontab定时任务&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://linuxtools-rst.readthedocs.io/zh_CN/latest/tool/crontab.html" target="_blank" rel="noopener"
+>2.crontab 定时任务&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://blog.csdn.net/qq_22823581/article/details/80783835" target="_blank" rel="noopener"
+>3.crontab 每天，每月，每年 定时启动&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>

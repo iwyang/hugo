@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pr on Bore's Notes</title><link>/tags/pr/</link><description>Recent content in Pr on Bore's Notes</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 17 Mar 2022 23:06:45 +0000</lastBuildDate><atom:link href="/tags/pr/index.xml" rel="self" type="application/rss+xml"/><item><title>pr学习笔记</title><link>/archives/pr%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link><pubDate>Thu, 17 Mar 2022 23:06:45 +0000</pubDate><guid>/archives/pr%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid><description>&lt;p>决定把pr系统地过一遍，看能不能坚持下来。&lt;/p>
+&lt;p>1.源窗口，&lt;code>i&lt;/code>标记入点，&lt;code>o&lt;/code>标记出点，可以将需要的一小段素材拖到视频轨道。&lt;/p>
+&lt;p>2.&lt;code>Shift+m&lt;/code>：跳转到下一标记点；&lt;code>Ctrl+Shirt+m&lt;/code>：跳转到上一标记点。&lt;/p>
+&lt;p>3.按住&lt;code>Alt&lt;/code>键，选中音频，再按&lt;code>Delete&lt;/code>键，可以快速删除音频。&lt;/p>
+&lt;p>4.&lt;code>波纹删除&lt;/code>可以快速删除两端素材之间的空白，不过会移动标记点，为了使标记点不移动，这时就要右键删除，再鼠标拖动、拼接素材。&lt;/p>
+&lt;p>5.音乐鼓点节拍插件BeatEdit&lt;/p></description></item><item><title>2021年秋季运动会</title><link>/archives/2021%E5%B9%B4%E7%A7%8B%E5%AD%A3%E8%BF%90%E5%8A%A8%E4%BC%9A/</link><pubDate>Fri, 12 Nov 2021 14:27:25 +0000</pubDate><guid>/archives/2021%E5%B9%B4%E7%A7%8B%E5%AD%A3%E8%BF%90%E5%8A%A8%E4%BC%9A/</guid><description>&lt;p>用pr做了一个电子相册，参考： &lt;a class="link" href="https://www.bilibili.com/video/BV1Wx41177ps" target="_blank" rel="noopener"
+>使用 Premiere 把照片变成唯美动画效果。&lt;/a>&lt;/p>
+&lt;div align=center class="aspect-ratio">
+&lt;iframe src="https://player.bilibili.com/player.html?aid=891682348&amp;&amp;page=1&amp;as_wide=1&amp;high_quality=1&amp;danmaku=0"
+scrolling="no"
+border="0"
+frameborder="no"
+framespacing="0"
+high_quality=1
+danmaku=1
+allowfullscreen="true">
+&lt;/iframe>
+&lt;/div></description></item><item><title>用pr制作《2021年春季运动会》电子相册</title><link>/archives/%E7%94%A8pr%E5%88%B6%E4%BD%9C2021%E5%B9%B4%E6%98%A5%E5%AD%A3%E8%BF%90%E5%8A%A8%E4%BC%9A%E7%94%B5%E5%AD%90%E7%9B%B8%E5%86%8C/</link><pubDate>Wed, 02 Jun 2021 14:27:25 +0000</pubDate><guid>/archives/%E7%94%A8pr%E5%88%B6%E4%BD%9C2021%E5%B9%B4%E6%98%A5%E5%AD%A3%E8%BF%90%E5%8A%A8%E4%BC%9A%E7%94%B5%E5%AD%90%E7%9B%B8%E5%86%8C/</guid><description>&lt;p>用pr做了一个电子相册，参考： &lt;a class="link" href="https://www.bilibili.com/video/BV1Wx41177ps" target="_blank" rel="noopener"
+>使用 Premiere 把照片变成唯美动画效果。&lt;/a>&lt;/p>
+&lt;div align=center class="aspect-ratio">
+&lt;iframe src="https://player.bilibili.com/player.html?aid=502918992&amp;&amp;page=1&amp;as_wide=1&amp;high_quality=1&amp;danmaku=0"
+scrolling="no"
+border="0"
+frameborder="no"
+framespacing="0"
+high_quality=1
+danmaku=1
+allowfullscreen="true">
+&lt;/iframe>
+&lt;/div></description></item></channel></rss>

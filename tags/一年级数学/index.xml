@@ -1,0 +1,3775 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>一年级数学 on Bore's Notes</title><link>/tags/%E4%B8%80%E5%B9%B4%E7%BA%A7%E6%95%B0%E5%AD%A6/</link><description>Recent content in 一年级数学 on Bore's Notes</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 09 Jul 2020 02:15:25 +0000</lastBuildDate><atom:link href="/tags/%E4%B8%80%E5%B9%B4%E7%BA%A7%E6%95%B0%E5%AD%A6/index.xml" rel="self" type="application/rss+xml"/><item><title>把一个正方形平分成四份</title><link>/archives/%E6%8A%8A%E4%B8%80%E4%B8%AA%E6%AD%A3%E6%96%B9%E5%BD%A2%E5%B9%B3%E5%88%86%E6%88%90%E5%9B%9B%E4%BB%BD/</link><pubDate>Thu, 09 Jul 2020 02:15:25 +0000</pubDate><guid>/archives/%E6%8A%8A%E4%B8%80%E4%B8%AA%E6%AD%A3%E6%96%B9%E5%BD%A2%E5%B9%B3%E5%88%86%E6%88%90%E5%9B%9B%E4%BB%BD/</guid><description>&lt;p>从学生的角度来讲，把一个正方形一部分成四份，应该有四种分法,如图所示：&lt;/p>
+&lt;p>&lt;img src="/img/%E6%8A%8A%E4%B8%80%E4%B8%AA%E6%AD%A3%E6%96%B9%E5%BD%A2%E5%B9%B3%E5%88%86%E6%88%90%E5%9B%9B%E4%BB%BD/1.jpg"
+loading="lazy"
+>&lt;/p>
+&lt;p>但是，如果不是学生，有人突然问你这样的一个问题，你就可以这样回答：有无数种方法。如：&lt;/p>
+&lt;p>&lt;img src="/img/%E6%8A%8A%E4%B8%80%E4%B8%AA%E6%AD%A3%E6%96%B9%E5%BD%A2%E5%B9%B3%E5%88%86%E6%88%90%E5%9B%9B%E4%BB%BD/2.jpg"
+loading="lazy"
+>&lt;/p>
+&lt;p>另外，我们还可以正方形的中心为交点画一个互相垂直的直线，然后沿此中心旋转，被分成的四个部分永远都是平均的四份。&lt;/p>
+&lt;p>参考链接：&lt;a class="link" href="https://zhidao.baidu.com/question/1177400619988510499.html" target="_blank" rel="noopener"
+>把一个正方形平分成四份.有几种分法&lt;/a>&lt;/p></description></item><item><title>一年级数学下册数图形有几个</title><link>/archives/%E4%B8%80%E5%B9%B4%E7%BA%A7%E6%95%B0%E5%AD%A6%E4%B8%8B%E5%86%8C%E6%95%B0%E5%9B%BE%E5%BD%A2%E6%9C%89%E5%87%A0%E4%B8%AA/</link><pubDate>Mon, 29 Jun 2020 06:10:25 +0000</pubDate><guid>/archives/%E4%B8%80%E5%B9%B4%E7%BA%A7%E6%95%B0%E5%AD%A6%E4%B8%8B%E5%86%8C%E6%95%B0%E5%9B%BE%E5%BD%A2%E6%9C%89%E5%87%A0%E4%B8%AA/</guid><description>&lt;p>&lt;img src="/img/%E4%B8%80%E5%B9%B4%E7%BA%A7%E6%95%B0%E5%AD%A6%E4%B8%8B%E5%86%8C%E6%95%B0%E5%9B%BE%E5%BD%A2%E6%9C%89%E5%87%A0%E4%B8%AA/1.gif"
+loading="lazy"
+>&lt;/p>
+&lt;p>&lt;img src="/img/%E4%B8%80%E5%B9%B4%E7%BA%A7%E6%95%B0%E5%AD%A6%E4%B8%8B%E5%86%8C%E6%95%B0%E5%9B%BE%E5%BD%A2%E6%9C%89%E5%87%A0%E4%B8%AA/2.gif"
+loading="lazy"
+>&lt;/p>
+&lt;p>&lt;img src="/img/%E4%B8%80%E5%B9%B4%E7%BA%A7%E6%95%B0%E5%AD%A6%E4%B8%8B%E5%86%8C%E6%95%B0%E5%9B%BE%E5%BD%A2%E6%9C%89%E5%87%A0%E4%B8%AA/3.gif"
+loading="lazy"
+>&lt;/p>
+&lt;h4 id="思路">思路：&lt;/h4>
+&lt;p>以最后一个数三角形有几个为例：&lt;/p>
+&lt;p>&lt;img src="/img/%E4%B8%80%E5%B9%B4%E7%BA%A7%E6%95%B0%E5%AD%A6%E4%B8%8B%E5%86%8C%E6%95%B0%E5%9B%BE%E5%BD%A2%E6%9C%89%E5%87%A0%E4%B8%AA/4.png"
+loading="lazy"
+>&lt;/p>
+&lt;ol>
+&lt;li>首先给小三角形编号：1号、2号、3号。&lt;/li>
+&lt;li>先数小三角形有几个：3个&lt;/li>
+&lt;li>再数中型三角形（ 把两个小三角形看作一个中型三角形）有几个：1号和2号是一个，2号和3号是一个，合起来是2个。&lt;/li>
+&lt;li>大三角形有1个。&lt;/li>
+&lt;li>所以一共有：3+2+1=6（个）&lt;/li>
+&lt;/ol>
+&lt;h4 id="总结">总结：&lt;/h4>
+&lt;p>感觉还是做个flash动画直观一些。&lt;/p>
+&lt;h4 id="参考链接">参考链接：&lt;/h4>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a class="link" href="https://v.qq.com/x/page/e084872v5rs.html" target="_blank" rel="noopener"
+>1.怎么数一数到底有几个三角形，一年级数学认识图形&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a class="link" href="https://haokan.baidu.com/v?pd=wisenatural&amp;amp;vid=11256514435927699277" target="_blank" rel="noopener"
+>2.一年级下数学：如何教孩子数图形的个数，才不会漏数呢？&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a class="link" href="https://wenku.baidu.com/view/ad88740ff5335a8103d22015.html" target="_blank" rel="noopener"
+>3.一年级数学-巧数图形&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul></description></item><item><title>一年级数学下册第六单元《加与减(三)》试卷错题集</title><link>/archives/%E4%B8%80%E5%B9%B4%E7%BA%A7%E6%95%B0%E5%AD%A6%E4%B8%8B%E5%86%8C%E7%AC%AC%E5%85%AD%E5%8D%95%E5%85%83%E5%8A%A0%E4%B8%8E%E5%87%8F%E4%B8%89%E8%AF%95%E5%8D%B7%E9%94%99%E9%A2%98%E9%9B%86/</link><pubDate>Thu, 11 Jun 2020 14:05:25 +0000</pubDate><guid>/archives/%E4%B8%80%E5%B9%B4%E7%BA%A7%E6%95%B0%E5%AD%A6%E4%B8%8B%E5%86%8C%E7%AC%AC%E5%85%AD%E5%8D%95%E5%85%83%E5%8A%A0%E4%B8%8E%E5%87%8F%E4%B8%89%E8%AF%95%E5%8D%B7%E9%94%99%E9%A2%98%E9%9B%86/</guid><description>&lt;p>&lt;img src="/img/%E4%B8%80%E5%B9%B4%E7%BA%A7%E6%95%B0%E5%AD%A6%E4%B8%8B%E5%86%8C%E7%AC%AC%E5%85%AD%E5%8D%95%E5%85%83%E3%80%8A%E5%8A%A0%E4%B8%8E%E5%87%8F%28%E4%B8%89%29%E3%80%8B%E8%AF%95%E5%8D%B7%E9%94%99%E9%A2%98%E9%9B%86/1.jpg"
+loading="lazy"
+>&lt;/p>
+&lt;p>&lt;img src="/img/%E4%B8%80%E5%B9%B4%E7%BA%A7%E6%95%B0%E5%AD%A6%E4%B8%8B%E5%86%8C%E7%AC%AC%E5%85%AD%E5%8D%95%E5%85%83%E3%80%8A%E5%8A%A0%E4%B8%8E%E5%87%8F%28%E4%B8%89%29%E3%80%8B%E8%AF%95%E5%8D%B7%E9%94%99%E9%A2%98%E9%9B%86/2.jpg"
+loading="lazy"
+>&lt;/p>
+&lt;ul>
+&lt;li>1.第一题第2题。
+求的是65与7的和是多少？差是多少？
+和：65+7=72 差：65-7=58&lt;/li>
+&lt;li>2.第一题第4题。
+①比35大12的数是多少？
+求的是“较大数”，用加法：35+12=47
+②35比12大多少？
+求的是“多多少”，用减法：35-12=23&lt;/li>
+&lt;li>3.第一题第6题。
+已经看了19页，接下来就从第20页开始看起。
+19+1=20（页）&lt;/li>
+&lt;li>4.第一题第7题。
+括号里最大填几，分两步计算。
+（1）29+（ ）＜46
+①先想比46小1的数是几，46-1=45，是45。
+②再想29加几等于45，45-29=16，答案是16。
+（2）42-（ ）＞2
+①先想比2大1的数是几，2+1=3，是3。
+②再想42减几等于3，42-3=39，答案是39。&lt;/li>
+&lt;li>5.第二题第3题。
+100减去一个两位数，差可能是两位数，也可能是一位数。例如100-20=80 100-99=1。&lt;/li>
+&lt;li>6.第二题第5题。
+两个加数都比50小，它们最大只能同时为49，49+49=98，和最大是98，比100小。&lt;/li>
+&lt;li>7.第三题第5题。
+由题意可知：
+①小亮比小红多收集17张。
+②小东比小红多收集25张。
+所以小东收集的最多。&lt;/li>
+&lt;li>8.第七题第4题，提数学问题要带数量词。&lt;/li>
+&lt;/ul></description></item><item><title>一年级数学下册第五单元《加与减(二)》试卷错题集</title><link>/archives/%E4%B8%80%E5%B9%B4%E7%BA%A7%E6%95%B0%E5%AD%A6%E4%B8%8B%E5%86%8C%E7%AC%AC%E4%BA%94%E5%8D%95%E5%85%83%E5%8A%A0%E4%B8%8E%E5%87%8F%E4%BA%8C%E8%AF%95%E5%8D%B7%E9%94%99%E9%A2%98%E9%9B%86/</link><pubDate>Wed, 10 Jun 2020 14:41:25 +0000</pubDate><guid>/archives/%E4%B8%80%E5%B9%B4%E7%BA%A7%E6%95%B0%E5%AD%A6%E4%B8%8B%E5%86%8C%E7%AC%AC%E4%BA%94%E5%8D%95%E5%85%83%E5%8A%A0%E4%B8%8E%E5%87%8F%E4%BA%8C%E8%AF%95%E5%8D%B7%E9%94%99%E9%A2%98%E9%9B%86/</guid><description>&lt;p>&lt;img src="/img/%E4%B8%80%E5%B9%B4%E7%BA%A7%E6%95%B0%E5%AD%A6%E4%B8%8B%E5%86%8C%E7%AC%AC%E4%BA%94%E5%8D%95%E5%85%83%E3%80%8A%E5%8A%A0%E4%B8%8E%E5%87%8F%28%E4%BA%8C%29%E3%80%8B%E8%AF%95%E5%8D%B7%E9%94%99%E9%A2%98%E9%9B%86/1.jpg"
+loading="lazy"
+>&lt;/p>
+&lt;p>&lt;img src="/img/%E4%B8%80%E5%B9%B4%E7%BA%A7%E6%95%B0%E5%AD%A6%E4%B8%8B%E5%86%8C%E7%AC%AC%E4%BA%94%E5%8D%95%E5%85%83%E3%80%8A%E5%8A%A0%E4%B8%8E%E5%87%8F%28%E4%BA%8C%29%E3%80%8B%E8%AF%95%E5%8D%B7%E9%94%99%E9%A2%98%E9%9B%86/2.jpg"
+loading="lazy"
+>&lt;/p>
+&lt;ul>
+&lt;li>1.第一题第6小题。
+先求出这个整十数，80-50=30；
+再求正确结果，50-30=20&lt;/li>
+&lt;li>2.第二题第5小题。
+两位数减两位数，结果可能是两位数，也可能是一位数。&lt;/li>
+&lt;li>3.第三题第3小题。
+先求出这个数：45-20=25
+再求这个数减去20的结果：25-20=5&lt;/li>
+&lt;li>4.第三题第4小题。
+最大的两位数是99，最小的两位数是10。两者相差：99-10=89&lt;/li>
+&lt;li>5.第七题第2（3）题。
+算式49-16解决的问题是“一辆玩具汽车比一个皮球贵多少元”。&lt;/li>
+&lt;li>6.第七题第4小题。
+这是一道比多比少问题。本张试卷这类问题有很多。这类问题有三种情况。
+（1）求多多少、少多少用减法。
+（2）求较大数，用加法。
+（3）求较小数，用减法。
+女同学比男同学少多，反过来说男同学就比女同学少，求男同学有多少人，求的是“较小数”，要用减法。&lt;/li>
+&lt;li>7.最后一题见参考答案。&lt;/li>
+&lt;/ul></description></item><item><title>一年级数学排队问题总结</title><link>/archives/%E4%B8%80%E5%B9%B4%E7%BA%A7%E6%95%B0%E5%AD%A6%E6%8E%92%E9%98%9F%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/</link><pubDate>Wed, 10 Jun 2020 04:07:36 +0000</pubDate><guid>/archives/%E4%B8%80%E5%B9%B4%E7%BA%A7%E6%95%B0%E5%AD%A6%E6%8E%92%E9%98%9F%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/</guid><description>&lt;p>排队问题在一年级数学试卷中经常遇到，现总结如下：&lt;/p>
+&lt;h4 id="题型一">题型一&lt;/h4>
+&lt;blockquote>
+&lt;p>一列队伍里有17人，笑笑的前面有9人，后面有几人？&lt;/p>
+&lt;/blockquote>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">17-9-1&lt;span class="o">=&lt;/span>7&lt;span class="o">(&lt;/span>人&lt;span class="o">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">答：后面有7人。
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>分析：此题可以通过画图来理解题意：&lt;/p>
+&lt;p>&lt;img src="/img/%E4%B8%80%E5%B9%B4%E7%BA%A7%E6%95%B0%E5%AD%A6%E6%8E%92%E9%98%9F%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/20200721154555.jpg"
+loading="lazy"
+>&lt;/p>
+&lt;h4 id="题型二">题型二&lt;/h4>
+&lt;blockquote>
+&lt;p>45人排队，从前往后数小明排第20个，从后往前数，小明排在第几个？&lt;/p>
+&lt;/blockquote>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">45-20&lt;span class="o">=&lt;/span>25&lt;span class="o">(&lt;/span>人&lt;span class="o">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">25+1&lt;span class="o">=&lt;/span>26&lt;span class="o">(&lt;/span>个&lt;span class="o">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">答：小明排在第26个。
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>分析：从前往后数小明排第20个，那么小明后面就有：45-20=25(人)，从后往前数小明就排第26个：25+1=26(个)&lt;/p>
+&lt;h4 id="题型三">题型三&lt;/h4>
+&lt;blockquote>
+&lt;p>同学们排队体检，小明的前面有17人，后面有19人，这队共有多少人？&lt;/p>
+&lt;/blockquote>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">17+19+1&lt;span class="o">=&lt;/span>37&lt;span class="o">(&lt;/span>人&lt;span class="o">)&lt;/span>。
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">答：这队共有37人
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>分析：注意还要加上小明他自己，也可借助画图来理解题意。&lt;/p>
+&lt;h4 id="题型四">题型四&lt;/h4>
+&lt;p>小明排第9，小英排第16，小明和小英之间有几人？&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">16-9-1&lt;span class="o">=&lt;/span>6（人）
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">答：小明和小英之间有6人。
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>分析：从问题着手，问的是他们俩中间有几人，不包含他们俩，16减9只是去掉了他们其中一人，再减一是去掉另外一人&lt;/p>
+&lt;p>（求间距都要减1 例如第9和第10之间没有间距，10-9-1=0，也是这个公式 如果算两端就要加2，这样就是加一，间距不算两端，是减一）&lt;/p></description></item><item><title>一年级数学下册第四单元《有趣的图形》试卷错题集</title><link>/archives/%E4%B8%80%E5%B9%B4%E7%BA%A7%E6%95%B0%E5%AD%A6%E4%B8%8B%E5%86%8C%E7%AC%AC%E5%9B%9B%E5%8D%95%E5%85%83%E6%9C%89%E8%B6%A3%E7%9A%84%E5%9B%BE%E5%BD%A2%E8%AF%95%E5%8D%B7%E9%94%99%E9%A2%98%E9%9B%86/</link><pubDate>Tue, 09 Jun 2020 13:52:25 +0000</pubDate><guid>/archives/%E4%B8%80%E5%B9%B4%E7%BA%A7%E6%95%B0%E5%AD%A6%E4%B8%8B%E5%86%8C%E7%AC%AC%E5%9B%9B%E5%8D%95%E5%85%83%E6%9C%89%E8%B6%A3%E7%9A%84%E5%9B%BE%E5%BD%A2%E8%AF%95%E5%8D%B7%E9%94%99%E9%A2%98%E9%9B%86/</guid><description>&lt;p>&lt;img src="/img/%E4%B8%80%E5%B9%B4%E7%BA%A7%E6%95%B0%E5%AD%A6%E4%B8%8B%E5%86%8C%E7%AC%AC%E5%9B%9B%E5%8D%95%E5%85%83%E3%80%8A%E6%9C%89%E8%B6%A3%E7%9A%84%E5%9B%BE%E5%BD%A2%E3%80%8B%E8%AF%95%E5%8D%B7%E9%94%99%E9%A2%98%E9%9B%86/1.jpg"
+loading="lazy"
+>&lt;/p>
+&lt;p>&lt;img src="/img/%E4%B8%80%E5%B9%B4%E7%BA%A7%E6%95%B0%E5%AD%A6%E4%B8%8B%E5%86%8C%E7%AC%AC%E5%9B%9B%E5%8D%95%E5%85%83%E3%80%8A%E6%9C%89%E8%B6%A3%E7%9A%84%E5%9B%BE%E5%BD%A2%E3%80%8B%E8%AF%95%E5%8D%B7%E9%94%99%E9%A2%98%E9%9B%86/2.jpg"
+loading="lazy"
+>&lt;/p>
+&lt;p>错题集：&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>1.第一题第6小题。
+七巧板是由3种图形组成，其中有1个正方形，1个平行四边形，5个三角形。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>2.第一题第7小题。&lt;/p>
+&lt;ul>
+&lt;li>①要拼成一个大正方形至少需要4个完全相同的小正方形。&lt;/li>
+&lt;li>②要拼成一个大正方体至少需要8个完全相同的小正方体。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>3.第一题第9小题。
+两个同样大小的直角三角形可以拼成一个长方形、三角形、平行四边形。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>4.判断题第1题。
+长方形对边相等，且四个角都是直角。有四条边只能说是四边形，不一定是长方形。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>5.判断题第2题。
+&lt;del>只有两个同样大小的直角三角形才能拼成一个大三角形。&lt;/del>（这种说法是错误的）&lt;/p>
+&lt;p>&lt;img src="https://cdn.jsdelivr.net/gh/iwyang/pic/20200721154933.jpg"
+loading="lazy"
+>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>6.判断题第3题。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>只有把一个等腰三角形对折才能得到两个完全相同的三角形。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>7.判断题第4题。
+将一张正方形纸对折两次，能折成4个正方形或者4个三角形。&lt;/p>
+&lt;/li>
+&lt;/ul></description></item><item><title>一年级数学下册第三单元《生活中的数》试卷错题集</title><link>/archives/%E4%B8%80%E5%B9%B4%E7%BA%A7%E6%95%B0%E5%AD%A6%E4%B8%8B%E5%86%8C%E7%AC%AC%E4%B8%89%E5%8D%95%E5%85%83%E7%94%9F%E6%B4%BB%E4%B8%AD%E7%9A%84%E6%95%B0%E8%AF%95%E5%8D%B7%E9%94%99%E9%A2%98%E9%9B%86/</link><pubDate>Mon, 08 Jun 2020 13:39:25 +0000</pubDate><guid>/archives/%E4%B8%80%E5%B9%B4%E7%BA%A7%E6%95%B0%E5%AD%A6%E4%B8%8B%E5%86%8C%E7%AC%AC%E4%B8%89%E5%8D%95%E5%85%83%E7%94%9F%E6%B4%BB%E4%B8%AD%E7%9A%84%E6%95%B0%E8%AF%95%E5%8D%B7%E9%94%99%E9%A2%98%E9%9B%86/</guid><description>&lt;p>&lt;img src="/img/%E4%B8%80%E5%B9%B4%E7%BA%A7%E6%95%B0%E5%AD%A6%E4%B8%8B%E5%86%8C%E7%AC%AC%E4%B8%89%E5%8D%95%E5%85%83%E3%80%8A%E7%94%9F%E6%B4%BB%E4%B8%AD%E7%9A%84%E6%95%B0%E3%80%8B%E8%AF%95%E5%8D%B7%E9%94%99%E9%A2%98%E9%9B%86/1.jpg"
+loading="lazy"
+>&lt;/p>
+&lt;p>&lt;img src="/img/%E4%B8%80%E5%B9%B4%E7%BA%A7%E6%95%B0%E5%AD%A6%E4%B8%8B%E5%86%8C%E7%AC%AC%E4%B8%89%E5%8D%95%E5%85%83%E3%80%8A%E7%94%9F%E6%B4%BB%E4%B8%AD%E7%9A%84%E6%95%B0%E3%80%8B%E8%AF%95%E5%8D%B7%E9%94%99%E9%A2%98%E9%9B%86/2.jpg"
+loading="lazy"
+>&lt;/p>
+&lt;ul>
+&lt;li>1.第三题第6小题。
+将一列数从小到大排列要用小于号连接起。&lt;/li>
+&lt;li>2.第三题第9小题。
+从右起第二位是十位，第三位是百位。&lt;/li>
+&lt;li>3.第三题第10小题。
+看清题目，是从三张卡片选两张，组成两位数。&lt;/li>
+&lt;li>4.第三题第11小题、第六题第2小题。
+两数之间不包括两边的数。&lt;/li>
+&lt;li>5.看题要仔细，个位、十位不要看错，搞混淆了。&lt;/li>
+&lt;/ul></description></item><item><title>100以内加减法计算题</title><link>/archives/100%E4%BB%A5%E5%86%85%E5%8A%A0%E5%87%8F%E6%B3%95%E8%AE%A1%E7%AE%97%E9%A2%98/</link><pubDate>Sun, 07 Jun 2020 12:24:25 +0000</pubDate><guid>/archives/100%E4%BB%A5%E5%86%85%E5%8A%A0%E5%87%8F%E6%B3%95%E8%AE%A1%E7%AE%97%E9%A2%98/</guid><description>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align:left">&lt;strong>练习1&lt;/strong>&lt;/th>
+&lt;th>&lt;/th>
+&lt;th>&lt;/th>
+&lt;th>&lt;/th>
+&lt;th>&lt;/th>
+&lt;th>&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align:left">64+8=&lt;/td>
+&lt;td>35-16=&lt;/td>
+&lt;td>60-48=&lt;/td>
+&lt;td>53+18=&lt;/td>
+&lt;td>34+37=&lt;/td>
+&lt;td>100-83=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">21+59=&lt;/td>
+&lt;td>40-25=&lt;/td>
+&lt;td>46+46=&lt;/td>
+&lt;td>91-29=&lt;/td>
+&lt;td>61-43=&lt;/td>
+&lt;td>79+12=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习2&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">41-23=&lt;/td>
+&lt;td>6+69=&lt;/td>
+&lt;td>84-69=&lt;/td>
+&lt;td>36+55=&lt;/td>
+&lt;td>80-35=&lt;/td>
+&lt;td>28+28=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">28+24=&lt;/td>
+&lt;td>91-43=&lt;/td>
+&lt;td>59+39=&lt;/td>
+&lt;td>79+11=&lt;/td>
+&lt;td>100-48=&lt;/td>
+&lt;td>51-23=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习3&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">44+29=&lt;/td>
+&lt;td>97-18=&lt;/td>
+&lt;td>48+42=&lt;/td>
+&lt;td>90-59=&lt;/td>
+&lt;td>100-56=&lt;/td>
+&lt;td>95-18=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">67-8=&lt;/td>
+&lt;td>28+56=&lt;/td>
+&lt;td>74-26=&lt;/td>
+&lt;td>45+49=&lt;/td>
+&lt;td>37+16=&lt;/td>
+&lt;td>97-29=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习4&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">64-15=&lt;/td>
+&lt;td>26+65=&lt;/td>
+&lt;td>87+8=&lt;/td>
+&lt;td>62-35=&lt;/td>
+&lt;td>66+6=&lt;/td>
+&lt;td>93-45=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">23+19=&lt;/td>
+&lt;td>82-66=&lt;/td>
+&lt;td>31-13=&lt;/td>
+&lt;td>14+76=&lt;/td>
+&lt;td>100-68=&lt;/td>
+&lt;td>13+69=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习5&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">55+19=&lt;/td>
+&lt;td>80-53=&lt;/td>
+&lt;td>43+37=&lt;/td>
+&lt;td>65-48=&lt;/td>
+&lt;td>100-31=&lt;/td>
+&lt;td>29+34=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">47-18=&lt;/td>
+&lt;td>38+39=&lt;/td>
+&lt;td>92-23=&lt;/td>
+&lt;td>7+69=&lt;/td>
+&lt;td>28+15=&lt;/td>
+&lt;td>91-19=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习6&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">54-38=&lt;/td>
+&lt;td>25+56=&lt;/td>
+&lt;td>66-18=&lt;/td>
+&lt;td>19+51=&lt;/td>
+&lt;td>55+29=&lt;/td>
+&lt;td>31-12=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">25+18=&lt;/td>
+&lt;td>62-26=&lt;/td>
+&lt;td>53+17=&lt;/td>
+&lt;td>47+47=&lt;/td>
+&lt;td>100-39=&lt;/td>
+&lt;td>53-8=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习7&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">49+8=&lt;/td>
+&lt;td>93-55=&lt;/td>
+&lt;td>37+13=&lt;/td>
+&lt;td>16+28=&lt;/td>
+&lt;td>100-19=&lt;/td>
+&lt;td>24+49=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">90-22=&lt;/td>
+&lt;td>35+48=&lt;/td>
+&lt;td>82-15=&lt;/td>
+&lt;td>93-76=&lt;/td>
+&lt;td>63+29=&lt;/td>
+&lt;td>73-15=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习8&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">59+15=&lt;/td>
+&lt;td>5+58=&lt;/td>
+&lt;td>41-14=&lt;/td>
+&lt;td>92-53=&lt;/td>
+&lt;td>58+33=&lt;/td>
+&lt;td>73-19=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">80-11=&lt;/td>
+&lt;td>31-16=&lt;/td>
+&lt;td>38+28=&lt;/td>
+&lt;td>17+57=&lt;/td>
+&lt;td>100-61=&lt;/td>
+&lt;td>18+44=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习9&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">43-8=&lt;/td>
+&lt;td>19+33=&lt;/td>
+&lt;td>54+18=&lt;/td>
+&lt;td>91-45=&lt;/td>
+&lt;td>46+44=&lt;/td>
+&lt;td>60-18=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">75+15=&lt;/td>
+&lt;td>51-15=&lt;/td>
+&lt;td>74-38=&lt;/td>
+&lt;td>47+48=&lt;/td>
+&lt;td>100-34=&lt;/td>
+&lt;td>29+56=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习10&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">78+18=&lt;/td>
+&lt;td>12+28=&lt;/td>
+&lt;td>70-39=&lt;/td>
+&lt;td>15+15=&lt;/td>
+&lt;td>100-47=&lt;/td>
+&lt;td>95-67=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">66-19=&lt;/td>
+&lt;td>55-17=&lt;/td>
+&lt;td>19+15=&lt;/td>
+&lt;td>70-42=&lt;/td>
+&lt;td>84+7=&lt;/td>
+&lt;td>13+49=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习11&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">8+77=&lt;/td>
+&lt;td>52-38=&lt;/td>
+&lt;td>78+16=&lt;/td>
+&lt;td>93-68=&lt;/td>
+&lt;td>14+29=&lt;/td>
+&lt;td>80-47=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">83-28=&lt;/td>
+&lt;td>16+47=&lt;/td>
+&lt;td>42-18=&lt;/td>
+&lt;td>36+36=&lt;/td>
+&lt;td>100-29=&lt;/td>
+&lt;td>57+16=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习12&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">39+19=&lt;/td>
+&lt;td>80-52=&lt;/td>
+&lt;td>59+33=&lt;/td>
+&lt;td>93-26=&lt;/td>
+&lt;td>33+17=&lt;/td>
+&lt;td>63-38=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">81-28=&lt;/td>
+&lt;td>27+65=&lt;/td>
+&lt;td>97-9=&lt;/td>
+&lt;td>29+64=&lt;/td>
+&lt;td>100-59=&lt;/td>
+&lt;td>15+48=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习13&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">49+48=&lt;/td>
+&lt;td>36+58=&lt;/td>
+&lt;td>76-19=&lt;/td>
+&lt;td>37-18=&lt;/td>
+&lt;td>39+15=&lt;/td>
+&lt;td>60-34=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">80-18=&lt;/td>
+&lt;td>85-69=&lt;/td>
+&lt;td>39+4=&lt;/td>
+&lt;td>25+65=&lt;/td>
+&lt;td>100-44=&lt;/td>
+&lt;td>14+28=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习14&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">87-28=&lt;/td>
+&lt;td>62+28=&lt;/td>
+&lt;td>54+16=&lt;/td>
+&lt;td>91-38=&lt;/td>
+&lt;td>42+19=&lt;/td>
+&lt;td>42-13=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">9+62=&lt;/td>
+&lt;td>90-57=&lt;/td>
+&lt;td>31-14=&lt;/td>
+&lt;td>35+56=&lt;/td>
+&lt;td>100-15=&lt;/td>
+&lt;td>28+63=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习15&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">37+23=&lt;/td>
+&lt;td>14+57=&lt;/td>
+&lt;td>71-13=&lt;/td>
+&lt;td>80-12=&lt;/td>
+&lt;td>47+35=&lt;/td>
+&lt;td>71-47=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">62-38=&lt;/td>
+&lt;td>77+16=&lt;/td>
+&lt;td>17+63=&lt;/td>
+&lt;td>75-8=&lt;/td>
+&lt;td>100-32=&lt;/td>
+&lt;td>19+26=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习16&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">76-29=&lt;/td>
+&lt;td>72-45=&lt;/td>
+&lt;td>19+78=&lt;/td>
+&lt;td>45+9=&lt;/td>
+&lt;td>100-57=&lt;/td>
+&lt;td>25+35=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">39+13=&lt;/td>
+&lt;td>27+68=&lt;/td>
+&lt;td>70-15=&lt;/td>
+&lt;td>80-55=&lt;/td>
+&lt;td>49+17=&lt;/td>
+&lt;td>48-29=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习17&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">38+34=&lt;/td>
+&lt;td>24+27=&lt;/td>
+&lt;td>92-57=&lt;/td>
+&lt;td>63-26=&lt;/td>
+&lt;td>100-21=&lt;/td>
+&lt;td>6+88=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">90-47=&lt;/td>
+&lt;td>63-14=&lt;/td>
+&lt;td>34+19=&lt;/td>
+&lt;td>26+44=&lt;/td>
+&lt;td>48+25=&lt;/td>
+&lt;td>81-23=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习18&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">62-19=&lt;/td>
+&lt;td>19+64=&lt;/td>
+&lt;td>50-27=&lt;/td>
+&lt;td>39+55=&lt;/td>
+&lt;td>75+17=&lt;/td>
+&lt;td>83-46=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">27+16=&lt;/td>
+&lt;td>84-7=&lt;/td>
+&lt;td>67+13=&lt;/td>
+&lt;td>71-46=&lt;/td>
+&lt;td>100-12=&lt;/td>
+&lt;td>27+43=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习19&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">54+38=&lt;/td>
+&lt;td>17+29=&lt;/td>
+&lt;td>93-58=&lt;/td>
+&lt;td>80-24=&lt;/td>
+&lt;td>68+16=&lt;/td>
+&lt;td>91-68=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">72-17=&lt;/td>
+&lt;td>68+26=&lt;/td>
+&lt;td>55-8=&lt;/td>
+&lt;td>28+43=&lt;/td>
+&lt;td>100-73=&lt;/td>
+&lt;td>12+78=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习20&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">81-42=&lt;/td>
+&lt;td>74-37=&lt;/td>
+&lt;td>44+48=&lt;/td>
+&lt;td>17+27=&lt;/td>
+&lt;td>48+27=&lt;/td>
+&lt;td>55-29=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">38+32=&lt;/td>
+&lt;td>37+58=&lt;/td>
+&lt;td>30-14=&lt;/td>
+&lt;td>81-34=&lt;/td>
+&lt;td>100-72=&lt;/td>
+&lt;td>75+8=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习21&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">45+39=&lt;/td>
+&lt;td>55-18=&lt;/td>
+&lt;td>74+18=&lt;/td>
+&lt;td>75-39=&lt;/td>
+&lt;td>77+13=&lt;/td>
+&lt;td>70-12=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">84-46=&lt;/td>
+&lt;td>38+42=&lt;/td>
+&lt;td>75-16=&lt;/td>
+&lt;td>8+68=&lt;/td>
+&lt;td>100-54=&lt;/td>
+&lt;td>13+19=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习22&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">72-39=&lt;/td>
+&lt;td>27+55=&lt;/td>
+&lt;td>56+26=&lt;/td>
+&lt;td>62-39=&lt;/td>
+&lt;td>49+11=&lt;/td>
+&lt;td>60-15=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">63+27=&lt;/td>
+&lt;td>71-35=&lt;/td>
+&lt;td>53-17=&lt;/td>
+&lt;td>9+57=&lt;/td>
+&lt;td>100-24&lt;/td>
+&lt;td>16+18=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习23&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">12+29=&lt;/td>
+&lt;td>73-35=&lt;/td>
+&lt;td>39+11=&lt;/td>
+&lt;td>38+45=&lt;/td>
+&lt;td>88-49=&lt;/td>
+&lt;td>40-21=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">90-17=&lt;/td>
+&lt;td>24+67=&lt;/td>
+&lt;td>39+34=&lt;/td>
+&lt;td>74+7=&lt;/td>
+&lt;td>100-65=&lt;/td>
+&lt;td>91-13=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习24&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">88-19=&lt;/td>
+&lt;td>79+16=&lt;/td>
+&lt;td>17+28=&lt;/td>
+&lt;td>91-32=&lt;/td>
+&lt;td>21+29=&lt;/td>
+&lt;td>85-36=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">84-9=&lt;/td>
+&lt;td>27+27=&lt;/td>
+&lt;td>90-53=&lt;/td>
+&lt;td>37+35=&lt;/td>
+&lt;td>100-27&lt;/td>
+&lt;td>66+28=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习25&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">56+38=&lt;/td>
+&lt;td>70-35=&lt;/td>
+&lt;td>55+26=&lt;/td>
+&lt;td>80-44=&lt;/td>
+&lt;td>18+17=&lt;/td>
+&lt;td>78-19=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">19+48=&lt;/td>
+&lt;td>91-15=&lt;/td>
+&lt;td>38+8=&lt;/td>
+&lt;td>36-18=&lt;/td>
+&lt;td>100-78=&lt;/td>
+&lt;td>34+46=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习26&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">74-16=&lt;/td>
+&lt;td>47+49=&lt;/td>
+&lt;td>68+18=&lt;/td>
+&lt;td>61-13=&lt;/td>
+&lt;td>56+15=&lt;/td>
+&lt;td>94-65=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">23+17=&lt;/td>
+&lt;td>62-45=&lt;/td>
+&lt;td>62-4=&lt;/td>
+&lt;td>21+69=&lt;/td>
+&lt;td>100-85=&lt;/td>
+&lt;td>29+49=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习27&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">5+29=&lt;/td>
+&lt;td>28+26=&lt;/td>
+&lt;td>80-49=&lt;/td>
+&lt;td>41-25=&lt;/td>
+&lt;td>47+39=&lt;/td>
+&lt;td>56-19=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">18+32=&lt;/td>
+&lt;td>26+35=&lt;/td>
+&lt;td>53-25=&lt;/td>
+&lt;td>48+34=&lt;/td>
+&lt;td>100-66=&lt;/td>
+&lt;td>87-29=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习28&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">65-39=&lt;/td>
+&lt;td>18+63=&lt;/td>
+&lt;td>76-58=&lt;/td>
+&lt;td>17+68=&lt;/td>
+&lt;td>34+17=&lt;/td>
+&lt;td>70-36=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">57+6=&lt;/td>
+&lt;td>33-16=&lt;/td>
+&lt;td>47+37=&lt;/td>
+&lt;td>75-17=&lt;/td>
+&lt;td>100-74=&lt;/td>
+&lt;td>37+48=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习29&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">95-38=&lt;/td>
+&lt;td>11+59=&lt;/td>
+&lt;td>56+16=&lt;/td>
+&lt;td>93-49=&lt;/td>
+&lt;td>58+14=&lt;/td>
+&lt;td>70-23=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">89+7=&lt;/td>
+&lt;td>83-54=&lt;/td>
+&lt;td>41-13=&lt;/td>
+&lt;td>15+66=&lt;/td>
+&lt;td>100-81=&lt;/td>
+&lt;td>36+59=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习30&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">57+15=&lt;/td>
+&lt;td>15+17=&lt;/td>
+&lt;td>61-14=&lt;/td>
+&lt;td>82-28=&lt;/td>
+&lt;td>47+15=&lt;/td>
+&lt;td>46-27=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">12+18=&lt;/td>
+&lt;td>87-9=&lt;/td>
+&lt;td>76-38=&lt;/td>
+&lt;td>46+49=&lt;/td>
+&lt;td>100-77=&lt;/td>
+&lt;td>44+16=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习31&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">98-19=&lt;/td>
+&lt;td>23+57=&lt;/td>
+&lt;td>39+24=&lt;/td>
+&lt;td>40-23=&lt;/td>
+&lt;td>64+28=&lt;/td>
+&lt;td>84-66=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">45+28=&lt;/td>
+&lt;td>85-9=&lt;/td>
+&lt;td>91-69=&lt;/td>
+&lt;td>15+78=&lt;/td>
+&lt;td>100-86=&lt;/td>
+&lt;td>16+49=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习32&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">48+22=&lt;/td>
+&lt;td>63-44=&lt;/td>
+&lt;td>39+17=&lt;/td>
+&lt;td>54-17=&lt;/td>
+&lt;td>48+32=&lt;/td>
+&lt;td>91-16=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">82-14=&lt;/td>
+&lt;td>28+47=&lt;/td>
+&lt;td>51-29=&lt;/td>
+&lt;td>5+38=&lt;/td>
+&lt;td>100-41=&lt;/td>
+&lt;td>29+46=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习33&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">96-57=&lt;/td>
+&lt;td>14+26=&lt;/td>
+&lt;td>49+26=&lt;/td>
+&lt;td>44-19=&lt;/td>
+&lt;td>14+78=&lt;/td>
+&lt;td>82-25=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">67+29=&lt;/td>
+&lt;td>54-18=&lt;/td>
+&lt;td>50-25=&lt;/td>
+&lt;td>29+39=&lt;/td>
+&lt;td>100-26=&lt;/td>
+&lt;td>59+9=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习34&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">36+29=&lt;/td>
+&lt;td>98-29=&lt;/td>
+&lt;td>51-33=&lt;/td>
+&lt;td>25+45=&lt;/td>
+&lt;td>59+37=&lt;/td>
+&lt;td>92-35=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">81-43=&lt;/td>
+&lt;td>8+25=&lt;/td>
+&lt;td>58+26=&lt;/td>
+&lt;td>83-15=&lt;/td>
+&lt;td>100-45=&lt;/td>
+&lt;td>23+49=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习35&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">61-44=&lt;/td>
+&lt;td>37+56=&lt;/td>
+&lt;td>58+24=&lt;/td>
+&lt;td>87-18=&lt;/td>
+&lt;td>69+17=&lt;/td>
+&lt;td>86-19=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">64+16=&lt;/td>
+&lt;td>18+45=&lt;/td>
+&lt;td>64-47=&lt;/td>
+&lt;td>44-7=&lt;/td>
+&lt;td>100-33=&lt;/td>
+&lt;td>27+69=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习36&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">27+54=&lt;/td>
+&lt;td>73-26=&lt;/td>
+&lt;td>44+28=&lt;/td>
+&lt;td>91-48=&lt;/td>
+&lt;td>61+29=&lt;/td>
+&lt;td>81-59=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">33+38=&lt;/td>
+&lt;td>53-14=&lt;/td>
+&lt;td>60-22=&lt;/td>
+&lt;td>55+6=&lt;/td>
+&lt;td>100-38=&lt;/td>
+&lt;td>17+54=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习37&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">97-58=&lt;/td>
+&lt;td>27+46=&lt;/td>
+&lt;td>76-39=&lt;/td>
+&lt;td>59+38=&lt;/td>
+&lt;td>67+25=&lt;/td>
+&lt;td>83-56=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">60-14=&lt;/td>
+&lt;td>36+56=&lt;/td>
+&lt;td>9+37=&lt;/td>
+&lt;td>36+19=&lt;/td>
+&lt;td>100-69=&lt;/td>
+&lt;td>95-39=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习38&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">65+17=&lt;/td>
+&lt;td>42-16=&lt;/td>
+&lt;td>49+33=&lt;/td>
+&lt;td>80-29=&lt;/td>
+&lt;td>47-19=&lt;/td>
+&lt;td>26+66=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">36+14=&lt;/td>
+&lt;td>94-5=&lt;/td>
+&lt;td>17+24=&lt;/td>
+&lt;td>61-46=&lt;/td>
+&lt;td>100-35=&lt;/td>
+&lt;td>28+34=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习39&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">91-17=&lt;/td>
+&lt;td>18+47=&lt;/td>
+&lt;td>59+13=&lt;/td>
+&lt;td>65-38=&lt;/td>
+&lt;td>16+48=&lt;/td>
+&lt;td>93-59=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">48+14=&lt;/td>
+&lt;td>66+8=&lt;/td>
+&lt;td>94-37=&lt;/td>
+&lt;td>38+49=&lt;/td>
+&lt;td>100-53=&lt;/td>
+&lt;td>91-52=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习40&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">82-23=&lt;/td>
+&lt;td>36+47=&lt;/td>
+&lt;td>50-22=&lt;/td>
+&lt;td>37+49=&lt;/td>
+&lt;td>55+35=&lt;/td>
+&lt;td>83-57=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">71-12=&lt;/td>
+&lt;td>61-39=&lt;/td>
+&lt;td>34+57=&lt;/td>
+&lt;td>73+18=&lt;/td>
+&lt;td>100-18=&lt;/td>
+&lt;td>46+8=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习41&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">28+27=&lt;/td>
+&lt;td>80-28=&lt;/td>
+&lt;td>66+25=&lt;/td>
+&lt;td>32-14=&lt;/td>
+&lt;td>37+25=&lt;/td>
+&lt;td>72-47=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">88-9=&lt;/td>
+&lt;td>28+33=&lt;/td>
+&lt;td>58-29=&lt;/td>
+&lt;td>15+27=&lt;/td>
+&lt;td>100-88=&lt;/td>
+&lt;td>16+74=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习42&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">71-19=&lt;/td>
+&lt;td>27+58=&lt;/td>
+&lt;td>36+27=&lt;/td>
+&lt;td>93-14=&lt;/td>
+&lt;td>22+18=&lt;/td>
+&lt;td>71-48=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">80-58=&lt;/td>
+&lt;td>38+26=&lt;/td>
+&lt;td>33-14=&lt;/td>
+&lt;td>7+76=&lt;/td>
+&lt;td>100-46=&lt;/td>
+&lt;td>14+67=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习43&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">43+39=&lt;/td>
+&lt;td>95-26=&lt;/td>
+&lt;td>57+28=&lt;/td>
+&lt;td>32-16=&lt;/td>
+&lt;td>49+21=&lt;/td>
+&lt;td>53-27=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">93-65=&lt;/td>
+&lt;td>19+24=&lt;/td>
+&lt;td>60-17=&lt;/td>
+&lt;td>9+55=&lt;/td>
+&lt;td>100-13=&lt;/td>
+&lt;td>16+76=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习44&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">96-17=&lt;/td>
+&lt;td>28+37=&lt;/td>
+&lt;td>52-18=&lt;/td>
+&lt;td>36+45=&lt;/td>
+&lt;td>56+14=&lt;/td>
+&lt;td>90-32=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">77+15=&lt;/td>
+&lt;td>51-39=&lt;/td>
+&lt;td>81-44=&lt;/td>
+&lt;td>67+9=&lt;/td>
+&lt;td>100-58=&lt;/td>
+&lt;td>29+59=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习45&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">46+28=&lt;/td>
+&lt;td>27+49=&lt;/td>
+&lt;td>94-18=&lt;/td>
+&lt;td>53-35=&lt;/td>
+&lt;td>24+16=&lt;/td>
+&lt;td>64-19=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">33-18=&lt;/td>
+&lt;td>14+69=&lt;/td>
+&lt;td>44+27=&lt;/td>
+&lt;td>96-9=&lt;/td>
+&lt;td>100-63=&lt;/td>
+&lt;td>14+59=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习46&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">77-18=&lt;/td>
+&lt;td>25+36=&lt;/td>
+&lt;td>41+29=&lt;/td>
+&lt;td>94-59=&lt;/td>
+&lt;td>77+19=&lt;/td>
+&lt;td>98-49=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">35+46=&lt;/td>
+&lt;td>67-29=&lt;/td>
+&lt;td>70-57=&lt;/td>
+&lt;td>88+5=&lt;/td>
+&lt;td>100-49=&lt;/td>
+&lt;td>18+55=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习47&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">39+39=&lt;/td>
+&lt;td>81-13=&lt;/td>
+&lt;td>16+46=&lt;/td>
+&lt;td>57+27=&lt;/td>
+&lt;td>93-54=&lt;/td>
+&lt;td>42-25=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">60-13=&lt;/td>
+&lt;td>41-22=&lt;/td>
+&lt;td>6+87=&lt;/td>
+&lt;td>38+23=&lt;/td>
+&lt;td>100-87=&lt;/td>
+&lt;td>16+34=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习48&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">93-66=&lt;/td>
+&lt;td>35+39=&lt;/td>
+&lt;td>79+15=&lt;/td>
+&lt;td>74-25=&lt;/td>
+&lt;td>64+18=&lt;/td>
+&lt;td>96-48=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">51+39=&lt;/td>
+&lt;td>90-34=&lt;/td>
+&lt;td>19+75=&lt;/td>
+&lt;td>44-9=&lt;/td>
+&lt;td>100-67=&lt;/td>
+&lt;td>14+77=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习49&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">68+19=&lt;/td>
+&lt;td>92-34=&lt;/td>
+&lt;td>74+19=&lt;/td>
+&lt;td>71-45=&lt;/td>
+&lt;td>45+29=&lt;/td>
+&lt;td>53-24=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">21+39=&lt;/td>
+&lt;td>90-52=&lt;/td>
+&lt;td>19+73=&lt;/td>
+&lt;td>34+49=&lt;/td>
+&lt;td>100-75=&lt;/td>
+&lt;td>65-8=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习50&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">90-18=&lt;/td>
+&lt;td>16+65=&lt;/td>
+&lt;td>52-26=&lt;/td>
+&lt;td>82-44=&lt;/td>
+&lt;td>37+15=&lt;/td>
+&lt;td>49+35=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">90-45=&lt;/td>
+&lt;td>87-48=&lt;/td>
+&lt;td>35+15=&lt;/td>
+&lt;td>9+43=&lt;/td>
+&lt;td>100-84=&lt;/td>
+&lt;td>17+59=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习51&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">54+36=&lt;/td>
+&lt;td>93-24=&lt;/td>
+&lt;td>67+27=&lt;/td>
+&lt;td>38-19=&lt;/td>
+&lt;td>48+38=&lt;/td>
+&lt;td>85-47=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">84-48=&lt;/td>
+&lt;td>17+78=&lt;/td>
+&lt;td>56-29=&lt;/td>
+&lt;td>19+38=&lt;/td>
+&lt;td>100-42=&lt;/td>
+&lt;td>7+58=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习52&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">52-27=&lt;/td>
+&lt;td>24+46=&lt;/td>
+&lt;td>69+12=&lt;/td>
+&lt;td>52-36=&lt;/td>
+&lt;td>27+18=&lt;/td>
+&lt;td>91-47=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">37+29=&lt;/td>
+&lt;td>77-19=&lt;/td>
+&lt;td>90-26=&lt;/td>
+&lt;td>7+49=&lt;/td>
+&lt;td>100-37=&lt;/td>
+&lt;td>39+46=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习53&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">41+19=&lt;/td>
+&lt;td>93-18=&lt;/td>
+&lt;td>42+29=&lt;/td>
+&lt;td>82-53=&lt;/td>
+&lt;td>67+16=&lt;/td>
+&lt;td>81-19=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">97-8=&lt;/td>
+&lt;td>25+69=&lt;/td>
+&lt;td>64-37=&lt;/td>
+&lt;td>18+39=&lt;/td>
+&lt;td>100-89=&lt;/td>
+&lt;td>17+64=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习54&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">64-18=&lt;/td>
+&lt;td>19+76=&lt;/td>
+&lt;td>85-18=&lt;/td>
+&lt;td>12+49=&lt;/td>
+&lt;td>91-54=&lt;/td>
+&lt;td>13+17=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">65+8=&lt;/td>
+&lt;td>71-39=&lt;/td>
+&lt;td>29+16=&lt;/td>
+&lt;td>40-29=&lt;/td>
+&lt;td>100-43=&lt;/td>
+&lt;td>58+38=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习55&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">37+38=&lt;/td>
+&lt;td>60-33=&lt;/td>
+&lt;td>38+18=&lt;/td>
+&lt;td>85-19=&lt;/td>
+&lt;td>48+46=&lt;/td>
+&lt;td>80-19=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">48+9=&lt;/td>
+&lt;td>82-19=&lt;/td>
+&lt;td>72-46=&lt;/td>
+&lt;td>15+29=&lt;/td>
+&lt;td>100-82=&lt;/td>
+&lt;td>29+52=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习56&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">86-57=&lt;/td>
+&lt;td>15+38=&lt;/td>
+&lt;td>65+19=&lt;/td>
+&lt;td>34-17=&lt;/td>
+&lt;td>66+17=&lt;/td>
+&lt;td>36-19=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">73-5=&lt;/td>
+&lt;td>33+29=&lt;/td>
+&lt;td>83-44=&lt;/td>
+&lt;td>24+26=&lt;/td>
+&lt;td>100-14=&lt;/td>
+&lt;td>18+12=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习57&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">47+45=&lt;/td>
+&lt;td>63-17=&lt;/td>
+&lt;td>68-49=&lt;/td>
+&lt;td>13+38=&lt;/td>
+&lt;td>61-24=&lt;/td>
+&lt;td>16+39=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">93-57=&lt;/td>
+&lt;td>9+89=&lt;/td>
+&lt;td>32+28=&lt;/td>
+&lt;td>80-14=&lt;/td>
+&lt;td>100-25=&lt;/td>
+&lt;td>67+17=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习58&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">77-49=&lt;/td>
+&lt;td>41+49=&lt;/td>
+&lt;td>17+26=&lt;/td>
+&lt;td>73-36=&lt;/td>
+&lt;td>29+25=&lt;/td>
+&lt;td>83-18=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">56+8=&lt;/td>
+&lt;td>93-46=&lt;/td>
+&lt;td>29+28=&lt;/td>
+&lt;td>90-66=&lt;/td>
+&lt;td>100-28=&lt;/td>
+&lt;td>27+64=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习59&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">48+28=&lt;/td>
+&lt;td>82-46=&lt;/td>
+&lt;td>35+17=&lt;/td>
+&lt;td>90-23=&lt;/td>
+&lt;td>68+24=&lt;/td>
+&lt;td>52-29=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">71-55=&lt;/td>
+&lt;td>15+26=&lt;/td>
+&lt;td>29+32=&lt;/td>
+&lt;td>92-4=&lt;/td>
+&lt;td>100-51=&lt;/td>
+&lt;td>43+49=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习60&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">81-57=&lt;/td>
+&lt;td>45+16=&lt;/td>
+&lt;td>82-45=&lt;/td>
+&lt;td>13+79=&lt;/td>
+&lt;td>65-19=&lt;/td>
+&lt;td>12+38=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">7+68=&lt;/td>
+&lt;td>73-17=&lt;/td>
+&lt;td>41+39=&lt;/td>
+&lt;td>51-19=&lt;/td>
+&lt;td>100-76=&lt;/td>
+&lt;td>48+24=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习61&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">35+19=&lt;/td>
+&lt;td>64-28=&lt;/td>
+&lt;td>39+28=&lt;/td>
+&lt;td>72-29=&lt;/td>
+&lt;td>71+19=&lt;/td>
+&lt;td>75-19=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">96-68=&lt;/td>
+&lt;td>27+47=&lt;/td>
+&lt;td>91-62=&lt;/td>
+&lt;td>25+59=&lt;/td>
+&lt;td>100-36=&lt;/td>
+&lt;td>8+78=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习62&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">75-57=&lt;/td>
+&lt;td>26+54=&lt;/td>
+&lt;td>53+19=&lt;/td>
+&lt;td>67-18=&lt;/td>
+&lt;td>59+24=&lt;/td>
+&lt;td>51-25=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">45-8=&lt;/td>
+&lt;td>34+27=&lt;/td>
+&lt;td>97-69=&lt;/td>
+&lt;td>25+58=&lt;/td>
+&lt;td>100-22=&lt;/td>
+&lt;td>29+48=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习63&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">37+14=&lt;/td>
+&lt;td>64-29=&lt;/td>
+&lt;td>52+18=&lt;/td>
+&lt;td>44-18=&lt;/td>
+&lt;td>66+29=&lt;/td>
+&lt;td>66-27=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">86-28=&lt;/td>
+&lt;td>18+28=&lt;/td>
+&lt;td>74-56=&lt;/td>
+&lt;td>28+35=&lt;/td>
+&lt;td>100-16=&lt;/td>
+&lt;td>9+56=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习64&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">51-16=&lt;/td>
+&lt;td>33+37=&lt;/td>
+&lt;td>91-67=&lt;/td>
+&lt;td>26+59=&lt;/td>
+&lt;td>59+27=&lt;/td>
+&lt;td>71-22&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">49+42=&lt;/td>
+&lt;td>60-24=&lt;/td>
+&lt;td>35+6=&lt;/td>
+&lt;td>64-25=&lt;/td>
+&lt;td>100-71=&lt;/td>
+&lt;td>32+49=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习65&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">72-8=&lt;/td>
+&lt;td>15+25=&lt;/td>
+&lt;td>92-46=&lt;/td>
+&lt;td>29+62=&lt;/td>
+&lt;td>71-37=&lt;/td>
+&lt;td>18+43=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">19+16=&lt;/td>
+&lt;td>80-21=&lt;/td>
+&lt;td>48+12=&lt;/td>
+&lt;td>71-18=&lt;/td>
+&lt;td>17+83=&lt;/td>
+&lt;td>91-12=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习66&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">23+18=&lt;/td>
+&lt;td>52-28=&lt;/td>
+&lt;td>69+15=&lt;/td>
+&lt;td>91-36=&lt;/td>
+&lt;td>75-6=&lt;/td>
+&lt;td>28+23=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">90-11=&lt;/td>
+&lt;td>43+48=&lt;/td>
+&lt;td>98-59=&lt;/td>
+&lt;td>35+45=&lt;/td>
+&lt;td>52+48=&lt;/td>
+&lt;td>56-28=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习67&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">73-29=&lt;/td>
+&lt;td>18+79=&lt;/td>
+&lt;td>90-48=&lt;/td>
+&lt;td>31+59=&lt;/td>
+&lt;td>53-37=&lt;/td>
+&lt;td>29+68=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">59+8=&lt;/td>
+&lt;td>84-56=&lt;/td>
+&lt;td>48+26=&lt;/td>
+&lt;td>94-49=&lt;/td>
+&lt;td>44+56=&lt;/td>
+&lt;td>18+77=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习68&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">49+15=&lt;/td>
+&lt;td>91-65=&lt;/td>
+&lt;td>18+13=&lt;/td>
+&lt;td>90-14=&lt;/td>
+&lt;td>90-62=&lt;/td>
+&lt;td>45+48=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">42-19=&lt;/td>
+&lt;td>16+66=&lt;/td>
+&lt;td>95-8=&lt;/td>
+&lt;td>27+35=&lt;/td>
+&lt;td>32+68=&lt;/td>
+&lt;td>82-13=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习69&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">74-19=&lt;/td>
+&lt;td>77-39=&lt;/td>
+&lt;td>80-43=&lt;/td>
+&lt;td>76-7=&lt;/td>
+&lt;td>43-28=&lt;/td>
+&lt;td>63-34=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">29+18=&lt;/td>
+&lt;td>27+53=&lt;/td>
+&lt;td>69+23=&lt;/td>
+&lt;td>17+48=&lt;/td>
+&lt;td>69+31=&lt;/td>
+&lt;td>19+72=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习70&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">38+16=&lt;/td>
+&lt;td>81-56=&lt;/td>
+&lt;td>48+18=&lt;/td>
+&lt;td>70-19=&lt;/td>
+&lt;td>84-29=&lt;/td>
+&lt;td>8+45=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">43-18=&lt;/td>
+&lt;td>26+36=&lt;/td>
+&lt;td>70-53=&lt;/td>
+&lt;td>12+19=&lt;/td>
+&lt;td>61+39=&lt;/td>
+&lt;td>94-47=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习71&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">57-8=&lt;/td>
+&lt;td>83-48=&lt;/td>
+&lt;td>50-13=&lt;/td>
+&lt;td>44-28=&lt;/td>
+&lt;td>92-29=&lt;/td>
+&lt;td>73-49=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">68+22=&lt;/td>
+&lt;td>38+55=&lt;/td>
+&lt;td>67+15=&lt;/td>
+&lt;td>17+76=&lt;/td>
+&lt;td>81+19=&lt;/td>
+&lt;td>15+58=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习72&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">74-15=&lt;/td>
+&lt;td>63-5=&lt;/td>
+&lt;td>66-28=&lt;/td>
+&lt;td>74-17=&lt;/td>
+&lt;td>91-58=&lt;/td>
+&lt;td>62-44=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">69+11=&lt;/td>
+&lt;td>15+16=&lt;/td>
+&lt;td>27+14=&lt;/td>
+&lt;td>39+53=&lt;/td>
+&lt;td>39+61=&lt;/td>
+&lt;td>54+19=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习73&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">35+8=&lt;/td>
+&lt;td>52-33=&lt;/td>
+&lt;td>38+36=&lt;/td>
+&lt;td>95-48=&lt;/td>
+&lt;td>66+34=&lt;/td>
+&lt;td>85-29=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">90-15=&lt;/td>
+&lt;td>15+36=&lt;/td>
+&lt;td>72-18=&lt;/td>
+&lt;td>45+46=&lt;/td>
+&lt;td>90-46=&lt;/td>
+&lt;td>18+42=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习74&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">96-18=&lt;/td>
+&lt;td>17+38=&lt;/td>
+&lt;td>34-15=&lt;/td>
+&lt;td>28+42=&lt;/td>
+&lt;td>91-7=&lt;/td>
+&lt;td>28+67=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">47+19=&lt;/td>
+&lt;td>40-28=&lt;/td>
+&lt;td>39+31=&lt;/td>
+&lt;td>30-15=&lt;/td>
+&lt;td>53+47=&lt;/td>
+&lt;td>62-49=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习75&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">55+28=&lt;/td>
+&lt;td>63-47=&lt;/td>
+&lt;td>24+18=&lt;/td>
+&lt;td>72-36=&lt;/td>
+&lt;td>71+29=&lt;/td>
+&lt;td>73-57=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">85-8=&lt;/td>
+&lt;td>14+38=&lt;/td>
+&lt;td>94-16=&lt;/td>
+&lt;td>25+68=&lt;/td>
+&lt;td>43-14=&lt;/td>
+&lt;td>33+47=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习76&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">58-39=&lt;/td>
+&lt;td>28+52=&lt;/td>
+&lt;td>92-59=&lt;/td>
+&lt;td>67+26=&lt;/td>
+&lt;td>50-17=&lt;/td>
+&lt;td>38+25=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">53+28=&lt;/td>
+&lt;td>92-27=&lt;/td>
+&lt;td>9+88=&lt;/td>
+&lt;td>93-64=&lt;/td>
+&lt;td>41+59=&lt;/td>
+&lt;td>63-48=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习77&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">19+11=&lt;/td>
+&lt;td>94-36=&lt;/td>
+&lt;td>57+19=&lt;/td>
+&lt;td>90-25=&lt;/td>
+&lt;td>56+44=&lt;/td>
+&lt;td>42-14=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">97-49=&lt;/td>
+&lt;td>16+69=&lt;/td>
+&lt;td>43-4=&lt;/td>
+&lt;td>18+19=&lt;/td>
+&lt;td>54-39=&lt;/td>
+&lt;td>24+36=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习78&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">71-9=&lt;/td>
+&lt;td>33+57=&lt;/td>
+&lt;td>70-16=&lt;/td>
+&lt;td>38+53=&lt;/td>
+&lt;td>85+15=&lt;/td>
+&lt;td>91-28=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">59+28=&lt;/td>
+&lt;td>90-68=&lt;/td>
+&lt;td>17+14=&lt;/td>
+&lt;td>91-35=&lt;/td>
+&lt;td>61-42=&lt;/td>
+&lt;td>13+29=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习79&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">38+24=&lt;/td>
+&lt;td>71-57=&lt;/td>
+&lt;td>68+12=&lt;/td>
+&lt;td>80-63=&lt;/td>
+&lt;td>68+32=&lt;/td>
+&lt;td>45-19=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">60-23=&lt;/td>
+&lt;td>13+58=&lt;/td>
+&lt;td>93-16=&lt;/td>
+&lt;td>67+8=&lt;/td>
+&lt;td>82-35=&lt;/td>
+&lt;td>24+47=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习80&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">52-13=&lt;/td>
+&lt;td>27+45=&lt;/td>
+&lt;td>97-19=&lt;/td>
+&lt;td>25+55=&lt;/td>
+&lt;td>66-17=&lt;/td>
+&lt;td>29+19=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">47+29=&lt;/td>
+&lt;td>95-27=&lt;/td>
+&lt;td>55+15=&lt;/td>
+&lt;td>54-9=&lt;/td>
+&lt;td>43+57=&lt;/td>
+&lt;td>60-25=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习81&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">47+43=&lt;/td>
+&lt;td>51-24=&lt;/td>
+&lt;td>26+37=&lt;/td>
+&lt;td>70-44=&lt;/td>
+&lt;td>79+21=&lt;/td>
+&lt;td>94-6=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">72-38=&lt;/td>
+&lt;td>14+49=&lt;/td>
+&lt;td>55+37=&lt;/td>
+&lt;td>53-19=&lt;/td>
+&lt;td>73-25=&lt;/td>
+&lt;td>58+23=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习82&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">43-27=&lt;/td>
+&lt;td>7+77=&lt;/td>
+&lt;td>80-13=&lt;/td>
+&lt;td>25+46=&lt;/td>
+&lt;td>92-17=&lt;/td>
+&lt;td>37+46=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">43+19=&lt;/td>
+&lt;td>83-64=&lt;/td>
+&lt;td>27+23=&lt;/td>
+&lt;td>94-55=&lt;/td>
+&lt;td>88+12=&lt;/td>
+&lt;td>70-43=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习83&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">55+17=&lt;/td>
+&lt;td>46-17=&lt;/td>
+&lt;td>47+8=&lt;/td>
+&lt;td>71-43=&lt;/td>
+&lt;td>27+73=&lt;/td>
+&lt;td>90-78=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">92-54=&lt;/td>
+&lt;td>35+58=&lt;/td>
+&lt;td>94-26=&lt;/td>
+&lt;td>24+56=&lt;/td>
+&lt;td>84-16=&lt;/td>
+&lt;td>23+68=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习84&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">70-38=&lt;/td>
+&lt;td>37+37=&lt;/td>
+&lt;td>83-8=&lt;/td>
+&lt;td>34+47=&lt;/td>
+&lt;td>75-27=&lt;/td>
+&lt;td>29+26=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">42+39=&lt;/td>
+&lt;td>95-37=&lt;/td>
+&lt;td>16+14=&lt;/td>
+&lt;td>92-48=&lt;/td>
+&lt;td>28+72=&lt;/td>
+&lt;td>44-17=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习85&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">46+38=&lt;/td>
+&lt;td>80-38=&lt;/td>
+&lt;td>59+16=&lt;/td>
+&lt;td>76-8=&lt;/td>
+&lt;td>46+54=&lt;/td>
+&lt;td>32-13=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">84-45=&lt;/td>
+&lt;td>18+37=&lt;/td>
+&lt;td>92-18=&lt;/td>
+&lt;td>36+39=&lt;/td>
+&lt;td>90-77=&lt;/td>
+&lt;td>58+12=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习86&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">90-63=&lt;/td>
+&lt;td>35+36=&lt;/td>
+&lt;td>82-26=&lt;/td>
+&lt;td>23+39=&lt;/td>
+&lt;td>60-49=&lt;/td>
+&lt;td>15+45=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">39+33=&lt;/td>
+&lt;td>82-27=&lt;/td>
+&lt;td>36+17=&lt;/td>
+&lt;td>66-9=&lt;/td>
+&lt;td>76+24=&lt;/td>
+&lt;td>34-18=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习87&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">73+17=&lt;/td>
+&lt;td>81-7=&lt;/td>
+&lt;td>39+49=&lt;/td>
+&lt;td>83-45=&lt;/td>
+&lt;td>35+65=&lt;/td>
+&lt;td>91-24=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">41-12=&lt;/td>
+&lt;td>21+19=&lt;/td>
+&lt;td>50-11=&lt;/td>
+&lt;td>38+35=&lt;/td>
+&lt;td>73-34=&lt;/td>
+&lt;td>13+78=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习88&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">54-27=&lt;/td>
+&lt;td>69+19=&lt;/td>
+&lt;td>45-28=&lt;/td>
+&lt;td>32+59=&lt;/td>
+&lt;td>50-21=&lt;/td>
+&lt;td>36+49=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">9+75=&lt;/td>
+&lt;td>95-16=&lt;/td>
+&lt;td>53+37=&lt;/td>
+&lt;td>72-37=&lt;/td>
+&lt;td>73+27=&lt;/td>
+&lt;td>94-66=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习89&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">35+35=&lt;/td>
+&lt;td>67-19=&lt;/td>
+&lt;td>19+59=&lt;/td>
+&lt;td>80-34=&lt;/td>
+&lt;td>22+78=&lt;/td>
+&lt;td>46-8=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">94-56=&lt;/td>
+&lt;td>44+36=&lt;/td>
+&lt;td>81-55=&lt;/td>
+&lt;td>18+18=&lt;/td>
+&lt;td>35-18=&lt;/td>
+&lt;td>76+15=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习90&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">40-17=&lt;/td>
+&lt;td>17+45=&lt;/td>
+&lt;td>86-68=&lt;/td>
+&lt;td>13+48=&lt;/td>
+&lt;td>15+85=&lt;/td>
+&lt;td>78-49=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">58+16=&lt;/td>
+&lt;td>96-49=&lt;/td>
+&lt;td>58+4=&lt;/td>
+&lt;td>90-21=&lt;/td>
+&lt;td>71-56=&lt;/td>
+&lt;td>65+29=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习91&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">25+16=&lt;/td>
+&lt;td>54-28=&lt;/td>
+&lt;td>28+25=&lt;/td>
+&lt;td>50-32=&lt;/td>
+&lt;td>34+66=&lt;/td>
+&lt;td>61-35=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">34-5=&lt;/td>
+&lt;td>19+37=&lt;/td>
+&lt;td>82-34=&lt;/td>
+&lt;td>31+49=&lt;/td>
+&lt;td>86-39=&lt;/td>
+&lt;td>58+29=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习92&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">63-6=&lt;/td>
+&lt;td>81-63=&lt;/td>
+&lt;td>84-37=&lt;/td>
+&lt;td>85-17=&lt;/td>
+&lt;td>51-34=&lt;/td>
+&lt;td>85-48=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">39+26=&lt;/td>
+&lt;td>16+17=&lt;/td>
+&lt;td>58+18=&lt;/td>
+&lt;td>17+58=&lt;/td>
+&lt;td>26+74=&lt;/td>
+&lt;td>36+34=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习93&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">57+38=&lt;/td>
+&lt;td>70-59=&lt;/td>
+&lt;td>28+13=&lt;/td>
+&lt;td>81-15=&lt;/td>
+&lt;td>19+81=&lt;/td>
+&lt;td>95-59=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">96-7=&lt;/td>
+&lt;td>29+54=&lt;/td>
+&lt;td>72-16=&lt;/td>
+&lt;td>44+49=&lt;/td>
+&lt;td>72-58=&lt;/td>
+&lt;td>47+23=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习94&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">72-15=&lt;/td>
+&lt;td>9+78=&lt;/td>
+&lt;td>60-44=&lt;/td>
+&lt;td>27+19=&lt;/td>
+&lt;td>62-47=&lt;/td>
+&lt;td>47+14=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">54+28=&lt;/td>
+&lt;td>32-15=&lt;/td>
+&lt;td>38+38=&lt;/td>
+&lt;td>30-12=&lt;/td>
+&lt;td>23+77=&lt;/td>
+&lt;td>95-46=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习95&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">19+79=&lt;/td>
+&lt;td>80-23=&lt;/td>
+&lt;td>69+22=&lt;/td>
+&lt;td>93-78=&lt;/td>
+&lt;td>14+86=&lt;/td>
+&lt;td>65-16=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">73-45=&lt;/td>
+&lt;td>76+9=&lt;/td>
+&lt;td>63-24=&lt;/td>
+&lt;td>13+27=&lt;/td>
+&lt;td>92-64=&lt;/td>
+&lt;td>66+18=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习96&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">70-48=&lt;/td>
+&lt;td>19+44=&lt;/td>
+&lt;td>56-39=&lt;/td>
+&lt;td>17+37=&lt;/td>
+&lt;td>80-48=&lt;/td>
+&lt;td>16+75=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">68+14=&lt;/td>
+&lt;td>75-28=&lt;/td>
+&lt;td>29+22=&lt;/td>
+&lt;td>43-5=&lt;/td>
+&lt;td>59+41=&lt;/td>
+&lt;td>75-29=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习97&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">57+39=&lt;/td>
+&lt;td>40-14=&lt;/td>
+&lt;td>25+25=&lt;/td>
+&lt;td>68-29=&lt;/td>
+&lt;td>74+26=&lt;/td>
+&lt;td>68-9=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">96-67=&lt;/td>
+&lt;td>18+36=&lt;/td>
+&lt;td>75-49=&lt;/td>
+&lt;td>19+25=&lt;/td>
+&lt;td>92-14=&lt;/td>
+&lt;td>25+57=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习98&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">65-36=&lt;/td>
+&lt;td>29+69=&lt;/td>
+&lt;td>84-58=&lt;/td>
+&lt;td>15+68=&lt;/td>
+&lt;td>96-59=&lt;/td>
+&lt;td>35+57=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">43+38=&lt;/td>
+&lt;td>33-8=&lt;/td>
+&lt;td>33+18=&lt;/td>
+&lt;td>70-25=&lt;/td>
+&lt;td>55+45=&lt;/td>
+&lt;td>72-23=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习99&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">44+17=&lt;/td>
+&lt;td>93-56=&lt;/td>
+&lt;td>47+17=&lt;/td>
+&lt;td>96-27=&lt;/td>
+&lt;td>67+33=&lt;/td>
+&lt;td>63-18=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">80-64=&lt;/td>
+&lt;td>19+67=&lt;/td>
+&lt;td>82-24=&lt;/td>
+&lt;td>7+37=&lt;/td>
+&lt;td>86-69=&lt;/td>
+&lt;td>18+69=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习100&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">61-6=&lt;/td>
+&lt;td>14+39=&lt;/td>
+&lt;td>72-28=&lt;/td>
+&lt;td>33+48=&lt;/td>
+&lt;td>90-29=&lt;/td>
+&lt;td>26+47=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">59+22=&lt;/td>
+&lt;td>71-17=&lt;/td>
+&lt;td>38+22=&lt;/td>
+&lt;td>81-54=&lt;/td>
+&lt;td>62+38=&lt;/td>
+&lt;td>71-33=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习101&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">46+14=&lt;/td>
+&lt;td>73-46=&lt;/td>
+&lt;td>39+37=&lt;/td>
+&lt;td>97-59=&lt;/td>
+&lt;td>31+69=&lt;/td>
+&lt;td>92-56=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">55-19=&lt;/td>
+&lt;td>27+56=&lt;/td>
+&lt;td>46-9=&lt;/td>
+&lt;td>39+58=&lt;/td>
+&lt;td>92-25=&lt;/td>
+&lt;td>56+39=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习102&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">82-17=&lt;/td>
+&lt;td>29+51=&lt;/td>
+&lt;td>82-33=&lt;/td>
+&lt;td>15+46=&lt;/td>
+&lt;td>50-14=&lt;/td>
+&lt;td>16+26=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">28+19=&lt;/td>
+&lt;td>92-66=&lt;/td>
+&lt;td>89+5=&lt;/td>
+&lt;td>41-24=&lt;/td>
+&lt;td>65+35=&lt;/td>
+&lt;td>62-34=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习103&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">74+17=&lt;/td>
+&lt;td>65-47=&lt;/td>
+&lt;td>57+37=&lt;/td>
+&lt;td>87-49=&lt;/td>
+&lt;td>47+53=&lt;/td>
+&lt;td>74-8=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">62-14=&lt;/td>
+&lt;td>34+59=&lt;/td>
+&lt;td>72-13=&lt;/td>
+&lt;td>27+38=&lt;/td>
+&lt;td>64-16=&lt;/td>
+&lt;td>52+39=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习104&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">54-8=&lt;/td>
+&lt;td>22+39=&lt;/td>
+&lt;td>91-18=&lt;/td>
+&lt;td>22+28=&lt;/td>
+&lt;td>90-55=&lt;/td>
+&lt;td>23+59=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">59+12=&lt;/td>
+&lt;td>83-47=&lt;/td>
+&lt;td>57+26=&lt;/td>
+&lt;td>86-49=&lt;/td>
+&lt;td>82+18=&lt;/td>
+&lt;td>91-34=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习105&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">79+9=&lt;/td>
+&lt;td>90-16=&lt;/td>
+&lt;td>29+29=&lt;/td>
+&lt;td>61-28=&lt;/td>
+&lt;td>12+88=&lt;/td>
+&lt;td>42-15=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">55-28=&lt;/td>
+&lt;td>14+18=&lt;/td>
+&lt;td>91-66=&lt;/td>
+&lt;td>47+25=&lt;/td>
+&lt;td>62-25=&lt;/td>
+&lt;td>62+18=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习106&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">64-38=&lt;/td>
+&lt;td>19+52=&lt;/td>
+&lt;td>63-27=&lt;/td>
+&lt;td>14+79=&lt;/td>
+&lt;td>40-22=&lt;/td>
+&lt;td>23+48=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">58+22=&lt;/td>
+&lt;td>85-27=&lt;/td>
+&lt;td>19+14=&lt;/td>
+&lt;td>83-7=&lt;/td>
+&lt;td>54+46=&lt;/td>
+&lt;td>81-14=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习107&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">65+28=&lt;/td>
+&lt;td>43-19=&lt;/td>
+&lt;td>43+17=&lt;/td>
+&lt;td>64-9=&lt;/td>
+&lt;td>87+13=&lt;/td>
+&lt;td>92-76=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">82-39=&lt;/td>
+&lt;td>26+69=&lt;/td>
+&lt;td>85-57=&lt;/td>
+&lt;td>16+16=&lt;/td>
+&lt;td>70-21=&lt;/td>
+&lt;td>26+27=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习108&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">92-15=&lt;/td>
+&lt;td>12+39=&lt;/td>
+&lt;td>76-9=&lt;/td>
+&lt;td>18+34=&lt;/td>
+&lt;td>70-14=&lt;/td>
+&lt;td>58+32=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">79+17=&lt;/td>
+&lt;td>65-37=&lt;/td>
+&lt;td>44+37=&lt;/td>
+&lt;td>81-45=&lt;/td>
+&lt;td>42+58=&lt;/td>
+&lt;td>88-59=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习109&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">18+15=&lt;/td>
+&lt;td>76-27=&lt;/td>
+&lt;td>76+18=&lt;/td>
+&lt;td>83-14=&lt;/td>
+&lt;td>37+63=&lt;/td>
+&lt;td>73-59=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">74-46=&lt;/td>
+&lt;td>18+35=&lt;/td>
+&lt;td>71-27=&lt;/td>
+&lt;td>9+87=&lt;/td>
+&lt;td>40-24=&lt;/td>
+&lt;td>45+19=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习110&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">93-5=&lt;/td>
+&lt;td>29+38=&lt;/td>
+&lt;td>70-41=&lt;/td>
+&lt;td>18+59=&lt;/td>
+&lt;td>96-19=&lt;/td>
+&lt;td>49+49=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">59+35=&lt;/td>
+&lt;td>61-36=&lt;/td>
+&lt;td>57+13=&lt;/td>
+&lt;td>81-46=&lt;/td>
+&lt;td>51+49=&lt;/td>
+&lt;td>73-55=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习111&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">47+13=&lt;/td>
+&lt;td>62-46=&lt;/td>
+&lt;td>68+13=&lt;/td>
+&lt;td>84-27=&lt;/td>
+&lt;td>13+87=&lt;/td>
+&lt;td>50-16=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">78-39=&lt;/td>
+&lt;td>19+22=&lt;/td>
+&lt;td>93-6=&lt;/td>
+&lt;td>39+54=&lt;/td>
+&lt;td>61-23=&lt;/td>
+&lt;td>25+17=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习112&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">90-51=&lt;/td>
+&lt;td>34+56=&lt;/td>
+&lt;td>94-15=&lt;/td>
+&lt;td>35+9=&lt;/td>
+&lt;td>82-18=&lt;/td>
+&lt;td>49+25=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">66+27=&lt;/td>
+&lt;td>74-39=&lt;/td>
+&lt;td>48+48=&lt;/td>
+&lt;td>91-77=&lt;/td>
+&lt;td>33+67=&lt;/td>
+&lt;td>94-75=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习113&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">52+38=&lt;/td>
+&lt;td>83-49=&lt;/td>
+&lt;td>58+34=&lt;/td>
+&lt;td>60-21=&lt;/td>
+&lt;td>25+75=&lt;/td>
+&lt;td>92-19=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">87-19=&lt;/td>
+&lt;td>24+29=&lt;/td>
+&lt;td>93-19=&lt;/td>
+&lt;td>26+45=&lt;/td>
+&lt;td>74-45=&lt;/td>
+&lt;td>8+57=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习114&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">84-49=&lt;/td>
+&lt;td>39+48=&lt;/td>
+&lt;td>50-15=&lt;/td>
+&lt;td>44+38=&lt;/td>
+&lt;td>52-37=&lt;/td>
+&lt;td>45+45=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">72+18=&lt;/td>
+&lt;td>81-16=&lt;/td>
+&lt;td>26+26=&lt;/td>
+&lt;td>52-9=&lt;/td>
+&lt;td>16+84=&lt;/td>
+&lt;td>76-59=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习115&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">48+36=&lt;/td>
+&lt;td>95-17=&lt;/td>
+&lt;td>29+27=&lt;/td>
+&lt;td>57-19=&lt;/td>
+&lt;td>58+42=&lt;/td>
+&lt;td>65-7=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">90-54=&lt;/td>
+&lt;td>24+69=&lt;/td>
+&lt;td>94-67=&lt;/td>
+&lt;td>19+19=&lt;/td>
+&lt;td>86-38=&lt;/td>
+&lt;td>38+47=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习116&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">66-37=&lt;/td>
+&lt;td>19+58=&lt;/td>
+&lt;td>81-12=&lt;/td>
+&lt;td>44+47=&lt;/td>
+&lt;td>45-18=&lt;/td>
+&lt;td>16+36=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">27+25=&lt;/td>
+&lt;td>56-7=&lt;/td>
+&lt;td>64+26=&lt;/td>
+&lt;td>85-46=&lt;/td>
+&lt;td>63+37=&lt;/td>
+&lt;td>70-46=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习117&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">89+8=&lt;/td>
+&lt;td>57-39=&lt;/td>
+&lt;td>37+27=&lt;/td>
+&lt;td>81-64=&lt;/td>
+&lt;td>11+89=&lt;/td>
+&lt;td>94-25=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">60-19=&lt;/td>
+&lt;td>19+62=&lt;/td>
+&lt;td>71-29=&lt;/td>
+&lt;td>18+75=&lt;/td>
+&lt;td>83-16=&lt;/td>
+&lt;td>53+29=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习118&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">73-8=&lt;/td>
+&lt;td>32+39=&lt;/td>
+&lt;td>45-29=&lt;/td>
+&lt;td>11+29=&lt;/td>
+&lt;td>96-58=&lt;/td>
+&lt;td>37+54=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">46+18=&lt;/td>
+&lt;td>95-19=&lt;/td>
+&lt;td>67+18=&lt;/td>
+&lt;td>61-49=&lt;/td>
+&lt;td>57+43=&lt;/td>
+&lt;td>30-13=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习119&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">33+27=&lt;/td>
+&lt;td>75-38=&lt;/td>
+&lt;td>46+26=&lt;/td>
+&lt;td>44-15=&lt;/td>
+&lt;td>18+82=&lt;/td>
+&lt;td>81-52=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">57-9=&lt;/td>
+&lt;td>19+63=&lt;/td>
+&lt;td>56-18=&lt;/td>
+&lt;td>19+66=&lt;/td>
+&lt;td>94-46=&lt;/td>
+&lt;td>61+19=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习120&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">62-33=&lt;/td>
+&lt;td>57+29=&lt;/td>
+&lt;td>84-19=&lt;/td>
+&lt;td>17+17=&lt;/td>
+&lt;td>83-17=&lt;/td>
+&lt;td>17+19=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">5+68=&lt;/td>
+&lt;td>53-15=&lt;/td>
+&lt;td>44+39=&lt;/td>
+&lt;td>50-26=&lt;/td>
+&lt;td>86+14=&lt;/td>
+&lt;td>81-62=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习121&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">57+36=&lt;/td>
+&lt;td>98-9=&lt;/td>
+&lt;td>49+19=&lt;/td>
+&lt;td>51-13=&lt;/td>
+&lt;td>75+25=&lt;/td>
+&lt;td>55-16=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">92-45=&lt;/td>
+&lt;td>17+46=&lt;/td>
+&lt;td>60-32=&lt;/td>
+&lt;td>14+66=&lt;/td>
+&lt;td>84-67=&lt;/td>
+&lt;td>24+37=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习122&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">64-8=&lt;/td>
+&lt;td>46+47=&lt;/td>
+&lt;td>43-17=&lt;/td>
+&lt;td>24+66=&lt;/td>
+&lt;td>54-29=&lt;/td>
+&lt;td>18+65=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">49+28=&lt;/td>
+&lt;td>90-41=&lt;/td>
+&lt;td>37+36=&lt;/td>
+&lt;td>57-28=&lt;/td>
+&lt;td>72+28=&lt;/td>
+&lt;td>91-64=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习123&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">16+55=&lt;/td>
+&lt;td>61-29=&lt;/td>
+&lt;td>46+36=&lt;/td>
+&lt;td>41-15=&lt;/td>
+&lt;td>49+51=&lt;/td>
+&lt;td>92-49=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">76-48=&lt;/td>
+&lt;td>88+4=&lt;/td>
+&lt;td>52-17=&lt;/td>
+&lt;td>23+67=&lt;/td>
+&lt;td>92-24=&lt;/td>
+&lt;td>29+23=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习124&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">75-7=&lt;/td>
+&lt;td>17+56=&lt;/td>
+&lt;td>80-41=&lt;/td>
+&lt;td>19+32=&lt;/td>
+&lt;td>72-48=&lt;/td>
+&lt;td>46+19=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">57+24=&lt;/td>
+&lt;td>61-16=&lt;/td>
+&lt;td>45+37=&lt;/td>
+&lt;td>92-13=&lt;/td>
+&lt;td>24+76=&lt;/td>
+&lt;td>50-12=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习125&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">68+28=&lt;/td>
+&lt;td>74-27=&lt;/td>
+&lt;td>62+29=&lt;/td>
+&lt;td>84-25=&lt;/td>
+&lt;td>64+36=&lt;/td>
+&lt;td>86-8=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">54-19=&lt;/td>
+&lt;td>28+36=&lt;/td>
+&lt;td>67-39=&lt;/td>
+&lt;td>29+43=&lt;/td>
+&lt;td>90-19=&lt;/td>
+&lt;td>19+56=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习126&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">61-34=&lt;/td>
+&lt;td>57+18=&lt;/td>
+&lt;td>72-19=&lt;/td>
+&lt;td>18+49=&lt;/td>
+&lt;td>83-24=&lt;/td>
+&lt;td>25+26=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">8+37=&lt;/td>
+&lt;td>80-26=&lt;/td>
+&lt;td>69+28=&lt;/td>
+&lt;td>83-58=&lt;/td>
+&lt;td>78+22=&lt;/td>
+&lt;td>77-48=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习127&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">58+28=&lt;/td>
+&lt;td>46-28=&lt;/td>
+&lt;td>56+18=&lt;/td>
+&lt;td>63-35=&lt;/td>
+&lt;td>84+16=&lt;/td>
+&lt;td>65-9=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">51-14=&lt;/td>
+&lt;td>29+35=&lt;/td>
+&lt;td>70-52=&lt;/td>
+&lt;td>18+26=&lt;/td>
+&lt;td>95-29=&lt;/td>
+&lt;td>27+39=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;strong>练习128&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">91-49=&lt;/td>
+&lt;td>70-33=&lt;/td>
+&lt;td>41-6=&lt;/td>
+&lt;td>85-59=&lt;/td>
+&lt;td>86-27=&lt;/td>
+&lt;td>81-49=&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">35+16=&lt;/td>
+&lt;td>26+34=&lt;/td>
+&lt;td>77+17=&lt;/td>
+&lt;td>25+39=&lt;/td>
+&lt;td>29+71=&lt;/td>
+&lt;td>49+22=&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table></description></item><item><title>一年级数学下册第二单元《观察物体》试卷错题集</title><link>/archives/%E4%B8%80%E5%B9%B4%E7%BA%A7%E6%95%B0%E5%AD%A6%E4%B8%8B%E5%86%8C%E7%AC%AC%E4%BA%8C%E5%8D%95%E5%85%83%E8%A7%82%E5%AF%9F%E7%89%A9%E4%BD%93%E8%AF%95%E5%8D%B7%E9%94%99%E9%A2%98%E9%9B%86/</link><pubDate>Fri, 05 Jun 2020 12:07:25 +0000</pubDate><guid>/archives/%E4%B8%80%E5%B9%B4%E7%BA%A7%E6%95%B0%E5%AD%A6%E4%B8%8B%E5%86%8C%E7%AC%AC%E4%BA%8C%E5%8D%95%E5%85%83%E8%A7%82%E5%AF%9F%E7%89%A9%E4%BD%93%E8%AF%95%E5%8D%B7%E9%94%99%E9%A2%98%E9%9B%86/</guid><description>&lt;p>&lt;img src="/img/%E4%B8%80%E5%B9%B4%E7%BA%A7%E6%95%B0%E5%AD%A6%E4%B8%8B%E5%86%8C%E7%AC%AC%E4%BA%8C%E5%8D%95%E5%85%83%E3%80%8A%E8%A7%82%E5%AF%9F%E7%89%A9%E4%BD%93%E3%80%8B%E8%AF%95%E5%8D%B7%E9%94%99%E9%A2%98%E9%9B%86/1.jpg"
+loading="lazy"
+>&lt;/p>
+&lt;p>&lt;img src="/img/%E4%B8%80%E5%B9%B4%E7%BA%A7%E6%95%B0%E5%AD%A6%E4%B8%8B%E5%86%8C%E7%AC%AC%E4%BA%8C%E5%8D%95%E5%85%83%E3%80%8A%E8%A7%82%E5%AF%9F%E7%89%A9%E4%BD%93%E3%80%8B%E8%AF%95%E5%8D%B7%E9%94%99%E9%A2%98%E9%9B%86/2.jpg"
+loading="lazy"
+alt="第二张"
+>&lt;/p>
+&lt;ul>
+&lt;li>1.第三题第1小题。
+圆柱从上面看，看到的形状是圆形；从正面或者侧面看，看到的形状是长方形或者正方形。&lt;/li>
+&lt;li>2.第三题第4小题。
+从上面看能看到车灯，A选项没有车灯，所以选C。&lt;/li>
+&lt;li>3.第五题第2小题。
+冰箱的门在小刚的左手边，所以小刚看到的是2号图。&lt;/li>
+&lt;/ul></description></item><item><title>一年级数学下册破十法和平十法</title><link>/archives/%E4%B8%80%E5%B9%B4%E7%BA%A7%E6%95%B0%E5%AD%A6%E4%B8%8B%E5%86%8C%E7%A0%B4%E5%8D%81%E6%B3%95%E5%92%8C%E5%B9%B3%E5%8D%81%E6%B3%95/</link><pubDate>Thu, 04 Jun 2020 14:33:25 +0000</pubDate><guid>/archives/%E4%B8%80%E5%B9%B4%E7%BA%A7%E6%95%B0%E5%AD%A6%E4%B8%8B%E5%86%8C%E7%A0%B4%E5%8D%81%E6%B3%95%E5%92%8C%E5%B9%B3%E5%8D%81%E6%B3%95/</guid><description>&lt;p>口算十几减几的退位减法主要有有数数法、做减法想加法、破十法、平十法这几种方法，下面着重讲讲破十法与平十法。&lt;/p>
+&lt;h2 id="破十法">破十法&lt;/h2>
+&lt;p>破十法口诀：&lt;code>看大数，分出10，减小数，加剩数&lt;/code>，一般会这样考你：&lt;/p>
+&lt;p>口算18-9= ( ) 时，可以这样想：先算(10)-(9)=(1)，再算(1)+(8)=(9)&lt;/p>
+&lt;h2 id="平十法">平十法&lt;/h2>
+&lt;p>平十法口诀：&lt;code>分小数，减出10，10减几&lt;/code>。&lt;/p>
+&lt;p>平十法就是连续减，例如18-9=( )，18个位上的8不够减9，那18减几最好够减，最好算的，18-8好算，所以先把9分成8和1，先算(18)-(8)=(10)，再算(10)-(1)=(9)。&lt;/p>
+&lt;h2 id="参考链接">参考链接&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a class="link" href="https://www.sohu.com/a/374921630_120064993" target="_blank" rel="noopener"
+>1.破十法和平十法的巧妙口诀&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a class="link" href="https://wenku.baidu.com/view/7abe1dd6a200a6c30c22590102020740bf1ecdf1.html" target="_blank" rel="noopener"
+>2.凑十法、破十法、连减法算理复习&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul></description></item><item><title>一年级数学下册第一单元《加与减(一)》试卷错题集</title><link>/archives/%E4%B8%80%E5%B9%B4%E7%BA%A7%E6%95%B0%E5%AD%A6%E4%B8%8B%E5%86%8C%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E5%8A%A0%E4%B8%8E%E5%87%8F%E4%B8%80%E8%AF%95%E5%8D%B7%E9%94%99%E9%A2%98%E9%9B%86/</link><pubDate>Thu, 04 Jun 2020 12:29:25 +0000</pubDate><guid>/archives/%E4%B8%80%E5%B9%B4%E7%BA%A7%E6%95%B0%E5%AD%A6%E4%B8%8B%E5%86%8C%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E5%8A%A0%E4%B8%8E%E5%87%8F%E4%B8%80%E8%AF%95%E5%8D%B7%E9%94%99%E9%A2%98%E9%9B%86/</guid><description>&lt;p>&lt;img src="/img/%E4%B8%80%E5%B9%B4%E7%BA%A7%E6%95%B0%E5%AD%A6%E4%B8%8B%E5%86%8C%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E3%80%8A%E5%8A%A0%E4%B8%8E%E5%87%8F%28%E4%B8%80%29%E3%80%8B%E8%AF%95%E5%8D%B7%E9%94%99%E9%A2%98%E9%9B%86/1.jpg"
+loading="lazy"
+>&lt;/p>
+&lt;p>&lt;img src="/img/%E4%B8%80%E5%B9%B4%E7%BA%A7%E6%95%B0%E5%AD%A6%E4%B8%8B%E5%86%8C%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E3%80%8A%E5%8A%A0%E4%B8%8E%E5%87%8F%28%E4%B8%80%29%E3%80%8B%E8%AF%95%E5%8D%B7%E9%94%99%E9%A2%98%E9%9B%86/2.jpg"
+loading="lazy"
+>&lt;/p>
+&lt;ul>
+&lt;li>1.第一题第3小题，填合适的数。
+求被减数用加法，求减数用减法，&lt;/li>
+&lt;li>2.第一题第6小题，找规律。
+规律是相邻的两个数依次增加1、2、3……&lt;/li>
+&lt;li>3.判断题第2小题，是用破十法算十几减几的退位减法。破十法口诀：看大数，分出10，减小数，加剩数。&lt;/li>
+&lt;li>4.第七题，画一画，算一算。
+第1题是问“圆比三角形多6个，求圆有几个”，先画，再算一算。同理第2题一样。&lt;/li>
+&lt;li>5.第八题看图列式第2个，题目意思是“原来有16个球，圈了7个，还剩下几个？”&lt;/li>
+&lt;li>6.最后一题，排队问题。
+最后还要减1，可以利用画图来理解题意。可以看下参考答案里画的图。&lt;/li>
+&lt;/ul></description></item><item><title>一年级数学和差问题</title><link>/archives/%E4%B8%80%E5%B9%B4%E7%BA%A7%E6%95%B0%E5%AD%A6%E5%92%8C%E5%B7%AE%E9%97%AE%E9%A2%98/</link><pubDate>Wed, 03 Jun 2020 02:34:25 +0000</pubDate><guid>/archives/%E4%B8%80%E5%B9%B4%E7%BA%A7%E6%95%B0%E5%AD%A6%E5%92%8C%E5%B7%AE%E9%97%AE%E9%A2%98/</guid><description>&lt;p>一年级试卷居然出现了和差问题，题目意思大概是：已知两数之和是35，两数之差是5，求这两数是多少？小学没学过方程，只能用小学的方法来解决，这里用画图的方法来解决问题。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">35+5&lt;span class="o">=&lt;/span>&lt;span class="m">40&lt;/span> 先假设两数一样多，求出的40就是两个大数之和
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">40-20&lt;span class="o">=&lt;/span>&lt;span class="m">20&lt;/span> 再求出大数
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">35-20&lt;span class="o">=&lt;/span>&lt;span class="m">15&lt;/span> 再求出小数
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>参考链接：&lt;a class="link" href="https://www.acfun.cn/v/ac14050553" target="_blank" rel="noopener"
+>小学奥数和差问题&lt;/a>&lt;/p></description></item><item><title>一年级数学括号最大能填几</title><link>/archives/%E4%B8%80%E5%B9%B4%E7%BA%A7%E6%95%B0%E5%AD%A6%E6%8B%AC%E5%8F%B7%E6%9C%80%E5%A4%A7%E8%83%BD%E5%A1%AB%E5%87%A0/</link><pubDate>Tue, 02 Jun 2020 02:02:25 +0000</pubDate><guid>/archives/%E4%B8%80%E5%B9%B4%E7%BA%A7%E6%95%B0%E5%AD%A6%E6%8B%AC%E5%8F%B7%E6%9C%80%E5%A4%A7%E8%83%BD%E5%A1%AB%E5%87%A0/</guid><description>&lt;p>求“括号最大能填几”，分两步计算。例如：&lt;/p>
+&lt;p>(1) &lt;strong>39-( )＞14&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>第一步，先想比14大1的数是几？14+1=15；&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>第二步，再想39减几等于15，39-( )=15，答案是24。&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>(2) &lt;strong>84＞( )+12&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>第一步，先想比84小1的数是几，84-1=83；&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>第二步，再想几加12等于83，答案是71。&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>(3) &lt;strong>29+( )＜46&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>第一步，先想比46小1的数是几，46-1=45，是45。&lt;/li>
+&lt;li>第二步，再想29加几等于45，45-29=16，答案是16。&lt;/li>
+&lt;/ul>
+&lt;p>更多有关“括号最大能填几”内容，可查看：&lt;a class="link" href="https://www.sohu.com/a/358938277_100195078" target="_blank" rel="noopener"
+>括号里最大能填几？&lt;/a>&lt;/p></description></item><item><title>一年级数学一图四式问题</title><link>/archives/%E4%B8%80%E5%B9%B4%E7%BA%A7%E6%95%B0%E5%AD%A6%E4%B8%80%E5%9B%BE%E5%9B%9B%E5%BC%8F%E9%97%AE%E9%A2%98/</link><pubDate>Thu, 28 May 2020 07:20:25 +0000</pubDate><guid>/archives/%E4%B8%80%E5%B9%B4%E7%BA%A7%E6%95%B0%E5%AD%A6%E4%B8%80%E5%9B%BE%E5%9B%9B%E5%BC%8F%E9%97%AE%E9%A2%98/</guid><description>&lt;blockquote>
+&lt;p>什么是“一图四式”呢？&lt;/p>
+&lt;p>**给出一个图，写出四个算式，两道加法算式，两道减法算式。**这类数学题的目的，是为了训练一年级小学生看图的能力，以及对加减法意义的理解。&lt;/p>
+&lt;/blockquote>
+&lt;p>口诀：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">一图四式题，先来数左边，再来数右边，
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">两道加法题，左边加右边，右边加左边。
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">两位减法题，先来数总数，
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">总数减左边，就等于右边。
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">总数减右边，就等于左边。
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>参考链接：&lt;a class="link" href="https://www.sohu.com/a/344323527_750537" target="_blank" rel="noopener"
+>一年级数学“一图四式”&lt;/a>&lt;/p></description></item><item><title>一年级数学上册大括号问题</title><link>/archives/%E4%B8%80%E5%B9%B4%E7%BA%A7%E6%95%B0%E5%AD%A6%E4%B8%8A%E5%86%8C%E5%A4%A7%E6%8B%AC%E5%8F%B7%E9%97%AE%E9%A2%98/</link><pubDate>Sat, 23 May 2020 14:49:25 +0000</pubDate><guid>/archives/%E4%B8%80%E5%B9%B4%E7%BA%A7%E6%95%B0%E5%AD%A6%E4%B8%8A%E5%86%8C%E5%A4%A7%E6%8B%AC%E5%8F%B7%E9%97%AE%E9%A2%98/</guid><description>&lt;p>大括号问题，是一年级数学一个必考题目，只有两种做法：加法或者减法。尽管很简单，我们依然要让孩子分清题目的不同表示方法，下面列出三种加法的表示：&lt;/p>
+&lt;blockquote>
+&lt;p>大括号表示什么意思？表示两部分合起来！
+问号表示什么意思？表示需要求的问题！
+这里必须要注意的地方，是问题的答案必须写在等号的右边，这也是很多孩子容易犯的错误之一。就是把算式写错了，尽管知道正确的结果，但是写的位置不对！&lt;/p>
+&lt;/blockquote>
+&lt;p>用 口诀加强理解：&lt;/p>
+&lt;blockquote>
+&lt;p>大括号，小问号，&lt;/p>
+&lt;p>在一起，我会算。&lt;/p>
+&lt;p>&lt;strong>小问号，在中间&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>求一共，用加法&lt;/strong>。&lt;/p>
+&lt;p>&lt;strong>小问号，在一边&lt;/strong>，&lt;/p>
+&lt;p>&lt;strong>求部分，用减法&lt;/strong>。&lt;/p>
+&lt;/blockquote>
+&lt;p>用这个口诀，可以加深孩子的印象。之后，我们就慢慢要给孩子用整体和部分来理解，因为这是理解加法和减法关系的基础。&lt;/p>
+&lt;p>解题步骤：&lt;/p>
+&lt;ol>
+&lt;li>看？在哪儿&lt;/li>
+&lt;li>求什么&lt;/li>
+&lt;li>加还是减&lt;/li>
+&lt;/ol>
+&lt;p>参考链接：&lt;a class="link" href="http://www.360doc.cn/mip/800320995.html" target="_blank" rel="noopener"
+>一年级数学上册《大括号问题》&lt;/a>&lt;/p></description></item><item><title>一年级数学下册估算问题</title><link>/archives/%E4%B8%80%E5%B9%B4%E7%BA%A7%E6%95%B0%E5%AD%A6%E4%B8%8B%E5%86%8C%E4%BC%B0%E7%AE%97%E9%97%AE%E9%A2%98/</link><pubDate>Wed, 20 May 2020 09:32:25 +0000</pubDate><guid>/archives/%E4%B8%80%E5%B9%B4%E7%BA%A7%E6%95%B0%E5%AD%A6%E4%B8%8B%E5%86%8C%E4%BC%B0%E7%AE%97%E9%97%AE%E9%A2%98/</guid><description>&lt;p>估算是数学里一种很重要的能力，一年级数学下册有关估算这部分内容出现在课本71页，主要讲的是两位数加两位数的进位加法的估算。首先来了解一下什么是估算，对于两位数加两位数的进位加法的估算，可以把其中一个加数看作与它最接近的“整十数”，也可以把两个加数分别看作与它们接近的“整十数”，再口算出得数。我们拿书上例题为例。淘气摘了17个苹果，笑笑摘了38个苹果，箱子能装60个苹果，让你估一估，这个箱子能装得下吗？&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">这里有三种估法，如下：
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">方法一：把17看作20
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 20+38&lt;span class="o">=&lt;/span>58&lt;span class="o">(&lt;/span>个&lt;span class="o">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 58＜60
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 答：这个箱子装得下。
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">方法二：把38看作40
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 17+40&lt;span class="o">=&lt;/span>57&lt;span class="o">(&lt;/span>个&lt;span class="o">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 57＜60
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 答：这个箱子装得下。
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">方法三：把17看作20，把38看作40
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 20+40&lt;span class="o">=&lt;/span>60&lt;span class="o">(&lt;/span>个&lt;span class="o">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">60&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="m">60&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 答：这个箱子装得下。
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">总结：三种估法都是往大了估。往大了估，可以装下，实际比估计的少，所以也能装下。
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">------------------------------------------------------------------------------------------
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">再看下72页练一练第1题，已知第一袋可装43颗珠子，第二袋可装19颗，第三袋能装38颗，现在70颗能穿一条项链。
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">问“估一估，哪两袋珠子合起来够穿一条项链”，这里要往小了估。答案如下：
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 把43看作40
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 40+38&lt;span class="o">=&lt;/span>78&lt;span class="o">(&lt;/span>颗&lt;span class="o">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 78＞70
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 答：第一袋和第三袋能够穿一条项链。
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">总结：往小了估够70颗，实际比估计的多，肯定也够，所以第一袋和第三袋合起来能穿一条项链。
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>有时也也会遇到估算类填空题：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">1.估算48+33时，可以把48看作（50），（50）+33&lt;span class="o">=&lt;/span>（83），结果是（83）。
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">2.估算48+33时，可以把48看作（50），把32看作（30），结果是（80）。
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>更多有关估算类的内容可以查看：&lt;/p>
+&lt;p>&lt;a class="link" href="http://blog.sina.com.cn/s/blog_81e64c020100wxdx.html" target="_blank" rel="noopener"
+>1.运用估算方法来解答应用题&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://wenku.baidu.com/view/e80250c750e79b89680203d8ce2f0066f5336482.html" target="_blank" rel="noopener"
+>2.估算应用题&lt;/a>&lt;/p></description></item><item><title>一年级数学比多比少类问题</title><link>/archives/%E4%B8%80%E5%B9%B4%E7%BA%A7%E6%95%B0%E5%AD%A6%E6%AF%94%E5%A4%9A%E6%AF%94%E5%B0%91%E7%B1%BB%E9%97%AE%E9%A2%98/</link><pubDate>Sun, 17 May 2020 02:20:25 +0000</pubDate><guid>/archives/%E4%B8%80%E5%B9%B4%E7%BA%A7%E6%95%B0%E5%AD%A6%E6%AF%94%E5%A4%9A%E6%AF%94%E5%B0%91%E7%B1%BB%E9%97%AE%E9%A2%98/</guid><description>&lt;p>一年级比多比少类问题，应该说是一个难点。部分同学看见“多”就用加法，看见“少”就用减法，这样是不对的，一般说来比多比少类问题有三种题型，现在做个简单的总结，具体如下（题目选自网上）：&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>求“多多少”、“少多少”都用减法&lt;/strong>。&lt;/li>
+&lt;/ol>
+&lt;p>例如：小明有39张卡片，小华有23张，小华比小明少多少张卡片？（或者小明比小华多多少张卡片？）&lt;/p>
+&lt;ol start="2">
+&lt;li>&lt;strong>求“较大数”用加法&lt;/strong>。&lt;/li>
+&lt;/ol>
+&lt;p>例如：小明有39张卡片，小华比小明多12张，小华有多少张卡片？&lt;/p>
+&lt;p>或者：小明有39张卡片，比小华少12张，小华有多少张卡片？&lt;/p>
+&lt;p>这两题其实是一样的，求的都是小华，求小华求的是较大数，所以用加法。&lt;/p>
+&lt;ol start="3">
+&lt;li>&lt;strong>求“较小数”用减法&lt;/strong>。&lt;/li>
+&lt;/ol>
+&lt;p>例如：小明有39张卡片，小华比小明少12张，小华有多少张卡片？&lt;/p>
+&lt;p>或者：小明有39张卡片，比小华多12张，小华有多少张卡片？&lt;/p>
+&lt;p>这两题其实是一样的，求的都是小华，求小华求的是较小数，所以用减法。&lt;/p>
+&lt;hr>
+&lt;p>另外还有比多比少列式计算题，相关内容可查看：&lt;a class="link" href="https://bore.vip/first-grade-math-lie-shi/" target="_blank" rel="noopener"
+>一年级数学下册列式计算(加数、被减数、比多比少)&lt;/a>&lt;/p></description></item><item><title>一年级数学下册列式计算(加数、被减数、比多比少)</title><link>/archives/%E4%B8%80%E5%B9%B4%E7%BA%A7%E6%95%B0%E5%AD%A6%E4%B8%8B%E5%86%8C%E5%88%97%E5%BC%8F%E8%AE%A1%E7%AE%97%E5%8A%A0%E6%95%B0%E8%A2%AB%E5%87%8F%E6%95%B0%E6%AF%94%E5%A4%9A%E6%AF%94%E5%B0%91/</link><pubDate>Sat, 16 May 2020 01:10:25 +0000</pubDate><guid>/archives/%E4%B8%80%E5%B9%B4%E7%BA%A7%E6%95%B0%E5%AD%A6%E4%B8%8B%E5%86%8C%E5%88%97%E5%BC%8F%E8%AE%A1%E7%AE%97%E5%8A%A0%E6%95%B0%E8%A2%AB%E5%87%8F%E6%95%B0%E6%AF%94%E5%A4%9A%E6%AF%94%E5%B0%91/</guid><description>&lt;p>首先要记忆以下几个公式：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">加数+加数&lt;span class="o">=&lt;/span>和
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">被减数-减数&lt;span class="o">=&lt;/span>差
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">和-加数&lt;span class="o">=&lt;/span>加数
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">被减数-差&lt;span class="o">=&lt;/span>减数
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">减数+差&lt;span class="o">=&lt;/span>被减数
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>要让他们将以上几个公式，写在数学书第一页上，然后背诵。列式计算具体习题如下：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;span class="lnt">25
+&lt;/span>&lt;span class="lnt">26
+&lt;/span>&lt;span class="lnt">27
+&lt;/span>&lt;span class="lnt">28
+&lt;/span>&lt;span class="lnt">29
+&lt;/span>&lt;span class="lnt">30
+&lt;/span>&lt;span class="lnt">31
+&lt;/span>&lt;span class="lnt">32
+&lt;/span>&lt;span class="lnt">33
+&lt;/span>&lt;span class="lnt">34
+&lt;/span>&lt;span class="lnt">35
+&lt;/span>&lt;span class="lnt">36
+&lt;/span>&lt;span class="lnt">37
+&lt;/span>&lt;span class="lnt">38
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">1、一个加数是25，另一个加数是36，和是多少?
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">2、两个加数都是46，和是多少？
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">3、一个加数是37，另一个加数比它多17，和是多少？
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">4、被减数是56，减数是39，差是多少？
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">5、两个加数的和是87，其中的一个加数是40，另一个加数是多少？
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">6、被减数是56，差是34，减数是多少？
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">7、减数是27，差是49，被减数是多少？
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">8、72与45的差，再加上38是多少？
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">9、36与45的和，再减去42是多少？
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">10、86比20多多少？
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">11、一个加数由3个十和4个一组成，另一个加数由2个十和7个一组成，
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">这两个加数的和是多少？
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">12、30比90少多少？
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">13、三个25连续相加，和是多少？
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">14、从80里减去27，在加上25，和是多少？
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">15、一个数是56，它比哪一个数大21，另一个数是多少？它们的和是多少？它们的和是多少？
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">16、72和91相差多少？
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">17、比85少39的数是多少？
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">18、甲数是26，乙数是35，丙数是28，它们的和是多少？
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">19、35与44的差，再加上30与16的和，得多少？
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;img src="https://cdn.jsdelivr.net/gh/iwyang/pic/20200721160729.jpg"
+loading="lazy"
+>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">列式计算
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">1、67比30多多少？ 2、78比70多多少？
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">3、34比40少多少？ 4、66比60小多少？
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">5、93比90大多少？ 6、 比78多9的数是多少？
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">7、比34少6的数是多少？
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">8、最大的一位数与最小的两位数的和是多少？差是多少？
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">9、两个加数都是30，它们的和是多少？差是多少？
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">10、减数是50，差是34，被减数是多少？
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">11、减数和差都是40，被减数是多少？
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">12、26加上34与30的差，和是多少？
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">13、76减去21与9的和，差是多少？
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;span class="lnt">25
+&lt;/span>&lt;span class="lnt">26
+&lt;/span>&lt;span class="lnt">27
+&lt;/span>&lt;span class="lnt">28
+&lt;/span>&lt;span class="lnt">29
+&lt;/span>&lt;span class="lnt">30
+&lt;/span>&lt;span class="lnt">31
+&lt;/span>&lt;span class="lnt">32
+&lt;/span>&lt;span class="lnt">33
+&lt;/span>&lt;span class="lnt">34
+&lt;/span>&lt;span class="lnt">35
+&lt;/span>&lt;span class="lnt">36
+&lt;/span>&lt;span class="lnt">37
+&lt;/span>&lt;span class="lnt">38
+&lt;/span>&lt;span class="lnt">39
+&lt;/span>&lt;span class="lnt">40
+&lt;/span>&lt;span class="lnt">41
+&lt;/span>&lt;span class="lnt">42
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl"> 一、列式计算。
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">1、 一个加数是45，另一个加数是28，和是多少?
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">2&lt;span class="sb">`&lt;/span> 40与57相差多少? 3. 43比20多多少?
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">4. 两个加数都是45,和是多少?
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">5. 一个加数是25, 另一个加数是19, 和是多少?
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">6. 18与32的和是多少? 7. 被减数是50，减数是26，差是多少?
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">8. 62比27大多少？ 9. 减数是26，被减数是32，差是几？
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">10. 两个加数都是34，和是多少？ 11.1 8比37小多少？　　
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">12.23和32相差多少？ 13. 比42少17的数是多少?
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">14. 比38多29的数是多少? 15.25比70少多少？
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">16.减数是24，差是16，被减数是多少？ 17.60比34多多少？
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">18.25加上18，再减去24，得多少？ 19.5个4相加是多少？
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">20.60减去45，再加上26，得多少？ 21、2个5连加得多少？
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">22.最小的三位数比最大的两位数多多少？
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">23.最大的两位数比最大的一位数多多少？
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">24.35比100少多少？ 25.两个因数都是5，积是多少？
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">26.5乘3得多少？ 27.一个因数是5，另一个因数是2，积是多少？
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">28.两个数的和是45，其中一个加数是13，另一个加数是多少？
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">29.5和4相乘得多少？ 30.3个5相加的和是多少？
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">31.比28多16的数是多少？ 32.比28少16的数是多少？
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">33.减数是36，差是24，被减数是多少？
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">34.被减数和减数都是26，差是多少？
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>题目选自：&lt;/p>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://wenku.baidu.com/view/847865f3152ded630b1c59eef8c75fbfc77d9489.html" target="_blank" rel="noopener"
+>1.一年级下数学列式计算题及答案&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://www.topstudy8.com/article/57498070" target="_blank" rel="noopener"
+>2.一年级下册数学列式计算专项练习&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://wenku.baidu.com/view/9be4c6a6af45b307e9719711.html?fr=search" target="_blank" rel="noopener"
+>3.小学一年级数学下册列式计算题专项训练&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>

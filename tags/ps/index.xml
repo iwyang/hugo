@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ps on Bore's Notes</title><link>/tags/ps/</link><description>Recent content in Ps on Bore's Notes</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sun, 08 Aug 2021 03:42:17 +0000</lastBuildDate><atom:link href="/tags/ps/index.xml" rel="self" type="application/rss+xml"/><item><title>PS竖屏图片转横屏</title><link>/archives/ps%E7%AB%96%E5%B1%8F%E5%9B%BE%E7%89%87%E8%BD%AC%E6%A8%AA%E5%B1%8F/</link><pubDate>Sun, 08 Aug 2021 03:42:17 +0000</pubDate><guid>/archives/ps%E7%AB%96%E5%B1%8F%E5%9B%BE%E7%89%87%E8%BD%AC%E6%A8%AA%E5%B1%8F/</guid><description>&lt;p>PS竖屏图片转横屏方法有多种，这里记录一下：&lt;/p>
+&lt;h3 id="方法一">方法一：&lt;/h3>
+&lt;p>1.调整图片画布大小。&lt;/p>
+&lt;p>2.选中图片空白区域， 单击右键选择&lt;code>填充-内容识别&lt;/code>，勾选&lt;code>颜色识别&lt;/code>，确定。&lt;/p>
+&lt;p>3.利用&lt;code>仿制图章&lt;/code>工具作最后的调整。&lt;/p>
+&lt;h3 id="方法二">方法二：&lt;/h3>
+&lt;p>1.套索工具选择主体，单击右键选择&lt;code>存储选取&lt;/code>，取消选区。&lt;/p>
+&lt;p>2.&lt;code>编辑-内容识别缩放&lt;/code>，保护选择刚才存储的选区，然后点亮&lt;code>人形图标&lt;/code>。&lt;/p>
+&lt;h3 id="方法三">方法三：&lt;/h3>
+&lt;p>裁剪时勾选&lt;code>内容识别&lt;/code>。&lt;/p></description></item><item><title>Ps2020更换照片底色</title><link>/archives/ps2020%E6%9B%B4%E6%8D%A2%E7%85%A7%E7%89%87%E5%BA%95%E8%89%B2/</link><pubDate>Fri, 06 Aug 2021 01:38:02 +0000</pubDate><guid>/archives/ps2020%E6%9B%B4%E6%8D%A2%E7%85%A7%E7%89%87%E5%BA%95%E8%89%B2/</guid><description>&lt;p>更换登记照底色的方法网上有多种，这里先记录一种，以PS2020为例。&lt;/p>
+&lt;p>1.左侧工具栏选择&lt;code>选择&lt;/code>工具，然后顶部工具栏先点击&lt;code>选择主体&lt;/code>，然后选择&lt;code>选择并遮住&lt;/code>，接着右侧属性工具栏勾选&lt;code>净化颜色&lt;/code>，确定。&lt;/p>
+&lt;p>2.新建一图层，调整背景色，按&lt;code>Ctrl+Delete&lt;/code>填充颜色，最后将图片移至最上层。&lt;/p>
+&lt;p>3.要更改背景色颜色，只需选择颜色图层，选择合适的颜色填充即可。&lt;/p>
+&lt;p>其他方法：&lt;/p>
+&lt;p>1、用魔棒工具快速把蓝底框选出来，Ctrl+Shift+I 反选，把人像抠出。&lt;/p>
+&lt;p>2、在图层下新建图层，填充白色，这时候你会看到人像的四周还有蓝边，不用担心，我们下一步就来调整。&lt;/p>
+&lt;p>3、这里执行，选择——选择并遮住，把净化颜色勾上，用画笔擦拭边缘，擦拭完按确认。&lt;/p>
+&lt;p>参考:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a class="link" href="https://www.bilibili.com/video/BV1Q741147i4/" target="_blank" rel="noopener"
+>1.ps2020超快速更换证件照背景颜色的&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a class="link" href="https://zhuanlan.zhihu.com/p/97560952" target="_blank" rel="noopener"
+>2.PS如何给证件照换底色？&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul></description></item><item><title>PS批量压缩&amp;重命名图片</title><link>/archives/ps%E6%89%B9%E9%87%8F%E5%8E%8B%E7%BC%A9%E9%87%8D%E5%91%BD%E5%90%8D%E5%9B%BE%E7%89%87/</link><pubDate>Tue, 11 Aug 2020 01:59:25 +0000</pubDate><guid>/archives/ps%E6%89%B9%E9%87%8F%E5%8E%8B%E7%BC%A9%E9%87%8D%E5%91%BD%E5%90%8D%E5%9B%BE%E7%89%87/</guid><description>&lt;h2 id="创建重命名动作">创建重命名动作&lt;/h2>
+&lt;p>首先打开任意一张图片，然后创建一个新的动作，接着就是记录动作：可以先调整图片的尺寸（如把1080P图片改成720P），然后依次点击&lt;code>文件—存储为&lt;/code>将图片保存在文件夹里。完成后点击&lt;code>停止记录动作&lt;/code>。&lt;/p>
+&lt;h2 id="批量重命名图片">批量重命名图片&lt;/h2>
+&lt;p>依次点击&lt;code>文件—自动—批处理&lt;/code>，打开批处理窗口。接着按以下操作：&lt;/p>
+&lt;ul>
+&lt;li>选择刚才的动作。&lt;/li>
+&lt;li>选择源文件夹。（图片文件夹）&lt;/li>
+&lt;li>选择批处理后图片存放位置。（选择上面图片存放文件夹即可）&lt;/li>
+&lt;li>勾选&lt;code>覆盖动作中的&amp;quot;存储为&amp;quot;命令&lt;/code>。&lt;/li>
+&lt;li>选择重命名格式。&lt;/li>
+&lt;li>点击&lt;code>确定&lt;/code>，开始执行批处理动作。&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="/img/PS%E6%89%B9%E9%87%8F%E5%8E%8B%E7%BC%A9&amp;amp;%E9%87%8D%E5%91%BD%E5%90%8D%E5%9B%BE%E7%89%87/20200811103621.jpeg"
+loading="lazy"
+>&lt;/p>
+&lt;h2 id="批量压缩图片">批量压缩图片&lt;/h2>
+&lt;p>在上一步保存图片时其实可以适当调整图片大小，如果对图片大小还是不满意的话。可接上一步批量压缩图片。先打开一张图片，然后记录动作：依次点击&lt;code>文件—导出—存储为Web所有格式（旧版）&lt;/code>，然后调整大小后保存，完成后点击&lt;code>停止记录动作&lt;/code>。接着批量压缩图片可以参考上面的操作。&lt;/p>
+&lt;h2 id="总结">总结&lt;/h2>
+&lt;div class="note primary">
+&lt;p>之所以不把两个动作合在一起，直接在导出图片时选择—存储为Web所有格式（旧版），是因为如果这样的话，最后图片不能重命名了，不知问题出在哪里，所以干脆就分两步进行了，如果不是对图片大小有过于苛刻的要求的话，只进行第一步就行了。&lt;/p>
+&lt;/div>
+&lt;p>​&lt;/p></description></item><item><title>让PS支持.ico&amp;webp格式</title><link>/archives/%E8%AE%A9ps%E6%94%AF%E6%8C%81.icowebp%E6%A0%BC%E5%BC%8F/</link><pubDate>Mon, 13 Jul 2020 16:43:25 +0000</pubDate><guid>/archives/%E8%AE%A9ps%E6%94%AF%E6%8C%81.icowebp%E6%A0%BC%E5%BC%8F/</guid><description>&lt;h3 id="ico插件">ico插件&lt;/h3>
+&lt;ol>
+&lt;li>下载插件：官网下载地址：&lt;a class="link" href="http://www.telegraphics.com.au/sw/" target="_blank" rel="noopener"
+>ICO (Windows Icon) Format &lt;/a>，找到ICO (Windows Icon) Format，然后根据系统选择相应版本，如Windows (64 bit)，进行下载。&lt;/li>
+&lt;li>复制下载的&lt;code>ICOFormat64.8bi&lt;/code>，粘贴到&lt;code>D:\Program Files\Adobe\Adobe Photoshop CC 2015\Required\Plug-Ins\File Formats&lt;/code>&lt;/li>
+&lt;li>重新打开Photoshop点击打开会显示有.ico和.cur文件，也可以对文件进行操作，然后另存为.ico格式和.cur格式。&lt;/li>
+&lt;/ol>
+&lt;p>参考链接：&lt;a class="link" href="https://blog.csdn.net/weixin_44222492/article/details/101596183" target="_blank" rel="noopener"
+>使Photoshop支持ICO图片、CUR图片格式&lt;/a>&lt;/p>
+&lt;h3 id="webp插件">webp插件&lt;/h3>
+&lt;p>插件地址：&lt;a class="link" href="https://github.com/webmproject/WebPShop" target="_blank" rel="noopener"
+>WebP file format plug-in for Photoshop&lt;/a>&lt;/p></description></item></channel></rss>
