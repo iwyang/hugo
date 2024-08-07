@@ -1,4 +1,251 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Github on Bore's Notes</title><link>/tags/github/</link><description>Recent content in Github on Bore's Notes</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 18 Aug 2021 03:56:29 +0000</lastBuildDate><atom:link href="/tags/github/index.xml" rel="self" type="application/rss+xml"/><item><title>解决Github Port 443以及Port 22问题</title><link>/archives/%E8%A7%A3%E5%86%B3github-port-443%E4%BB%A5%E5%8F%8Aport-22%E9%97%AE%E9%A2%98/</link><pubDate>Wed, 18 Aug 2021 03:56:29 +0000</pubDate><guid>/archives/%E8%A7%A3%E5%86%B3github-port-443%E4%BB%A5%E5%8F%8Aport-22%E9%97%AE%E9%A2%98/</guid><description>&lt;p>&lt;strong>一、解决port 443问题：&lt;/strong>&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Github on Bore's Notes</title><link>/tags/github/</link><description>Recent content in Github on Bore's Notes</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>Example Person</copyright><lastBuildDate>Thu, 13 Jul 2023 18:02:15 +0000</lastBuildDate><atom:link href="/tags/github/index.xml" rel="self" type="application/rss+xml"/><item><title>利用Github Actions自动同步Fork</title><link>/archives/%E5%88%A9%E7%94%A8github-actions%E8%87%AA%E5%8A%A8%E5%90%8C%E6%AD%A5fork/</link><pubDate>Thu, 13 Jul 2023 18:02:15 +0000</pubDate><guid>/archives/%E5%88%A9%E7%94%A8github-actions%E8%87%AA%E5%8A%A8%E5%90%8C%E6%AD%A5fork/</guid><description>&lt;p>虽然Github自带一个Sync Fork的按钮，但是每次都自己点总是麻烦的，所以有人搞了个Github Action来做这件事，https://github.com/tgymnich/fork-sync&lt;/p>
+&lt;h2 id="创建workflow">创建workflow
+&lt;/h2>&lt;p>创建新的workflow后在&lt;code>sync.yml&lt;/code>输入里面的内容：&lt;/p>
+&lt;p>&lt;strong>官方：&lt;/strong>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">Sync Fork&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">on&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">schedule&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">cron&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="s1">&amp;#39;*/30 * * * *&amp;#39;&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># every 30 minutes&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">workflow_dispatch&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># on button click&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">jobs&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">sync&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">runs-on&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">ubuntu-latest&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">steps&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">uses&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">tgymnich/fork-sync@v1.8&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">with&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">token&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">${{ secrets.PERSONAL_TOKEN }}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">owner&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">llvm&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">base&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">master&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">head&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">master&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;strong>注释：&lt;/strong>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">Sync Fork&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">on&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">push&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># push 时触发, 主要是为了测试配置有没有问题&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">schedule&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">cron&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="s1">&amp;#39;* */24 * * *&amp;#39;&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># 每天一次&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">jobs&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">repo-sync&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">runs-on&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">ubuntu-latest&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">steps&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">uses&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">tgymnich/fork-sync@v1.8&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">with&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">token&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">${{ secrets.TOKEN }}&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c">#Github Token，记得加入secrets&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">owner&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">ngosang&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># fork 的上游仓库 user&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">head&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">master&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># fork 的上游仓库 branch&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">base&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">master&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># 本地仓库 branch&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;strong>最终&lt;/strong>&lt;code>sync.yml&lt;/code>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">Sync Fork&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">on&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">schedule&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">cron&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="s1">&amp;#39;* */24 * * *&amp;#39;&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># 每天一次&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">workflow_dispatch&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># on button click&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">jobs&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">sync&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">runs-on&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">ubuntu-latest&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">steps&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">uses&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">tgymnich/fork-sync@v1.8&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">with&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">token&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">${{ secrets.PERSONAL_TOKEN }}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">owner&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">mack-a&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">base&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">master&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">head&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">master&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;code>* */24 * * *&lt;/code>改成&lt;code>* */48 * * *&lt;/code>每两天运行一次&lt;/p>
+&lt;blockquote>
+&lt;p>PS：ChatGPT有时给出的答案可能是错误的，需要验证：&lt;a class="link" href="https://crontab.guru/" target="_blank" rel="noopener"
+>crontab guru&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="创建github访问token">创建github访问token
+&lt;/h2>&lt;p>参考：&lt;a class="link" href="https://docs.github.com/zh/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens" target="_blank" rel="noopener"
+>管理个人访问令牌&lt;/a>&lt;/p>
+&lt;p>1.在任何页面的右上角，单击个人资料照片，然后单击“设置”。&lt;/p>
+&lt;p>2.在左侧边栏中，单击“ 开发人员设置”。
+3.请在左侧边栏的“ Personal access token”下，单击“细粒度令牌” 。
+4.单击“生成新令牌”。
+5.在“令牌名称”下，输入令牌的名称。
+6.在“过期时间”下，选择令牌的过期时间（永不过期）。&lt;/p>
+&lt;p>7.然后权限要开启&lt;strong>repo&lt;/strong>和&lt;strong>workflow&lt;/strong>的权限&lt;/p>
+&lt;p>&lt;img src="/img/%E5%88%A9%E7%94%A8Github-Actions%E8%87%AA%E5%8A%A8%E5%90%8C%E6%AD%A5Fork/github.png"
+loading="lazy"
+>&lt;/p>
+&lt;p>8.创建完成后复制token内容&lt;/p>
+&lt;h2 id="添加环境变量secret">添加环境变量secret
+&lt;/h2>&lt;p>在&lt;code>settings/secrets(Secrets and variables)/actions&lt;/code>里把Github的Token设置上，比如workflow写的是secrets.PERSONAL_TOKEN，所以添加的时候Name填写PERSONAL_TOKEN，Secret里填写上一步创建Token内容。&lt;/p>
+&lt;p>如果部署完成之后，运行显示错误是：&lt;/p>
+&lt;blockquote>
+&lt;p>repo-sync
+Failed to create or merge pull request: HttpError: Validation Failed: {“resource”:”PullRequest”,”code”:”custom”,”message”:”No commits between knight000:master and ngosang:master”}&lt;/p>
+&lt;/blockquote>
+&lt;p>就证明初步成功了，因为你部署了workflow所以比原仓库新，等原仓库更新后点&lt;code>Re-run jobs&lt;/code>就可以测试是否正确部署了。&lt;/p>
+&lt;h2 id="自动提交修改到gitee未测试">自动提交修改到Gitee(未测试)
+&lt;/h2>&lt;p>以下action文件来自https://juejin.cn/post/6894928345830522887&lt;/p>
+&lt;p>把GITEE_PRIVATE_KEY、&lt;a class="link" href="https://gitee.com/profile/personal_access_tokens" target="_blank" rel="noopener"
+>GITEE_TOKEN&lt;/a>、GITEE_USER都添加到secrets里，然后Gitee内&lt;a class="link" href="https://gitee.com/projects/import/url" target="_blank" rel="noopener"
+>从URL导入仓库&lt;/a>，创建同名仓库即可同步。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;span class="lnt">25
+&lt;/span>&lt;span class="lnt">26
+&lt;/span>&lt;span class="lnt">27
+&lt;/span>&lt;span class="lnt">28
+&lt;/span>&lt;span class="lnt">29
+&lt;/span>&lt;span class="lnt">30
+&lt;/span>&lt;span class="lnt">31
+&lt;/span>&lt;span class="lnt">32
+&lt;/span>&lt;span class="lnt">33
+&lt;/span>&lt;span class="lnt">34
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="c"># 通过 Github actions， 在 Github 仓库的每一次 commit 后自动同步到 Gitee 上&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">sync2gitee&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">on&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">push&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">branches&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="l">master&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">jobs&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">repo-sync&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">env&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">dst_key&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">${{ secrets.GITEE_PRIVATE_KEY }}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">dst_token&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">${{ secrets.GITEE_TOKEN }}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">gitee_user&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">${{ secrets.GITEE_USER }}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">runs-on&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">ubuntu-latest&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">steps&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">uses&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">actions/checkout@v2&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">with&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">persist-credentials&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">false&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">sync github -&amp;gt; gitee&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">uses&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">Yikun/hub-mirror-action@master&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">if&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">env.dst_key &amp;amp;&amp;amp; env.dst_token &amp;amp;&amp;amp; env.gitee_user&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">with&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="c"># 必选，需要同步的 Github 用户（源）&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">src&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="s1">&amp;#39;github/${{ github.repository_owner }}&amp;#39;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="c"># 必选，需要同步到的 Gitee 用户（目的）&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">dst&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="s1">&amp;#39;gitee/${{ secrets.GITEE_USER }}&amp;#39;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="c"># 必选，Gitee公钥对应的私钥，https://gitee.com/profile/sshkeys&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">dst_key&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">${{ secrets.GITEE_PRIVATE_KEY }}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="c"># 必选，Gitee对应的用于创建仓库的token，https://gitee.com/profile/personal_access_tokens&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">dst_token&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">${{ secrets.GITEE_TOKEN }}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="c"># 如果是组织，指定组织即可，默认为用户 user&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="c"># account_type: org&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="c"># 直接取当前项目的仓库名&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">static_list&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">${{ github.event.repository.name }}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>因为有&lt;code>if: env.dst_key &amp;amp;&amp;amp; env.dst_token &amp;amp;&amp;amp; env.gitee_user&lt;/code>这一句所以信息不足的情况下是会跳过执行，显示执行成功而不是显示错误，请注意。&lt;/p>
+&lt;h2 id="参考链接">参考链接
+&lt;/h2>&lt;ul>
+&lt;li>&lt;a class="link" href="https://knight.abn-team.top/2023/03/29/GithunActionAutoSync2Gitee/" target="_blank" rel="noopener"
+>GithunActionAutoSync2Gitee&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://zhuanlan.zhihu.com/p/500768626" target="_blank" rel="noopener"
+>利用Github Actions自动同步Fork&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://github.com/tgymnich/fork-sync" target="_blank" rel="noopener"
+>fork-sync&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>解决Github Port 443以及Port 22问题</title><link>/archives/%E8%A7%A3%E5%86%B3github-port-443%E4%BB%A5%E5%8F%8Aport-22%E9%97%AE%E9%A2%98/</link><pubDate>Wed, 18 Aug 2021 03:56:29 +0000</pubDate><guid>/archives/%E8%A7%A3%E5%86%B3github-port-443%E4%BB%A5%E5%8F%8Aport-22%E9%97%AE%E9%A2%98/</guid><description>&lt;p>&lt;strong>一、解决port 443问题：&lt;/strong>&lt;/p>
 &lt;p>1.切换到全：&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -77,13 +324,15 @@
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">ssh git@github.com
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>参考链接：&lt;/p>
+&lt;/div>&lt;p>三、Please make sure you have the correct access rights and the repository exist&lt;/p>
+&lt;p>如果即使已经添加本地公钥到github，还提示以上错误，并且执行&lt;code>ssh -T git@github.com&lt;/code>提示22端口关闭，解决方法见上。&lt;/p>
+&lt;p>参考链接：&lt;/p>
 &lt;p>&lt;a class="link" href="https://blog.csdn.net/Hodors/article/details/103226958" target="_blank" rel="noopener"
 >1.解决 Failed to connect to github.com port 443&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://blog.csdn.net/MBuger/article/details/70226712" target="_blank" rel="noopener"
 >2.解决ssh: connect to host github.com port 22&lt;/a>&lt;/p></description></item><item><title>利用github Actions自动同步项目到gitee并自动部署Gitee Pages</title><link>/archives/%E5%88%A9%E7%94%A8github-actions%E8%87%AA%E5%8A%A8%E5%90%8C%E6%AD%A5%E9%A1%B9%E7%9B%AE%E5%88%B0gitee%E5%B9%B6%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2gitee-pages/</link><pubDate>Tue, 17 Aug 2021 04:06:13 +0000</pubDate><guid>/archives/%E5%88%A9%E7%94%A8github-actions%E8%87%AA%E5%8A%A8%E5%90%8C%E6%AD%A5%E9%A1%B9%E7%9B%AE%E5%88%B0gitee%E5%B9%B6%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2gitee-pages/</guid><description>&lt;p>首先确保&lt;code>gitee&lt;/code>账户已绑定邮箱，并且要关注&lt;code>gitee&lt;/code>公众号，并绑定了自己的账号。&lt;/p>
-&lt;h2 id="安装git">安装GIt&lt;/h2>
-&lt;p>本地需要安装 &lt;a class="link" href="https://git-scm.com/" target="_blank" rel="noopener"
+&lt;h2 id="安装git">安装GIt
+&lt;/h2>&lt;p>本地需要安装 &lt;a class="link" href="https://git-scm.com/" target="_blank" rel="noopener"
 >Git&lt;/a> ，安装过程略。安装完git后还要配置环境变量： 右键我的电脑 –&amp;gt; 属性，然后点击高级系统设置 –&amp;gt; 环境变量 –&amp;gt; 选择用户变量或系统变量中的Path,点击编辑；找到Git安装目录,添加以下地址:&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -97,8 +346,8 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">D:&lt;span class="se">\P&lt;/span>rogram Files&lt;span class="se">\G&lt;/span>it&lt;span class="se">\m&lt;/span>ingw64&lt;span class="se">\b&lt;/span>in
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h2 id="生成ssh-公钥">生成SSH 公钥&lt;/h2>
-&lt;p>Windows 上安装 &lt;a class="link" href="https://git-for-windows.github.io/" target="_blank" rel="noopener"
+&lt;/div>&lt;h2 id="生成ssh-公钥">生成SSH 公钥
+&lt;/h2>&lt;p>Windows 上安装 &lt;a class="link" href="https://git-for-windows.github.io/" target="_blank" rel="noopener"
 >Git for Windows&lt;/a> 之后在开始菜单里打开 Git Bash 输入：&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -125,14 +374,14 @@
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>这样就在系统当前用户文件夹下生成了私钥 &lt;code>id_rsa&lt;/code> 和公钥 &lt;code>id_rsa.pub&lt;/code>。&lt;/p>
-&lt;h2 id="配置ssh-公钥">配置SSH 公钥&lt;/h2>
-&lt;ul>
+&lt;h2 id="配置ssh-公钥">配置SSH 公钥
+&lt;/h2>&lt;ul>
 &lt;li>在 GitHub 项目的「Settings -&amp;gt; Secrets」路径下配置好命名为 &lt;code>GITEE_RSA_PRIVATE_KEY&lt;/code> 和 &lt;code>GITEE_PASSWORD&lt;/code> 的两个密钥。其中：&lt;code>GITEE_RSA_PRIVATE_KEY&lt;/code> 存放 &lt;code>id_rsa&lt;/code> 私钥；&lt;code>GITEE_PASSWORD&lt;/code> 存放 &lt;code>Gitee&lt;/code> 帐号的密码&lt;/li>
 &lt;li>在 GitHub 的个人设置页面「Settings -&amp;gt; SSH and GPG keys」 配置 SSH 公钥（即：id_rsa.pub），命名随意&lt;/li>
 &lt;li>在 Gitee 的个人设置页面「安全设置 -&amp;gt; SSH 公钥」 配置 SSH 公钥（即：id_rsa.pub），命名随意&lt;/li>
 &lt;/ul>
-&lt;h2 id="配置github-actions">配置GitHub Actions&lt;/h2>
-&lt;p>新建文件&lt;code>.github/workflows/Sync to Gitee.yml&lt;/code>&lt;/p>
+&lt;h2 id="配置github-actions">配置GitHub Actions
+&lt;/h2>&lt;p>新建文件&lt;code>.github/workflows/Sync to Gitee.yml&lt;/code>&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
@@ -203,14 +452,14 @@
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">branch&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">master&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h2 id="参考链接">参考链接&lt;/h2>
-&lt;p>&lt;a class="link" href="https://wqdy.top/2023.html" target="_blank" rel="noopener"
+&lt;/div>&lt;h2 id="参考链接">参考链接
+&lt;/h2>&lt;p>&lt;a class="link" href="https://wqdy.top/2023.html" target="_blank" rel="noopener"
 >使用 github actions 将 github 项目自动同步到 gitee 并自动部署 Gitee Pages&lt;/a>&lt;/p></description></item><item><title>GitHub Actions利用FTP自动部署hugo-hexo到Centos 8</title><link>/archives/github-actions%E5%88%A9%E7%94%A8ftp%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2hugo-hexo%E5%88%B0centos-8/</link><pubDate>Sun, 15 Aug 2021 08:39:34 +0000</pubDate><guid>/archives/github-actions%E5%88%A9%E7%94%A8ftp%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2hugo-hexo%E5%88%B0centos-8/</guid><description>&lt;p>部署hugo到服务器，网上一般方法是利用&lt;code>git hook&lt;/code>。这里记录一种新的方法：利用FTP Deploy GitHub Actions自动部署hugo到Centos8服务器。今后只要提交源码到&lt;code>github&lt;/code>仓库，剩下的事就交给&lt;code>GitHub Actions&lt;/code>了。&lt;/p>
-&lt;h2 id="本地操作">本地操作&lt;/h2>
-&lt;p>参考：&lt;a class="link" href="/archives/hugo-install-on-coding-and-gitee/#%e6%9c%ac%e5%9c%b0%e6%93%8d%e4%bd%9c" >hugo部署到coding&amp;amp;gitee&amp;amp;备份源码-本地操作&lt;/a>&lt;/p>
-&lt;h2 id="服务器操作">服务器操作&lt;/h2>
-&lt;h3 id="安装-nginx">安装 Nginx&lt;/h3>
-&lt;p>准备工作：如果服务器端口不是22，先要更改SSH端口：&lt;/p>
+&lt;h2 id="本地操作">本地操作
+&lt;/h2>&lt;p>参考：&lt;a class="link" href="/archives/hugo-install-on-coding-and-gitee/#%e6%9c%ac%e5%9c%b0%e6%93%8d%e4%bd%9c" >hugo部署到coding&amp;amp;gitee&amp;amp;备份源码-本地操作&lt;/a>&lt;/p>
+&lt;h2 id="服务器操作">服务器操作
+&lt;/h2>&lt;h3 id="安装-nginx">安装 Nginx
+&lt;/h3>&lt;p>准备工作：如果服务器端口不是22，先要更改SSH端口：&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -234,8 +483,8 @@
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>如果是centos 7，先要安装安装epel：&lt;code>yum install epel-release&lt;/code>，才能安装nginx。&lt;/p>
-&lt;h3 id="启动-nginx">启动 Nginx&lt;/h3>
-&lt;p>Nginx 安装完成后需要手动启动，启动Nginx并设置开机自启：&lt;/p>
+&lt;h3 id="启动-nginx">启动 Nginx
+&lt;/h3>&lt;p>Nginx 安装完成后需要手动启动，启动Nginx并设置开机自启：&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -258,9 +507,9 @@
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>配置完成后，访问使用浏览器服务器 ip ，如果能看到以下界面，表示运行成功。&lt;/p>
-&lt;h3 id="创建新的网站目录">创建新的网站目录&lt;/h3>
-&lt;p>&lt;strong>为了图方便，可以直接将网站目录改为FTP家目录。&lt;/strong>&lt;/p>
-&lt;p>Nginx 默认把网页文件存在 &lt;code>/var/www/html&lt;/code> 目录。为了方便期间，我们在 &lt;code>/var/www/&lt;/code> 目录下为每个站点创建一个文件夹。&lt;/p>
+&lt;h3 id="创建新的网站目录">创建新的网站目录
+&lt;/h3>&lt;p>&lt;strong>为了图方便，可以直接将网站目录改为FTP家目录。&lt;/strong>&lt;/p>
+&lt;p>为了方便期间，我们在 &lt;code>/var/www/&lt;/code> 目录下为每个站点创建一个文件夹。&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -273,8 +522,21 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo chmod -R &lt;span class="m">755&lt;/span> /var/www
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 id="配置-nginx">配置 nginx&lt;/h3>
+&lt;/div>&lt;ul>
+&lt;li>解决Nginx出现403 forbidden&lt;/li>
+&lt;/ul>
+&lt;p>如果后面利用FTP上传网页后，出现&lt;code>403 Forbidden&lt;/code>，解决方法：&lt;/p>
+&lt;p>假设网站根目录在&lt;code>/var/www/blog/&lt;/code>，则执行：&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">chmod -R &lt;span class="m">777&lt;/span> /var/www
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="配置-nginx">配置 nginx
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
@@ -355,10 +617,13 @@
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo systemctl restart nginx
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 id="配置ssl证书">配置ssl证书&lt;/h3>
+&lt;/div>&lt;h3 id="配置ssl证书">配置ssl证书
+&lt;/h3>&lt;blockquote>
+&lt;p>更多查看：&lt;a class="link" href="/archives/58fed3fc/" >Nginx 配置 ssl 证书&lt;/a>&lt;/p>
+&lt;/blockquote>
 &lt;p>这里记下怎样添加 Let’s Encrypt 免费证书。（貌似只有上传了文件到网站目录，才能申请证书成功。）如果想启用阿里证书，可查看：&lt;a class="link" href="/archives/enable-ssl-on-nginx/#%e5%90%af%e7%94%a8%e9%98%bf%e9%87%8c%e5%85%8d%e8%b4%b9%e8%af%81%e4%b9%a6" >启用阿里免费证书&lt;/a>&lt;/p>
-&lt;h4 id="安装certbot">安装Certbot&lt;/h4>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;h4 id="安装certbot">安装Certbot
+&lt;/h4>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;span class="lnt">2
@@ -377,8 +642,8 @@
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">certbot certonly --webroot -w /var/www/blog -d bore.vip -m 455343442@qq.com --agree-tos
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h4 id="配置nginx">配置Nginx&lt;/h4>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;/div>&lt;h4 id="配置nginx">配置Nginx
+&lt;/h4>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
@@ -481,8 +746,8 @@
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">systemctl restart nginx
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h4 id="证书自动更新">证书自动更新&lt;/h4>
-&lt;p>由于这个证书的时效只有 90 天，我们需要设置自动更新的功能，帮我们自动更新证书的时效。首先先在命令行模拟证书更新：&lt;/p>
+&lt;/div>&lt;h4 id="证书自动更新">证书自动更新
+&lt;/h4>&lt;p>由于这个证书的时效只有 90 天，我们需要设置自动更新的功能，帮我们自动更新证书的时效。首先先在命令行模拟证书更新：&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -519,7 +784,8 @@
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">openssl x509 -noout -dates -in /etc/letsencrypt/live/bore.vip/cert.pem
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 id="安装vsftpd">安装vsftpd&lt;/h3>
+&lt;/div>&lt;h3 id="安装vsftpd">安装vsftpd
+&lt;/h3>&lt;p>Debian查看：&lt;a class="link" href="/archives/9eb70758/#Debian%e5%ae%89%e8%a3%85vsftpd" >Debian安装vsftpd&lt;/a>，Centos参考下面的。&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -539,8 +805,8 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo systemctl &lt;span class="nb">enable&lt;/span> vsftpd
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 id="配置vsftpd">配置vsftpd&lt;/h3>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;/div>&lt;h3 id="配置vsftpd">配置vsftpd
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
@@ -559,8 +825,8 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">userlist_deny&lt;/span>&lt;span class="o">=&lt;/span>NO
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 id="创建ftp用户">创建FTP用户&lt;/h3>
-&lt;p>创建一个新用户，名为admin:&lt;/p>
+&lt;/div>&lt;h3 id="创建ftp用户">创建FTP用户
+&lt;/h3>&lt;p>创建一个新用户，名为admin:&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -591,8 +857,8 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo chown -R admin: /var/www/blog
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 id="关闭防火墙">关闭防火墙&lt;/h3>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;/div>&lt;h3 id="关闭防火墙">关闭防火墙
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;span class="lnt">2
@@ -602,8 +868,8 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">systemctl disable firewalld.service
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 id="重启vsftpd服务">重启vsftpd服务&lt;/h3>
-&lt;p>保存文件并重新启动vsftpd服务，以使更改生效：&lt;/p>
+&lt;/div>&lt;h3 id="重启vsftpd服务">重启vsftpd服务
+&lt;/h3>&lt;p>保存文件并重新启动vsftpd服务，以使更改生效：&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -613,8 +879,8 @@
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>更多有关ftp部分可查看：&lt;a class="link" href="/archives/centos8-enable-ftp/" >centos8搭建ftp服务器&lt;/a>&lt;/p>
-&lt;h2 id="允许root登录ftp">允许root登录FTP&lt;/h2>
-&lt;ol>
+&lt;h2 id="允许root登录ftp">允许root登录FTP
+&lt;/h2>&lt;ol>
 &lt;li>将&lt;code>root&lt;/code>添加到允许的FTP用户列表中：&lt;/li>
 &lt;/ol>
 &lt;div class="highlight">&lt;div class="chroma">
@@ -656,11 +922,11 @@
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo systemctl restart vsftpd
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h2 id="github操作">Github操作&lt;/h2>
-&lt;h3 id="配置ftp_mirror_password">配置&lt;code>FTP_MIRROR_PASSWORD&lt;/code>&lt;/h3>
-&lt;p>点击博客仓库的Settings-&amp;gt;Secrets-&amp;gt;Add a new secret，Name填写&lt;code>FTP_MIRROR_PASSWORD&lt;/code>，Value填写用户密码。&lt;/p>
-&lt;h3 id="配置-github-actions">配置 Github actions&lt;/h3>
-&lt;p>在博客根目录新建&lt;code>.github/workflows/gh_pages.yml&lt;/code>文件。代码如下：&lt;/p>
+&lt;/div>&lt;h2 id="github操作">Github操作
+&lt;/h2>&lt;h3 id="配置ftp_mirror_password">配置&lt;code>FTP_MIRROR_PASSWORD&lt;/code>
+&lt;/h3>&lt;p>点击博客仓库的Settings-&amp;gt;Secrets-&amp;gt;Add a new secret，Name填写&lt;code>FTP_MIRROR_PASSWORD&lt;/code>，Value填写用户密码。&lt;/p>
+&lt;h3 id="配置-github-actions">配置 Github actions
+&lt;/h3>&lt;p>在博客根目录新建&lt;code>.github/workflows/gh_pages.yml&lt;/code>文件。代码（&lt;strong>不添加缓存&lt;/strong>）如下：最好使用下面添加了缓存的。&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
@@ -747,8 +1013,212 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> server-dir: /var/www/blog/
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h2 id="提交源码">提交源码&lt;/h2>
-&lt;p>初始化git，新建并切换到&lt;code>develop&lt;/code>分支，将源码提交到&lt;code>develop&lt;/code>分支。稍等片刻，github action会自动部署blog到&lt;code>master&lt;/code>分支和服务器。&lt;/p>
+&lt;/div>&lt;p>&lt;strong>添加缓存：&lt;/strong>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;span class="lnt">25
+&lt;/span>&lt;span class="lnt">26
+&lt;/span>&lt;span class="lnt">27
+&lt;/span>&lt;span class="lnt">28
+&lt;/span>&lt;span class="lnt">29
+&lt;/span>&lt;span class="lnt">30
+&lt;/span>&lt;span class="lnt">31
+&lt;/span>&lt;span class="lnt">32
+&lt;/span>&lt;span class="lnt">33
+&lt;/span>&lt;span class="lnt">34
+&lt;/span>&lt;span class="lnt">35
+&lt;/span>&lt;span class="lnt">36
+&lt;/span>&lt;span class="lnt">37
+&lt;/span>&lt;span class="lnt">38
+&lt;/span>&lt;span class="lnt">39
+&lt;/span>&lt;span class="lnt">40
+&lt;/span>&lt;span class="lnt">41
+&lt;/span>&lt;span class="lnt">42
+&lt;/span>&lt;span class="lnt">43
+&lt;/span>&lt;span class="lnt">44
+&lt;/span>&lt;span class="lnt">45
+&lt;/span>&lt;span class="lnt">46
+&lt;/span>&lt;span class="lnt">47
+&lt;/span>&lt;span class="lnt">48
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">GitHub Page Deploy&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">on&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">push&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">branches&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="l">develop&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">jobs&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">build-deploy&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">runs-on&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">ubuntu-latest&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">steps&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">Checkout master&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">uses&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">actions/checkout@v2.3.4&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">with&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">submodules&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">true&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># Fetch Hugo themes (true OR recursive)&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">fetch-depth&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="m">0&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># Fetch all history for .GitInfo and .Lastmod&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">Setup Hugo&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">uses&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">peaceiris/actions-hugo@v2.5.0&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">with&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">hugo-version&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="s1">&amp;#39;latest&amp;#39;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">extended&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">true&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">Cache resources&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># 缓存 resource 文件加快生成速度&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">uses&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">actions/cache@v2&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">with&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">path&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">resources&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="c"># 检查照片文件变化&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">key&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">${{ runner.os }}-hugocache-${{ hashFiles(&amp;#39;content/**/*&amp;#39;) }}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">restore-keys&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">${{ runner.os }}-hugocache- &lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">Build Hugo&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">run&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">hugo --minify --gc&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">Deploy Hugo to gh-pages&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">uses&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">peaceiris/actions-gh-pages@v3.8.0&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">with&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">github_token&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">${{ secrets.GITHUB_TOKEN }}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">PUBLISH_BRANCH&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">master&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">PUBLISH_DIR&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">./public&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="c"># cname:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">Deploy Hugo to Server&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">uses&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">SamKirkland/FTP-Deploy-Action@4.3.0&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">with&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">server&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="m">104.224.191.88&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">username&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">root&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">password&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">${{ secrets.FTP_MIRROR_PASSWORD }}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">local-dir&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">./public/&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">server-dir&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">/usr/share/nginx/html/&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;strong>第三方：&lt;/strong>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;span class="lnt">25
+&lt;/span>&lt;span class="lnt">26
+&lt;/span>&lt;span class="lnt">27
+&lt;/span>&lt;span class="lnt">28
+&lt;/span>&lt;span class="lnt">29
+&lt;/span>&lt;span class="lnt">30
+&lt;/span>&lt;span class="lnt">31
+&lt;/span>&lt;span class="lnt">32
+&lt;/span>&lt;span class="lnt">33
+&lt;/span>&lt;span class="lnt">34
+&lt;/span>&lt;span class="lnt">35
+&lt;/span>&lt;span class="lnt">36
+&lt;/span>&lt;span class="lnt">37
+&lt;/span>&lt;span class="lnt">38
+&lt;/span>&lt;span class="lnt">39
+&lt;/span>&lt;span class="lnt">40
+&lt;/span>&lt;span class="lnt">41
+&lt;/span>&lt;span class="lnt">42
+&lt;/span>&lt;span class="lnt">43
+&lt;/span>&lt;span class="lnt">44
+&lt;/span>&lt;span class="lnt">45
+&lt;/span>&lt;span class="lnt">46
+&lt;/span>&lt;span class="lnt">47
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">name: GitHub Page
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">on:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> push:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> branches:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - master &lt;span class="c1"># master 更新触发&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">jobs:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> deploy:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> runs-on: ubuntu-18.04
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> steps:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - uses: actions/checkout@v2
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> with:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> submodules: &lt;span class="nb">true&lt;/span> &lt;span class="c1"># clone submodules&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> fetch-depth: &lt;span class="m">0&lt;/span> &lt;span class="c1"># 克隆所有历史信息&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - name: Setup Hugo
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> uses: peaceiris/actions-hugo@v2
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> with:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> hugo-version: &lt;span class="s2">&amp;#34;0.87.0&amp;#34;&lt;/span> &lt;span class="c1"># Hugo 版本&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> extended: &lt;span class="nb">true&lt;/span> &lt;span class="c1"># hugo插件版 Stack主题 必须启用&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - name: Cache resources &lt;span class="c1"># 缓存 resource 文件加快生成速度&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> uses: actions/cache@v2
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> with:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> path: resources
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># 检查照片文件变化&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> key: &lt;span class="si">${&lt;/span>&lt;span class="p">{ runner.os &lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="o">}&lt;/span>-hugocache-&lt;span class="si">${&lt;/span>&lt;span class="p">{ hashFiles(&lt;/span>&lt;span class="s1">&amp;#39;content/**/*&amp;#39;&lt;/span>&lt;span class="p">) &lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="o">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> restore-keys: &lt;span class="si">${&lt;/span>&lt;span class="p">{ runner.os &lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="o">}&lt;/span>-hugocache-
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - name: Build &lt;span class="c1"># 生成网页 删除无用 resource 文件 削减空行&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> run: hugo --minify --gc
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - name: Deploy &lt;span class="c1"># 部署到 GitHub Page&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> uses: peaceiris/actions-gh-pages@v3
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> with:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># 如果在同一个仓库下使用请使用 github_token 并注释 deploy_key&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># github_token: ${{ secrets.GITHUB_TOKEN }}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> deploy_key: &lt;span class="si">${&lt;/span>&lt;span class="p">{ secrets.ACTIONS_DEPLOY_KEY &lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="o">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># 如果在同一个仓库请注释&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> external_repository: &lt;span class="c1"># 你的 GitHub page 仓库 example/example.github.io&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> publish_dir: ./public
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> user_name: &lt;span class="s2">&amp;#34;github-actions[bot]&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> user_email: &lt;span class="s2">&amp;#34;github-actions[bot]@users.noreply.github.com&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> full_commit_message: Deploy from &lt;span class="si">${&lt;/span>&lt;span class="p">{ github.repository &lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="o">}&lt;/span>@&lt;span class="si">${&lt;/span>&lt;span class="p">{ github.sha &lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="o">}&lt;/span> 🚀
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="提交源码">提交源码
+&lt;/h2>&lt;p>初始化git，新建并切换到&lt;code>develop&lt;/code>分支，将源码提交到&lt;code>develop&lt;/code>分支。稍等片刻，github action会自动部署blog到&lt;code>master&lt;/code>分支和服务器。&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -792,8 +1262,8 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git push origin develop --force
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h2 id="克隆源码到本地">克隆源码到本地&lt;/h2>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;/div>&lt;h2 id="克隆源码到本地">克隆源码到本地
+&lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
@@ -802,8 +1272,8 @@
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>因为使用&lt;code>Submodule&lt;/code>管理主题，所以最后要加上 &lt;code>--recursive&lt;/code>，因为使用 git clone 命令默认不会拉取项目中的子模块，你会发现主题文件是空的。（另外一种方法：&lt;code>git submodule init &amp;amp;&amp;amp; git submodule update&lt;/code>）&lt;/p>
-&lt;h3 id="同步更新源文件">同步更新源文件&lt;/h3>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;h3 id="同步更新源文件">同步更新源文件
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
@@ -811,8 +1281,8 @@
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">git pull origin develop
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 id="同步主题文件">同步主题文件&lt;/h3>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;/div>&lt;h3 id="同步主题文件">同步主题文件
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
@@ -821,8 +1291,8 @@
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>运行此命令后， Git 将会自动进入子模块然后抓取并更新，更新后重新提交一遍，子模块新的跟踪信息便也会记录到仓库中。这样就保证仓库主题是最新的。&lt;/p>
-&lt;h2 id="githubgitee服务器三线部署hexo">github、gitee、服务器三线部署hexo&lt;/h2>
-&lt;p>将hexo三线部署（由于部署hexo较慢，如果单独为&lt;code>gitee&lt;/code>建立一个&lt;code>workflows&lt;/code>，gitee会先部署完成，这样无法同步；hugo可以单独为&lt;code>gitee&lt;/code>建立一个&lt;code>workflows&lt;/code>，因为&lt;code>hugo&lt;/code>部署到服务器会先于部署到&lt;code>gitee&lt;/code>）：&lt;/p>
+&lt;h2 id="githubgitee服务器三线部署hexo">github、gitee、服务器三线部署hexo
+&lt;/h2>&lt;p>将hexo三线部署（由于部署hexo较慢，如果单独为&lt;code>gitee&lt;/code>建立一个&lt;code>workflows&lt;/code>，gitee会先部署完成，这样无法同步；hugo可以单独为&lt;code>gitee&lt;/code>建立一个&lt;code>workflows&lt;/code>，因为&lt;code>hugo&lt;/code>部署到服务器会先于部署到&lt;code>gitee&lt;/code>）：&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
@@ -1029,8 +1499,8 @@
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">branch&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">master&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h2 id="githubgitee服务器三线部署hugo">github、gitee、服务器三线部署hugo&lt;/h2>
-&lt;p>由于部署到&lt;code>github&lt;/code>和服务器先于&lt;code>gitee&lt;/code>，所有可以建立两个&lt;code>workflows&lt;/code>。&lt;/p>
+&lt;/div>&lt;h2 id="githubgitee服务器三线部署hugo">github、gitee、服务器三线部署hugo
+&lt;/h2>&lt;p>由于部署到&lt;code>github&lt;/code>和服务器先于&lt;code>gitee&lt;/code>，所有可以建立两个&lt;code>workflows&lt;/code>。&lt;/p>
 &lt;ol>
 &lt;li>根目录新建&lt;code>.github/workflows/deploy.yml&lt;/code>（用于部署到&lt;code>github&lt;/code>和服务器）&lt;/li>
 &lt;/ol>
@@ -1193,8 +1663,8 @@
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">branch&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">master&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h2 id="解决问题">解决问题&lt;/h2>
-&lt;p>1.&lt;strong>Error: FTPError: 550 Remove directory operation failed&lt;/strong>&lt;/p>
+&lt;/div>&lt;h2 id="解决问题">解决问题
+&lt;/h2>&lt;p>1.&lt;strong>Error: FTPError: 550 Remove directory operation failed&lt;/strong>&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
@@ -1221,8 +1691,8 @@
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="l">sudo systemctl restart vsftpd&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h2 id="参考链接">参考链接&lt;/h2>
-&lt;p>&lt;a class="link" href="https://eliyar.biz/how_to_build_hexo_blog/" target="_blank" rel="noopener"
+&lt;/div>&lt;h2 id="参考链接">参考链接
+&lt;/h2>&lt;p>&lt;a class="link" href="https://eliyar.biz/how_to_build_hexo_blog/" target="_blank" rel="noopener"
 >1.从 0 开始搭建 hexo 博客&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://blog.yizhilee.com/post/letsencrypt-certificate/" target="_blank" rel="noopener"
 >2.为博客添加 Let’s Encrypt 免费证书&lt;/a>&lt;/p>
@@ -1230,15 +1700,17 @@
 >3.SamKirkland&lt;/a>/&lt;a class="link" href="https://github.com/SamKirkland/FTP-Deploy-Action" target="_blank" rel="noopener"
 >FTP-Deploy-Action&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://blog.csdn.net/weixin_43782998/article/details/109163384" target="_blank" rel="noopener"
->4.vsftpd参数设置，并允许root账户登录ftp&lt;/a>&lt;/p></description></item><item><title>upptime-利用Github-Actions检测网站运行状态</title><link>/archives/upptime-%E5%88%A9%E7%94%A8github-actions%E6%A3%80%E6%B5%8B%E7%BD%91%E7%AB%99%E8%BF%90%E8%A1%8C%E7%8A%B6%E6%80%81/</link><pubDate>Mon, 02 Aug 2021 00:05:13 +0000</pubDate><guid>/archives/upptime-%E5%88%A9%E7%94%A8github-actions%E6%A3%80%E6%B5%8B%E7%BD%91%E7%AB%99%E8%BF%90%E8%A1%8C%E7%8A%B6%E6%80%81/</guid><description>&lt;h2 id="创建-upptime-源">创建 upptime 源&lt;/h2>
-&lt;ol>
+>4.vsftpd参数设置，并允许root账户登录ftp&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://blog.zhixuan.dev/posts/ce103e3b/" target="_blank" rel="noopener"
+>5.Stack主题 + GitHub Action&lt;/a>&lt;/p></description></item><item><title>upptime-利用Github-Actions检测网站运行状态</title><link>/archives/upptime-%E5%88%A9%E7%94%A8github-actions%E6%A3%80%E6%B5%8B%E7%BD%91%E7%AB%99%E8%BF%90%E8%A1%8C%E7%8A%B6%E6%80%81/</link><pubDate>Mon, 02 Aug 2021 00:05:13 +0000</pubDate><guid>/archives/upptime-%E5%88%A9%E7%94%A8github-actions%E6%A3%80%E6%B5%8B%E7%BD%91%E7%AB%99%E8%BF%90%E8%A1%8C%E7%8A%B6%E6%80%81/</guid><description>&lt;h2 id="创建-upptime-源">创建 upptime 源
+&lt;/h2>&lt;ol>
 &lt;li>进入 &lt;a class="link" href="https://github.com/upptime/upptime" target="_blank" rel="noopener"
 >upptime – GitHub&lt;/a> ，点击 Use this template。&lt;/li>
 &lt;li>Create a new repository from upptime，注意勾选&lt;code>Include all branches&lt;/code>。&lt;/li>
 &lt;li>进入源设置，下拉到 GitHub Pages 选项，确认 Source 已经设置为 gh-pages 分支。&lt;/li>
 &lt;/ol>
-&lt;h2 id="设置-pat">设置 PAT&lt;/h2>
-&lt;ol>
+&lt;h2 id="设置-pat">设置 PAT
+&lt;/h2>&lt;ol>
 &lt;li>新建 &lt;code>Personal access token&lt;/code>。&lt;/li>
 &lt;/ol>
 &lt;ul>
@@ -1252,8 +1724,8 @@
 &lt;ul>
 &lt;li>将名称设置为 &lt;code>GH_PAT&lt;/code> 并填入 token，保存&lt;/li>
 &lt;/ul>
-&lt;h2 id="配置并运行-upptime">配置并运行 upptime&lt;/h2>
-&lt;ol>
+&lt;h2 id="配置并运行-upptime">配置并运行 upptime
+&lt;/h2>&lt;ol>
 &lt;li>配置 upptime&lt;/li>
 &lt;/ol>
 &lt;ul>
@@ -1368,8 +1840,8 @@ loading="lazy"
 &lt;ol start="2">
 &lt;li>如果 upptime 没有成功运行，可以手动执行 GitHub Actions 中的 Setup 工作流。&lt;/li>
 &lt;/ol>
-&lt;h2 id="效果">效果&lt;/h2>
-&lt;ul>
+&lt;h2 id="效果">效果
+&lt;/h2>&lt;ul>
 &lt;li>
 &lt;p>&lt;a class="link" href="https://iwyang.github.io/check" target="_blank" rel="noopener"
 >https://iwyang.github.io/check&lt;/a>&lt;/p>
@@ -1379,8 +1851,8 @@ loading="lazy"
 >https://github.com/iwyang/check&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ul>
-&lt;h2 id="参考链接">参考链接&lt;/h2>
-&lt;ul>
+&lt;h2 id="参考链接">参考链接
+&lt;/h2>&lt;ul>
 &lt;li>
 &lt;p>&lt;a class="link" href="https://azhuge233.com/upptime-%E5%88%A9%E7%94%A8-github-actions-%E7%9B%91%E6%8E%A7%E7%BD%91%E7%AB%99%E8%BF%90%E8%A1%8C%E7%8A%B6%E6%80%81/" target="_blank" rel="noopener"
 >upptime – 利用 Github Actions 查看网站运行状态&lt;/a>&lt;/p>
@@ -1393,8 +1865,8 @@ loading="lazy"
 &lt;p>&lt;a class="link" href="https://upptime.js.org/docs/get-started" target="_blank" rel="noopener"
 >Getting started&lt;/a>&lt;/p>
 &lt;/li>
-&lt;/ul></description></item><item><title>hexo利用Github Actions自动构建博客</title><link>/archives/hexo%E5%88%A9%E7%94%A8github-actions%E8%87%AA%E5%8A%A8%E6%9E%84%E5%BB%BA%E5%8D%9A%E5%AE%A2/</link><pubDate>Tue, 07 Jul 2020 11:11:25 +0000</pubDate><guid>/archives/hexo%E5%88%A9%E7%94%A8github-actions%E8%87%AA%E5%8A%A8%E6%9E%84%E5%BB%BA%E5%8D%9A%E5%AE%A2/</guid><description>&lt;h2 id="生成公钥">生成公钥&lt;/h2>
-&lt;p>Windows 上安装 &lt;a class="link" href="https://git-for-windows.github.io/" target="_blank" rel="noopener"
+&lt;/ul></description></item><item><title>hexo利用Github Actions自动构建博客</title><link>/archives/hexo%E5%88%A9%E7%94%A8github-actions%E8%87%AA%E5%8A%A8%E6%9E%84%E5%BB%BA%E5%8D%9A%E5%AE%A2/</link><pubDate>Tue, 07 Jul 2020 11:11:25 +0000</pubDate><guid>/archives/hexo%E5%88%A9%E7%94%A8github-actions%E8%87%AA%E5%8A%A8%E6%9E%84%E5%BB%BA%E5%8D%9A%E5%AE%A2/</guid><description>&lt;h2 id="生成公钥">生成公钥
+&lt;/h2>&lt;p>Windows 上安装 &lt;a class="link" href="https://git-for-windows.github.io/" target="_blank" rel="noopener"
 >Git for Windows&lt;/a> 之后在开始菜单里打开 Git Bash 输入：&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -1421,13 +1893,13 @@ loading="lazy"
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>在系统当前用户文件夹下生成了私钥 &lt;code>id_rsa&lt;/code> 和公钥 &lt;code>id_rsa.pub&lt;/code>。&lt;/p>
-&lt;h3 id="上传id_rsapub">上传id_rsa.pub&lt;/h3>
-&lt;p>在右上角个人账户依次点击&lt;code>Settings&lt;/code>-&amp;gt;&lt;code>SSH and GPG keys&lt;/code>添加刚刚生成的公钥，名称随意。&lt;/p>
-&lt;h3 id="上传id_rsa">上传id_rsa&lt;/h3>
-&lt;p>然后在 Settings &amp;gt; Secrets 中新增一个 secret，命名为 &lt;code>DEPLOY_KEY&lt;/code>，把私钥 &lt;code>id_rsa&lt;/code> 的内容复制进去，供后续使用。&lt;/p>
-&lt;h2 id="配置-github-actions">配置 GitHub Actions&lt;/h2>
-&lt;h3 id="第一种">第一种&lt;/h3>
-&lt;p>在博客根目录新建&lt;code>.github/workflows/gh_pages.yml&lt;/code>文件。代码如下：&lt;/p>
+&lt;h3 id="上传id_rsapub">上传id_rsa.pub
+&lt;/h3>&lt;p>在右上角个人账户依次点击&lt;code>Settings&lt;/code>-&amp;gt;&lt;code>SSH and GPG keys&lt;/code>添加刚刚生成的公钥，名称随意。&lt;/p>
+&lt;h3 id="上传id_rsa">上传id_rsa
+&lt;/h3>&lt;p>然后在 Settings &amp;gt; Secrets 中新增一个 secret，命名为 &lt;code>DEPLOY_KEY&lt;/code>，把私钥 &lt;code>id_rsa&lt;/code> 的内容复制进去，供后续使用。&lt;/p>
+&lt;h2 id="配置-github-actions">配置 GitHub Actions
+&lt;/h2>&lt;h3 id="第一种">第一种
+&lt;/h3>&lt;p>在博客根目录新建&lt;code>.github/workflows/gh_pages.yml&lt;/code>文件。代码如下：&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
@@ -1589,8 +2061,8 @@ loading="lazy"
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;hr>
-&lt;h3 id="第二种">第二种&lt;/h3>
-&lt;p>PS：第二种比第一种慢。&lt;/p>
+&lt;h3 id="第二种">第二种
+&lt;/h3>&lt;p>PS：第二种比第一种慢。&lt;/p>
 &lt;p>首先确认&lt;code> _config.yml&lt;/code> 文件中有类似如下的 GitHub Pages 配置：&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -1608,21 +2080,21 @@ loading="lazy"
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">branch&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">gh-pages&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h4 id="配置私钥">配置私钥&lt;/h4>
-&lt;ul>
+&lt;/div>&lt;h4 id="配置私钥">配置私钥
+&lt;/h4>&lt;ul>
 &lt;li>首先在 GitHub 上打开保存 Hexo 的仓库，访问 Settings -&amp;gt; Secrets，然后选择 New secret;&lt;/li>
 &lt;li>名字部分填写：HEXO_DEPLOY_KEY，注意大小写，这个后面的 GitHub Actions Workflow 要用到;&lt;/li>
 &lt;li>在 Value 的部分填入 github-deploy-key 中的内容。&lt;/li>
 &lt;/ul>
-&lt;h4 id="添加公钥">添加公钥&lt;/h4>
-&lt;ul>
+&lt;h4 id="添加公钥">添加公钥
+&lt;/h4>&lt;ul>
 &lt;li>接下来我们需要访问存放网页的仓库，也就是 Hexo 部署以后的仓库，访问 Settings -&amp;gt; Deploy keys;&lt;/li>
 &lt;li>按 Add deploy key 来添加一个新的公钥；&lt;/li>
 &lt;li>在 Title中输入：HEXO_DEPLOY_PUB 字样，当然也可以填写其它自定义的名字;&lt;/li>
 &lt;li>在 Key 中粘贴 github-deploy-key.pub文件的内容。&lt;/li>
 &lt;/ul>
-&lt;h4 id="创建-workflow">创建 Workflow&lt;/h4>
-&lt;p>&lt;strong>在 Hexo 的仓库中创建一个新文件：.github/workflows/auto_deploy.yml，文件的内容如下:&lt;/strong>&lt;/p>
+&lt;h4 id="创建-workflow">创建 Workflow
+&lt;/h4>&lt;p>&lt;strong>在 Hexo 的仓库中创建一个新文件：.github/workflows/auto_deploy.yml，文件的内容如下:&lt;/strong>&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
@@ -1717,8 +2189,8 @@ loading="lazy"
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">server-dir&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">/var/www/hexo/&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h2 id="githubgitee服务器三线部署">github、gitee、服务器三线部署&lt;/h2>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;/div>&lt;h2 id="githubgitee服务器三线部署">github、gitee、服务器三线部署
+&lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
 &lt;/span>&lt;span class="lnt"> 2
@@ -1925,9 +2397,9 @@ loading="lazy"
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>将hexo三线部署（由于部署hexo较慢，如果单独为&lt;code>gitee&lt;/code>建立一个&lt;code>workflows&lt;/code>，gitee会先部署完成，这样无法同步；hugo可以单独为&lt;code>gitee&lt;/code>建立一个&lt;code>workflows&lt;/code>，因为&lt;code>hugo&lt;/code>部署到服务器会先于部署到&lt;code>gitee&lt;/code>）&lt;/p>
-&lt;h2 id="推送到远端">推送到远端&lt;/h2>
-&lt;h3 id="配置hexo的_configyml">配置Hexo的_config.yml&lt;/h3>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;h2 id="推送到远端">推送到远端
+&lt;/h2>&lt;h3 id="配置hexo的_configyml">配置Hexo的_config.yml
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;span class="lnt">2
@@ -1948,8 +2420,8 @@ loading="lazy"
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>当然，具体步骤还是得根据自己的需求进行相应的修改。&lt;/p>
-&lt;h3 id="提交源码">提交源码&lt;/h3>
-&lt;p>今后只需备份源码到&lt;code>develop&lt;/code>分支，&lt;code>gitbub action&lt;/code>就会自动部署博客到&lt;code>iwyang.github.io&lt;/code>仓库。&lt;/p>
+&lt;h3 id="提交源码">提交源码
+&lt;/h3>&lt;p>今后只需备份源码到&lt;code>develop&lt;/code>分支，&lt;code>gitbub action&lt;/code>就会自动部署博客到&lt;code>iwyang.github.io&lt;/code>仓库。&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -1968,8 +2440,8 @@ loading="lazy"
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="l">git push --force origin develop&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 id="最终部署脚本">最终部署脚本&lt;/h3>
-&lt;p>&lt;code>deploy.sh&lt;/code>内容：&lt;/p>
+&lt;/div>&lt;h3 id="最终部署脚本">最终部署脚本
+&lt;/h3>&lt;p>&lt;code>deploy.sh&lt;/code>内容：&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -1994,17 +2466,17 @@ loading="lazy"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git push origin develop --force
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h2 id="参考链接">参考链接&lt;/h2>
-&lt;ul>
+&lt;/div>&lt;h2 id="参考链接">参考链接
+&lt;/h2>&lt;ul>
 &lt;li>&lt;a class="link" href="https://printempw.github.io/use-github-actions-to-deploy-hexo-blog/" target="_blank" rel="noopener"
 >使用 GitHub Actions 自动部署 Hexo 博客&lt;/a>&lt;/li>
 &lt;li>&lt;a class="link" href="https://weijiajin.com/1f41c35f3517/" target="_blank" rel="noopener"
 >GitHub Actions 实现 Hexo 自动部署&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>hugo利用Github Actions自动构建博客</title><link>/archives/hugo%E5%88%A9%E7%94%A8github-actions%E8%87%AA%E5%8A%A8%E6%9E%84%E5%BB%BA%E5%8D%9A%E5%AE%A2/</link><pubDate>Mon, 06 Jul 2020 09:19:19 +0000</pubDate><guid>/archives/hugo%E5%88%A9%E7%94%A8github-actions%E8%87%AA%E5%8A%A8%E6%9E%84%E5%BB%BA%E5%8D%9A%E5%AE%A2/</guid><description>&lt;h2 id="初始化-github-仓库">初始化 GitHub 仓库&lt;/h2>
-&lt;p>Github上新建一个名为&lt;code>iwyang.github.io&lt;/code>的仓库。&lt;/p>
-&lt;h2 id="配置actions_deploy_key">配置&lt;code>ACTIONS_DEPLOY_KEY&lt;/code>&lt;/h2>
-&lt;h3 id="生成公钥">生成公钥&lt;/h3>
-&lt;p>Windows 上安装 &lt;a class="link" href="https://git-for-windows.github.io/" target="_blank" rel="noopener"
+&lt;/ul></description></item><item><title>hugo利用Github Actions自动构建博客</title><link>/archives/hugo%E5%88%A9%E7%94%A8github-actions%E8%87%AA%E5%8A%A8%E6%9E%84%E5%BB%BA%E5%8D%9A%E5%AE%A2/</link><pubDate>Mon, 06 Jul 2020 09:19:19 +0000</pubDate><guid>/archives/hugo%E5%88%A9%E7%94%A8github-actions%E8%87%AA%E5%8A%A8%E6%9E%84%E5%BB%BA%E5%8D%9A%E5%AE%A2/</guid><description>&lt;h2 id="初始化-github-仓库">初始化 GitHub 仓库
+&lt;/h2>&lt;p>Github上新建一个名为&lt;code>iwyang.github.io&lt;/code>的仓库。&lt;/p>
+&lt;h2 id="配置actions_deploy_key">配置&lt;code>ACTIONS_DEPLOY_KEY&lt;/code>
+&lt;/h2>&lt;h3 id="生成公钥">生成公钥
+&lt;/h3>&lt;p>Windows 上安装 &lt;a class="link" href="https://git-for-windows.github.io/" target="_blank" rel="noopener"
 >Git for Windows&lt;/a> 之后在开始菜单里打开 Git Bash 输入：&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -2031,17 +2503,17 @@ loading="lazy"
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>在系统当前用户文件夹下生成了私钥 &lt;code>id_rsa&lt;/code> 和公钥 &lt;code>id_rsa.pub&lt;/code>。&lt;/p>
-&lt;h3 id="上传id_rsapub">上传id_rsa.pub&lt;/h3>
-&lt;p>点击博客仓库的Settings-&amp;gt;Deploy keys-&amp;gt;add deploy key，Title填写&lt;code>ACTIONS_DEPLOY_KEY&lt;/code>，Key填写&lt;code>id_rsa.pub&lt;/code>文件的内容。&lt;/p>
-&lt;h3 id="上传id_rsa">上传id_rsa&lt;/h3>
-&lt;p>点击博客仓库的Settings-&amp;gt;Secrets-&amp;gt;Add a new secret，Name填写&lt;code>ACTIONS_DEPLOY_KEY&lt;/code>，Value填写&lt;code>id_rsa&lt;/code>文件的内容。&lt;/p>
-&lt;h2 id="利用ftp-deploy-action上传文件">利用&lt;code>FTP-Deploy-Action&lt;/code>上传文件&lt;/h2>
-&lt;p>这里在&lt;code>Github actions&lt;/code>里利用&lt;code>FTP-Deploy-Action&lt;/code>上传文件到服务器。项目地址：&lt;a class="link" href="https://github.com/SamKirkland" target="_blank" rel="noopener"
+&lt;h3 id="上传id_rsapub">上传id_rsa.pub
+&lt;/h3>&lt;p>点击博客仓库的Settings-&amp;gt;Deploy keys-&amp;gt;add deploy key，Title填写&lt;code>ACTIONS_DEPLOY_KEY&lt;/code>，Key填写&lt;code>id_rsa.pub&lt;/code>文件的内容。&lt;/p>
+&lt;h3 id="上传id_rsa">上传id_rsa
+&lt;/h3>&lt;p>点击博客仓库的Settings-&amp;gt;Secrets-&amp;gt;Add a new secret，Name填写&lt;code>ACTIONS_DEPLOY_KEY&lt;/code>，Value填写&lt;code>id_rsa&lt;/code>文件的内容。&lt;/p>
+&lt;h2 id="利用ftp-deploy-action上传文件">利用&lt;code>FTP-Deploy-Action&lt;/code>上传文件
+&lt;/h2>&lt;p>这里在&lt;code>Github actions&lt;/code>里利用&lt;code>FTP-Deploy-Action&lt;/code>上传文件到服务器。项目地址：&lt;a class="link" href="https://github.com/SamKirkland" target="_blank" rel="noopener"
 >SamKirkland&lt;/a>/&lt;a class="link" href="https://github.com/SamKirkland/FTP-Deploy-Action" target="_blank" rel="noopener"
 >FTP-Deploy-Action&lt;/a>&lt;/p>
 &lt;p>首先是搭建ftp服务器。&lt;/p>
-&lt;h3 id="安装vsftpd">安装vsftpd&lt;/h3>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;h3 id="安装vsftpd">安装vsftpd
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
@@ -2060,8 +2532,8 @@ loading="lazy"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo systemctl &lt;span class="nb">enable&lt;/span> vsftpd
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 id="配置vsftpd">配置vsftpd&lt;/h3>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;/div>&lt;h3 id="配置vsftpd">配置vsftpd
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
@@ -2080,8 +2552,8 @@ loading="lazy"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">userlist_deny&lt;/span>&lt;span class="o">=&lt;/span>NO
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 id="创建ftp用户">创建FTP用户&lt;/h3>
-&lt;ul>
+&lt;/div>&lt;h3 id="创建ftp用户">创建FTP用户
+&lt;/h3>&lt;ul>
 &lt;li>创建一个新用户，名为git:&lt;/li>
 &lt;/ul>
 &lt;div class="highlight">&lt;div class="chroma">
@@ -2131,10 +2603,10 @@ loading="lazy"
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo systemctl restart vsftpd
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h2 id="配置ftp_mirror_password">配置&lt;code>FTP_MIRROR_PASSWORD&lt;/code>&lt;/h2>
-&lt;p>点击博客仓库的Settings-&amp;gt;Secrets-&amp;gt;Add a new secret，Name填写&lt;code>FTP_MIRROR_PASSWORD&lt;/code>，Value填写用户密码。&lt;/p>
-&lt;h2 id="配置-github-actions">配置 Github actions&lt;/h2>
-&lt;p>在博客根目录新建&lt;code>.github/workflows/gh_pages.yml&lt;/code>文件。代码如下：&lt;/p>
+&lt;/div>&lt;h2 id="配置ftp_mirror_password">配置&lt;code>FTP_MIRROR_PASSWORD&lt;/code>
+&lt;/h2>&lt;p>点击博客仓库的Settings-&amp;gt;Secrets-&amp;gt;Add a new secret，Name填写&lt;code>FTP_MIRROR_PASSWORD&lt;/code>，Value填写用户密码。&lt;/p>
+&lt;h2 id="配置-github-actions">配置 Github actions
+&lt;/h2>&lt;p>在博客根目录新建&lt;code>.github/workflows/gh_pages.yml&lt;/code>文件。代码（&lt;strong>不添加缓存&lt;/strong>）如下：最好使用下面添加了缓存的。&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
@@ -2221,8 +2693,212 @@ loading="lazy"
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">server-dir&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">/var/www/hexo/&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 id="提交源码">提交源码&lt;/h3>
-&lt;p>初始化git，新建并切换到&lt;code>develop&lt;/code>分支，将源码提交到&lt;code>develop&lt;/code>分支。稍等片刻，github action会自动部署blog到&lt;code>master&lt;/code>分支。&lt;/p>
+&lt;/div>&lt;p>&lt;strong>添加缓存：&lt;/strong>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;span class="lnt">25
+&lt;/span>&lt;span class="lnt">26
+&lt;/span>&lt;span class="lnt">27
+&lt;/span>&lt;span class="lnt">28
+&lt;/span>&lt;span class="lnt">29
+&lt;/span>&lt;span class="lnt">30
+&lt;/span>&lt;span class="lnt">31
+&lt;/span>&lt;span class="lnt">32
+&lt;/span>&lt;span class="lnt">33
+&lt;/span>&lt;span class="lnt">34
+&lt;/span>&lt;span class="lnt">35
+&lt;/span>&lt;span class="lnt">36
+&lt;/span>&lt;span class="lnt">37
+&lt;/span>&lt;span class="lnt">38
+&lt;/span>&lt;span class="lnt">39
+&lt;/span>&lt;span class="lnt">40
+&lt;/span>&lt;span class="lnt">41
+&lt;/span>&lt;span class="lnt">42
+&lt;/span>&lt;span class="lnt">43
+&lt;/span>&lt;span class="lnt">44
+&lt;/span>&lt;span class="lnt">45
+&lt;/span>&lt;span class="lnt">46
+&lt;/span>&lt;span class="lnt">47
+&lt;/span>&lt;span class="lnt">48
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">GitHub Page Deploy&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">on&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">push&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">branches&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="l">develop&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">jobs&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">build-deploy&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">runs-on&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">ubuntu-latest&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">steps&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">Checkout master&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">uses&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">actions/checkout@v2.3.4&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">with&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">submodules&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">true&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># Fetch Hugo themes (true OR recursive)&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">fetch-depth&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="m">0&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># Fetch all history for .GitInfo and .Lastmod&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">Setup Hugo&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">uses&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">peaceiris/actions-hugo@v2.5.0&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">with&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">hugo-version&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="s1">&amp;#39;latest&amp;#39;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">extended&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">true&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">Cache resources&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># 缓存 resource 文件加快生成速度&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">uses&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">actions/cache@v2&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">with&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">path&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">resources&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="c"># 检查照片文件变化&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">key&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">${{ runner.os }}-hugocache-${{ hashFiles(&amp;#39;content/**/*&amp;#39;) }}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">restore-keys&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">${{ runner.os }}-hugocache-&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">Build Hugo&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">run&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">hugo --minify --gc&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">Deploy Hugo to gh-pages&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">uses&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">peaceiris/actions-gh-pages@v3.8.0&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">with&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">github_token&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">${{ secrets.GITHUB_TOKEN }}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">PUBLISH_BRANCH&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">master&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">PUBLISH_DIR&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">./public&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="c"># cname:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">Deploy Hugo to Server&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">uses&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">SamKirkland/FTP-Deploy-Action@4.1.0&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">with&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">server&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="m">104.224.191.88&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">username&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">git&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">password&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">${{ secrets.FTP_MIRROR_PASSWORD }}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">local-dir&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">./public/&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">server-dir&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">/var/www/hexo/&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;strong>第三方：&lt;/strong>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;span class="lnt">25
+&lt;/span>&lt;span class="lnt">26
+&lt;/span>&lt;span class="lnt">27
+&lt;/span>&lt;span class="lnt">28
+&lt;/span>&lt;span class="lnt">29
+&lt;/span>&lt;span class="lnt">30
+&lt;/span>&lt;span class="lnt">31
+&lt;/span>&lt;span class="lnt">32
+&lt;/span>&lt;span class="lnt">33
+&lt;/span>&lt;span class="lnt">34
+&lt;/span>&lt;span class="lnt">35
+&lt;/span>&lt;span class="lnt">36
+&lt;/span>&lt;span class="lnt">37
+&lt;/span>&lt;span class="lnt">38
+&lt;/span>&lt;span class="lnt">39
+&lt;/span>&lt;span class="lnt">40
+&lt;/span>&lt;span class="lnt">41
+&lt;/span>&lt;span class="lnt">42
+&lt;/span>&lt;span class="lnt">43
+&lt;/span>&lt;span class="lnt">44
+&lt;/span>&lt;span class="lnt">45
+&lt;/span>&lt;span class="lnt">46
+&lt;/span>&lt;span class="lnt">47
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">GitHub Page&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">on&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">push&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">branches&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="l">master&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># master 更新触发&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">jobs&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">deploy&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">runs-on&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">ubuntu-18.04&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">steps&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">uses&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">actions/checkout@v2&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">with&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">submodules&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">true&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># clone submodules&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">fetch-depth&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="m">0&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># 克隆所有历史信息&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">Setup Hugo&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">uses&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">peaceiris/actions-hugo@v2&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">with&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">hugo-version&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="s2">&amp;#34;0.87.0&amp;#34;&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># Hugo 版本&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">extended&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">true&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># hugo插件版 Stack主题 必须启用&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">Cache resources&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># 缓存 resource 文件加快生成速度&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">uses&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">actions/cache@v2&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">with&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">path&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">resources&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="c"># 检查照片文件变化&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">key&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">${{ runner.os }}-hugocache-${{ hashFiles(&amp;#39;content/**/*&amp;#39;) }}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">restore-keys&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">${{ runner.os }}-hugocache-&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">Build&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># 生成网页 删除无用 resource 文件 削减空行&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">run&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">hugo --minify --gc&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">Deploy&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># 部署到 GitHub Page&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">uses&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">peaceiris/actions-gh-pages@v3&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">with&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="c"># 如果在同一个仓库下使用请使用 github_token 并注释 deploy_key&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="c"># github_token: ${{ secrets.GITHUB_TOKEN }}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">deploy_key&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">${{ secrets.ACTIONS_DEPLOY_KEY }}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="c"># 如果在同一个仓库请注释&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">external_repository&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># 你的 GitHub page 仓库 example/example.github.io&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">publish_dir&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">./public&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">user_name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="s2">&amp;#34;github-actions[bot]&amp;#34;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">user_email&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="s2">&amp;#34;github-actions[bot]@users.noreply.github.com&amp;#34;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">full_commit_message&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">Deploy from ${{ github.repository }}@${{ github.sha }} 🚀&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="提交源码">提交源码
+&lt;/h3>&lt;p>初始化git，新建并切换到&lt;code>develop&lt;/code>分支，将源码提交到&lt;code>develop&lt;/code>分支。稍等片刻，github action会自动部署blog到&lt;code>master&lt;/code>分支。&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -2241,8 +2917,8 @@ loading="lazy"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git push --force origin develop
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 id="最终部署脚本">最终部署脚本&lt;/h3>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;/div>&lt;h3 id="最终部署脚本">最终部署脚本
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;span class="lnt">2
@@ -2266,8 +2942,8 @@ loading="lazy"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git push origin develop --force
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h2 id="本地操作">本地操作&lt;/h2>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;/div>&lt;h2 id="本地操作">本地操作
+&lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
@@ -2276,8 +2952,8 @@ loading="lazy"
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>因为使用&lt;code>Submodule&lt;/code>管理主题，所以最后要加上 &lt;code>--recursive&lt;/code>，因为使用 git clone 命令默认不会拉取项目中的子模块，你会发现主题文件是空的。（另外一种方法：&lt;code>git submodule init &amp;amp;&amp;amp; git submodule update&lt;/code>）&lt;/p>
-&lt;h3 id="同步更新源文件">同步更新源文件&lt;/h3>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;h3 id="同步更新源文件">同步更新源文件
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
@@ -2285,8 +2961,8 @@ loading="lazy"
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">git pull
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 id="同步主题文件">同步主题文件&lt;/h3>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;/div>&lt;h3 id="同步主题文件">同步主题文件
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
@@ -2295,10 +2971,10 @@ loading="lazy"
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>运行此命令后， Git 将会自动进入子模块然后抓取并更新，更新后重新提交一遍，子模块新的跟踪信息便也会记录到仓库中。这样就保证仓库主题是最新的。&lt;/p>
-&lt;h2 id="服务器通过git拉取更新">服务器通过git拉取更新&lt;/h2>
-&lt;p>2021.8.15 已经不用此方法，现在直接在&lt;code>Github actions&lt;/code>利用&lt;code>FTP-Deploy-Action&lt;/code>上传文件到服务器。&lt;/p>
-&lt;h3 id="克隆仓库">克隆仓库&lt;/h3>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;h2 id="服务器通过git拉取更新">服务器通过git拉取更新
+&lt;/h2>&lt;p>2021.8.15 已经不用此方法，现在直接在&lt;code>Github actions&lt;/code>利用&lt;code>FTP-Deploy-Action&lt;/code>上传文件到服务器。&lt;/p>
+&lt;h3 id="克隆仓库">克隆仓库
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;span class="lnt">2
@@ -2308,11 +2984,11 @@ loading="lazy"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git clone git@github.com:iwyang/iwyang.github.io.git /var/www/hexo
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 id="出现问题">出现问题&lt;/h3>
-&lt;p>执行上一步可能会出现问题：&lt;code> Permission denied (publickey). Could not read from remote repository&lt;/code>。&lt;/p>
+&lt;/div>&lt;h3 id="出现问题">出现问题
+&lt;/h3>&lt;p>执行上一步可能会出现问题：&lt;code> Permission denied (publickey). Could not read from remote repository&lt;/code>。&lt;/p>
 &lt;p>解决方法：&lt;/p>
-&lt;h4 id="服务器生成ssh-key">服务器生成ssh key&lt;/h4>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;h4 id="服务器生成ssh-key">服务器生成ssh key
+&lt;/h4>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;span class="lnt">2
@@ -2362,10 +3038,10 @@ loading="lazy"
 &lt;/div>
 &lt;/div>&lt;p>出现问题：&lt;code>Could not open a connection to your authentication agent.&lt;/code>&lt;/p>
 &lt;p>解决方法：使用：&lt;code>ssh-agent bash&lt;/code> 命令，然后再次使用&lt;code>ssh-add ~/.ssh/id_rsa_name&lt;/code>这个命令就没问题了。(&lt;strong>注意&lt;/strong>：Identity added: &amp;hellip;这是ssh key文件路径的信息，如&lt;code>/.ssh/id_rsa&lt;/code>)&lt;/p>
-&lt;h4 id="配置github">配置github&lt;/h4>
-&lt;p>打开你刚刚生成的&lt;code>id_rsa.pub&lt;/code>，将里面的内容复制，进入你的github账号，在settings下，SSH and GPG keys下new SSH key，然后将id_rsa.pub里的内容复制到Key中，完成后Add SSH Key。&lt;/p>
-&lt;h4 id="验证key">验证Key&lt;/h4>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;h4 id="配置github">配置github
+&lt;/h4>&lt;p>打开你刚刚生成的&lt;code>id_rsa.pub&lt;/code>，将里面的内容复制，进入你的github账号，在settings下，SSH and GPG keys下new SSH key，然后将id_rsa.pub里的内容复制到Key中，完成后Add SSH Key。&lt;/p>
+&lt;h4 id="验证key">验证Key
+&lt;/h4>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
@@ -2373,8 +3049,8 @@ loading="lazy"
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">ssh -T git@github.com
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 id="设置crontab定时任务">设置crontab定时任务：&lt;/h3>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;/div>&lt;h3 id="设置crontab定时任务">设置crontab定时任务：
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;span class="lnt">2
@@ -2386,8 +3062,8 @@ loading="lazy"
 &lt;/div>
 &lt;/div>&lt;p>这样只要提交源码给github，&lt;code>github action&lt;/code>就会帮你部署博客到&lt;code>github page&lt;/code>，服务器通过&lt;code>git pull&lt;/code>定时拉取更新。换台电脑不用再搭建环境，直接在gtihub新建或者修改文章，剩下的工作就交给&lt;code>github action&lt;/code>。注意回本地电脑先&lt;code>git pull&lt;/code>拉取更新，再提交源码。&lt;/p>
 &lt;p>&lt;strong>注意：好像先要从源码仓库clone一份源码到本地，才能利用&lt;code>git pull&lt;/code>拉取github已有的更新。只有先拉取github已有的更新，再在本地提交源码，github上的更新才不会被删除&lt;/strong>。&lt;/p>
-&lt;h2 id="附使用git-submodule管理hugo主题">附：使用Git Submodule管理Hugo主题&lt;/h2>
-&lt;ul>
+&lt;h2 id="附使用git-submodule管理hugo主题">附：使用Git Submodule管理Hugo主题
+&lt;/h2>&lt;ul>
 &lt;li>如果克隆库的时候要初始化子模块，请加上 &lt;code>--recursive&lt;/code> 参数，如：&lt;/li>
 &lt;/ul>
 &lt;div class="highlight">&lt;div class="chroma">
@@ -2425,8 +3101,8 @@ loading="lazy"
 &lt;ul>
 &lt;li>其他命令：在主仓库更新所有子模块：&lt;code>git submodule foreach git pull origin master&lt;/code>&lt;/li>
 &lt;/ul>
-&lt;h2 id="参考链接">参考链接&lt;/h2>
-&lt;ul>
+&lt;h2 id="参考链接">参考链接
+&lt;/h2>&lt;ul>
 &lt;li>&lt;a class="link" href="https://yanlong.me/post/deploy-blog-use-github-actions/" target="_blank" rel="noopener"
 >1.使用Github Actions自动编译部署基于hugo的博客&lt;/a>&lt;/li>
 &lt;li>&lt;a class="link" href="https://juejin.im/post/5e0d9f61f265da5d0d435a24" target="_blank" rel="noopener"
@@ -2441,4 +3117,6 @@ loading="lazy"
 >6.GIT 子模块&lt;/a>&lt;/li>
 &lt;li>&lt;a class="link" href="https://zj-git-guide.readthedocs.io/zh_CN/stable/basic/%E5%AD%90%E6%A8%A1%E5%9D%97.html" target="_blank" rel="noopener"
 >7.子模块&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://blog.zhixuan.dev/posts/ce103e3b/" target="_blank" rel="noopener"
+>8.Stack主题 + GitHub Action&lt;/a>&lt;/li>
 &lt;/ul></description></item></channel></rss>

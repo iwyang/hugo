@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>图床 on Bore's Notes</title><link>/tags/%E5%9B%BE%E5%BA%8A/</link><description>Recent content in 图床 on Bore's Notes</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 21 Jul 2020 08:32:00 +0000</lastBuildDate><atom:link href="/tags/%E5%9B%BE%E5%BA%8A/index.xml" rel="self" type="application/rss+xml"/><item><title>GitHub+jsDelivr+PicGo+typecho打造免费高速图床</title><link>/archives/github-jsdelivr-picgo-typecho%E6%89%93%E9%80%A0%E5%85%8D%E8%B4%B9%E9%AB%98%E9%80%9F%E5%9B%BE%E5%BA%8A/</link><pubDate>Tue, 21 Jul 2020 08:32:00 +0000</pubDate><guid>/archives/github-jsdelivr-picgo-typecho%E6%89%93%E9%80%A0%E5%85%8D%E8%B4%B9%E9%AB%98%E9%80%9F%E5%9B%BE%E5%BA%8A/</guid><description>&lt;blockquote>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>图床 on Bore's Notes</title><link>/tags/%E5%9B%BE%E5%BA%8A/</link><description>Recent content in 图床 on Bore's Notes</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>Example Person</copyright><lastBuildDate>Tue, 21 Jul 2020 08:32:00 +0000</lastBuildDate><atom:link href="/tags/%E5%9B%BE%E5%BA%8A/index.xml" rel="self" type="application/rss+xml"/><item><title>GitHub+jsDelivr+PicGo+Typora打造免费高速图床&amp;&amp;npm图床</title><link>/archives/github-jsdelivr-picgo-typora%E6%89%93%E9%80%A0%E5%85%8D%E8%B4%B9%E9%AB%98%E9%80%9F%E5%9B%BE%E5%BA%8Anpm%E5%9B%BE%E5%BA%8A/</link><pubDate>Tue, 21 Jul 2020 08:32:00 +0000</pubDate><guid>/archives/github-jsdelivr-picgo-typora%E6%89%93%E9%80%A0%E5%85%8D%E8%B4%B9%E9%AB%98%E9%80%9F%E5%9B%BE%E5%BA%8Anpm%E5%9B%BE%E5%BA%8A/</guid><description>&lt;blockquote>
 &lt;p>2022.5.17 因为&lt;code>jsdelivr&lt;/code>不再稳定，此法已失效。现在还是利用&lt;code>typecho&lt;/code>将插入到文章的图片自动复制到&lt;code>/source/img/&lt;/code>文件夹下，方法如下:&lt;/p>
 &lt;p>1.在&lt;code>typora&lt;/code>菜单栏点击 &lt;code>格式-&amp;gt;图像-&amp;gt;设置图片根目录&lt;/code>，将&lt;code>hexo/source&lt;/code>作为其根目录即可。&lt;/p>
 &lt;p>2.首先在 hexo &amp;gt; source目录下建一个文件夹叫img，用来保存博客中的图片。然后打开Typora的 文件 &amp;gt; 偏好设置，进行如下设置。&lt;/p>
-&lt;p>&lt;img src="/img/GitHub&amp;#43;jsDelivr&amp;#43;PicGo&amp;#43;typecho%E6%89%93%E9%80%A0%E5%85%8D%E8%B4%B9%E9%AB%98%E9%80%9F%E5%9B%BE%E5%BA%8A/QQ%E6%88%AA%E5%9B%BE20220517225839.jpg"
+&lt;p>&lt;img src="/img/GitHub&amp;#43;jsDelivr&amp;#43;PicGo&amp;#43;Typora%E6%89%93%E9%80%A0%E5%85%8D%E8%B4%B9%E9%AB%98%E9%80%9F%E5%9B%BE%E5%BA%8A&amp;amp;&amp;amp;npm%E5%9B%BE%E5%BA%8A/00.jpg"
 loading="lazy"
 >&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
@@ -130,21 +130,21 @@ loading="lazy"
 &lt;/div>
 &lt;/div>&lt;p>手动将图片文件夹放到上述文件夹下，然后在源码模式，一个个输入图片相对路径。&lt;/p>
 &lt;/blockquote>
-&lt;h2 id="配置github">配置github&lt;/h2>
-&lt;h3 id="新建公共仓库">新建公共仓库&lt;/h3>
-&lt;p>新建一个公共仓库，例如我建的仓库地址：&lt;code>https://github.com/iwyang/pic&lt;/code>，注意一定要勾选&lt;strong>使用Readme文件初始化这个仓库&lt;/strong>，否则后面会无法上传图片。&lt;/p>
-&lt;h3 id="获取私人令牌">获取私人令牌&lt;/h3>
-&lt;p>&lt;a class="link" href="https://github.com/settings/tokens" target="_blank" rel="noopener"
+&lt;h2 id="配置github">配置github
+&lt;/h2>&lt;h3 id="新建公共仓库">新建公共仓库
+&lt;/h3>&lt;p>新建一个公共仓库，例如我建的仓库地址：&lt;code>https://github.com/iwyang/pic&lt;/code>，注意一定要勾选&lt;strong>使用Readme文件初始化这个仓库&lt;/strong>，否则后面会无法上传图片。&lt;/p>
+&lt;h3 id="获取私人令牌">获取私人令牌
+&lt;/h3>&lt;p>&lt;a class="link" href="https://github.com/settings/tokens" target="_blank" rel="noopener"
 >前往设置&lt;/a>，作用：授权仓库的操作权限，通过API实现自动化。然后填写 &lt;code>Token&lt;/code> 描述，勾选 repo、write、read然后点击 &lt;code>Generate token&lt;/code> 生成一个 &lt;code>Token&lt;/code>。因为 Token 只会显示一次，所以先保存笔记本等。&lt;/p>
-&lt;h2 id="安装配置picgo">安装&amp;amp;配置PicGo&lt;/h2>
-&lt;h3 id="安装picgo">安装PicGo&lt;/h3>
-&lt;p>访问&lt;a class="link" href="https://github.com/Molunerfinn/PicGo/releases" target="_blank" rel="noopener"
+&lt;h2 id="安装配置picgo">安装&amp;amp;配置PicGo
+&lt;/h2>&lt;h3 id="安装picgo">安装PicGo
+&lt;/h3>&lt;p>访问&lt;a class="link" href="https://github.com/Molunerfinn/PicGo/releases" target="_blank" rel="noopener"
 >PicGo Releases&lt;/a>直接下载你的操作系统对应的安装包并完成安装。&lt;/p>
 &lt;blockquote>
 &lt;p>注：在安装的时候安装目录千万不能选C:\Program Files\下的任何地方，因为PicGo无法解析这一路径，如果你不知道安装在哪里的话，选择仅为我安装，否则在设置Typora时会出现错误。&lt;/p>
 &lt;/blockquote>
-&lt;h3 id="配置picgo">配置PicGo&lt;/h3>
-&lt;p>在PicGo设置里作如下修改：&lt;/p>
+&lt;h3 id="配置picgo">配置PicGo
+&lt;/h3>&lt;p>在PicGo设置里作如下修改：&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -163,136 +163,272 @@ loading="lazy"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">选择显示的图床：只勾选Github图床
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 id="配置github插件">配置&lt;code>GitHub&lt;/code>插件&lt;/h3>
-&lt;p>安装好后开始配置&lt;code>GitHub&lt;/code>图床&lt;/p>
+&lt;/div>&lt;h3 id="配置github插件">配置&lt;code>GitHub&lt;/code>插件
+&lt;/h3>&lt;p>安装好后开始配置&lt;code>GitHub&lt;/code>图床&lt;/p>
 &lt;ol>
 &lt;li>设定仓库名：按照 用户名/仓库名 的格式填写（iwyang/pic）&lt;/li>
 &lt;li>设定分支名：master&lt;/li>
 &lt;li>设定 Token：粘贴之前叫你保存的Token。（在网盘里搜索&lt;code>图床&lt;/code>会找到Token）&lt;/li>
 &lt;li>设定自定义域名：它的的作用是，在图片上传后，PicGo 会按照自定义域名+上传的图片名的方式生成访问链接，放到粘贴板上。 &lt;code>https://cdn.jsdelivr.net/gh/用户名/仓库名&lt;/code>（&lt;code>https://cdn.jsdelivr.net/gh/iwyang/pic&lt;/code>）&lt;/li>
 &lt;/ol>
-&lt;p>&lt;img src="/img/GitHub&amp;#43;jsDelivr&amp;#43;PicGo&amp;#43;typecho%E6%89%93%E9%80%A0%E5%85%8D%E8%B4%B9%E9%AB%98%E9%80%9F%E5%9B%BE%E5%BA%8A/8.jpg"
+&lt;p>&lt;img src="/img/GitHub&amp;#43;jsDelivr&amp;#43;PicGo&amp;#43;Typora%E6%89%93%E9%80%A0%E5%85%8D%E8%B4%B9%E9%AB%98%E9%80%9F%E5%9B%BE%E5%BA%8A&amp;amp;&amp;amp;npm%E5%9B%BE%E5%BA%8A/01.jpg"
 loading="lazy"
 >&lt;/p>
 &lt;ol start="5">
 &lt;li>点击&lt;code>设为默认图床&lt;/code>&lt;/li>
 &lt;/ol>
-&lt;h3 id="上传和管理图片">上传和管理图片&lt;/h3>
-&lt;ul>
+&lt;h3 id="上传和管理图片">上传和管理图片
+&lt;/h3>&lt;ul>
 &lt;li>单击上传区，选择链接格式，使用点击上传或剪贴板图片上传，PicGo会自动上传图片并将符合链接格式的链接复制到剪贴板，你只要按下Ctrl+v即可粘贴图片的链接。&lt;/li>
 &lt;li>单击相册，你可以看到你上传的所有图片，你可以对所有图片进行复制链接，修改图片URL与删除操作，并可以批量复制或批量删除。&lt;/li>
 &lt;/ul>
-&lt;h2 id="配置typora">配置Typora&lt;/h2>
-&lt;ul>
+&lt;h2 id="配置typora">配置Typora
+&lt;/h2>&lt;ul>
 &lt;li>点击Typora左上角的文件-&amp;gt;偏好设置&lt;/li>
 &lt;li>在弹出的界面中点击图像，选择插入图片时选项为&lt;code>上传图片&lt;/code>，并勾选&lt;code>对本地位置的图片应用上述规则&lt;/code>和&lt;code>对网络位置的图片应用上述规则&lt;/code>。&lt;/li>
 &lt;li>&lt;code>上传服务&lt;/code>选项里选择&lt;code>PicGo(app)&lt;/code>，&lt;code>PicGo路径&lt;/code>选择&lt;code>PicGo.exe&lt;/code>的绝对路径。&lt;/li>
 &lt;/ul>
 &lt;p>以后在Typora里插入本地图片时，它会利用PicGo自动帮你上传到github，并替换本地图片地址为github地址。&lt;/p>
-&lt;h2 id="参考链接">参考链接&lt;/h2>
+&lt;h2 id="typora下载地址皮肤">Typora下载地址&amp;amp;皮肤
+&lt;/h2>&lt;p>下载地址：&lt;/p>
 &lt;ul>
+&lt;li>&lt;a class="link" href="https://www.ghxi.com/typora.html" target="_blank" rel="noopener"
+>Typora 1.3.8&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="http://www.123pan.com/s/HQeA-UX1Sh" target="_blank" rel="noopener"
+>123pan&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>皮肤：&lt;/p>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://github.com/liangjingkanji/DrakeTyporaTheme" target="_blank" rel="noopener"
+>DrakeTyporaTheme&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="npm图床">npm图床
+&lt;/h2>&lt;p>1.首先需要注册一个 npm 的账号。访问 &lt;a class="link" href="https://www.npmjs.com/signup/" target="_blank" rel="noopener"
+>npm 注册页面&lt;/a>&lt;/p>
+&lt;p>2.完成邮箱验证，注册完成后进入账号管理界面:头像 -&amp;gt;Account，拉倒最上方，你会看到 &lt;code>You have not verified your email address&lt;/code> 字样的提示，点击以后按提示步骤验证你的邮箱。&lt;/p>
+&lt;p>3.部分同学需要切换回原生源，如果你没改过源请跳过此步。（右键空白处———Git bush）来打开终端，输入以下命令：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">npm config set registry https://registry.npmjs.org
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>4.添加本地 &lt;code>npm&lt;/code> 用户设置&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl"># 仅第一次使用需要添加用户，之后会提示你输入你的npm账号密码以及注册邮箱(第一次可能需要输入邮箱验证码)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">npm adduser
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"># 非第一次使用直接登录即可，之后会提示你输入你的npm账号密码以及注册邮箱(第一次可能需要输入邮箱验证码)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">npm login
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>5.新建一个文件夹，将你需要的上传到图床的图片放到里面。也可以将你之前的GitHub仓库的图片clone下来，右键文件夹空白处打开终端。输入以下命令：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">npm init
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>运行 &lt;code>npm&lt;/code> 初始化指令，把整个图床仓库打包，按照指示进行配置，注意需要事先确认你的包名没有和别人已发布的包重复，可以在 npm 官网搜索相应包名，搜不到就说明还没被占用。&lt;/p>
+&lt;p>&lt;img src="/img/GitHub&amp;#43;jsDelivr&amp;#43;PicGo&amp;#43;Typora%E6%89%93%E9%80%A0%E5%85%8D%E8%B4%B9%E9%AB%98%E9%80%9F%E5%9B%BE%E5%BA%8A&amp;amp;&amp;amp;npm%E5%9B%BE%E5%BA%8A/1.jpg"
+loading="lazy"
+>&lt;/p>
+&lt;p>6.禁用双重验证&lt;/p>
+&lt;p>如果不禁用双重验证，每次&lt;code>npm publish&lt;/code>都会报错提示要输入验证码（必须加上&lt;code>--otp=&amp;lt;code&amp;gt;&lt;/code>才能发布包）：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">npm ERR! You can provide a one-time password by passing --otp=&amp;lt;code&amp;gt; to the command you ran.
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;strong>禁用方法：&lt;/strong>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">npm profile disable-2fa
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>npm 将提示你输入密码，然后npm会显示&lt;code>Enter one-time password from your authenticator:6位数字&lt;/code>。&lt;/p>
+&lt;p>7.然后输入以下指令来发布我们的包：：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">npm publish
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>8.那么如何利用&lt;del>国内&lt;/del>节点引用图片等资源呢&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">https://unpkg.com/:package@:version/:file ## unpkg CDN
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">https://cdn.jsdelivr.net/npm/:package@:version/:file ## jsd cdn
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">https://cdn1.tianli0.top/npm/:package@:version/:file ## 第三方
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>例如：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">https://unpkg.com/iwyang@1.0.2/speak/butterfly-ispeak-swiper.min.js
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">https://cdn.jsdelivr.net/npm/iwyang@1.0.2/speak/butterfly-ispeak-swiper.min.js
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">https://cdn1.tianli0.top/npm/iwyang@1.0.2/speak/butterfly-ispeak-swiper.min.js
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>通过ping看出，&lt;code>unpkg&lt;/code>比&lt;code>jsd&lt;/code>要稳定、速度要更快，所以优先使用&lt;code>unpkg&lt;/code>&lt;/p>
+&lt;/blockquote>
+&lt;p>9.每次更新 npm 图床都需要先修改&lt;code>[AssetsRepo]\package.json&lt;/code>里的 &lt;code>version&lt;/code>, 也就是版本号。
+而 &lt;code>npm version patch&lt;/code> 即为更新 package.json 里的版本号的指令，效果是末尾版本号 + 1，例如 &lt;code>0.0.1=&amp;gt;0.0.2&lt;/code>、&lt;code>1.1.3=&amp;gt;1.1.4&lt;/code>。免去了打开 &lt;code>package.json&lt;/code> 再修改版本号的麻烦。（大版本更新还是需要手动改的）。更新 npm 图床务必要记得更新 &lt;code>package.json&lt;/code> 里的版本号！&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">npm version patch
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>10.可以在根目录新建 &lt;code>deploy.sh&lt;/code>脚本：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl"># 更新package版本号
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">npm version patch
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"># 发布新版本包
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">npm publish
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="利用github-actions发布包">利用GitHub actions发布包
+&lt;/h3>&lt;blockquote>
+&lt;p>此部分内容还未测试&lt;/p>
+&lt;/blockquote>
+&lt;p>1.如果每次都要在本地进行 npm publish 的话，npm 的提交是整个包一起上传的，不存在增量更新，耗时不说，而且还往往需要架梯子才能正常上传。所以我们可以把它交给 github action 来完成。&lt;/p>
+&lt;p>在 &lt;a class="link" href="https://www.npmjs.com/" target="_blank" rel="noopener"
+>npm 官网&lt;/a> -&amp;gt;&lt;code>头像&lt;/code> -&amp;gt;&lt;code>Access Tokens&lt;/code>-&amp;gt;&lt;code>Generate New Token&lt;/code>, 勾选&lt;code>Automation&lt;/code>选项，&lt;code>Token&lt;/code> 只会显示这一次，之后如果忘记了就只能重新生成重新配置了。&lt;/p>
+&lt;p>&lt;img src="/img/GitHub&amp;#43;jsDelivr&amp;#43;PicGo&amp;#43;Typora%E6%89%93%E9%80%A0%E5%85%8D%E8%B4%B9%E9%AB%98%E9%80%9F%E5%9B%BE%E5%BA%8A&amp;amp;&amp;amp;npm%E5%9B%BE%E5%BA%8A/2.jpg"
+loading="lazy"
+>&lt;/p>
+&lt;p>&lt;img src="/img/GitHub&amp;#43;jsDelivr&amp;#43;PicGo&amp;#43;Typora%E6%89%93%E9%80%A0%E5%85%8D%E8%B4%B9%E9%AB%98%E9%80%9F%E5%9B%BE%E5%BA%8A&amp;amp;&amp;amp;npm%E5%9B%BE%E5%BA%8A/3.jpg"
+loading="lazy"
+>&lt;/p>
+&lt;p>2.在 github 的 &lt;code>[AssetsRepo]&lt;/code> 仓库设置项里添加一个名为 &lt;code>NPM_TOKEN&lt;/code> 的 &lt;code>secrets&lt;/code>，把获取的 Npm 的&lt;code>Access token&lt;/code>输入进去。&lt;/p>
+&lt;p>3.在本地的 &lt;code>[AssetsRepo]&lt;/code>文件夹下新建 &lt;code>[AssetsRepo]/.github/workflows/autopublish.yml&lt;/code>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">Node.js Package&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="c"># 监测图床分支，2020年10月后github新建仓库默认分支改为main，记得更改&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">on&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">push&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">branches&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="l">master&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">jobs&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">publish-npm&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">runs-on&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">ubuntu-latest&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">steps&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">uses&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">actions/checkout@v2&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">uses&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">actions/setup-node@v1&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">with&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">node-version&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="s2">&amp;#34;12.x&amp;#34;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">registry-url&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">https://registry.npmjs.org/&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">run&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">npm publish&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">env&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">NODE_AUTH_TOKEN&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">${{secrets.npm_token}}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>4.在本地的 &lt;code>[AssetsRepo]&lt;/code> 文件夹下打开终端，运行以下指令，上传新增内容至 github，即可触发部署。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 将更改提交&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git add .
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git commit -m &lt;span class="s2">&amp;#34;npm publish&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 更新package版本号&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">npm version patch
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 推送至github触发action&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git push
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>此处的四行指令顺序严格。
+每次更新 npm 图床都需要先修改&lt;code>[AssetsRepo]\package.json&lt;/code>里的 &lt;code>version&lt;/code>, 也就是版本号。
+而 &lt;code>npm version patch&lt;/code> 即为更新 package.json 里的版本号的指令，效果是末尾版本号 + 1，例如 &lt;code>0.0.1=&amp;gt;0.0.2&lt;/code>、&lt;code>1.1.3=&amp;gt;1.1.4&lt;/code>。免去了打开 &lt;code>package.json&lt;/code> 再修改版本号的麻烦。（大版本更新还是需要手动改的）
+更新 npm 图床务必要记得更新 &lt;code>package.json&lt;/code> 里的版本号！&lt;/p>
+&lt;/blockquote>
+&lt;p>5.总结：&lt;/p>
+&lt;ul>
+&lt;li>GitHub 图床仓库大小不能超过 1G。当仓库超过 1G 后会有人工审核仓库内容，如果发现用来做图床，轻则删库重则封号。&lt;/li>
+&lt;li>Npm 有 &lt;code>100MB&lt;/code> 的包大小限制，但是 NPM 有丰富的国内节点。&lt;/li>
+&lt;/ul>
+&lt;h2 id="参考链接">参考链接
+&lt;/h2>&lt;ul>
 &lt;li>&lt;a class="link" href="https://my.oschina.net/u/3990666/blog/4371252" target="_blank" rel="noopener"
 >1.GitHub + jsDelivr + PicGo 打造稳定快速、高效免费图床&lt;/a>&lt;/li>
 &lt;li>&lt;a class="link" href="https://blog.csdn.net/disILLL/article/details/104944710" target="_blank" rel="noopener"
 >2.手把手教你用Typora自动上传到picgo图床&lt;/a>&lt;/li>
 &lt;li>&lt;a class="link" href="https://yinyoupoet.github.io/2019/09/03/hexo%E5%8D%9A%E5%AE%A2%E4%B8%AD%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/" target="_blank" rel="noopener"
 >3.typora + hexo博客中插入图片&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Gitee+Picgo+Typecho搭建图床</title><link>/archives/gitee-picgo-typecho%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A/</link><pubDate>Sat, 06 Jun 2020 00:59:25 +0000</pubDate><guid>/archives/gitee-picgo-typecho%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A/</guid><description>&lt;h2 id="配置gitee">配置gitee&lt;/h2>
-&lt;h3 id="新建公共仓库">新建公共仓库&lt;/h3>
-&lt;p>新建一个公共仓库，例如我建的仓库地址：&lt;code>https://gitee.com/iwyang/pics&lt;/code>，注意一定要勾选&lt;strong>使用Readme文件初始化这个仓库&lt;/strong>，否则后面会无法上传图片。&lt;/p>
-&lt;h3 id="获取私人令牌">获取私人令牌&lt;/h3>
-&lt;p>依次点击&lt;code>右上角设置—私人令牌&lt;/code>，在私人令牌描述中写上便于你了解该令牌用处的文字，并勾选需要的权限，PicGo要使用的私人令牌只需要&lt;code>user_info&lt;/code>和&lt;code>projects&lt;/code>权限，勾选上后提交，gitee将会返回私人令牌的token，保存该token，因为该token只会出现一次，离开页面过后再不会出现。&lt;/p>
-&lt;h2 id="安装配置picgo">安装&amp;amp;配置PicGo&lt;/h2>
-&lt;h3 id="安装picgo">安装PicGo&lt;/h3>
-&lt;p>访问&lt;a class="link" href="https://github.com/Molunerfinn/PicGo/releases" target="_blank" rel="noopener"
->PicGo Releases&lt;/a>直接下载你的操作系统对应的安装包并完成安装。&lt;/p>
-&lt;blockquote>
-&lt;p>注：在安装的时候安装目录千万不能选C:\Program Files\下的任何地方，因为PicGo无法解析这一路径，如果你不知道安装在哪里的话，选择仅为我安装，否则在设置Typora时会出现错误。&lt;/p>
-&lt;/blockquote>
-&lt;h3 id="配置picgo">配置PicGo&lt;/h3>
-&lt;p>在PicGo设置里作如下修改：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;span class="lnt">5
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">设置日志文件：日志记录等级选择&lt;span class="s2">&amp;#34;错误-Error&amp;#34;&lt;/span>和&lt;span class="s2">&amp;#34;提醒-Warn&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">时间戳重命名：开
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">开启上传提示：开
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">上传后自动复制URL：开
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">选择显示的图床：只勾选githubPlus
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;h3 id="安装npm">安装npm&lt;/h3>
-&lt;p>由于PicGo的插件需要使用npm进行安装，如果你的电脑上没有安装npm，那么你是无法安装PicGo插件的，而我们接下来要使用一个额外的插件获得gitee支持，所以在此之前先完成npm的安装。访问node.js的&lt;a class="link" href="https://nodejs.org/en/" target="_blank" rel="noopener"
->官网&lt;/a>，根据官网的指导下载并安装node.js。安装为了解决npm速度过慢问题，需更换镜像源：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">npm config &lt;span class="nb">set&lt;/span> registry https://registry.npm.taobao.org
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;h3 id="安装github-plus插件">安装github-plus插件&lt;/h3>
-&lt;p>运行PicGo，单击插件设置，在搜索中输入github，安装搜索结果中的&lt;a class="link" href="https://github.com/zWingz/picgo-plugin-github-plus" target="_blank" rel="noopener"
->github-plus&lt;/a>。&lt;/p>
-&lt;h3 id="配置ithub-plus插件">配置ithub-plus插件&lt;/h3>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;span class="lnt">5
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">repo&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">iwyang/pics&lt;/span>&lt;span class="w">
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">branch&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">master&lt;/span>&lt;span class="w">
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">token&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">输入私人令牌&lt;/span>&lt;span class="w">
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">customUrl&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">不用填&lt;/span>&lt;span class="w">
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">origin&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">gitee &lt;/span>&lt;span class="w">
-&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;h3 id="上传和管理图片">上传和管理图片&lt;/h3>
-&lt;ul>
-&lt;li>
-&lt;p>单击上传区，选择链接格式，使用点击上传或剪贴板图片上传，PicGo会自动上传图片并将符合链接格式的链接复制到剪贴板，你只要按下Ctrl+v即可粘贴图片的链接。&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>单击相册，你可以看到你上传的所有图片，你可以对所有图片进行复制链接，修改图片URL与删除操作，并可以批量复制或批量删除。&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;p>要注意的是，gitee支持外部链接的文件大小限制为1M（不过我也没试过）。&lt;/p>
-&lt;h2 id="配置typora">配置Typora&lt;/h2>
-&lt;ul>
-&lt;li>
-&lt;p>点击Typora左上角的文件-&amp;gt;偏好设置&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>在弹出的界面中点击图像，选择插入图片时选项为&lt;code>上传图片&lt;/code>，并勾选&lt;code>对本地位置的图片应用上述规则&lt;/code>和&lt;code>对网络位置的图片应用上述规则&lt;/code>。&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;code>上传服务&lt;/code>选项里选择&lt;code>PicGo(app)&lt;/code>，&lt;code>PicGo路径&lt;/code>选择&lt;code>PicGo.exe&lt;/code>的绝对路径。&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;p>以后在Typora里插入本地图片时，它会利用PicGo自动帮你上传到gitee，并替换本地图片地址为gitee地址。&lt;/p>
-&lt;h2 id="参考链接">参考链接&lt;/h2>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;a class="link" href="https://www.cnblogs.com/focksor/p/12402471.html" target="_blank" rel="noopener"
->1.Gitee图床+PicGo+Typora便捷在博客中使用图片 &lt;/a>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;a class="link" href="https://www.jianshu.com/p/fad1dacbf535" target="_blank" rel="noopener"
->2.PicGo+Gitee(码云)搭建自己的图床&lt;/a>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;a class="link" href="https://blog.csdn.net/disILLL/article/details/104944710" target="_blank" rel="noopener"
->3.手把手教你用Typora自动上传到picgo图床&lt;/a>&lt;/p>
-&lt;/li>
+&lt;li>&lt;a class="link" href="https://minecraftbilibili.com/posts/950569f3" target="_blank" rel="noopener"
+>4.使用npm作为图床&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://sianx.com/posts/3e956346/" target="_blank" rel="noopener"
+>5.npm图床的使用技巧&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://www.w3cschool.cn/npmjs/npmjs-qadz3kmo.html" target="_blank" rel="noopener"
+>6.npm 使用双因素身份验证.&lt;/a>&lt;/li>
 &lt;/ul></description></item></channel></rss>

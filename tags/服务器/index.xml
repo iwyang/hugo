@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>服务器 on Bore's Notes</title><link>/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/</link><description>Recent content in 服务器 on Bore's Notes</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sun, 15 Aug 2021 08:39:34 +0000</lastBuildDate><atom:link href="/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/index.xml" rel="self" type="application/rss+xml"/><item><title>GitHub Actions利用FTP自动部署hugo-hexo到Centos 8</title><link>/archives/github-actions%E5%88%A9%E7%94%A8ftp%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2hugo-hexo%E5%88%B0centos-8/</link><pubDate>Sun, 15 Aug 2021 08:39:34 +0000</pubDate><guid>/archives/github-actions%E5%88%A9%E7%94%A8ftp%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2hugo-hexo%E5%88%B0centos-8/</guid><description>&lt;p>部署hugo到服务器，网上一般方法是利用&lt;code>git hook&lt;/code>。这里记录一种新的方法：利用FTP Deploy GitHub Actions自动部署hugo到Centos8服务器。今后只要提交源码到&lt;code>github&lt;/code>仓库，剩下的事就交给&lt;code>GitHub Actions&lt;/code>了。&lt;/p>
-&lt;h2 id="本地操作">本地操作&lt;/h2>
-&lt;p>参考：&lt;a class="link" href="/archives/hugo-install-on-coding-and-gitee/#%e6%9c%ac%e5%9c%b0%e6%93%8d%e4%bd%9c" >hugo部署到coding&amp;amp;gitee&amp;amp;备份源码-本地操作&lt;/a>&lt;/p>
-&lt;h2 id="服务器操作">服务器操作&lt;/h2>
-&lt;h3 id="安装-nginx">安装 Nginx&lt;/h3>
-&lt;p>准备工作：如果服务器端口不是22，先要更改SSH端口：&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>服务器 on Bore's Notes</title><link>/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/</link><description>Recent content in 服务器 on Bore's Notes</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>Example Person</copyright><lastBuildDate>Sun, 15 Aug 2021 08:39:34 +0000</lastBuildDate><atom:link href="/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/index.xml" rel="self" type="application/rss+xml"/><item><title>GitHub Actions利用FTP自动部署hugo-hexo到Centos 8</title><link>/archives/github-actions%E5%88%A9%E7%94%A8ftp%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2hugo-hexo%E5%88%B0centos-8/</link><pubDate>Sun, 15 Aug 2021 08:39:34 +0000</pubDate><guid>/archives/github-actions%E5%88%A9%E7%94%A8ftp%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2hugo-hexo%E5%88%B0centos-8/</guid><description>&lt;p>部署hugo到服务器，网上一般方法是利用&lt;code>git hook&lt;/code>。这里记录一种新的方法：利用FTP Deploy GitHub Actions自动部署hugo到Centos8服务器。今后只要提交源码到&lt;code>github&lt;/code>仓库，剩下的事就交给&lt;code>GitHub Actions&lt;/code>了。&lt;/p>
+&lt;h2 id="本地操作">本地操作
+&lt;/h2>&lt;p>参考：&lt;a class="link" href="/archives/hugo-install-on-coding-and-gitee/#%e6%9c%ac%e5%9c%b0%e6%93%8d%e4%bd%9c" >hugo部署到coding&amp;amp;gitee&amp;amp;备份源码-本地操作&lt;/a>&lt;/p>
+&lt;h2 id="服务器操作">服务器操作
+&lt;/h2>&lt;h3 id="安装-nginx">安装 Nginx
+&lt;/h3>&lt;p>准备工作：如果服务器端口不是22，先要更改SSH端口：&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -27,8 +27,8 @@
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>如果是centos 7，先要安装安装epel：&lt;code>yum install epel-release&lt;/code>，才能安装nginx。&lt;/p>
-&lt;h3 id="启动-nginx">启动 Nginx&lt;/h3>
-&lt;p>Nginx 安装完成后需要手动启动，启动Nginx并设置开机自启：&lt;/p>
+&lt;h3 id="启动-nginx">启动 Nginx
+&lt;/h3>&lt;p>Nginx 安装完成后需要手动启动，启动Nginx并设置开机自启：&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -51,9 +51,9 @@
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>配置完成后，访问使用浏览器服务器 ip ，如果能看到以下界面，表示运行成功。&lt;/p>
-&lt;h3 id="创建新的网站目录">创建新的网站目录&lt;/h3>
-&lt;p>&lt;strong>为了图方便，可以直接将网站目录改为FTP家目录。&lt;/strong>&lt;/p>
-&lt;p>Nginx 默认把网页文件存在 &lt;code>/var/www/html&lt;/code> 目录。为了方便期间，我们在 &lt;code>/var/www/&lt;/code> 目录下为每个站点创建一个文件夹。&lt;/p>
+&lt;h3 id="创建新的网站目录">创建新的网站目录
+&lt;/h3>&lt;p>&lt;strong>为了图方便，可以直接将网站目录改为FTP家目录。&lt;/strong>&lt;/p>
+&lt;p>为了方便期间，我们在 &lt;code>/var/www/&lt;/code> 目录下为每个站点创建一个文件夹。&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -66,8 +66,21 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo chmod -R &lt;span class="m">755&lt;/span> /var/www
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 id="配置-nginx">配置 nginx&lt;/h3>
+&lt;/div>&lt;ul>
+&lt;li>解决Nginx出现403 forbidden&lt;/li>
+&lt;/ul>
+&lt;p>如果后面利用FTP上传网页后，出现&lt;code>403 Forbidden&lt;/code>，解决方法：&lt;/p>
+&lt;p>假设网站根目录在&lt;code>/var/www/blog/&lt;/code>，则执行：&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">chmod -R &lt;span class="m">777&lt;/span> /var/www
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="配置-nginx">配置 nginx
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
@@ -148,10 +161,13 @@
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo systemctl restart nginx
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 id="配置ssl证书">配置ssl证书&lt;/h3>
+&lt;/div>&lt;h3 id="配置ssl证书">配置ssl证书
+&lt;/h3>&lt;blockquote>
+&lt;p>更多查看：&lt;a class="link" href="/archives/58fed3fc/" >Nginx 配置 ssl 证书&lt;/a>&lt;/p>
+&lt;/blockquote>
 &lt;p>这里记下怎样添加 Let’s Encrypt 免费证书。（貌似只有上传了文件到网站目录，才能申请证书成功。）如果想启用阿里证书，可查看：&lt;a class="link" href="/archives/enable-ssl-on-nginx/#%e5%90%af%e7%94%a8%e9%98%bf%e9%87%8c%e5%85%8d%e8%b4%b9%e8%af%81%e4%b9%a6" >启用阿里免费证书&lt;/a>&lt;/p>
-&lt;h4 id="安装certbot">安装Certbot&lt;/h4>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;h4 id="安装certbot">安装Certbot
+&lt;/h4>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;span class="lnt">2
@@ -170,8 +186,8 @@
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">certbot certonly --webroot -w /var/www/blog -d bore.vip -m 455343442@qq.com --agree-tos
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h4 id="配置nginx">配置Nginx&lt;/h4>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;/div>&lt;h4 id="配置nginx">配置Nginx
+&lt;/h4>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
@@ -274,8 +290,8 @@
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">systemctl restart nginx
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h4 id="证书自动更新">证书自动更新&lt;/h4>
-&lt;p>由于这个证书的时效只有 90 天，我们需要设置自动更新的功能，帮我们自动更新证书的时效。首先先在命令行模拟证书更新：&lt;/p>
+&lt;/div>&lt;h4 id="证书自动更新">证书自动更新
+&lt;/h4>&lt;p>由于这个证书的时效只有 90 天，我们需要设置自动更新的功能，帮我们自动更新证书的时效。首先先在命令行模拟证书更新：&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -312,7 +328,8 @@
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">openssl x509 -noout -dates -in /etc/letsencrypt/live/bore.vip/cert.pem
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 id="安装vsftpd">安装vsftpd&lt;/h3>
+&lt;/div>&lt;h3 id="安装vsftpd">安装vsftpd
+&lt;/h3>&lt;p>Debian查看：&lt;a class="link" href="/archives/9eb70758/#Debian%e5%ae%89%e8%a3%85vsftpd" >Debian安装vsftpd&lt;/a>，Centos参考下面的。&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -332,8 +349,8 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo systemctl &lt;span class="nb">enable&lt;/span> vsftpd
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 id="配置vsftpd">配置vsftpd&lt;/h3>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;/div>&lt;h3 id="配置vsftpd">配置vsftpd
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
@@ -352,8 +369,8 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">userlist_deny&lt;/span>&lt;span class="o">=&lt;/span>NO
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 id="创建ftp用户">创建FTP用户&lt;/h3>
-&lt;p>创建一个新用户，名为admin:&lt;/p>
+&lt;/div>&lt;h3 id="创建ftp用户">创建FTP用户
+&lt;/h3>&lt;p>创建一个新用户，名为admin:&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -384,8 +401,8 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo chown -R admin: /var/www/blog
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 id="关闭防火墙">关闭防火墙&lt;/h3>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;/div>&lt;h3 id="关闭防火墙">关闭防火墙
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;span class="lnt">2
@@ -395,8 +412,8 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">systemctl disable firewalld.service
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 id="重启vsftpd服务">重启vsftpd服务&lt;/h3>
-&lt;p>保存文件并重新启动vsftpd服务，以使更改生效：&lt;/p>
+&lt;/div>&lt;h3 id="重启vsftpd服务">重启vsftpd服务
+&lt;/h3>&lt;p>保存文件并重新启动vsftpd服务，以使更改生效：&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -406,8 +423,8 @@
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>更多有关ftp部分可查看：&lt;a class="link" href="/archives/centos8-enable-ftp/" >centos8搭建ftp服务器&lt;/a>&lt;/p>
-&lt;h2 id="允许root登录ftp">允许root登录FTP&lt;/h2>
-&lt;ol>
+&lt;h2 id="允许root登录ftp">允许root登录FTP
+&lt;/h2>&lt;ol>
 &lt;li>将&lt;code>root&lt;/code>添加到允许的FTP用户列表中：&lt;/li>
 &lt;/ol>
 &lt;div class="highlight">&lt;div class="chroma">
@@ -449,11 +466,11 @@
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo systemctl restart vsftpd
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h2 id="github操作">Github操作&lt;/h2>
-&lt;h3 id="配置ftp_mirror_password">配置&lt;code>FTP_MIRROR_PASSWORD&lt;/code>&lt;/h3>
-&lt;p>点击博客仓库的Settings-&amp;gt;Secrets-&amp;gt;Add a new secret，Name填写&lt;code>FTP_MIRROR_PASSWORD&lt;/code>，Value填写用户密码。&lt;/p>
-&lt;h3 id="配置-github-actions">配置 Github actions&lt;/h3>
-&lt;p>在博客根目录新建&lt;code>.github/workflows/gh_pages.yml&lt;/code>文件。代码如下：&lt;/p>
+&lt;/div>&lt;h2 id="github操作">Github操作
+&lt;/h2>&lt;h3 id="配置ftp_mirror_password">配置&lt;code>FTP_MIRROR_PASSWORD&lt;/code>
+&lt;/h3>&lt;p>点击博客仓库的Settings-&amp;gt;Secrets-&amp;gt;Add a new secret，Name填写&lt;code>FTP_MIRROR_PASSWORD&lt;/code>，Value填写用户密码。&lt;/p>
+&lt;h3 id="配置-github-actions">配置 Github actions
+&lt;/h3>&lt;p>在博客根目录新建&lt;code>.github/workflows/gh_pages.yml&lt;/code>文件。代码（&lt;strong>不添加缓存&lt;/strong>）如下：最好使用下面添加了缓存的。&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
@@ -540,8 +557,212 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> server-dir: /var/www/blog/
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h2 id="提交源码">提交源码&lt;/h2>
-&lt;p>初始化git，新建并切换到&lt;code>develop&lt;/code>分支，将源码提交到&lt;code>develop&lt;/code>分支。稍等片刻，github action会自动部署blog到&lt;code>master&lt;/code>分支和服务器。&lt;/p>
+&lt;/div>&lt;p>&lt;strong>添加缓存：&lt;/strong>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;span class="lnt">25
+&lt;/span>&lt;span class="lnt">26
+&lt;/span>&lt;span class="lnt">27
+&lt;/span>&lt;span class="lnt">28
+&lt;/span>&lt;span class="lnt">29
+&lt;/span>&lt;span class="lnt">30
+&lt;/span>&lt;span class="lnt">31
+&lt;/span>&lt;span class="lnt">32
+&lt;/span>&lt;span class="lnt">33
+&lt;/span>&lt;span class="lnt">34
+&lt;/span>&lt;span class="lnt">35
+&lt;/span>&lt;span class="lnt">36
+&lt;/span>&lt;span class="lnt">37
+&lt;/span>&lt;span class="lnt">38
+&lt;/span>&lt;span class="lnt">39
+&lt;/span>&lt;span class="lnt">40
+&lt;/span>&lt;span class="lnt">41
+&lt;/span>&lt;span class="lnt">42
+&lt;/span>&lt;span class="lnt">43
+&lt;/span>&lt;span class="lnt">44
+&lt;/span>&lt;span class="lnt">45
+&lt;/span>&lt;span class="lnt">46
+&lt;/span>&lt;span class="lnt">47
+&lt;/span>&lt;span class="lnt">48
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">GitHub Page Deploy&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">on&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">push&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">branches&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="l">develop&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">jobs&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">build-deploy&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">runs-on&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">ubuntu-latest&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">steps&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">Checkout master&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">uses&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">actions/checkout@v2.3.4&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">with&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">submodules&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">true&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># Fetch Hugo themes (true OR recursive)&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">fetch-depth&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="m">0&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># Fetch all history for .GitInfo and .Lastmod&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">Setup Hugo&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">uses&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">peaceiris/actions-hugo@v2.5.0&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">with&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">hugo-version&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="s1">&amp;#39;latest&amp;#39;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">extended&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">true&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">Cache resources&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># 缓存 resource 文件加快生成速度&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">uses&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">actions/cache@v2&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">with&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">path&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">resources&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="c"># 检查照片文件变化&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">key&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">${{ runner.os }}-hugocache-${{ hashFiles(&amp;#39;content/**/*&amp;#39;) }}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">restore-keys&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">${{ runner.os }}-hugocache- &lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">Build Hugo&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">run&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">hugo --minify --gc&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">Deploy Hugo to gh-pages&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">uses&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">peaceiris/actions-gh-pages@v3.8.0&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">with&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">github_token&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">${{ secrets.GITHUB_TOKEN }}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">PUBLISH_BRANCH&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">master&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">PUBLISH_DIR&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">./public&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="c"># cname:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">Deploy Hugo to Server&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">uses&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">SamKirkland/FTP-Deploy-Action@4.3.0&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">with&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">server&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="m">104.224.191.88&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">username&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">root&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">password&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">${{ secrets.FTP_MIRROR_PASSWORD }}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">local-dir&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">./public/&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">server-dir&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">/usr/share/nginx/html/&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;strong>第三方：&lt;/strong>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;span class="lnt">25
+&lt;/span>&lt;span class="lnt">26
+&lt;/span>&lt;span class="lnt">27
+&lt;/span>&lt;span class="lnt">28
+&lt;/span>&lt;span class="lnt">29
+&lt;/span>&lt;span class="lnt">30
+&lt;/span>&lt;span class="lnt">31
+&lt;/span>&lt;span class="lnt">32
+&lt;/span>&lt;span class="lnt">33
+&lt;/span>&lt;span class="lnt">34
+&lt;/span>&lt;span class="lnt">35
+&lt;/span>&lt;span class="lnt">36
+&lt;/span>&lt;span class="lnt">37
+&lt;/span>&lt;span class="lnt">38
+&lt;/span>&lt;span class="lnt">39
+&lt;/span>&lt;span class="lnt">40
+&lt;/span>&lt;span class="lnt">41
+&lt;/span>&lt;span class="lnt">42
+&lt;/span>&lt;span class="lnt">43
+&lt;/span>&lt;span class="lnt">44
+&lt;/span>&lt;span class="lnt">45
+&lt;/span>&lt;span class="lnt">46
+&lt;/span>&lt;span class="lnt">47
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">name: GitHub Page
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">on:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> push:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> branches:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - master &lt;span class="c1"># master 更新触发&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">jobs:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> deploy:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> runs-on: ubuntu-18.04
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> steps:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - uses: actions/checkout@v2
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> with:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> submodules: &lt;span class="nb">true&lt;/span> &lt;span class="c1"># clone submodules&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> fetch-depth: &lt;span class="m">0&lt;/span> &lt;span class="c1"># 克隆所有历史信息&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - name: Setup Hugo
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> uses: peaceiris/actions-hugo@v2
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> with:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> hugo-version: &lt;span class="s2">&amp;#34;0.87.0&amp;#34;&lt;/span> &lt;span class="c1"># Hugo 版本&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> extended: &lt;span class="nb">true&lt;/span> &lt;span class="c1"># hugo插件版 Stack主题 必须启用&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - name: Cache resources &lt;span class="c1"># 缓存 resource 文件加快生成速度&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> uses: actions/cache@v2
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> with:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> path: resources
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># 检查照片文件变化&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> key: &lt;span class="si">${&lt;/span>&lt;span class="p">{ runner.os &lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="o">}&lt;/span>-hugocache-&lt;span class="si">${&lt;/span>&lt;span class="p">{ hashFiles(&lt;/span>&lt;span class="s1">&amp;#39;content/**/*&amp;#39;&lt;/span>&lt;span class="p">) &lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="o">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> restore-keys: &lt;span class="si">${&lt;/span>&lt;span class="p">{ runner.os &lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="o">}&lt;/span>-hugocache-
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - name: Build &lt;span class="c1"># 生成网页 删除无用 resource 文件 削减空行&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> run: hugo --minify --gc
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - name: Deploy &lt;span class="c1"># 部署到 GitHub Page&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> uses: peaceiris/actions-gh-pages@v3
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> with:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># 如果在同一个仓库下使用请使用 github_token 并注释 deploy_key&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># github_token: ${{ secrets.GITHUB_TOKEN }}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> deploy_key: &lt;span class="si">${&lt;/span>&lt;span class="p">{ secrets.ACTIONS_DEPLOY_KEY &lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="o">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># 如果在同一个仓库请注释&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> external_repository: &lt;span class="c1"># 你的 GitHub page 仓库 example/example.github.io&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> publish_dir: ./public
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> user_name: &lt;span class="s2">&amp;#34;github-actions[bot]&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> user_email: &lt;span class="s2">&amp;#34;github-actions[bot]@users.noreply.github.com&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> full_commit_message: Deploy from &lt;span class="si">${&lt;/span>&lt;span class="p">{ github.repository &lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="o">}&lt;/span>@&lt;span class="si">${&lt;/span>&lt;span class="p">{ github.sha &lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="o">}&lt;/span> 🚀
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="提交源码">提交源码
+&lt;/h2>&lt;p>初始化git，新建并切换到&lt;code>develop&lt;/code>分支，将源码提交到&lt;code>develop&lt;/code>分支。稍等片刻，github action会自动部署blog到&lt;code>master&lt;/code>分支和服务器。&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -585,8 +806,8 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git push origin develop --force
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h2 id="克隆源码到本地">克隆源码到本地&lt;/h2>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;/div>&lt;h2 id="克隆源码到本地">克隆源码到本地
+&lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
@@ -595,8 +816,8 @@
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>因为使用&lt;code>Submodule&lt;/code>管理主题，所以最后要加上 &lt;code>--recursive&lt;/code>，因为使用 git clone 命令默认不会拉取项目中的子模块，你会发现主题文件是空的。（另外一种方法：&lt;code>git submodule init &amp;amp;&amp;amp; git submodule update&lt;/code>）&lt;/p>
-&lt;h3 id="同步更新源文件">同步更新源文件&lt;/h3>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;h3 id="同步更新源文件">同步更新源文件
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
@@ -604,8 +825,8 @@
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">git pull origin develop
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 id="同步主题文件">同步主题文件&lt;/h3>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;/div>&lt;h3 id="同步主题文件">同步主题文件
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
@@ -614,8 +835,8 @@
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>运行此命令后， Git 将会自动进入子模块然后抓取并更新，更新后重新提交一遍，子模块新的跟踪信息便也会记录到仓库中。这样就保证仓库主题是最新的。&lt;/p>
-&lt;h2 id="githubgitee服务器三线部署hexo">github、gitee、服务器三线部署hexo&lt;/h2>
-&lt;p>将hexo三线部署（由于部署hexo较慢，如果单独为&lt;code>gitee&lt;/code>建立一个&lt;code>workflows&lt;/code>，gitee会先部署完成，这样无法同步；hugo可以单独为&lt;code>gitee&lt;/code>建立一个&lt;code>workflows&lt;/code>，因为&lt;code>hugo&lt;/code>部署到服务器会先于部署到&lt;code>gitee&lt;/code>）：&lt;/p>
+&lt;h2 id="githubgitee服务器三线部署hexo">github、gitee、服务器三线部署hexo
+&lt;/h2>&lt;p>将hexo三线部署（由于部署hexo较慢，如果单独为&lt;code>gitee&lt;/code>建立一个&lt;code>workflows&lt;/code>，gitee会先部署完成，这样无法同步；hugo可以单独为&lt;code>gitee&lt;/code>建立一个&lt;code>workflows&lt;/code>，因为&lt;code>hugo&lt;/code>部署到服务器会先于部署到&lt;code>gitee&lt;/code>）：&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
@@ -822,8 +1043,8 @@
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">branch&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">master&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h2 id="githubgitee服务器三线部署hugo">github、gitee、服务器三线部署hugo&lt;/h2>
-&lt;p>由于部署到&lt;code>github&lt;/code>和服务器先于&lt;code>gitee&lt;/code>，所有可以建立两个&lt;code>workflows&lt;/code>。&lt;/p>
+&lt;/div>&lt;h2 id="githubgitee服务器三线部署hugo">github、gitee、服务器三线部署hugo
+&lt;/h2>&lt;p>由于部署到&lt;code>github&lt;/code>和服务器先于&lt;code>gitee&lt;/code>，所有可以建立两个&lt;code>workflows&lt;/code>。&lt;/p>
 &lt;ol>
 &lt;li>根目录新建&lt;code>.github/workflows/deploy.yml&lt;/code>（用于部署到&lt;code>github&lt;/code>和服务器）&lt;/li>
 &lt;/ol>
@@ -986,8 +1207,8 @@
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">branch&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">master&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h2 id="解决问题">解决问题&lt;/h2>
-&lt;p>1.&lt;strong>Error: FTPError: 550 Remove directory operation failed&lt;/strong>&lt;/p>
+&lt;/div>&lt;h2 id="解决问题">解决问题
+&lt;/h2>&lt;p>1.&lt;strong>Error: FTPError: 550 Remove directory operation failed&lt;/strong>&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
@@ -1014,8 +1235,8 @@
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="l">sudo systemctl restart vsftpd&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h2 id="参考链接">参考链接&lt;/h2>
-&lt;p>&lt;a class="link" href="https://eliyar.biz/how_to_build_hexo_blog/" target="_blank" rel="noopener"
+&lt;/div>&lt;h2 id="参考链接">参考链接
+&lt;/h2>&lt;p>&lt;a class="link" href="https://eliyar.biz/how_to_build_hexo_blog/" target="_blank" rel="noopener"
 >1.从 0 开始搭建 hexo 博客&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://blog.yizhilee.com/post/letsencrypt-certificate/" target="_blank" rel="noopener"
 >2.为博客添加 Let’s Encrypt 免费证书&lt;/a>&lt;/p>
@@ -1023,21 +1244,23 @@
 >3.SamKirkland&lt;/a>/&lt;a class="link" href="https://github.com/SamKirkland/FTP-Deploy-Action" target="_blank" rel="noopener"
 >FTP-Deploy-Action&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://blog.csdn.net/weixin_43782998/article/details/109163384" target="_blank" rel="noopener"
->4.vsftpd参数设置，并允许root账户登录ftp&lt;/a>&lt;/p></description></item><item><title>在Centos服务器部署Halo</title><link>/archives/%E5%9C%A8centos%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%83%A8%E7%BD%B2halo/</link><pubDate>Fri, 24 Jul 2020 02:21:25 +0000</pubDate><guid>/archives/%E5%9C%A8centos%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%83%A8%E7%BD%B2halo/</guid><description>&lt;p>本教程以 &lt;code>CentOS 7.x&lt;/code> 为例，配置并运行 &lt;code>Halo&lt;/code>，其他 Linux 发行版大同小异。&lt;/p>
-&lt;h2 id="写在前面">写在前面&lt;/h2>
-&lt;ol>
+>4.vsftpd参数设置，并允许root账户登录ftp&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://blog.zhixuan.dev/posts/ce103e3b/" target="_blank" rel="noopener"
+>5.Stack主题 + GitHub Action&lt;/a>&lt;/p></description></item><item><title>在Centos服务器部署Halo</title><link>/archives/%E5%9C%A8centos%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%83%A8%E7%BD%B2halo/</link><pubDate>Fri, 24 Jul 2020 02:21:25 +0000</pubDate><guid>/archives/%E5%9C%A8centos%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%83%A8%E7%BD%B2halo/</guid><description>&lt;p>本教程以 &lt;code>CentOS 7.x&lt;/code> 为例，配置并运行 &lt;code>Halo&lt;/code>，其他 Linux 发行版大同小异。&lt;/p>
+&lt;h2 id="写在前面">写在前面
+&lt;/h2>&lt;ol>
 &lt;li>具备一定的 Linux 基础。&lt;/li>
 &lt;li>如需域名绑定，请先保证已经正确解析 IP，以及确认服务器是否需要备案。&lt;/li>
 &lt;li>如需使用 IP 访问，请先确保 Halo 的运行端口已经打开，除非你使用 80 端口运行 Halo。&lt;/li>
 &lt;li>如 3 所述，如果你使用了类似 &lt;code>宝塔面板&lt;/code> 之类的 Linux 管理面板，可能还需要在面板里设置端口。&lt;/li>
 &lt;li>不要想当然，请严格按照文档的流程操作。&lt;/li>
 &lt;/ol>
-&lt;h2 id="win10配置java环境变量">Win10配置java环境变量&lt;/h2>
-&lt;h3 id="下载-安装jdk">下载&amp;amp;&amp;amp; 安装JDK&lt;/h3>
-&lt;p>下载地址：https://www.oracle.com/java/technologies/downloads/&lt;/p>
+&lt;h2 id="win10配置java环境变量">Win10配置java环境变量
+&lt;/h2>&lt;h3 id="下载-安装jdk">下载&amp;amp;&amp;amp; 安装JDK
+&lt;/h3>&lt;p>下载地址：https://www.oracle.com/java/technologies/downloads/&lt;/p>
 &lt;p>2022.5.26 java18 本地不可用，java17 本地可用。（halo版本：1.5.3）&lt;/p>
-&lt;h3 id="环境变量配置">环境变量配置&lt;/h3>
-&lt;ol>
+&lt;h3 id="环境变量配置">环境变量配置
+&lt;/h3>&lt;ol>
 &lt;li>
 &lt;p>打开 环境变量窗口，右键 &lt;strong>This PC(此电脑) -&amp;gt; Properties（属性） -&amp;gt; Advanced system settings（高级系统设置） -&amp;gt; Environment Variables（环境变量）&amp;hellip;&lt;/strong>&lt;/p>
 &lt;/li>
@@ -1084,15 +1307,15 @@
 &lt;/div>&lt;ol start="4">
 &lt;li>检查 打开 cmd，输入 &lt;strong>java&lt;/strong>，出现一连串的指令提示，说明配置成功了。&lt;/li>
 &lt;/ol>
-&lt;h2 id="环境要求">环境要求&lt;/h2>
-&lt;p>为了在使用过程中不出现意外的事故，给出下列推荐的配置&lt;/p>
+&lt;h2 id="环境要求">环境要求
+&lt;/h2>&lt;p>为了在使用过程中不出现意外的事故，给出下列推荐的配置&lt;/p>
 &lt;ul>
 &lt;li>CentOS 7.x&lt;/li>
 &lt;li>512 MB 以上内存&lt;/li>
 &lt;/ul>
-&lt;h2 id="服务器配置">服务器配置&lt;/h2>
-&lt;h3 id="更新软件包">更新软件包&lt;/h3>
-&lt;p>请确保服务器的软件包已经是最新的。&lt;/p>
+&lt;h2 id="服务器配置">服务器配置
+&lt;/h2>&lt;h3 id="更新软件包">更新软件包
+&lt;/h3>&lt;p>请确保服务器的软件包已经是最新的。&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -1101,8 +1324,8 @@
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo yum update -y
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 id="装-java-运行环境">装 Java 运行环境&lt;/h3>
-&lt;blockquote>
+&lt;/div>&lt;h3 id="装-java-运行环境">装 Java 运行环境
+&lt;/h3>&lt;blockquote>
 &lt;p>若已经存在 Java 运行环境的可略过这一步。&lt;/p>
 &lt;/blockquote>
 &lt;div class="highlight">&lt;div class="chroma">
@@ -1122,8 +1345,8 @@
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>当然，这只是其中一种比较简单的安装方式，你也可以用其他方式，并不是强制要求使用这种方式安装。&lt;/p>
-&lt;h2 id="创建-halo-用户">创建 Halo 用户&lt;/h2>
-&lt;p>&lt;del>我们推荐创建一个低权限的用户运行 &lt;code>halo&lt;/code>&lt;/del>：（这一步我没有进行，直接用root）&lt;/p>
+&lt;h2 id="创建-halo-用户">创建 Halo 用户
+&lt;/h2>&lt;p>&lt;del>我们推荐创建一个低权限的用户运行 &lt;code>halo&lt;/code>&lt;/del>：（这一步我没有进行，直接用root）&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -1138,9 +1361,9 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo su halo
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h2 id="安装-halo">安装 Halo&lt;/h2>
-&lt;h3 id="创建存放运行包的目录">创建存放运行包的目录&lt;/h3>
-&lt;p>创建存放 运行包 的目录，这里以 ~/app 为例&lt;/p>
+&lt;/div>&lt;h2 id="安装-halo">安装 Halo
+&lt;/h2>&lt;h3 id="创建存放运行包的目录">创建存放运行包的目录
+&lt;/h3>&lt;p>创建存放 运行包 的目录，这里以 ~/app 为例&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -1149,8 +1372,8 @@
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">mkdir ~/app &lt;span class="o">&amp;amp;&amp;amp;&lt;/span> &lt;span class="nb">cd&lt;/span> ~/app
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 id="下载运行包">下载运行包&lt;/h3>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;/div>&lt;h3 id="下载运行包">下载运行包
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
@@ -1158,8 +1381,8 @@
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">wget https://dl.halo.run/release/halo-1.5.3.jar -O halo.jar
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 id="创建工作目录">创建工作目录&lt;/h3>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;/div>&lt;h3 id="创建工作目录">创建工作目录
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
@@ -1167,8 +1390,8 @@
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">mkdir ~/.halo &lt;span class="o">&amp;amp;&amp;amp;&lt;/span> &lt;span class="nb">cd&lt;/span> ~/.halo
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 id="下载配置文件">下载配置文件&lt;/h3>
-&lt;p>考虑到部分用户的需要，可能需要自定义比如端口等设置项，我们提供了公共的配置文件，并且该配置文件是完全独立于安装包的。当然，你也可以使用安装包内的默认配置文件，但是安装包内的配置文件是不可修改的。请注意：配置文件的路径为 &lt;code>~/.halo/application.yaml&lt;/code>。&lt;/p>
+&lt;/div>&lt;h3 id="下载配置文件">下载配置文件
+&lt;/h3>&lt;p>考虑到部分用户的需要，可能需要自定义比如端口等设置项，我们提供了公共的配置文件，并且该配置文件是完全独立于安装包的。当然，你也可以使用安装包内的默认配置文件，但是安装包内的配置文件是不可修改的。请注意：配置文件的路径为 &lt;code>~/.halo/application.yaml&lt;/code>。&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -1179,8 +1402,8 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">wget https://dl.halo.run/config/application-template.yaml -O ./application.yaml
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 id="修改配置文件">修改配置文件&lt;/h3>
-&lt;p>完成上一步操作，我们就可以自己配置 &lt;code>Halo&lt;/code> 的运行端口，以及数据库相关的配置了。&lt;/p>
+&lt;/div>&lt;h3 id="修改配置文件">修改配置文件
+&lt;/h3>&lt;p>完成上一步操作，我们就可以自己配置 &lt;code>Halo&lt;/code> 的运行端口，以及数据库相关的配置了。&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -1293,8 +1516,8 @@
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">create database halodb character &lt;span class="nb">set&lt;/span> utf8mb4 collate utf8mb4_bin&lt;span class="p">;&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 id="运行-halo">运行 Halo&lt;/h3>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;/div>&lt;h3 id="运行-halo">运行 Halo
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
@@ -1316,8 +1539,8 @@
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>提示：以上的启动仅仅为测试 Halo 是否可以正常运行，如果我们关闭 ssh 连接，Halo 也将被关闭。要想一直处于运行状态，请继续看下面的教程。&lt;/p>
-&lt;h3 id="作为服务运行">作为服务运行&lt;/h3>
-&lt;p>上面我们已经完成了 Halo 的整个配置和安装过程，接下来我们对其进行更完善的配置，比如：&lt;code>需要开机自启？&lt;/code>，&lt;code>更简单的启动方式？&lt;/code>&lt;/p>
+&lt;h3 id="作为服务运行">作为服务运行
+&lt;/h3>&lt;p>上面我们已经完成了 Halo 的整个配置和安装过程，接下来我们对其进行更完善的配置，比如：&lt;code>需要开机自启？&lt;/code>，&lt;code>更简单的启动方式？&lt;/code>&lt;/p>
 &lt;p>实现以上功能我们只需要新增一个配置文件即可，也就是使用 &lt;code>Systemd&lt;/code> 来完成这些工作。&lt;/p>
 &lt;p>1.退出 halo 账户，登录到 root 账户&lt;/p>
 &lt;blockquote>
@@ -1350,12 +1573,8 @@
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>4.修改配置&lt;/p>
-&lt;ul>
-&lt;li>&lt;code>YOUR_JAR_PATH&lt;/code>：Halo 运行包的绝对路径，例如 /home/halo/app/halo.jar，注意：此路径不支持 ~ 符号。&lt;/li>
-&lt;li>&lt;code>USER&lt;/code>：运行 Halo 的系统用户，如果有按照上方教程创建新的用户来运行 Halo，修改为你创建的用户名称即可。反之请删除 User=USER。&lt;/li>
-&lt;/ul>
-&lt;h3 id="下载-halo-官方的-haloservice-模板">下载 Halo 官方的 halo.service 模板&lt;/h3>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;h3 id="下载-halo-官方的-haloservice-模板">下载 Halo 官方的 halo.service 模板
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
@@ -1368,14 +1587,16 @@
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 修改 halo.service&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo vim /etc/systemd/system/halo.service
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo vi /etc/systemd/system/halo.service
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>打开之后我们可以看到&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>YOUR_JAR_PATH&lt;/code>：Halo 运行包的绝对路径，例如 &lt;code>/root/app/halo.jar&lt;/code>，注意：此路径不支持 ~ 符号。&lt;/li>
+&lt;li>&lt;code>USER&lt;/code>：运行 Halo 的系统用户，如果有按照上方教程创建新的用户来运行 Halo，修改为你创建的用户名称即可。反之请删除 &lt;strong>User=USER&lt;/strong>。&lt;/li>
+&lt;/ul>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
@@ -1468,8 +1689,8 @@
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">journalctl -n &lt;span class="m">20&lt;/span> -u halo
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h2 id="配置域名访问">配置域名访问&lt;/h2>
-&lt;ol>
+&lt;/div>&lt;h2 id="配置域名访问">配置域名访问
+&lt;/h2>&lt;ol>
 &lt;li>假设你已经成功配置并运行好了 Halo，且不是使用 80 端口运行。&lt;/li>
 &lt;li>请确保域名已经成功解析到服务器 IP，并确认服务器是否需要备案。&lt;/li>
 &lt;li>请检查服务器的 80 和 443 端口是否开放。&lt;/li>
@@ -1477,10 +1698,10 @@
 &lt;li>并不一定要求按照下列教程操作，这里仅仅以供参考。&lt;/li>
 &lt;li>如 2 所述，你需要做的仅仅是反向代理 Halo 运行端口，并配置 SSL 证书而已，所以并不要求配置方式。&lt;/li>
 &lt;/ol>
-&lt;h3 id="使用-nginx-进行反向代理">使用 Nginx 进行反向代理&lt;/h3>
-&lt;p>我使用的是这一种方法。&lt;/p>
-&lt;h4 id="安装-nginx">安装 Nginx&lt;/h4>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;h3 id="使用-nginx-进行反向代理">使用 Nginx 进行反向代理
+&lt;/h3>&lt;p>我使用的是这一种方法。&lt;/p>
+&lt;h4 id="安装-nginx">安装 Nginx
+&lt;/h4>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
 &lt;/span>&lt;span class="lnt"> 2
@@ -1508,8 +1729,8 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo systemctl &lt;span class="nb">enable&lt;/span> nginx.service
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h4 id="配置-nginx">配置 Nginx&lt;/h4>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;/div>&lt;h4 id="配置-nginx">配置 Nginx
+&lt;/h4>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;span class="lnt">2
@@ -1587,8 +1808,8 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo nginx -s reload
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 id="配置阿里云免费证书ssl-证书">配置阿里云免费证书SSL 证书&lt;/h3>
-&lt;p>目前使用的是Let’s Encrypt 免费证书。&lt;/p>
+&lt;/div>&lt;h3 id="配置阿里云免费证书ssl-证书">配置阿里云免费证书SSL 证书
+&lt;/h3>&lt;p>目前使用的是Let’s Encrypt 免费证书。&lt;/p>
 &lt;p>1.在nginx根目录（默认为/etc/nginx）下创建目录cert。&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -1789,9 +2010,9 @@
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">systemctl restart nginx
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 id="添加-lets-encrypt-免费证书">添加 Let&amp;rsquo;s Encrypt 免费证书&lt;/h3>
-&lt;h4 id="centos-8">&lt;strong>Centos 8&lt;/strong>&lt;/h4>
-&lt;ol>
+&lt;/div>&lt;h3 id="添加-lets-encrypt-免费证书">添加 Let&amp;rsquo;s Encrypt 免费证书
+&lt;/h3>&lt;h4 id="centos-8">&lt;strong>Centos 8&lt;/strong>
+&lt;/h4>&lt;ol>
 &lt;li>安装Certbot&lt;/li>
 &lt;/ol>
 &lt;div class="highlight">&lt;div class="chroma">
@@ -2197,8 +2418,8 @@
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>PS:如果失败，先申请阿里证书，再申请Let&amp;rsquo;s Encrypt SSL证书，记得要添加 acme.sh 续签验证路由，才能申请Let&amp;rsquo;s Encrypt SSL证书。&lt;/p>
-&lt;h4 id="debian10">Debian10&lt;/h4>
-&lt;ol>
+&lt;h4 id="debian10">Debian10
+&lt;/h4>&lt;ol>
 &lt;li>安装 Certbot&lt;/li>
 &lt;/ol>
 &lt;div class="highlight">&lt;div class="chroma">
@@ -2314,6 +2535,15 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> root /data/wwwroot/bore.vip/&lt;span class="p">;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>重启 Nginx 生效：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">systemctl restart nginx
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;ol start="5">
@@ -2531,6 +2761,8 @@
 &lt;/span>&lt;span class="lnt">55
 &lt;/span>&lt;span class="lnt">56
 &lt;/span>&lt;span class="lnt">57
+&lt;/span>&lt;span class="lnt">58
+&lt;/span>&lt;span class="lnt">59
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">
@@ -2542,6 +2774,8 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> listen &lt;span class="o">[&lt;/span>::&lt;span class="o">]&lt;/span>:80&lt;span class="p">;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> listen 127.0.0.1:443 ssl http2 proxy_protocol&lt;span class="p">;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> listen &lt;span class="o">[&lt;/span>::&lt;span class="o">]&lt;/span>:443 ssl http2&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> set_real_ip_from 127.0.0.1&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> real_ip_header proxy_protocol&lt;span class="p">;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> server_name bore.vip www.bore.vip&lt;span class="p">;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="o">(&lt;/span>&lt;span class="nv">$host&lt;/span> !&lt;span class="o">=&lt;/span> &lt;span class="s1">&amp;#39;bore.vip&amp;#39;&lt;/span> &lt;span class="o">)&lt;/span> &lt;span class="o">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> rewrite ^/&lt;span class="o">(&lt;/span>.*&lt;span class="o">)&lt;/span>$ https://bore.vip/&lt;span class="nv">$1&lt;/span> permanent&lt;span class="p">;&lt;/span>
@@ -2644,8 +2878,8 @@
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="m">30&lt;/span> &lt;span class="m">2&lt;/span> * */2 * /usr/bin/certbot renew --quiet &lt;span class="o">&amp;amp;&amp;amp;&lt;/span> /bin/systemctl restart nginx
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h2 id="halo更改评论模块">halo更改评论模块&lt;/h2>
-&lt;p>首先进入后台，依次点击：&lt;code>系统&lt;/code>—&lt;code>博客设置&lt;/code>—&lt;code>评论设置&lt;/code>，更改&lt;code>评论模块JS&lt;/code>。系统默认（halo 1.3.2）&lt;code>评论模块JS&lt;/code>为：&lt;/p>
+&lt;/div>&lt;h2 id="halo更改评论模块">halo更改评论模块
+&lt;/h2>&lt;p>首先进入后台，依次点击：&lt;code>系统&lt;/code>—&lt;code>博客设置&lt;/code>—&lt;code>评论设置&lt;/code>，更改&lt;code>评论模块JS&lt;/code>。系统默认（halo 1.3.2）&lt;code>评论模块JS&lt;/code>为：&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -2675,8 +2909,8 @@
 &lt;/div>
 &lt;/div>&lt;p>更多&lt;code>评论模块JS&lt;/code>，可以在&lt;code>github&lt;/code>中搜索&lt;a class="link" href="https://github.com/search?q=halo&amp;#43;comment" target="_blank" rel="noopener"
 >halo comment&lt;/a>。&lt;/p>
-&lt;h2 id="定时删除halo日志">定时删除halo日志&lt;/h2>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;h2 id="定时删除halo日志">定时删除halo日志
+&lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
@@ -2693,8 +2927,8 @@
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>意思是每天删除日志文件。&lt;/p>
-&lt;h2 id="更改时区">更改时区&lt;/h2>
-&lt;p>如果你不知道服务器当前时间，可以使用下面的命令，查看当前时间：&lt;/p>
+&lt;h2 id="更改时区">更改时区
+&lt;/h2>&lt;p>如果你不知道服务器当前时间，可以使用下面的命令，查看当前时间：&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -2721,8 +2955,8 @@
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">timedatectl
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h2 id="版本升级">版本升级&lt;/h2>
-&lt;blockquote>
+&lt;/div>&lt;h2 id="版本升级">版本升级
+&lt;/h2>&lt;blockquote>
 &lt;p>我们假设你存放运行包的路径为 ~/app，运行包的文件名为 halo.jar，且使用了 systemd 进行进程管理，如有不同，下列命令请按需修改。&lt;/p>
 &lt;/blockquote>
 &lt;ol>
@@ -2797,16 +3031,16 @@
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">service halo start
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h2 id="备份迁移">备份迁移&lt;/h2>
-&lt;p>目前 Halo 在后台的小工具中提供了数据导出的功能，此功能的作用为导出数据库的所有数据，格式为 JSON。通常可以作为切换数据库类型的时候使用。需要注意的是，此备份仅仅为备份数据，不包含其他诸如主题、附件等资料。如下图：&lt;/p>
-&lt;h3 id="整站备份">整站备份&lt;/h3>
-&lt;p>通过 《写在前面》 的名词解释部分我们可以知道，Halo 的所有数据都是存放在当前用户目录的工作目录（.halo）下的（使用 MySQL 数据库除外，你还需要导出 MySQL 数据）。所以我们备份整站的数据仅需备份这个目录即可，不管你使用何种方式。不过，为了操作方便，我们也在后台的小工具中提供了备份整站数据的功能，和上面所说的数据备份一致，点击备份按钮即可打包工作目录文件夹。如下图：&lt;/p>
-&lt;h3 id="导入数据">导入数据&lt;/h3>
-&lt;p>此功能为导入上面所说的数据备份产生的数据文件（JSON 格式），并非整站备份的工作目录文件。需要注意的是，此功能仅在站点初始化的时候支持。如下图：&lt;/p>
-&lt;h3 id="整站迁移">整站迁移&lt;/h3>
-&lt;p>此操作通常用于迁移服务器，基于上面 整站备份 所说，Halo 的所有数据都是存放于当前用户目录的工作目录（.halo）下的。当然，这仅限于使用 H2 Database 的情况下，如果你使用的 MySQL，那么还需要手动导出 MySQL 数据。所以，我们迁移服务器仅仅需要需要将工作目录的备份文件上传到新服务器的用户目录下解压，然后按照 《安装指南》 重新安装即可。MySQL 用户还需要做的就是手动导出 MySQL 数据，并在新服务器上导入。&lt;/p>
-&lt;h2 id="常见问题">常见问题&lt;/h2>
-&lt;p>1.忘记了管理员密码，如何重置？&lt;/p>
+&lt;/div>&lt;h2 id="备份迁移">备份迁移
+&lt;/h2>&lt;p>目前 Halo 在后台的小工具中提供了数据导出的功能，此功能的作用为导出数据库的所有数据，格式为 JSON。通常可以作为切换数据库类型的时候使用。需要注意的是，此备份仅仅为备份数据，不包含其他诸如主题、附件等资料。如下图：&lt;/p>
+&lt;h3 id="整站备份">整站备份
+&lt;/h3>&lt;p>通过 《写在前面》 的名词解释部分我们可以知道，Halo 的所有数据都是存放在当前用户目录的工作目录（.halo）下的（使用 MySQL 数据库除外，你还需要导出 MySQL 数据）。所以我们备份整站的数据仅需备份这个目录即可，不管你使用何种方式。不过，为了操作方便，我们也在后台的小工具中提供了备份整站数据的功能，和上面所说的数据备份一致，点击备份按钮即可打包工作目录文件夹。如下图：&lt;/p>
+&lt;h3 id="导入数据">导入数据
+&lt;/h3>&lt;p>此功能为导入上面所说的数据备份产生的数据文件（JSON 格式），并非整站备份的工作目录文件。需要注意的是，此功能仅在站点初始化的时候支持。如下图：&lt;/p>
+&lt;h3 id="整站迁移">整站迁移
+&lt;/h3>&lt;p>此操作通常用于迁移服务器，基于上面 整站备份 所说，Halo 的所有数据都是存放于当前用户目录的工作目录（.halo）下的。当然，这仅限于使用 H2 Database 的情况下，如果你使用的 MySQL，那么还需要手动导出 MySQL 数据。所以，我们迁移服务器仅仅需要需要将工作目录的备份文件上传到新服务器的用户目录下解压，然后按照 《安装指南》 重新安装即可。MySQL 用户还需要做的就是手动导出 MySQL 数据，并在新服务器上导入。&lt;/p>
+&lt;h2 id="常见问题">常见问题
+&lt;/h2>&lt;p>1.忘记了管理员密码，如何重置？&lt;/p>
 &lt;p>目前在登录页面含有隐藏的 找回密码 链接，点击即可进入找回密码页面，具体可参考以下步骤：&lt;/p>
 &lt;ol>
 &lt;li>在登录页面按下键盘快捷键（Windows / Linux：Shift + Alt + H，macOS：Shift + Command + H）即可显示 找回密码 链接。&lt;/li>
@@ -2816,8 +3050,8 @@
 &lt;blockquote>
 &lt;p>需要注意的是，第 2 步中的获取验证码需要事先配置了 SMTP 发信设置，否则无法发送验证码。但你可以登录服务器查看 Halo 运行日志，搜索 Got reset password code 关键字即可获取到验证码。&lt;/p>
 &lt;/blockquote>
-&lt;h2 id="附修改-nginx-配置文件">附：修改 Nginx 配置文件&lt;/h2>
-&lt;ol>
+&lt;h2 id="附修改-nginx-配置文件">附：修改 Nginx 配置文件
+&lt;/h2>&lt;ol>
 &lt;li>使用你熟悉的工具打开配置文件，此教程使用 vi。&lt;/li>
 &lt;/ol>
 &lt;div class="highlight">&lt;div class="chroma">
@@ -3050,8 +3284,8 @@
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>}&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h2 id="https-www跳转">https www跳转&lt;/h2>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;/div>&lt;h2 id="https-www跳转">https www跳转
+&lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
 &lt;/span>&lt;span class="lnt"> 2
@@ -3081,8 +3315,8 @@
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="gi">+ }
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h2 id="参考链接">参考链接&lt;/h2>
-&lt;ul>
+&lt;/div>&lt;h2 id="参考链接">参考链接
+&lt;/h2>&lt;ul>
 &lt;li>&lt;a class="link" href="https://docs.halo.run/getting-started/install/linux" target="_blank" rel="noopener"
 >1.在 Linux 服务器部署 Halo&lt;/a>&lt;/li>
 &lt;li>&lt;a class="link" href="https://halo.run/archives/install-reverse-proxy.html" target="_blank" rel="noopener"
@@ -3093,592 +3327,13 @@
 >4.windows 10 配置Java 环境变量&lt;/a>&lt;/li>
 &lt;li>&lt;a class="link" href="https://www.myfreax.com/how-to-set-or-change-timezone-on-centos-8/" target="_blank" rel="noopener"
 >5.如何设置或更改系统时区在CentOS 8&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>centos8搭建ftp服务器</title><link>/archives/centos8%E6%90%AD%E5%BB%BAftp%E6%9C%8D%E5%8A%A1%E5%99%A8/</link><pubDate>Sat, 06 Jun 2020 11:34:25 +0000</pubDate><guid>/archives/centos8%E6%90%AD%E5%BB%BAftp%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid><description>&lt;h2 id="安装vsftpd">安装vsftpd&lt;/h2>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo yum install vsftpd -y
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>安装软件包后，启动vsftpd，并使其能够在引导时自动启动：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo systemctl start vsftpd
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo systemctl &lt;span class="nb">enable&lt;/span> vsftpd
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;h2 id="配置vsftpd">配置vsftpd&lt;/h2>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">vi /etc/vsftpd/vsftpd.conf
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>要仅允许某些用户登录FTP服务器，需要在&lt;code>userlist_enable=YES&lt;/code>下面，加上：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="nv">userlist_file&lt;/span>&lt;span class="o">=&lt;/span>/etc/vsftpd/user_list
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">userlist_deny&lt;/span>&lt;span class="o">=&lt;/span>NO
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>启用此选项后，您需要通过将用户名添加到&lt;code>/etc/vsftpd/user_list&lt;/code>文件（每行一个用户）来明确指定哪些用户可以登录。&lt;/p>
-&lt;p>完成编辑后，vsftpd配置文件应如下所示：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
-&lt;/span>&lt;span class="lnt"> 2
-&lt;/span>&lt;span class="lnt"> 3
-&lt;/span>&lt;span class="lnt"> 4
-&lt;/span>&lt;span class="lnt"> 5
-&lt;/span>&lt;span class="lnt"> 6
-&lt;/span>&lt;span class="lnt"> 7
-&lt;/span>&lt;span class="lnt"> 8
-&lt;/span>&lt;span class="lnt"> 9
-&lt;/span>&lt;span class="lnt">10
-&lt;/span>&lt;span class="lnt">11
-&lt;/span>&lt;span class="lnt">12
-&lt;/span>&lt;span class="lnt">13
-&lt;/span>&lt;span class="lnt">14
-&lt;/span>&lt;span class="lnt">15
-&lt;/span>&lt;span class="lnt">16
-&lt;/span>&lt;span class="lnt">17
-&lt;/span>&lt;span class="lnt">18
-&lt;/span>&lt;span class="lnt">19
-&lt;/span>&lt;span class="lnt">20
-&lt;/span>&lt;span class="lnt">21
-&lt;/span>&lt;span class="lnt">22
-&lt;/span>&lt;span class="lnt">23
-&lt;/span>&lt;span class="lnt">24
-&lt;/span>&lt;span class="lnt">25
-&lt;/span>&lt;span class="lnt">26
-&lt;/span>&lt;span class="lnt">27
-&lt;/span>&lt;span class="lnt">28
-&lt;/span>&lt;span class="lnt">29
-&lt;/span>&lt;span class="lnt">30
-&lt;/span>&lt;span class="lnt">31
-&lt;/span>&lt;span class="lnt">32
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="nv">anonymous_enable&lt;/span>&lt;span class="o">=&lt;/span>NO
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">local_enable&lt;/span>&lt;span class="o">=&lt;/span>YES
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">write_enable&lt;/span>&lt;span class="o">=&lt;/span>YES
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">local_umask&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="m">022&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#anon_upload_enable=YES&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#anon_mkdir_write_enable=YES&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">dirmessage_enable&lt;/span>&lt;span class="o">=&lt;/span>YES
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">xferlog_enable&lt;/span>&lt;span class="o">=&lt;/span>YES
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">connect_from_port_20&lt;/span>&lt;span class="o">=&lt;/span>YES
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#chown_uploads=YES&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#chown_username=whoever&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#xferlog_file=/var/log/xferlog&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">xferlog_std_format&lt;/span>&lt;span class="o">=&lt;/span>YES
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#idle_session_timeout=600&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#data_connection_timeout=120&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#nopriv_user=ftpsecure&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#async_abor_enable=YES&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#ascii_upload_enable=YES&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#ascii_download_enable=YES&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#ftpd_banner=Welcome to blah FTP service.&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#deny_email_enable=YES&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#banned_email_file=/etc/vsftpd/banned_emails&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#chroot_local_user=YES&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#chroot_list_enable=YES&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#chroot_list_file=/etc/vsftpd/chroot_list&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#ls_recurse_enable=YES&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">listen&lt;/span>&lt;span class="o">=&lt;/span>NO
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">listen_ipv6&lt;/span>&lt;span class="o">=&lt;/span>YES
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">pam_service_name&lt;/span>&lt;span class="o">=&lt;/span>vsftpd
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">userlist_enable&lt;/span>&lt;span class="o">=&lt;/span>YES
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">userlist_file&lt;/span>&lt;span class="o">=&lt;/span>/etc/vsftpd/user_list
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">userlist_deny&lt;/span>&lt;span class="o">=&lt;/span>NO
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;h2 id="重启vsftpd服务">重启vsftpd服务&lt;/h2>
-&lt;p>保存文件并重新启动vsftpd服务，以使更改生效：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo systemctl restart vsftpd
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;h2 id="设置防火墙">设置防火墙&lt;/h2>
-&lt;p>最直接方法关闭防火墙。&lt;/p>
-&lt;h2 id="创建ftp用户">创建FTP用户&lt;/h2>
-&lt;p>创建一个新用户，名为admin:&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo adduser admin
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo passwd admin
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>将用户添加到允许的FTP用户列表中：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;admin&amp;#34;&lt;/span> &lt;span class="p">|&lt;/span> sudo tee -a /etc/vsftpd/user_list
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>设置正确的权限：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo chmod &lt;span class="m">750&lt;/span> /home/admin
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo chown -R admin: /home/admin
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>如果遇到文件无法下载，可能需要更改文件所属用户组，例如：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">chown admin 文件名
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;h2 id="修改vsftpd的默认根目录">修改vsftpd的默认根目录&lt;/h2>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">vi /etc/vsftpd/vsftpd.conf
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>加入如下几行：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="nv">local_root&lt;/span>&lt;span class="o">=&lt;/span>/var/www/html
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">anon_root&lt;/span>&lt;span class="o">=&lt;/span>/var/www/html
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>&lt;strong>注&lt;/strong>：&lt;code>local_root&lt;/code> 针对系统用户；&lt;code>anon_root&lt;/code> 针对匿名用户，如果禁止匿名登录，不用加此项。网上说还要加上&lt;code>chroot_local_user=YES&lt;/code>，加上此项后根本无法登陆。&lt;/p>
-&lt;p>重新启动服务：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo systemctl restart vsftpd
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>任何一个用户ftp登录到这个服务器上都会chroot到/var/www/html目录下。&lt;/p>
-&lt;h2 id="参考链接">参考链接&lt;/h2>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;a class="link" href="https://www.myfreax.com/how-to-setup-ftp-server-with-vsftpd-on-centos-7/" target="_blank" rel="noopener"
->1.如何在CentOS 7上使用VSFTPD设置FTP服务器&lt;/a>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;a class="link" href="https://blog.csdn.net/zyw_java/article/details/75212608" target="_blank" rel="noopener"
->2.基于 CentOS 搭建 FTP 文件服务&lt;/a>&lt;/p>
-&lt;/li>
-&lt;/ul></description></item><item><title>Centos8挂机笔记</title><link>/archives/centos8%E6%8C%82%E6%9C%BA%E7%AC%94%E8%AE%B0/</link><pubDate>Mon, 18 May 2020 07:33:25 +0000</pubDate><guid>/archives/centos8%E6%8C%82%E6%9C%BA%E7%AC%94%E8%AE%B0/</guid><description>&lt;p>接上篇&lt;a class="link" href="https://bore.vip/post/centos8-xfce-vnc/" target="_blank" rel="noopener"
->Centos8安装xfce&amp;amp;vnc&lt;/a>，接下来记下，怎样在centos 服务器上挂机。&lt;/p>
-&lt;h2 id="安装更新firefox">安装、更新firefox&lt;/h2>
-&lt;h3 id="安装firefox">安装firefox&lt;/h3>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">yum install firefox -y
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;h3 id="更新firefox">更新firefox&lt;/h3>
-&lt;ol>
-&lt;li>用你本地的旧版 firefox，访问火狐官网，下载Linux版本的Firefox，因为我的是64位故选择的安装包是：&lt;code>Firefox-latest-x86_64.tar.bz2&lt;/code>。&lt;/li>
-&lt;li>进入存放下载文件（Firefox-latest-x86_64.tar.bz2）的目录。&lt;/li>
-&lt;li>在该目录解压 Firefox-latest-x86_64.tar.bz2。&lt;/li>
-&lt;/ol>
-&lt;p>解压后会生成一个 firefox 子目录，里面有最新版本的 firefox 的二进制可执行文件，以及各种扩展模块，插件等等。&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">yum install tar -y
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">yum install bzip2 -y
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">tar -xjvf Firefox-latest-x86_64.tar.bz2
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;ol start="4">
-&lt;li>由于有时解压后出来的文件缺少文件（原因不明），可以采用在外部解压好后，直接拷贝出firefox文件夹的方式。&lt;/li>
-&lt;li>删除系统默认安装的旧版 firefox ，通常位于 /usr/lib64 目录下。&lt;/li>
-&lt;/ol>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">rm -rf /usr/lib64/firefox
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;ol start="6">
-&lt;li>将当前目录下的新版 firefox 子目录复制到 /usr/lib64 目录下。&lt;/li>
-&lt;/ol>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">mv firefox /usr/lib64
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;ol start="7">
-&lt;li>进入 /usr/bin 目录，删除其下的 firefox 脚本。&lt;/li>
-&lt;/ol>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">cd&lt;/span> /usr/bin
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">rm firefox
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;ol start="8">
-&lt;li>回到主目录或根目录，创建一个软链接，指向/usr/lib64/firefox/firefox。&lt;/li>
-&lt;/ol>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">cd&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">ln -s /usr/lib64/firefox/firefox /usr/bin/firefox
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;ol start="9">
-&lt;li>查看下最新版本&lt;/li>
-&lt;/ol>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">firefox -v
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;h2 id="firefox优化">firefox优化&lt;/h2>
-&lt;h3 id="设置开机启动">设置开机启动&lt;/h3>
-&lt;p>单击桌面下面最左边的那个X一样的图标选&lt;code>settings–Autostarted applications&lt;/code>在弹出的对话框中点击Add,在name中输&lt;code>firefox&lt;/code>,Description不用输入，Command中输入&lt;code>firefox&lt;/code>如此firefox的开机启动也设置好了!接下来reboot一下看看是否能正常工作!&lt;/p>
-&lt;h3 id="设置不保存历史记录">设置不保存历史记录&lt;/h3>
-&lt;p>&lt;code>Edit–Preferences–Privacy&lt;/code> 在firefox will后面的框里选&lt;code>Never remember history&lt;/code>，还要勾选&lt;code>Delete cookies and site data when Firefox is closed&lt;/code>&lt;/p>
-&lt;h3 id="设置自动播放">设置自动播放&lt;/h3>
-&lt;p>依次选择&lt;code>隐私和安全—Permissions—Autoplay—Allow audio and Video&lt;/code>&lt;/p>
-&lt;h3 id="关闭firefox恢复上次会话功能">关闭FireFox恢复上次会话功能&lt;/h3>
-&lt;ol>
-&lt;li>在FF地址栏输入&lt;code>about:config&lt;/code>再回车进入设置。&lt;/li>
-&lt;li>在过滤器中输入&lt;code>browser.sessionstore&lt;/code>查找&lt;/li>
-&lt;li>将&lt;code>browser.sessionstore.max_tabs_undo&lt;/code>的值改为0（把非法关闭后保存的Tab页数改为0）&lt;/li>
-&lt;li>将&lt;code>browser.sessionstore.max_windows_undo&lt;/code>的值改为0（把保存的窗口数改为0）&lt;/li>
-&lt;li>&lt;code>browser.sessionstore.resume_from_crash&lt;/code>设为false（禁用恢复会话功能）&lt;/li>
-&lt;li>关闭&lt;code>about:config&lt;/code>页，重启firefox&lt;/li>
-&lt;/ol>
-&lt;p>现在可以测试下，打开firefox，随便打开几个网页，再用任务管理器结束firefox.exe进程，再自己启动firefox，应该看不到那恢复会话窗口了。&lt;/p>
-&lt;h3 id="火狐禁止提交错误报告">火狐禁止提交错误报告&lt;/h3>
-&lt;p>依次选择&lt;code>隐私与安全—Firefox Data Collection and Use&lt;/code>，取消勾选&lt;code>Allow firefox to send backlogged crash reports on your behalf&lt;/code>&lt;/p>
-&lt;h3 id="firefox-禁止flash崩溃提示">Firefox 禁止flash崩溃提示&lt;/h3>
-&lt;p>搜索crash&lt;/p>
-&lt;p>&lt;code>dom.ipc.plugins.reportCrashURL&lt;/code> 改为&lt;code>false&lt;/code>&lt;/p>
-&lt;p>&lt;code>dom.ipc.plugins.flash.subprocess.crashreporter.enabled&lt;/code> 改为&lt;code>false&lt;/code>&lt;/p>
-&lt;p>(崩溃报告可能会占很大空间，具体方法是删除 /root/.mozilla/firefox/Crash Reports/pending 里所有文件，即删除pending文件夹，按住shift键永久删除）&lt;/p>
-&lt;h3 id="其它">其它&lt;/h3>
-&lt;ol>
-&lt;li>解决 “Gah. Your tab just crashed error ”&lt;/li>
-&lt;/ol>
-&lt;p>&lt;code>browser.tabs.remote.autostart&lt;/code> 设为false&lt;/p>
-&lt;h2 id="安装配置挂机插件">安装配置挂机插件&lt;/h2>
-&lt;h3 id="安装插件">安装插件&lt;/h3>
-&lt;p>在火狐里安装插件。&lt;/p>
-&lt;h3 id="配置插件">配置插件&lt;/h3>
-&lt;ul>
-&lt;li>Start with Firefox，选择&lt;code>true&lt;/code>&lt;/li>
-&lt;li>Auto Add Playlists，选择&lt;code>true&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;h2 id="设置定时任务">设置定时任务&lt;/h2>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">cd&lt;/span> /var/spool/cron
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">vi root
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;span class="lnt">5
-&lt;/span>&lt;span class="lnt">6
-&lt;/span>&lt;span class="lnt">7
-&lt;/span>&lt;span class="lnt">8
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="m">00&lt;/span> &lt;span class="m">00&lt;/span> * * * rm -rf /root/.vnc/*.log
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="m">01&lt;/span> &lt;span class="m">00&lt;/span> * * * /sbin/reboot
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="m">00&lt;/span> &lt;span class="m">06&lt;/span> * * * rm -rf /root/.vnc/*.log
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="m">01&lt;/span> &lt;span class="m">06&lt;/span> * * * /sbin/reboot
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="m">00&lt;/span> &lt;span class="m">12&lt;/span> * * * rm -rf /root/.vnc/*.log
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="m">01&lt;/span> &lt;span class="m">12&lt;/span> * * * /sbin/reboot
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="m">00&lt;/span> &lt;span class="m">18&lt;/span> * * * rm -rf /root/.vnc/*.log
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="m">01&lt;/span> &lt;span class="m">18&lt;/span> * * * /sbin/reboot
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;h2 id="参考链接">参考链接&lt;/h2>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;a class="link" href="https://www.iteye.com/blog/wangbanmin-2397404" target="_blank" rel="noopener"
->1.centos系统crontab实现自动定时重启教程&lt;/a>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;a class="link" href="https://cloud.tencent.com/developer/article/1406596" target="_blank" rel="noopener"
->2.centos7 更新Firefox版本&lt;/a>&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;p>​&lt;/p></description></item><item><title>Centos8安装xfce&amp;vnc</title><link>/archives/centos8%E5%AE%89%E8%A3%85xfcevnc/</link><pubDate>Mon, 18 May 2020 06:06:25 +0000</pubDate><guid>/archives/centos8%E5%AE%89%E8%A3%85xfcevnc/</guid><description>&lt;h2 id="安装-xfce-桌面环境">安装 Xfce 桌面环境&lt;/h2>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">yum install epel-release -y
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">yum groupinstall xfce -y
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;h2 id="安装-vnc-服务器">安装 VNC 服务器&lt;/h2>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">yum install tigervnc-server -y
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>现在安装了 VNC 服务器，下一步是运行 vncserver 命令，该命令将创建初始配置并设置密码。&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">vncserver
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>系统将提示您输入并确认密码，以及是否将其设置为仅查看密码。如果您选择设置仅查看密码，则用户将无法使用鼠标和键盘与 VNC 实例进行交互。&lt;strong>所以这里要选择n&lt;/strong>。&lt;/p>
-&lt;blockquote>
-&lt;p>You will require a password to access your desktops.&lt;/p>
-&lt;p>Password:
-Verify:
-Would you like to enter a view-only password (y/n)? n
-/usr/bin/xauth: file /root/.Xauthority does not exist&lt;/p>
-&lt;/blockquote>
-&lt;p>在继续下一步之前，首先使用 vncserver 带有 -kill 选项和服务器编号作为参数的命令停止 VNC 实例。在我们的例子中，服务器在端口 5901 (:1)中运行，因此我们将使用以下命令停止它：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">vncserver -kill :1
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;h2 id="配置-vnc-服务器">配置 VNC 服务器&lt;/h2>
-&lt;p>现在我们的 CentOS 服务器上安装了 Xfce 和 TigerVNC ，下一步是配置 TigerVNC 使用 Xfce 。为此，请打开以下文件：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">vi ~/.vnc/xstartup
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>并将默认内容改为以下内容：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="cp">#!/bin/sh
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cp">&lt;/span>&lt;span class="nb">unset&lt;/span> SESSION_MANAGER
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">unset&lt;/span> DBUS_SESSION_BUS_ADDRESS
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">exec&lt;/span> startxfce4
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>保存并关闭文件。无论何时启动或重新启动 TigerVNC 服务器，都将自动执行上述脚本。&lt;/p>
-&lt;p>如果需要将 &lt;a class="link" href="http://tigervnc.org/doc/vncserver.html" target="_blank" rel="noopener"
->附加选项&lt;/a> 传递给 VNC 服务器，则可以打开 &lt;code>~/.vnc/config&lt;/code> 文件并在每行添加一个选项。最常见的选项列在文件中。取消注释并根据自己的喜好进行修改。这是一个例子：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;span class="lnt">5
-&lt;/span>&lt;span class="lnt">6
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># securitytypes=vncauth,tlsvnc&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># desktop=sandbox&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">geometry&lt;/span>&lt;span class="o">=&lt;/span>1024x768
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># localhost&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># alwaysshared&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">dpi&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="m">96&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;h2 id="创建-systemd-单元文件">创建 Systemd 单元文件&lt;/h2>
-&lt;p>我们将创建一个 systemd 单元文件，使我们能够根据需要轻松启动，停止和重新启动 VNC 服务，与任何其他 systemd 服务相同。&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo cp /usr/lib/systemd/system/vncserver@.service /etc/systemd/system/vncserver@:1.service
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>使用文本编辑器打开文件，并替换为以下内容（本例用户名为root）。&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">vi /etc/systemd/system/vncserver@&lt;span class="se">\:&lt;/span>1.service
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
-&lt;/span>&lt;span class="lnt"> 2
-&lt;/span>&lt;span class="lnt"> 3
-&lt;/span>&lt;span class="lnt"> 4
-&lt;/span>&lt;span class="lnt"> 5
-&lt;/span>&lt;span class="lnt"> 6
-&lt;/span>&lt;span class="lnt"> 7
-&lt;/span>&lt;span class="lnt"> 8
-&lt;/span>&lt;span class="lnt"> 9
-&lt;/span>&lt;span class="lnt">10
-&lt;/span>&lt;span class="lnt">11
-&lt;/span>&lt;span class="lnt">12
-&lt;/span>&lt;span class="lnt">13
-&lt;/span>&lt;span class="lnt">14
-&lt;/span>&lt;span class="lnt">15
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="o">[&lt;/span>Unit&lt;span class="o">]&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">Description&lt;/span>&lt;span class="o">=&lt;/span>Remote desktop service &lt;span class="o">(&lt;/span>VNC&lt;span class="o">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">After&lt;/span>&lt;span class="o">=&lt;/span>syslog.target network.target
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">[&lt;/span>Service&lt;span class="o">]&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">Type&lt;/span>&lt;span class="o">=&lt;/span>forking
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Clean any existing files in /tmp/.X11-unix environment&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">ExecStartPre&lt;/span>&lt;span class="o">=&lt;/span>/bin/sh -c &lt;span class="s1">&amp;#39;/usr/bin/vncserver -kill %i &amp;gt; /dev/null 2&amp;gt;&amp;amp;1 || :&amp;#39;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">ExecStart&lt;/span>&lt;span class="o">=&lt;/span>/usr/sbin/runuser -l root -c &lt;span class="s2">&amp;#34;/usr/bin/vncserver %i&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">PIDFile&lt;/span>&lt;span class="o">=&lt;/span>/root/.vnc/%H%i.pid
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">ExecStop&lt;/span>&lt;span class="o">=&lt;/span>/bin/sh -c &lt;span class="s1">&amp;#39;/usr/bin/vncserver -kill %i &amp;gt; /dev/null 2&amp;gt;&amp;amp;1 || :&amp;#39;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">[&lt;/span>Install&lt;span class="o">]&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">WantedBy&lt;/span>&lt;span class="o">=&lt;/span>multi-user.target
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>保存并关闭文件。通知 systemd 我们创建了一个新的单元文件，让其重新加载：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo systemctl daemon-reload
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>下一步是使用以下命令启用单元文件：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo systemctl &lt;span class="nb">enable&lt;/span> vncserver@:1.service
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>符号 &lt;code>1&lt;/code> 后面的数字 &lt;code>@&lt;/code> 定义了 VNC 服务将在其上运行的显示端口，在我们的情况下，这是默认设置 &lt;code>1&lt;/code> ， VNC 服务器将在端口上侦听， &lt;code>5901&lt;/code> 如我们在上一节中讨论的那样。&lt;/p>
-&lt;p>执行以下命令启动 VNC 服务：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo systemctl start vncserver@:1.service
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>验证服务是否已成功启动：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo systemctl status vncserver@:1.service
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;blockquote>
-&lt;p>● vncserver@:1.service - Remote desktop service (VNC)
-Loaded: loaded (/etc/systemd/system/vncserver@:1.service; enabled; vendor pr&amp;gt;
-Active: active (running) since Mon 2020-05-18 14:00:12 CST; 23min ago
-Process: 806 ExecStart=/usr/sbin/runuser -l root -c /usr/bin/vncserver :1 (co&amp;gt;
-Process: 767 ExecStartPre=/bin/sh -c /usr/bin/vncserver -kill :1 &amp;gt; /dev/null &amp;gt;
-Main PID: 1018 (Xvnc)
-Tasks: 0 (limit: 6193)
-Memory: 716.0K&lt;/p>
-&lt;/blockquote>
-&lt;h2 id="连接到-vnc-服务器">连接到 VNC 服务器&lt;/h2>
-&lt;p>下载&lt;a class="link" href="https://www.realvnc.com/en/connect/download/viewer/windows/" target="_blank" rel="noopener"
->vnc viewer&lt;/a>，输入&lt;code>ip:1&lt;/code>登录。&lt;/p>
-&lt;h2 id="参考链接">参考链接&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a class="link" href="https://www.gobeta.net/linux/how-to-install-and-configure-vnc-on-centos-7/" target="_blank" rel="noopener"
->如何在 CentOS 7 上安装和配置 VNC&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Hugo部署到centos服务器</title><link>/archives/hugo%E9%83%A8%E7%BD%B2%E5%88%B0centos%E6%9C%8D%E5%8A%A1%E5%99%A8/</link><pubDate>Wed, 13 May 2020 10:05:25 +0000</pubDate><guid>/archives/hugo%E9%83%A8%E7%BD%B2%E5%88%B0centos%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid><description>&lt;p>服务器环境：Centos 8 x64&lt;/p>
 &lt;p>本地环境：Win10 x64&lt;/p>
-&lt;h2 id="本地操作">本地操作&lt;/h2>
-&lt;p>参考：&lt;a class="link" href="https://bore.vip/hugo-install-on-coding-and-gitee/#1-%E6%9C%AC%E5%9C%B0%E6%93%8D%E4%BD%9C" target="_blank" rel="noopener"
+&lt;h2 id="本地操作">本地操作
+&lt;/h2>&lt;p>参考：&lt;a class="link" href="https://bore.vip/hugo-install-on-coding-and-gitee/#1-%E6%9C%AC%E5%9C%B0%E6%93%8D%E4%BD%9C" target="_blank" rel="noopener"
 >hugo部署到coding&amp;amp;gitee-本地操作部分&lt;/a>&lt;/p>
-&lt;h2 id="服务器操作">服务器操作&lt;/h2>
-&lt;blockquote>
+&lt;h2 id="服务器操作">服务器操作
+&lt;/h2>&lt;blockquote>
 &lt;p>&lt;strong>注意：这里是参照服务器搭建hexo，所以代码里hexo没有改成hugo，不过这没有任何影响&lt;/strong>。&lt;/p>
 &lt;/blockquote>
 &lt;p>准备工作：如果服务器端口不是22，先要更改SSH端口，&lt;/p>
@@ -3733,8 +3388,8 @@ Memory: 716.0K&lt;/p>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>配置完成后，访问使用浏览器服务器 ip ，如果能看到以下界面，表示运行成功。&lt;/p>
-&lt;h3 id="配置用户">配置用户&lt;/h3>
-&lt;p>然后新增一个名为 git 的用户，过程中需要设置登录密码，输入两次密码即可。&lt;/p>
+&lt;h3 id="配置用户">配置用户
+&lt;/h3>&lt;p>然后新增一个名为 git 的用户，过程中需要设置登录密码，输入两次密码即可。&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -3774,8 +3429,8 @@ Memory: 716.0K&lt;/p>
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">chmod &lt;span class="m">440&lt;/span> /etc/sudoers
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 id="上传-ssh-公钥">上传 SSH 公钥&lt;/h3>
-&lt;p>接下来要把本地的 ssh 公钥上传到服务器 。执行&lt;/p>
+&lt;/div>&lt;h3 id="上传-ssh-公钥">上传 SSH 公钥
+&lt;/h3>&lt;p>接下来要把本地的 ssh 公钥上传到服务器 。执行&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -3843,8 +3498,8 @@ Memory: 716.0K&lt;/p>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">[&lt;/span>&lt;span class="n">git&lt;/span>&lt;span class="nv">@special&lt;/span>&lt;span class="n">-beep&lt;/span>&lt;span class="p">-&lt;/span>&lt;span class="mf">1&lt;/span> &lt;span class="p">~]$&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 id="用户授权">用户授权&lt;/h3>
-&lt;p>接下来要给用户 git 授予操作 nginx 放网页的地方的权限：&lt;/p>
+&lt;/div>&lt;h3 id="用户授权">用户授权
+&lt;/h3>&lt;p>接下来要给用户 git 授予操作 nginx 放网页的地方的权限：&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -3863,8 +3518,8 @@ Memory: 716.0K&lt;/p>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">chown git:git -R /var/www/hexo
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 id="配置钩子">配置钩子&lt;/h3>
-&lt;p>现在就要向 Git Hooks 操作，配置好钩子：&lt;/p>
+&lt;/div>&lt;h3 id="配置钩子">配置钩子
+&lt;/h3>&lt;p>现在就要向 Git Hooks 操作，配置好钩子：&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -3909,8 +3564,8 @@ Memory: 716.0K&lt;/p>
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">chmod +x post-receive
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 id="配置-nginx">配置 nginx&lt;/h3>
-&lt;p>然后是配置 nginx。执行&lt;/p>
+&lt;/div>&lt;h3 id="配置-nginx">配置 nginx
+&lt;/h3>&lt;p>然后是配置 nginx。执行&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -4043,8 +3698,8 @@ Memory: 716.0K&lt;/p>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 id="修改自动部署脚本">修改自动部署脚本&lt;/h3>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;/div>&lt;h3 id="修改自动部署脚本">修改自动部署脚本
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
 &lt;/span>&lt;span class="lnt"> 2
@@ -4129,8 +3784,8 @@ Memory: 716.0K&lt;/p>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git push origin master --force
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h2 id="总结">总结&lt;/h2>
-&lt;p>最好不要反复切换部署仓库，否则git会出现以下错误提示：&lt;/p>
+&lt;/div>&lt;h2 id="总结">总结
+&lt;/h2>&lt;p>最好不要反复切换部署仓库，否则git会出现以下错误提示：&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -4151,8 +3806,8 @@ Memory: 716.0K&lt;/p>
 &lt;p>解决方法：&lt;/p>
 &lt;p>1.输入命令：&lt;code>git fsck --lost-found&lt;/code>，可以看到好多“dangling commit”&lt;/p>
 &lt;p>2.清空他们：&lt;code>git gc --prune=now&lt;/code>，完成&lt;/p>
-&lt;h2 id="参考链接">参考链接&lt;/h2>
-&lt;ul>
+&lt;h2 id="参考链接">参考链接
+&lt;/h2>&lt;ul>
 &lt;li>&lt;a class="link" href="https://tiktoking.github.io/2016/01/26/hexo/#" target="_blank" rel="noopener"
 >1.在服务器上搭建hexo博客，利用git更新&lt;/a>&lt;/li>
 &lt;li>&lt;a class="link" href="https://eliyar.biz/how_to_build_hexo_blog/" target="_blank" rel="noopener"
@@ -4165,9 +3820,9 @@ Memory: 716.0K&lt;/p>
 >5.git运行突然提示 remote: error: The last gc run reported the following&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>hexo部署到centos服务器</title><link>/archives/hexo%E9%83%A8%E7%BD%B2%E5%88%B0centos%E6%9C%8D%E5%8A%A1%E5%99%A8/</link><pubDate>Sat, 25 Apr 2020 10:37:25 +0000</pubDate><guid>/archives/hexo%E9%83%A8%E7%BD%B2%E5%88%B0centos%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid><description>&lt;p>服务器环境：Centos 8 x64&lt;/p>
 &lt;p>本地环境：Win10 x64&lt;/p>
-&lt;h2 id="本地操作">本地操作&lt;/h2>
-&lt;h3 id="安装-git-和-nodejs">安装 Git 和 Node.js&lt;/h3>
-&lt;p>本地需要安装 &lt;a class="link" href="https://git-scm.com/" target="_blank" rel="noopener"
+&lt;h2 id="本地操作">本地操作
+&lt;/h2>&lt;h3 id="安装-git-和-nodejs">安装 Git 和 Node.js
+&lt;/h3>&lt;p>本地需要安装 &lt;a class="link" href="https://git-scm.com/" target="_blank" rel="noopener"
 >Git&lt;/a> 和 &lt;a class="link" href="https://nodejs.org/en/" target="_blank" rel="noopener"
 >Node.js&lt;/a>，安装过程略。&lt;/p>
 &lt;p>安装完git后还要配置环境变量：
@@ -4184,8 +3839,8 @@ Memory: 716.0K&lt;/p>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">D:&lt;span class="se">\P&lt;/span>rogram Files&lt;span class="se">\G&lt;/span>it&lt;span class="se">\m&lt;/span>ingw64&lt;span class="se">\b&lt;/span>in
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 id="配置ssh-公钥">配置SSH 公钥&lt;/h3>
-&lt;p>Windows 上安装 &lt;a class="link" href="https://git-for-windows.github.io/" target="_blank" rel="noopener"
+&lt;/div>&lt;h3 id="配置ssh-公钥">配置SSH 公钥
+&lt;/h3>&lt;p>Windows 上安装 &lt;a class="link" href="https://git-for-windows.github.io/" target="_blank" rel="noopener"
 >Git for Windows&lt;/a> 之后在开始菜单里打开 Git Bash 输入：&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -4212,8 +3867,8 @@ Memory: 716.0K&lt;/p>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>在系统当前用户文件夹下生成了私钥 &lt;code>id_rsa&lt;/code> 和公钥 &lt;code>id_rsa.pub&lt;/code>。&lt;/p>
-&lt;h3 id="初始化-hexo">初始化 Hexo&lt;/h3>
-&lt;p>在电脑任意目录新建一个文件夹 &lt;code>hexo&lt;/code>，进入文件夹，在空白处点击右键选择 Git Bash，输入：&lt;/p>
+&lt;h3 id="初始化-hexo">初始化 Hexo
+&lt;/h3>&lt;p>在电脑任意目录新建一个文件夹 &lt;code>hexo&lt;/code>，进入文件夹，在空白处点击右键选择 Git Bash，输入：&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -4236,8 +3891,8 @@ Memory: 716.0K&lt;/p>
 >hexo-editor&lt;/a>**&lt;/p>
 &lt;p>2020/4/27更新: hexo-editor速度太慢，改用&lt;a class="link" href="https://www.typora.io" target="_blank" rel="noopener"
 >Typora&lt;/a>&lt;/p>
-&lt;h3 id="修改-deploy-参数">修改 deploy 参数&lt;/h3>
-&lt;p>打开位于 &lt;code>hexo&lt;/code> 文件夹下的 &lt;code>_config.yml&lt;/code>，修改 deploy 参数：&lt;/p>
+&lt;h3 id="修改-deploy-参数">修改 deploy 参数
+&lt;/h3>&lt;p>打开位于 &lt;code>hexo&lt;/code> 文件夹下的 &lt;code>_config.yml&lt;/code>，修改 deploy 参数：&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -4252,8 +3907,8 @@ Memory: 716.0K&lt;/p>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> branch: master
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h4 id="提交到github">提交到github&lt;/h4>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;/div>&lt;h4 id="提交到github">提交到github
+&lt;/h4>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;span class="lnt">2
@@ -4269,8 +3924,8 @@ Memory: 716.0K&lt;/p>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> branch: master
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h4 id="githubcoding双线部署">github、coding双线部署&lt;/h4>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;/div>&lt;h4 id="githubcoding双线部署">github、coding双线部署
+&lt;/h4>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;span class="lnt">2
@@ -4288,8 +3943,8 @@ Memory: 716.0K&lt;/p>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> branch: master
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h4 id="githubcoding服务器三线线部署">github、coding、服务器三线线部署&lt;/h4>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;/div>&lt;h4 id="githubcoding服务器三线线部署">github、coding、服务器三线线部署
+&lt;/h4>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;span class="lnt">2
@@ -4309,8 +3964,8 @@ Memory: 716.0K&lt;/p>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> branch: master
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h2 id="服务器操作">服务器操作&lt;/h2>
-&lt;p>首先，在 服务器 上安装 Git 和 nginx。&lt;/p>
+&lt;/div>&lt;h2 id="服务器操作">服务器操作
+&lt;/h2>&lt;p>首先，在 服务器 上安装 Git 和 nginx。&lt;/p>
 &lt;div class="note primary">2021.5.27 注意最好不要执行下面第一步升级操作，不然升级到最后一步会卡死，最后导致后面无法启动nginx。&lt;/div>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -4371,8 +4026,8 @@ Memory: 716.0K&lt;/p>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>配置完成后，访问使用浏览器服务器 ip ，如果能看到以下界面，表示运行成功。&lt;/p>
-&lt;h3 id="配置用户">配置用户&lt;/h3>
-&lt;p>然后新增一个名为 git 的用户，过程中需要设置登录密码，输入两次密码即可。&lt;/p>
+&lt;h3 id="配置用户">配置用户
+&lt;/h3>&lt;p>然后新增一个名为 git 的用户，过程中需要设置登录密码，输入两次密码即可。&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -4412,8 +4067,8 @@ Memory: 716.0K&lt;/p>
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">chmod &lt;span class="m">440&lt;/span> /etc/sudoers
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 id="上传-ssh-公钥">上传 SSH 公钥&lt;/h3>
-&lt;p>接下来要把本地的 ssh 公钥上传到 服务器 。执行&lt;/p>
+&lt;/div>&lt;h3 id="上传-ssh-公钥">上传 SSH 公钥
+&lt;/h3>&lt;p>接下来要把本地的 ssh 公钥上传到 服务器 。执行&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -4481,8 +4136,8 @@ Memory: 716.0K&lt;/p>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">[&lt;/span>&lt;span class="n">git&lt;/span>&lt;span class="nv">@special&lt;/span>&lt;span class="n">-beep&lt;/span>&lt;span class="p">-&lt;/span>&lt;span class="mf">1&lt;/span> &lt;span class="p">~]$&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 id="用户授权">用户授权&lt;/h3>
-&lt;p>接下来要给用户 git 授予操作 nginx 放网页的地方的权限：&lt;/p>
+&lt;/div>&lt;h3 id="用户授权">用户授权
+&lt;/h3>&lt;p>接下来要给用户 git 授予操作 nginx 放网页的地方的权限：&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -4501,8 +4156,8 @@ Memory: 716.0K&lt;/p>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">chown git:git -R /var/www/hexo
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 id="配置钩子">配置钩子&lt;/h3>
-&lt;p>现在就要向 Git Hooks 操作，配置好钩子：&lt;/p>
+&lt;/div>&lt;h3 id="配置钩子">配置钩子
+&lt;/h3>&lt;p>现在就要向 Git Hooks 操作，配置好钩子：&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -4547,8 +4202,8 @@ Memory: 716.0K&lt;/p>
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">chmod +x post-receive
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 id="配置-nginx">配置 nginx&lt;/h3>
-&lt;p>然后是配置 nginx。执行&lt;/p>
+&lt;/div>&lt;h3 id="配置-nginx">配置 nginx
+&lt;/h3>&lt;p>然后是配置 nginx。执行&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -4681,8 +4336,8 @@ Memory: 716.0K&lt;/p>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h2 id="发布文章">发布文章&lt;/h2>
-&lt;p>在本地编辑好文章之后使用 &lt;code>hexo g -d&lt;/code> ，如果hexo d后， ERROR Deployer not found: git，执行&lt;/p>
+&lt;/div>&lt;h2 id="发布文章">发布文章
+&lt;/h2>&lt;p>在本地编辑好文章之后使用 &lt;code>hexo g -d&lt;/code> ，如果hexo d后， ERROR Deployer not found: git，执行&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -4691,8 +4346,8 @@ Memory: 716.0K&lt;/p>
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">npm install -- save hexo-deployer-git
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h2 id="参考链接">参考链接&lt;/h2>
-&lt;ul>
+&lt;/div>&lt;h2 id="参考链接">参考链接
+&lt;/h2>&lt;ul>
 &lt;li>
 &lt;p>&lt;a class="link" href="https://tiktoking.github.io/2016/01/26/hexo/#" target="_blank" rel="noopener"
 >1.在服务器上搭建hexo博客，利用git更新&lt;/a>&lt;/p>

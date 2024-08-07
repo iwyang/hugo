@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pages on Bore's Notes</title><link>/page/</link><description>Recent content in Pages on Bore's Notes</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sat, 25 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="/page/index.xml" rel="self" type="application/rss+xml"/><item><title>关于</title><link>/about/</link><pubDate>Sat, 25 Apr 2020 00:00:00 +0000</pubDate><guid>/about/</guid><description>&lt;style>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pages on Bore's Notes</title><link>/page/</link><description>Recent content in Pages on Bore's Notes</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>Example Person</copyright><lastBuildDate>Sat, 25 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="/page/index.xml" rel="self" type="application/rss+xml"/><item><title>关于</title><link>/about/</link><pubDate>Sat, 25 Apr 2020 00:00:00 +0000</pubDate><guid>/about/</guid><description>&lt;style>
 .article-header {
 display: none;
 }
 &lt;/style>
-&lt;h3 id="-关于本站">💻 关于本站&lt;/h3>
-&lt;p>本站主要用来收集整理资料、记录笔记，方便自己查询使用。&lt;/p>
-&lt;h3 id="-关于我">👋 关于我&lt;/h3>
-&lt;p>6666&lt;/p></description></item><item><title>归档</title><link>/archives/</link><pubDate>Sat, 25 Apr 2020 00:00:00 +0000</pubDate><guid>/archives/</guid><description/></item><item><title>说说</title><link>/say/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/say/</guid><description>&lt;h2 id="说说">说说&lt;/h2>
-&lt;style>
+&lt;h3 id="-关于本站">💻 关于本站
+&lt;/h3>&lt;p>本站主要用来收集整理资料、记录笔记，方便自己查询使用。&lt;/p>
+&lt;h3 id="-关于我">👋 关于我
+&lt;/h3>&lt;p>6666&lt;/p></description></item><item><title>归档</title><link>/archives/</link><pubDate>Sat, 25 Apr 2020 00:00:00 +0000</pubDate><guid>/archives/</guid><description/></item><item><title>说说</title><link>/say/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/say/</guid><description>&lt;h2 id="说说">说说
+&lt;/h2>&lt;style>
 .article-header {
 display: none;
 }
@@ -67,8 +67,8 @@ document.getElementById('tip').innerHTML = 'ipseak依赖加载失败！'
 display: none;
 }
 &lt;/style>
-&lt;h3 id="欢迎交换友情链接本站信息">欢迎交换友情链接，本站信息：&lt;/h3>
-&lt;blockquote>
+&lt;h3 id="欢迎交换友情链接本站信息">欢迎交换友情链接，本站信息：
+&lt;/h3>&lt;blockquote>
 &lt;p>网站名称：Bore&amp;rsquo;s Notes&lt;/p>
 &lt;p>网站链接：https://bore.vip&lt;/p>
 &lt;p>网站图像：https://cdn.jsdelivr.net/gh/iwyang/pic/avatar.jpg&lt;/p>

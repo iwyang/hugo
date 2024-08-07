@@ -1,4 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pr on Bore's Notes</title><link>/tags/pr/</link><description>Recent content in Pr on Bore's Notes</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 17 Mar 2022 23:06:45 +0000</lastBuildDate><atom:link href="/tags/pr/index.xml" rel="self" type="application/rss+xml"/><item><title>pr学习笔记</title><link>/archives/pr%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link><pubDate>Thu, 17 Mar 2022 23:06:45 +0000</pubDate><guid>/archives/pr%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid><description>&lt;p>决定把pr系统地过一遍，看能不能坚持下来。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pr on Bore's Notes</title><link>/tags/pr/</link><description>Recent content in Pr on Bore's Notes</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>Example Person</copyright><lastBuildDate>Sat, 30 Apr 2022 14:27:25 +0000</lastBuildDate><atom:link href="/tags/pr/index.xml" rel="self" type="application/rss+xml"/><item><title>2022年春季运动会</title><link>/archives/2022%E5%B9%B4%E6%98%A5%E5%AD%A3%E8%BF%90%E5%8A%A8%E4%BC%9A/</link><pubDate>Sat, 30 Apr 2022 14:27:25 +0000</pubDate><guid>/archives/2022%E5%B9%B4%E6%98%A5%E5%AD%A3%E8%BF%90%E5%8A%A8%E4%BC%9A/</guid><description>&lt;p>用AE做了一个电子相册。&lt;/p>
+&lt;div align=center class="aspect-ratio">
+&lt;iframe src="https://player.bilibili.com/player.html?aid=896125456&amp;&amp;page=1&amp;as_wide=1&amp;high_quality=1&amp;danmaku=0"
+scrolling="no"
+border="0"
+frameborder="no"
+framespacing="0"
+high_quality=1
+danmaku=1
+allowfullscreen="true">
+&lt;/iframe>
+&lt;/div></description></item><item><title>pr学习笔记</title><link>/archives/pr%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link><pubDate>Thu, 17 Mar 2022 23:06:45 +0000</pubDate><guid>/archives/pr%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid><description>&lt;p>决定把pr系统地过一遍，看能不能坚持下来。&lt;/p>
 &lt;p>1.源窗口，&lt;code>i&lt;/code>标记入点，&lt;code>o&lt;/code>标记出点，可以将需要的一小段素材拖到视频轨道。&lt;/p>
 &lt;p>2.&lt;code>Shift+m&lt;/code>：跳转到下一标记点；&lt;code>Ctrl+Shirt+m&lt;/code>：跳转到上一标记点。&lt;/p>
 &lt;p>3.按住&lt;code>Alt&lt;/code>键，选中音频，再按&lt;code>Delete&lt;/code>键，可以快速删除音频。&lt;/p>

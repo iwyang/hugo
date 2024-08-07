@@ -1,3 +1,32 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ppt on Bore's Notes</title><link>/tags/ppt/</link><description>Recent content in Ppt on Bore's Notes</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 17 Nov 2021 11:08:52 +0000</lastBuildDate><atom:link href="/tags/ppt/index.xml" rel="self" type="application/rss+xml"/><item><title>怎样提取PPT里的背景音乐</title><link>/archives/%E6%80%8E%E6%A0%B7%E6%8F%90%E5%8F%96ppt%E9%87%8C%E7%9A%84%E8%83%8C%E6%99%AF%E9%9F%B3%E4%B9%90/</link><pubDate>Wed, 17 Nov 2021 11:08:52 +0000</pubDate><guid>/archives/%E6%80%8E%E6%A0%B7%E6%8F%90%E5%8F%96ppt%E9%87%8C%E7%9A%84%E8%83%8C%E6%99%AF%E9%9F%B3%E4%B9%90/</guid><description>&lt;p>1.确保PPT扩展名为&lt;code>.pptx&lt;/code>&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ppt on Bore's Notes</title><link>/tags/ppt/</link><description>Recent content in Ppt on Bore's Notes</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>Example Person</copyright><lastBuildDate>Sun, 02 Jul 2023 21:02:25 +0000</lastBuildDate><atom:link href="/tags/ppt/index.xml" rel="self" type="application/rss+xml"/><item><title>office更改默认字体</title><link>/archives/office%E6%9B%B4%E6%94%B9%E9%BB%98%E8%AE%A4%E5%AD%97%E4%BD%93/</link><pubDate>Sun, 02 Jul 2023 21:02:25 +0000</pubDate><guid>/archives/office%E6%9B%B4%E6%94%B9%E9%BB%98%E8%AE%A4%E5%AD%97%E4%BD%93/</guid><description>&lt;p>这里以&lt;code>office2021&lt;/code>为例&lt;/p>
+&lt;h3 id="word">word
+&lt;/h3>&lt;p>方法一：&lt;/p>
+&lt;p>1.在开始选项卡找到正文。&lt;/p>
+&lt;p>2.正文右键，点击修改。&lt;/p>
+&lt;p>3.设定格式之后，点击基于该模板的新文档，并且点击确定。&lt;/p>
+&lt;p>方法二：&lt;/p>
+&lt;p>1.切换到设计选项卡&lt;/p>
+&lt;p>2.字体—自定义字体—设为默认值&lt;/p>
+&lt;h3 id="excel">excel
+&lt;/h3>&lt;p>1.新建Excel文档，默认的字体在“文件-选项-常规-新建工作簿时”的设置中指定的&lt;/p>
+&lt;h3 id="ppt">ppt
+&lt;/h3>&lt;p>1.新建一个空白演示文稿。&lt;/p>
+&lt;p>2.单击工具栏上的&amp;quot;&lt;strong>视图&lt;/strong>&amp;quot;，然后单击“&lt;strong>幻灯片母版&lt;/strong>”。&lt;/p>
+&lt;p>3.找到&amp;quot;&lt;strong>字体&lt;/strong>&amp;quot;，在下拉选项框中选择”&lt;strong>自定义字体&lt;/strong>“。&lt;/p>
+&lt;p>4.修改中文和西文字体，保存，然后关闭母版视图。&lt;/p>
+&lt;p>5.单击“&lt;strong>文件&lt;/strong>”&amp;gt;“&lt;strong>另存为&lt;/strong>”，将文件名改为&amp;quot;&lt;strong>blank&lt;/strong>&amp;quot;，保存类型改为” &lt;strong>PowerPoint模板&lt;/strong>“。注意：文件名一定是&amp;quot;&lt;strong>blank&lt;/strong>&amp;ldquo;和保存类型一定是” &lt;strong>PowerPoint模板&lt;/strong>“。&lt;/p>
+&lt;p>6.再打开”&lt;strong>资源管理器&lt;/strong>“，”&lt;strong>查看&lt;/strong>“→“&lt;strong>显示“→&lt;strong>勾选&lt;/strong>”隐藏的项目“。（别关闭第5步的窗口）&lt;/strong>&lt;/p>
+&lt;p>7.看回第5步的”&lt;strong>另存为&lt;/strong>“的界面，手动更改保存的路径：&lt;code>C:\Users\&amp;lt;用户名&amp;gt;\AppData\Roaming\Microsoft\Templates&lt;/code> ，然后单击保存完成默认字体的设置。&lt;/p>
+&lt;p>随意打开一个新的演示文稿，会看到默认字体已变为微软雅黑。&lt;/p>
+&lt;p>在开始菜单中会多一个名为”Default Theme“的ppt模板，以后新建ppt就单击这个就可以。&lt;/p>
+&lt;h3 id="参考链接">参考链接
+&lt;/h3>&lt;ul>
+&lt;li>&lt;a class="link" href="https://blog.csdn.net/Williamcsj/article/details/120688661" target="_blank" rel="noopener"
+>Word——永久修改默认标题和正文样式&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://www.luyouqi.com/shezhi/30957.html" target="_blank" rel="noopener"
+>如何设置修改Excel默认字体&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://zhuanlan.zhihu.com/p/556010400" target="_blank" rel="noopener"
+>修改PPT默认字体方法&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>怎样提取PPT里的背景音乐</title><link>/archives/%E6%80%8E%E6%A0%B7%E6%8F%90%E5%8F%96ppt%E9%87%8C%E7%9A%84%E8%83%8C%E6%99%AF%E9%9F%B3%E4%B9%90/</link><pubDate>Wed, 17 Nov 2021 11:08:52 +0000</pubDate><guid>/archives/%E6%80%8E%E6%A0%B7%E6%8F%90%E5%8F%96ppt%E9%87%8C%E7%9A%84%E8%83%8C%E6%99%AF%E9%9F%B3%E4%B9%90/</guid><description>&lt;p>1.确保PPT扩展名为&lt;code>.pptx&lt;/code>&lt;/p>
 &lt;p>2.将PPT扩展名改为&lt;code>.rar&lt;/code>&lt;/p>
 &lt;p>3.用压缩软件打开，音乐文件在&lt;code>/ppt/media&lt;/code>文件夹下。&lt;/p></description></item></channel></rss>

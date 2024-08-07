@@ -1,12 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Halo on Bore's Notes</title><link>/tags/halo/</link><description>Recent content in Halo on Bore's Notes</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 25 May 2022 21:27:46 +0000</lastBuildDate><atom:link href="/tags/halo/index.xml" rel="self" type="application/rss+xml"/><item><title>Halo-theme-joe2.0 使用文档&amp;&amp;样式指南</title><link>/archives/halo-theme-joe2.0-%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3%E6%A0%B7%E5%BC%8F%E6%8C%87%E5%8D%97/</link><pubDate>Wed, 25 May 2022 21:27:46 +0000</pubDate><guid>/archives/halo-theme-joe2.0-%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3%E6%A0%B7%E5%BC%8F%E6%8C%87%E5%8D%97/</guid><description>&lt;p>本文参考：&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Halo on Bore's Notes</title><link>/tags/halo/</link><description>Recent content in Halo on Bore's Notes</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>Example Person</copyright><lastBuildDate>Wed, 25 May 2022 21:27:46 +0000</lastBuildDate><atom:link href="/tags/halo/index.xml" rel="self" type="application/rss+xml"/><item><title>Halo-theme-joe2.0 使用文档&amp;&amp;样式指南</title><link>/archives/halo-theme-joe2.0-%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3%E6%A0%B7%E5%BC%8F%E6%8C%87%E5%8D%97/</link><pubDate>Wed, 25 May 2022 21:27:46 +0000</pubDate><guid>/archives/halo-theme-joe2.0-%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3%E6%A0%B7%E5%BC%8F%E6%8C%87%E5%8D%97/</guid><description>&lt;p>本文参考：&lt;/p>
 &lt;ul>
 &lt;li>&lt;a class="link" href="https://bbchin.com/archives/halo-theme-joe20" target="_blank" rel="noopener"
 >Halo-theme-joe2.0 食用文档&lt;/a>&lt;/li>
 &lt;li>&lt;a class="link" href="https://bbchin.com/archives/style-guideline" target="_blank" rel="noopener"
 >Joe2.0 样式指南&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;h2 id="安装--更新">安装 &amp;amp; 更新&lt;/h2>
-&lt;blockquote>
+&lt;h2 id="安装--更新">安装 &amp;amp; 更新
+&lt;/h2>&lt;blockquote>
 &lt;p>安装前请确保 Halo版本 和主题的兼容性，V1.0.10 及以上版本仅支持 Halo 1.5+，以下版本兼容到 Halo 1.4.11，请知悉。&lt;/p>
 &lt;/blockquote>
 &lt;ol>
@@ -25,8 +25,8 @@
 &lt;p>更新主题时，建议直接通过 外观-主题-Joe2.0-更多-从主题包更新 把下载好的 zip 包上传上去，然后 先切换到其他主题，再切回本主题，并进入主题设置执行一次保存，最后强刷前端页面即可（这里切主题主要是为了避免有时候主题状态未激活和缓存的问题）。&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;h2 id="注意事项">注意事项&lt;/h2>
-&lt;ol>
+&lt;h2 id="注意事项">注意事项
+&lt;/h2>&lt;ol>
 &lt;li>安装主题后请务必到 后台管理 - 博客设置 - 高级选项 中开启 API服务 并配置 Access key 为 joe2.0（切记要和主题设置中的 AccessKey 一致），不然部分用到 Content API 的页面会请求失败并报错。（请参考以下报错）&lt;/li>
 &lt;/ol>
 &lt;div class="highlight">&lt;div class="chroma">
@@ -56,9 +56,9 @@
 &lt;p>最后，建议大家在 后台管理-系统-博客设置-高级选项-其他设置 中开启 全局绝对路径。&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;h2 id="插入多媒体">插入多媒体&lt;/h2>
-&lt;h3 id="插入音乐">插入音乐&lt;/h3>
-&lt;p>怎样在文章中插入网易云播放器？&lt;/p>
+&lt;h2 id="插入多媒体">插入多媒体
+&lt;/h2>&lt;h3 id="插入音乐">插入音乐
+&lt;/h3>&lt;p>怎样在文章中插入网易云播放器？&lt;/p>
 &lt;blockquote>
 &lt;p>id：网易云歌单 ID 或 歌曲 ID（可从歌曲网址中获取）&lt;/p>
 &lt;/blockquote>
@@ -107,8 +107,8 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;lt;/&lt;/span>&lt;span class="n">joe&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">mp3&lt;/span>&lt;span class="o">&amp;gt;&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 id="插入视频">插入视频&lt;/h3>
-&lt;p>文章中如何插入视频？&lt;/p>
+&lt;/div>&lt;h3 id="插入视频">插入视频
+&lt;/h3>&lt;p>文章中如何插入视频？&lt;/p>
 &lt;blockquote>
 &lt;p>主题已集成 dplayer，只需要在编辑文章时使用 joe-dplayer 标签插入视频地址即可（建议 MP4 格式，其它格式未必支持，切记前后要空一行），它接受如下属性：&lt;/p>
 &lt;/blockquote>
@@ -140,9 +140,9 @@
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">&amp;lt;joe-bilibili bvid=&amp;#34;BV12h411k7vr&amp;#34;&amp;gt;&amp;lt;/joe-bilibili&amp;gt;
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h2 id="文本元素">文本元素&lt;/h2>
-&lt;h3 id="段落缩进">段落缩进&lt;/h3>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;/div>&lt;h2 id="文本元素">文本元素
+&lt;/h2>&lt;h3 id="段落缩进">段落缩进
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;span class="lnt">2
@@ -156,8 +156,8 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">p&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 id="居中标题">居中标题&lt;/h3>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;/div>&lt;h3 id="居中标题">居中标题
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
@@ -165,9 +165,9 @@
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">joe-mtitle&lt;/span> &lt;span class="na">title&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;牛鞭牛鞭&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&amp;lt;/&lt;/span>&lt;span class="nt">joe-mtitle&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h2 id="按钮元素">按钮元素&lt;/h2>
-&lt;h3 id="多彩按钮">多彩按钮&lt;/h3>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;/div>&lt;h2 id="按钮元素">按钮元素
+&lt;/h2>&lt;h3 id="多彩按钮">多彩按钮
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
@@ -194,8 +194,8 @@
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>&lt;joe-abtn radius="12px" content="圆角按钮">&lt;/joe-abtn>&lt;/p>
-&lt;h3 id="便条按钮">便条按钮&lt;/h3>
-&lt;blockquote>
+&lt;h3 id="便条按钮">便条按钮
+&lt;/h3>&lt;blockquote>
 &lt;p>便条按钮不能自定义色彩，必须使用一个图标，其他的的和上面的多彩按钮一样&lt;/p>
 &lt;/blockquote>
 &lt;div class="highlight">&lt;div class="chroma">
@@ -219,8 +219,8 @@
 &lt;joe-anote icon="fa-bus" href="#" type="warning" content="便条按钮">&lt;/joe-anote>
 &lt;joe-anote icon="fa-bus" href="#" type="error" content="便条按钮">&lt;/joe-anote>
 &lt;joe-anote icon="fa-bus" href="#" type="info" content="便条按钮">&lt;/joe-anote>&lt;/p>
-&lt;h3 id="网盘按钮">网盘按钮&lt;/h3>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;h3 id="网盘按钮">网盘按钮
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;span class="lnt">2
@@ -253,9 +253,9 @@
 &lt;joe-cloud type="github" url="" password="">&lt;/joe-cloud>
 &lt;joe-cloud type="gitee" url="" password="">&lt;/joe-cloud>
 &lt;joe-cloud type="lz" url="" password="">&lt;/joe-cloud>&lt;/p>
-&lt;h2 id="装饰元素">装饰元素&lt;/h2>
-&lt;h3 id="跑马灯">跑马灯&lt;/h3>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;h2 id="装饰元素">装饰元素
+&lt;/h2>&lt;h3 id="跑马灯">跑马灯
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
@@ -264,8 +264,8 @@
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>&lt;span class="joe_lamp">&lt;/span>&lt;/p>
-&lt;h3 id="进度条">进度条&lt;/h3>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;h3 id="进度条">进度条
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
@@ -274,8 +274,8 @@
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>&lt;joe-progress percentage="50%" color="#6ce766">&lt;/joe-progress>&lt;/p>
-&lt;h3 id="彩色虚线">彩色虚线&lt;/h3>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;h3 id="彩色虚线">彩色虚线
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;span class="lnt">2
@@ -287,8 +287,8 @@
 &lt;/div>
 &lt;/div>&lt;p>&lt;joe-dotted>&lt;/joe-dotted>
 &lt;joe-dotted startcolor="#1772e8" endcolor="#4cd327">&lt;/joe-dotted>&lt;/p>
-&lt;h3 id="tabs">Tabs&lt;/h3>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;h3 id="tabs">Tabs
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;span class="lnt">2
@@ -312,8 +312,8 @@
 {tabs-pane 第二个}小说家的故事{/tabs-pane}
 &lt;/div>
 &lt;/joe-tabs>
-&lt;h3 id="时间线">时间线&lt;/h3>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;h3 id="时间线">时间线
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;span class="lnt">2
@@ -340,8 +340,8 @@
 {timeline-item 2022}100元{/timeline-item}
 &lt;/div>
 &lt;/joe-timeline>
-&lt;h3 id="评论后可见">评论后可见&lt;/h3>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;h3 id="评论后可见">评论后可见
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
@@ -349,8 +349,8 @@
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">&amp;lt;joe-hide&amp;gt;&amp;lt;/joe-hide&amp;gt;
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h2 id="提示元素">提示元素&lt;/h2>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;/div>&lt;h2 id="提示元素">提示元素
+&lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;span class="lnt">2
@@ -368,8 +368,8 @@
 &lt;joe-message type="info" content="普通消息">&lt;/joe-message>
 &lt;joe-message type="warning" content="警告消息">&lt;/joe-message>
 &lt;joe-message type="error" content="错误消息">&lt;/joe-message>&lt;/p>
-&lt;h2 id="常见问题">常见问题&lt;/h2>
-&lt;p>1.如何自定义导航条菜单图标？&lt;/p>
+&lt;h2 id="常见问题">常见问题
+&lt;/h2>&lt;p>1.如何自定义导航条菜单图标？&lt;/p>
 &lt;blockquote>
 &lt;p>主题自身已经引入了部分 iconfont 图标，你可以直接用（全在这里），如果想在这个基础上增加图标，可联系我加入该项目的图标组，加入后即可获取最新的字体链接进行替换（template/module/link.ftl 中第 25 行）。iconfont 使用方式如下：
 （目前主题菜单只支持字体图标，若要用图片请自行修改代码）&lt;/p>
@@ -434,8 +434,8 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h2 id="主题修改">主题修改&lt;/h2>
-&lt;p>修改首页文章数、分类数、标签数顺序：
+&lt;/div>&lt;h2 id="主题修改">主题修改
+&lt;/h2>&lt;p>修改首页文章数、分类数、标签数顺序：
 自行修改 template/module/blogger.ftl 文件&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -482,10 +482,10 @@
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div></description></item><item><title>halo定时备份的方法</title><link>/archives/halo%E5%AE%9A%E6%97%B6%E5%A4%87%E4%BB%BD%E7%9A%84%E6%96%B9%E6%B3%95/</link><pubDate>Sun, 26 Jul 2020 13:49:25 +0000</pubDate><guid>/archives/halo%E5%AE%9A%E6%97%B6%E5%A4%87%E4%BB%BD%E7%9A%84%E6%96%B9%E6%B3%95/</guid><description>&lt;p>在网上查询了一下halo定时备份有三种方案：邮箱和Dropbox，以及github。&lt;/p>
-&lt;h2 id="备份到qq邮箱">备份到QQ邮箱&lt;/h2>
-&lt;h3 id="安装邮件发送依赖组件">&lt;strong>安装邮件发送依赖组件&lt;/strong>&lt;/h3>
-&lt;h4 id="centos-7">Centos 7&lt;/h4>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;h2 id="备份到qq邮箱">备份到QQ邮箱
+&lt;/h2>&lt;h3 id="安装邮件发送依赖组件">&lt;strong>安装邮件发送依赖组件&lt;/strong>
+&lt;/h3>&lt;h4 id="centos-7">Centos 7
+&lt;/h4>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
@@ -493,8 +493,8 @@
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">yum install sendmail mailx -y
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h4 id="centos-8">Centos 8&lt;/h4>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;/div>&lt;h4 id="centos-8">Centos 8
+&lt;/h4>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;span class="lnt">2
@@ -506,8 +506,8 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo systemctl &lt;span class="nb">enable&lt;/span> postfix
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h4 id="debian">Debian&lt;/h4>
-&lt;ol>
+&lt;/div>&lt;h4 id="debian">Debian
+&lt;/h4>&lt;ol>
 &lt;li>安装 mailtuils:&lt;/li>
 &lt;/ol>
 &lt;div class="highlight">&lt;div class="chroma">
@@ -531,8 +531,8 @@
 &lt;/div>
 &lt;/div>&lt;p>在安装过程即将结束时，您将看到一个类似于下图中的窗口的窗口。默认选项是&lt;code>Internet Site&lt;/code>。这是本教程的推荐选项，请按&lt;code>TAB&lt;/code>，然后按&lt;code>ENTER&lt;/code>。
 之后，您将获得另一个窗口，就像下一个图像中的窗口一样。该系统邮件名称应该是一样的，你分配给服务器，当你在创造它的名字。如果它显示子域&lt;code>subdomain.example.com&lt;/code>，请将其更改为&lt;code>ust example.com&lt;/code>。完成后，按&lt;code>TAB&lt;/code>，然后&lt;code>ENTER&lt;/code>。&lt;/p>
-&lt;h3 id="修改附件发送大小限制">修改附件发送大小限制&lt;/h3>
-&lt;p>看下现在邮件的大小限制：&lt;/p>
+&lt;h3 id="修改附件发送大小限制">修改附件发送大小限制
+&lt;/h3>&lt;p>看下现在邮件的大小限制：&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -551,8 +551,8 @@
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo postconf -e &lt;span class="s2">&amp;#34;message_size_limit = 204800000&amp;#34;&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 id="获得编辑备份脚本">获得&amp;amp;编辑备份脚本&lt;/h3>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;/div>&lt;h3 id="获得编辑备份脚本">获得&amp;amp;编辑备份脚本
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
@@ -560,8 +560,8 @@
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">wget https://raw.githubusercontent.com/iwyang/scripts/master/halo_email_backup.sh
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h4 id="创建备份文件夹">创建备份文件夹&lt;/h4>
-&lt;div class="note primary">如果选择将文件备份到临时目录的话，这步可跳过，直接修改脚本即可。我直接跳过了这一步。&lt;/div>
+&lt;/div>&lt;h4 id="创建备份文件夹">创建备份文件夹
+&lt;/h4>&lt;div class="note primary">如果选择将文件备份到临时目录的话，这步可跳过，直接修改脚本即可。我直接跳过了这一步。&lt;/div>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -570,8 +570,8 @@
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">mkdir -p /home/back
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h4 id="修改脚本">修改脚本&lt;/h4>
-&lt;p>脚本原来模样：&lt;/p>
+&lt;/div>&lt;h4 id="修改脚本">修改脚本
+&lt;/h4>&lt;p>脚本原来模样：&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
@@ -630,7 +630,7 @@
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">vi halo_email_backup.sh
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">vi email.sh
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;div class="highlight">&lt;div class="chroma">
@@ -651,39 +651,31 @@
 &lt;/div>
 &lt;/div>&lt;p>上面代码中最后的&lt;code>rm -f web_$(date +&amp;quot;%Y%m%d&amp;quot;).tar.gz&lt;/code>，表示删除本地的临时文件。&lt;/p>
 &lt;blockquote>
-&lt;p>&lt;strong>注意&lt;/strong>在Debian下要讲&lt;code>-a&lt;/code> 改成 &lt;code>-A&lt;/code>（如下）&lt;/p>
+&lt;p>&lt;strong>注意&lt;/strong>在&lt;strong>Debian&lt;/strong>下要讲&lt;code>-a&lt;/code> 改成 &lt;code>-A&lt;/code>（如下）&lt;/p>
 &lt;/blockquote>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
-&lt;/span>&lt;span class="lnt"> 2
-&lt;/span>&lt;span class="lnt"> 3
-&lt;/span>&lt;span class="lnt"> 4
-&lt;/span>&lt;span class="lnt"> 5
-&lt;/span>&lt;span class="lnt"> 6
-&lt;/span>&lt;span class="lnt"> 7
-&lt;/span>&lt;span class="lnt"> 8
-&lt;/span>&lt;span class="lnt"> 9
-&lt;/span>&lt;span class="lnt">10
-&lt;/span>&lt;span class="lnt">11
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-diff" data-lang="diff">&lt;span class="line">&lt;span class="cl">&lt;span class="gd">- tar zcvf web_$(date +&amp;#34;%Y%m%d&amp;#34;).tar.gz /root/.halo
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="gd">&lt;/span>echo &amp;#34;Blog date&amp;#34;|mail -s &amp;#34;Backup$(date +%Y-%m-%d)&amp;#34; -a web_$(date +&amp;#34;%Y%m%d&amp;#34;).tar.gz 455343442@qq.com
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="gi">+ tar zcvf web_$(date +&amp;#34;%Y%m%d&amp;#34;).tar.gz /root/.halo
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="gi">&lt;/span>echo &amp;#34;Blog date&amp;#34;|mail -s &amp;#34;Backup$(date +%Y-%m-%d)&amp;#34; -A web_$(date +&amp;#34;%Y%m%d&amp;#34;).tar.gz 455343442@qq.com
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">### 设置定时任务
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">#### 赋予文件执行权限
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">```bash
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">chmod +x /root/halo_email_backup.sh
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-diff" data-lang="diff">&lt;span class="line">&lt;span class="cl">&lt;span class="gd">- echo &amp;#34;Blog date&amp;#34;|mail -s &amp;#34;Backup$(date +%Y-%m-%d)&amp;#34; -a web_$(date +&amp;#34;%Y%m%d&amp;#34;).tar.gz 455343442@qq.com
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="gd">&lt;/span>&lt;span class="gi">+ echo &amp;#34;Blog date&amp;#34;|mail -s &amp;#34;Backup$(date +%Y-%m-%d)&amp;#34; -A web_$(date +&amp;#34;%Y%m%d&amp;#34;).tar.gz 455343442@qq.com
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="设置定时任务">设置定时任务
+&lt;/h4>&lt;h5 id="赋予文件执行权限">赋予文件执行权限
+&lt;/h5>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">chmod +x /root/email.sh
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>运行的时候就输入下面的代码即可：&lt;code>./halo_email_backup.sh&lt;/code>&lt;/p>
-&lt;h4 id="设定自动任务">设定自动任务&lt;/h4>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;/div>&lt;p>运行的时候就输入下面的代码即可：&lt;code>./email.sh&lt;/code>&lt;/p>
+&lt;h5 id="设定自动任务">设定自动任务
+&lt;/h5>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
@@ -696,20 +688,19 @@
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="m">01&lt;/span> &lt;span class="m">00&lt;/span> * * * /root/halo_email_backup.sh
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="m">01&lt;/span> &lt;span class="m">00&lt;/span> * * * /root/email.sh
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>意思是每天凌晨0:01运行这个脚本。&lt;/p>
-&lt;h2 id="备份到dropbox">备份到Dropbox&lt;/h2>
-&lt;h3 id="创建dropbox应用">创建Dropbox应用&lt;/h3>
-&lt;p>首先，需要创建一个Dropbox应用，可以从该网址进行创建：https://www.dropbox.com/developers/apps/create&lt;/p>
+&lt;h2 id="备份到dropbox">备份到Dropbox
+&lt;/h2>&lt;h3 id="创建dropbox应用">创建Dropbox应用
+&lt;/h3>&lt;p>首先，需要创建一个Dropbox应用，可以从该网址进行创建：https://www.dropbox.com/developers/apps/create&lt;/p>
 &lt;p>在这里，应用类型选择&lt;code>Dropbox API&lt;/code>，数据存储类型选择&lt;code>App folder&lt;/code>，然后&lt;code>命名&lt;/code>创建。然后切换到&lt;code>Permissions&lt;/code>选项卡，勾选相应权限。最后记录下&lt;code>App key&lt;/code>，&lt;code>App secret&lt;/code>，下面要用。&lt;/p>
-&lt;p>&lt;img src="https://bore.vip/upload/2022/05/dropbox_uploader.jpg"
+&lt;p>&lt;img src="/img/halo%E5%AE%9A%E6%97%B6%E5%A4%87%E4%BB%BD%E7%9A%84%E6%96%B9%E6%B3%95/dropbox_uploader.jpg"
 loading="lazy"
-alt="dropbox_uploader"
 >&lt;/p>
-&lt;h3 id="下载dropbox_uploadersh">下载dropbox_uploader.sh&lt;/h3>
-&lt;p>&lt;a class="link" href="https://github.com/andreafabrizi/Dropbox-Uploader/" target="_blank" rel="noopener"
+&lt;h3 id="下载dropbox_uploadersh">下载dropbox_uploader.sh
+&lt;/h3>&lt;p>&lt;a class="link" href="https://github.com/andreafabrizi/Dropbox-Uploader/" target="_blank" rel="noopener"
 >dropbox_uploader&lt;/a> 是一个第三方Dropbox备份脚本，首先下载脚本：&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -749,8 +740,8 @@ alt="dropbox_uploader"
 &lt;/div>
 &lt;/div>&lt;p>如果报错&lt;code>unlink&lt;/code>,先执行命令&lt;code>rm ~/.dropbox_uploader&lt;/code>，删除相应文件夹，然后删除上面申请的APP。按上面的操作重新申请&lt;/p>
 &lt;p>APP、重新绑定，一般第二次申请就会成功。&lt;/p>
-&lt;h3 id="编写备份脚本">编写备份脚本&lt;/h3>
-&lt;p>编写定时备份脚本，取名为&lt;code>backup.sh&lt;/code>。代码原来模样如下：&lt;/p>
+&lt;h3 id="编写备份脚本">编写备份脚本
+&lt;/h3>&lt;p>编写定时备份脚本，取名为&lt;code>backup.sh&lt;/code>。代码原来模样如下：&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -950,8 +941,8 @@ alt="dropbox_uploader"
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;hr>
-&lt;h3 id="赋予文件执行权限">赋予文件执行权限&lt;/h3>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;h3 id="赋予文件执行权限-1">赋予文件执行权限
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
@@ -960,8 +951,8 @@ alt="dropbox_uploader"
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>运行的时候就输入下面的代码即可：&lt;code>./backup.sh&lt;/code>&lt;/p>
-&lt;h3 id="设置定时任务">设置定时任务&lt;/h3>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;h3 id="设置定时任务-1">设置定时任务
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
@@ -978,11 +969,11 @@ alt="dropbox_uploader"
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>这样，就可以每天凌晨00:02自动备份到Dropbox了。&lt;/p>
-&lt;h2 id="备份到github">备份到github&lt;/h2>
-&lt;h3 id="准备工作">准备工作&lt;/h3>
-&lt;p>首先当然是在服务器上安装&lt;code>GIt&lt;/code>，配置&lt;code>ssh公钥&lt;/code>，并且在&lt;code>github&lt;/code>上添加服务器&lt;code>ssh公钥&lt;/code>。具体过程略。&lt;/p>
-&lt;h3 id="初始化仓库">初始化仓库&lt;/h3>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;h2 id="备份到github">备份到github
+&lt;/h2>&lt;h3 id="准备工作">准备工作
+&lt;/h3>&lt;p>首先当然是在服务器上安装&lt;code>GIt&lt;/code>，配置&lt;code>ssh公钥&lt;/code>，并且在&lt;code>github&lt;/code>上添加服务器&lt;code>ssh公钥&lt;/code>。具体过程略。&lt;/p>
+&lt;h3 id="初始化仓库">初始化仓库
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;span class="lnt">2
@@ -1011,9 +1002,9 @@ alt="dropbox_uploader"
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;hr>
-&lt;h3 id="设置定时任务-1">设置定时任务&lt;/h3>
-&lt;h4 id="编写备份脚本-1">编写备份脚本&lt;/h4>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;h3 id="设置定时任务-2">设置定时任务
+&lt;/h3>&lt;h4 id="编写备份脚本-1">编写备份脚本
+&lt;/h4>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;span class="lnt">2
@@ -1092,8 +1083,8 @@ alt="dropbox_uploader"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">rm&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="nx">rf&lt;/span> &lt;span class="p">.&lt;/span>&lt;span class="nx">git&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h4 id="赋予文件执行权限-1">赋予文件执行权限&lt;/h4>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;/div>&lt;h4 id="赋予文件执行权限-2">赋予文件执行权限
+&lt;/h4>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
@@ -1101,8 +1092,8 @@ alt="dropbox_uploader"
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">chmod +x /root/github.sh
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h4 id="设定自动任务-1">设定自动任务&lt;/h4>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;/div>&lt;h4 id="设定自动任务-1">设定自动任务
+&lt;/h4>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
@@ -1119,8 +1110,8 @@ alt="dropbox_uploader"
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>意思是每天凌晨0:03运行这个脚本。&lt;/p>
-&lt;h3 id="还原博客">还原博客&lt;/h3>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;h3 id="还原博客">还原博客
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
@@ -1130,12 +1121,12 @@ alt="dropbox_uploader"
 &lt;/div>
 &lt;/div>&lt;p>接下来就是配置个 Java 环境，下载个 Halo 运行包，配置域名访问。具体可参考&lt;a class="link" href="https://halo.run/" target="_blank" rel="noopener"
 >官方文档&lt;/a>。&lt;/p>
-&lt;h2 id="总结">总结&lt;/h2>
-&lt;p>&lt;code>halo&lt;/code>博客迁移后，最好删除&lt;code>logs&lt;/code>文件夹下的日志文件。&lt;/p>
+&lt;h2 id="总结">总结
+&lt;/h2>&lt;p>&lt;code>halo&lt;/code>博客迁移后，最好删除&lt;code>logs&lt;/code>文件夹下的日志文件。&lt;/p>
 &lt;hr>
-&lt;h2 id="scp命令">SCP命令&lt;/h2>
-&lt;h3 id="下载文件">下载文件&lt;/h3>
-&lt;p>从服务器下载文件到本地，在&lt;code>Git Bash&lt;/code>执行：&lt;/p>
+&lt;h2 id="scp命令">SCP命令
+&lt;/h2>&lt;h3 id="下载文件">下载文件
+&lt;/h3>&lt;p>从服务器下载文件到本地，在&lt;code>Git Bash&lt;/code>执行：&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -1145,8 +1136,8 @@ alt="dropbox_uploader"
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>意思是将服务器&lt;code>/root/.ssh&lt;/code>目录下的mysite文件复制到当前路径下&lt;code>ssh&lt;/code>文件夹下。&lt;/p>
-&lt;h3 id="上传文件">上传文件&lt;/h3>
-&lt;p>从本地上传文件到服务器，在&lt;code>Git Bash&lt;/code>执行：&lt;/p>
+&lt;h3 id="上传文件">上传文件
+&lt;/h3>&lt;p>从本地上传文件到服务器，在&lt;code>Git Bash&lt;/code>执行：&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -1156,9 +1147,9 @@ alt="dropbox_uploader"
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>意思是将当前目录下&lt;code>.halo.ip&lt;/code>文件上传到服务器&lt;code>/root/目录下&lt;/code>。&lt;/p>
-&lt;h2 id="wordpress常用命令">wordpress常用命令&lt;/h2>
-&lt;div class="note primary">附录：wordpress常用mysql命令&lt;/div>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;h2 id="wordpress相关">wordpress相关
+&lt;/h2>&lt;h3 id="wordpress常用mysql命令">wordpress常用mysql命令
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
 &lt;/span>&lt;span class="lnt"> 2
@@ -1199,10 +1190,130 @@ alt="dropbox_uploader"
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;hr>
-&lt;h2 id="nginx-command-not-found-解决方案">&lt;code>nginx&lt;/code>: command not found 解决方案&lt;/h2>
-&lt;p>只需要输入&lt;code>source /etc/profile&lt;/code> ，让配置文件重新生效一下即可。&lt;/p>
-&lt;h2 id="参考链接">参考链接&lt;/h2>
-&lt;ul>
+&lt;h3 id="debian-10-五分钟一键安装wordpress">Debian 10 五分钟/一键安装Wordpress
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#Debian8下载脚本&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">wget http://w3.gubo.org/pubfiles/tylemp/10/tylemp.sh
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#安装稳定版Nginx+PHP+MariaDB&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">bash tylemp.sh stable
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#安装wordpress，www.yourdomain.com即为你的域名&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">bash tylemp.sh wordpress www.yourdomain.com
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>命令列表&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">bash tylemp.sh system &lt;span class="c1"># 优化系统，删除不需要组件，dropbear替代sshd &lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">bash tylemp.sh exim4 &lt;span class="c1"># 更轻量级邮件系统 &lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">bash tylemp.sh mysql &lt;span class="c1"># 安装mysql &lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">bash tylemp.sh nginx &lt;span class="c1"># 安装nginx，默认一个进程，可调整&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">bash tylemp.sh php &lt;span class="c1"># 安装php，包含php5-gd，可使用验证码&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">bash tylemp.sh stable &lt;span class="c1"># 安装上面所有，软件是debian官方stable源，版本较旧&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">bash tylemp.sh wordpress www.yourdomain.com &lt;span class="c1"># 一键安装wordpress, 数据库自动配置好。 &lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">bash tylemp.sh vhost www.yourdomain.com &lt;span class="c1"># 一键安装静态虚拟主机。&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">bash tylemp.sh dhost www.yourdomain.com &lt;span class="c1"># 一键安装动态虚拟主机，方便直接上传网站程序。&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">bash tylemp.sh typecho www.yourdomain.com &lt;span class="c1"># 安装typecho，提供数据库名，密码等自主添加完成安装&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">bash tylemp.sh phpmyadmin www.yourdomain.com &lt;span class="c1"># 一键安装phpmyadmin 数据库管理软件，用http://www.yourdomain.com/phpMyAdmin访问 &lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">bash tylemp.sh addnginx &lt;span class="m">2&lt;/span> &lt;span class="c1">#调整nginx进程，这里2表示调整后的进程数，请根据vps配置（cpu核心数）更改&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">bash tylemp.sh sshport &lt;span class="m">22022&lt;/span> &lt;span class="c1">#更改ssh端口号22022，建议更改10000以上端口。重启后生效。&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">bash tylemp.sh rainloop www.yourdomain.com &lt;span class="c1"># 增加Gmail的web客户端一键安装&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">bash tylemp.sh carbon www.yourdomain.com &lt;span class="c1"># 增加Carbon Forum的一键安装&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="修改-wordpress-上传文件大小限制">修改 WordPress 上传文件大小限制
+&lt;/h3>&lt;p>1.查找php.ini配置文件&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">find / -name &amp;#34;php.ini&amp;#34;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>会出现两个结果，修改类似&lt;code>/etc/php/7.3/fpm/php.ini&lt;/code>&lt;/p>
+&lt;p>2.修改 &lt;code>php.ini&lt;/code>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">vi /etc/php/7.3/fpm/php.ini
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>在其中搜索并修改以下配置：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="nv">upload_max_filesize&lt;/span> &lt;span class="o">=&lt;/span> 512M
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">post_max_size&lt;/span> &lt;span class="o">=&lt;/span> 512M
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">max_execution_time&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="m">3000&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>这里配置上限为 512 MB，同时增加了最大处理时间。&lt;/p>
+&lt;p>3.修改 nginx.conf&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">vi /etc/nginx/conf.d/blog.bore.vip.conf
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>在 &lt;code>http&lt;/code> 或 &lt;code>server&lt;/code> 配置下添加&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">client_max_body_size 512M;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>这里配置上限为 512 MB。&lt;/p>
+&lt;p>4.重启nginx和php&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">service nginx restart
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">service php7.3-fpm restart
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="nginx-command-not-found-解决方案">&lt;code>nginx&lt;/code>: command not found 解决方案
+&lt;/h2>&lt;p>只需要输入&lt;code>source /etc/profile&lt;/code> ，让配置文件重新生效一下即可。&lt;/p>
+&lt;h2 id="参考链接">参考链接
+&lt;/h2>&lt;ul>
 &lt;li>&lt;a class="link" href="https://www.moerats.com/archives/69/" target="_blank" rel="noopener"
 >1.Linux 每日自动备份到FTP及数据库通过邮箱发送方法&lt;/a>&lt;/li>
 &lt;li>&lt;a class="link" href="http://blog.sina.com.cn/s/blog_7edf8b9f0100to4p.html" target="_blank" rel="noopener"
@@ -1221,21 +1332,25 @@ alt="dropbox_uploader"
 >8.Impossible to unlink&lt;/a>&lt;/li>
 &lt;li>&lt;a class="link" href="https://cloud.tencent.com/developer/article/1363216" target="_blank" rel="noopener"
 >9.如何在Debian 9上安装和配置Postfix作为仅发送SMTP服务&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://www.gubo.org/debian-lemp-script/" target="_blank" rel="noopener"
+>10.Debian LNMP/LEMP/WordPress一键脚本&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://blog.nex3z.com/2020/07/14/%E4%BF%AE%E6%94%B9-wordpress-%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6%E5%A4%A7%E5%B0%8F%E9%99%90%E5%88%B6/" target="_blank" rel="noopener"
+>11.修改 WordPress 上传文件大小限制&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>在Centos服务器部署Halo</title><link>/archives/%E5%9C%A8centos%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%83%A8%E7%BD%B2halo/</link><pubDate>Fri, 24 Jul 2020 02:21:25 +0000</pubDate><guid>/archives/%E5%9C%A8centos%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%83%A8%E7%BD%B2halo/</guid><description>&lt;p>本教程以 &lt;code>CentOS 7.x&lt;/code> 为例，配置并运行 &lt;code>Halo&lt;/code>，其他 Linux 发行版大同小异。&lt;/p>
-&lt;h2 id="写在前面">写在前面&lt;/h2>
-&lt;ol>
+&lt;h2 id="写在前面">写在前面
+&lt;/h2>&lt;ol>
 &lt;li>具备一定的 Linux 基础。&lt;/li>
 &lt;li>如需域名绑定，请先保证已经正确解析 IP，以及确认服务器是否需要备案。&lt;/li>
 &lt;li>如需使用 IP 访问，请先确保 Halo 的运行端口已经打开，除非你使用 80 端口运行 Halo。&lt;/li>
 &lt;li>如 3 所述，如果你使用了类似 &lt;code>宝塔面板&lt;/code> 之类的 Linux 管理面板，可能还需要在面板里设置端口。&lt;/li>
 &lt;li>不要想当然，请严格按照文档的流程操作。&lt;/li>
 &lt;/ol>
-&lt;h2 id="win10配置java环境变量">Win10配置java环境变量&lt;/h2>
-&lt;h3 id="下载-安装jdk">下载&amp;amp;&amp;amp; 安装JDK&lt;/h3>
-&lt;p>下载地址：https://www.oracle.com/java/technologies/downloads/&lt;/p>
+&lt;h2 id="win10配置java环境变量">Win10配置java环境变量
+&lt;/h2>&lt;h3 id="下载-安装jdk">下载&amp;amp;&amp;amp; 安装JDK
+&lt;/h3>&lt;p>下载地址：https://www.oracle.com/java/technologies/downloads/&lt;/p>
 &lt;p>2022.5.26 java18 本地不可用，java17 本地可用。（halo版本：1.5.3）&lt;/p>
-&lt;h3 id="环境变量配置">环境变量配置&lt;/h3>
-&lt;ol>
+&lt;h3 id="环境变量配置">环境变量配置
+&lt;/h3>&lt;ol>
 &lt;li>
 &lt;p>打开 环境变量窗口，右键 &lt;strong>This PC(此电脑) -&amp;gt; Properties（属性） -&amp;gt; Advanced system settings（高级系统设置） -&amp;gt; Environment Variables（环境变量）&amp;hellip;&lt;/strong>&lt;/p>
 &lt;/li>
@@ -1282,15 +1397,15 @@ alt="dropbox_uploader"
 &lt;/div>&lt;ol start="4">
 &lt;li>检查 打开 cmd，输入 &lt;strong>java&lt;/strong>，出现一连串的指令提示，说明配置成功了。&lt;/li>
 &lt;/ol>
-&lt;h2 id="环境要求">环境要求&lt;/h2>
-&lt;p>为了在使用过程中不出现意外的事故，给出下列推荐的配置&lt;/p>
+&lt;h2 id="环境要求">环境要求
+&lt;/h2>&lt;p>为了在使用过程中不出现意外的事故，给出下列推荐的配置&lt;/p>
 &lt;ul>
 &lt;li>CentOS 7.x&lt;/li>
 &lt;li>512 MB 以上内存&lt;/li>
 &lt;/ul>
-&lt;h2 id="服务器配置">服务器配置&lt;/h2>
-&lt;h3 id="更新软件包">更新软件包&lt;/h3>
-&lt;p>请确保服务器的软件包已经是最新的。&lt;/p>
+&lt;h2 id="服务器配置">服务器配置
+&lt;/h2>&lt;h3 id="更新软件包">更新软件包
+&lt;/h3>&lt;p>请确保服务器的软件包已经是最新的。&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -1299,8 +1414,8 @@ alt="dropbox_uploader"
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo yum update -y
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 id="装-java-运行环境">装 Java 运行环境&lt;/h3>
-&lt;blockquote>
+&lt;/div>&lt;h3 id="装-java-运行环境">装 Java 运行环境
+&lt;/h3>&lt;blockquote>
 &lt;p>若已经存在 Java 运行环境的可略过这一步。&lt;/p>
 &lt;/blockquote>
 &lt;div class="highlight">&lt;div class="chroma">
@@ -1320,8 +1435,8 @@ alt="dropbox_uploader"
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>当然，这只是其中一种比较简单的安装方式，你也可以用其他方式，并不是强制要求使用这种方式安装。&lt;/p>
-&lt;h2 id="创建-halo-用户">创建 Halo 用户&lt;/h2>
-&lt;p>&lt;del>我们推荐创建一个低权限的用户运行 &lt;code>halo&lt;/code>&lt;/del>：（这一步我没有进行，直接用root）&lt;/p>
+&lt;h2 id="创建-halo-用户">创建 Halo 用户
+&lt;/h2>&lt;p>&lt;del>我们推荐创建一个低权限的用户运行 &lt;code>halo&lt;/code>&lt;/del>：（这一步我没有进行，直接用root）&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -1336,9 +1451,9 @@ alt="dropbox_uploader"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo su halo
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h2 id="安装-halo">安装 Halo&lt;/h2>
-&lt;h3 id="创建存放运行包的目录">创建存放运行包的目录&lt;/h3>
-&lt;p>创建存放 运行包 的目录，这里以 ~/app 为例&lt;/p>
+&lt;/div>&lt;h2 id="安装-halo">安装 Halo
+&lt;/h2>&lt;h3 id="创建存放运行包的目录">创建存放运行包的目录
+&lt;/h3>&lt;p>创建存放 运行包 的目录，这里以 ~/app 为例&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -1347,8 +1462,8 @@ alt="dropbox_uploader"
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">mkdir ~/app &lt;span class="o">&amp;amp;&amp;amp;&lt;/span> &lt;span class="nb">cd&lt;/span> ~/app
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 id="下载运行包">下载运行包&lt;/h3>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;/div>&lt;h3 id="下载运行包">下载运行包
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
@@ -1356,8 +1471,8 @@ alt="dropbox_uploader"
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">wget https://dl.halo.run/release/halo-1.5.3.jar -O halo.jar
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 id="创建工作目录">创建工作目录&lt;/h3>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;/div>&lt;h3 id="创建工作目录">创建工作目录
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
@@ -1365,8 +1480,8 @@ alt="dropbox_uploader"
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">mkdir ~/.halo &lt;span class="o">&amp;amp;&amp;amp;&lt;/span> &lt;span class="nb">cd&lt;/span> ~/.halo
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 id="下载配置文件">下载配置文件&lt;/h3>
-&lt;p>考虑到部分用户的需要，可能需要自定义比如端口等设置项，我们提供了公共的配置文件，并且该配置文件是完全独立于安装包的。当然，你也可以使用安装包内的默认配置文件，但是安装包内的配置文件是不可修改的。请注意：配置文件的路径为 &lt;code>~/.halo/application.yaml&lt;/code>。&lt;/p>
+&lt;/div>&lt;h3 id="下载配置文件">下载配置文件
+&lt;/h3>&lt;p>考虑到部分用户的需要，可能需要自定义比如端口等设置项，我们提供了公共的配置文件，并且该配置文件是完全独立于安装包的。当然，你也可以使用安装包内的默认配置文件，但是安装包内的配置文件是不可修改的。请注意：配置文件的路径为 &lt;code>~/.halo/application.yaml&lt;/code>。&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -1377,8 +1492,8 @@ alt="dropbox_uploader"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">wget https://dl.halo.run/config/application-template.yaml -O ./application.yaml
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 id="修改配置文件">修改配置文件&lt;/h3>
-&lt;p>完成上一步操作，我们就可以自己配置 &lt;code>Halo&lt;/code> 的运行端口，以及数据库相关的配置了。&lt;/p>
+&lt;/div>&lt;h3 id="修改配置文件">修改配置文件
+&lt;/h3>&lt;p>完成上一步操作，我们就可以自己配置 &lt;code>Halo&lt;/code> 的运行端口，以及数据库相关的配置了。&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -1491,8 +1606,8 @@ alt="dropbox_uploader"
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">create database halodb character &lt;span class="nb">set&lt;/span> utf8mb4 collate utf8mb4_bin&lt;span class="p">;&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 id="运行-halo">运行 Halo&lt;/h3>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;/div>&lt;h3 id="运行-halo">运行 Halo
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
@@ -1514,8 +1629,8 @@ alt="dropbox_uploader"
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>提示：以上的启动仅仅为测试 Halo 是否可以正常运行，如果我们关闭 ssh 连接，Halo 也将被关闭。要想一直处于运行状态，请继续看下面的教程。&lt;/p>
-&lt;h3 id="作为服务运行">作为服务运行&lt;/h3>
-&lt;p>上面我们已经完成了 Halo 的整个配置和安装过程，接下来我们对其进行更完善的配置，比如：&lt;code>需要开机自启？&lt;/code>，&lt;code>更简单的启动方式？&lt;/code>&lt;/p>
+&lt;h3 id="作为服务运行">作为服务运行
+&lt;/h3>&lt;p>上面我们已经完成了 Halo 的整个配置和安装过程，接下来我们对其进行更完善的配置，比如：&lt;code>需要开机自启？&lt;/code>，&lt;code>更简单的启动方式？&lt;/code>&lt;/p>
 &lt;p>实现以上功能我们只需要新增一个配置文件即可，也就是使用 &lt;code>Systemd&lt;/code> 来完成这些工作。&lt;/p>
 &lt;p>1.退出 halo 账户，登录到 root 账户&lt;/p>
 &lt;blockquote>
@@ -1548,12 +1663,8 @@ alt="dropbox_uploader"
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>4.修改配置&lt;/p>
-&lt;ul>
-&lt;li>&lt;code>YOUR_JAR_PATH&lt;/code>：Halo 运行包的绝对路径，例如 /home/halo/app/halo.jar，注意：此路径不支持 ~ 符号。&lt;/li>
-&lt;li>&lt;code>USER&lt;/code>：运行 Halo 的系统用户，如果有按照上方教程创建新的用户来运行 Halo，修改为你创建的用户名称即可。反之请删除 User=USER。&lt;/li>
-&lt;/ul>
-&lt;h3 id="下载-halo-官方的-haloservice-模板">下载 Halo 官方的 halo.service 模板&lt;/h3>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;h3 id="下载-halo-官方的-haloservice-模板">下载 Halo 官方的 halo.service 模板
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
@@ -1566,14 +1677,16 @@ alt="dropbox_uploader"
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 修改 halo.service&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo vim /etc/systemd/system/halo.service
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo vi /etc/systemd/system/halo.service
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>打开之后我们可以看到&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>YOUR_JAR_PATH&lt;/code>：Halo 运行包的绝对路径，例如 &lt;code>/root/app/halo.jar&lt;/code>，注意：此路径不支持 ~ 符号。&lt;/li>
+&lt;li>&lt;code>USER&lt;/code>：运行 Halo 的系统用户，如果有按照上方教程创建新的用户来运行 Halo，修改为你创建的用户名称即可。反之请删除 &lt;strong>User=USER&lt;/strong>。&lt;/li>
+&lt;/ul>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
@@ -1666,8 +1779,8 @@ alt="dropbox_uploader"
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">journalctl -n &lt;span class="m">20&lt;/span> -u halo
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h2 id="配置域名访问">配置域名访问&lt;/h2>
-&lt;ol>
+&lt;/div>&lt;h2 id="配置域名访问">配置域名访问
+&lt;/h2>&lt;ol>
 &lt;li>假设你已经成功配置并运行好了 Halo，且不是使用 80 端口运行。&lt;/li>
 &lt;li>请确保域名已经成功解析到服务器 IP，并确认服务器是否需要备案。&lt;/li>
 &lt;li>请检查服务器的 80 和 443 端口是否开放。&lt;/li>
@@ -1675,10 +1788,10 @@ alt="dropbox_uploader"
 &lt;li>并不一定要求按照下列教程操作，这里仅仅以供参考。&lt;/li>
 &lt;li>如 2 所述，你需要做的仅仅是反向代理 Halo 运行端口，并配置 SSL 证书而已，所以并不要求配置方式。&lt;/li>
 &lt;/ol>
-&lt;h3 id="使用-nginx-进行反向代理">使用 Nginx 进行反向代理&lt;/h3>
-&lt;p>我使用的是这一种方法。&lt;/p>
-&lt;h4 id="安装-nginx">安装 Nginx&lt;/h4>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;h3 id="使用-nginx-进行反向代理">使用 Nginx 进行反向代理
+&lt;/h3>&lt;p>我使用的是这一种方法。&lt;/p>
+&lt;h4 id="安装-nginx">安装 Nginx
+&lt;/h4>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
 &lt;/span>&lt;span class="lnt"> 2
@@ -1706,8 +1819,8 @@ alt="dropbox_uploader"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo systemctl &lt;span class="nb">enable&lt;/span> nginx.service
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h4 id="配置-nginx">配置 Nginx&lt;/h4>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;/div>&lt;h4 id="配置-nginx">配置 Nginx
+&lt;/h4>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;span class="lnt">2
@@ -1785,8 +1898,8 @@ alt="dropbox_uploader"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo nginx -s reload
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 id="配置阿里云免费证书ssl-证书">配置阿里云免费证书SSL 证书&lt;/h3>
-&lt;p>目前使用的是Let’s Encrypt 免费证书。&lt;/p>
+&lt;/div>&lt;h3 id="配置阿里云免费证书ssl-证书">配置阿里云免费证书SSL 证书
+&lt;/h3>&lt;p>目前使用的是Let’s Encrypt 免费证书。&lt;/p>
 &lt;p>1.在nginx根目录（默认为/etc/nginx）下创建目录cert。&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -1987,9 +2100,9 @@ alt="dropbox_uploader"
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">systemctl restart nginx
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 id="添加-lets-encrypt-免费证书">添加 Let&amp;rsquo;s Encrypt 免费证书&lt;/h3>
-&lt;h4 id="centos-8">&lt;strong>Centos 8&lt;/strong>&lt;/h4>
-&lt;ol>
+&lt;/div>&lt;h3 id="添加-lets-encrypt-免费证书">添加 Let&amp;rsquo;s Encrypt 免费证书
+&lt;/h3>&lt;h4 id="centos-8">&lt;strong>Centos 8&lt;/strong>
+&lt;/h4>&lt;ol>
 &lt;li>安装Certbot&lt;/li>
 &lt;/ol>
 &lt;div class="highlight">&lt;div class="chroma">
@@ -2395,8 +2508,8 @@ alt="dropbox_uploader"
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>PS:如果失败，先申请阿里证书，再申请Let&amp;rsquo;s Encrypt SSL证书，记得要添加 acme.sh 续签验证路由，才能申请Let&amp;rsquo;s Encrypt SSL证书。&lt;/p>
-&lt;h4 id="debian10">Debian10&lt;/h4>
-&lt;ol>
+&lt;h4 id="debian10">Debian10
+&lt;/h4>&lt;ol>
 &lt;li>安装 Certbot&lt;/li>
 &lt;/ol>
 &lt;div class="highlight">&lt;div class="chroma">
@@ -2512,6 +2625,15 @@ alt="dropbox_uploader"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> root /data/wwwroot/bore.vip/&lt;span class="p">;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>重启 Nginx 生效：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">systemctl restart nginx
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;ol start="5">
@@ -2729,6 +2851,8 @@ alt="dropbox_uploader"
 &lt;/span>&lt;span class="lnt">55
 &lt;/span>&lt;span class="lnt">56
 &lt;/span>&lt;span class="lnt">57
+&lt;/span>&lt;span class="lnt">58
+&lt;/span>&lt;span class="lnt">59
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">
@@ -2740,6 +2864,8 @@ alt="dropbox_uploader"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> listen &lt;span class="o">[&lt;/span>::&lt;span class="o">]&lt;/span>:80&lt;span class="p">;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> listen 127.0.0.1:443 ssl http2 proxy_protocol&lt;span class="p">;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> listen &lt;span class="o">[&lt;/span>::&lt;span class="o">]&lt;/span>:443 ssl http2&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> set_real_ip_from 127.0.0.1&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> real_ip_header proxy_protocol&lt;span class="p">;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> server_name bore.vip www.bore.vip&lt;span class="p">;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="o">(&lt;/span>&lt;span class="nv">$host&lt;/span> !&lt;span class="o">=&lt;/span> &lt;span class="s1">&amp;#39;bore.vip&amp;#39;&lt;/span> &lt;span class="o">)&lt;/span> &lt;span class="o">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> rewrite ^/&lt;span class="o">(&lt;/span>.*&lt;span class="o">)&lt;/span>$ https://bore.vip/&lt;span class="nv">$1&lt;/span> permanent&lt;span class="p">;&lt;/span>
@@ -2842,8 +2968,8 @@ alt="dropbox_uploader"
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="m">30&lt;/span> &lt;span class="m">2&lt;/span> * */2 * /usr/bin/certbot renew --quiet &lt;span class="o">&amp;amp;&amp;amp;&lt;/span> /bin/systemctl restart nginx
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h2 id="halo更改评论模块">halo更改评论模块&lt;/h2>
-&lt;p>首先进入后台，依次点击：&lt;code>系统&lt;/code>—&lt;code>博客设置&lt;/code>—&lt;code>评论设置&lt;/code>，更改&lt;code>评论模块JS&lt;/code>。系统默认（halo 1.3.2）&lt;code>评论模块JS&lt;/code>为：&lt;/p>
+&lt;/div>&lt;h2 id="halo更改评论模块">halo更改评论模块
+&lt;/h2>&lt;p>首先进入后台，依次点击：&lt;code>系统&lt;/code>—&lt;code>博客设置&lt;/code>—&lt;code>评论设置&lt;/code>，更改&lt;code>评论模块JS&lt;/code>。系统默认（halo 1.3.2）&lt;code>评论模块JS&lt;/code>为：&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -2873,8 +2999,8 @@ alt="dropbox_uploader"
 &lt;/div>
 &lt;/div>&lt;p>更多&lt;code>评论模块JS&lt;/code>，可以在&lt;code>github&lt;/code>中搜索&lt;a class="link" href="https://github.com/search?q=halo&amp;#43;comment" target="_blank" rel="noopener"
 >halo comment&lt;/a>。&lt;/p>
-&lt;h2 id="定时删除halo日志">定时删除halo日志&lt;/h2>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;h2 id="定时删除halo日志">定时删除halo日志
+&lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
@@ -2891,8 +3017,8 @@ alt="dropbox_uploader"
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>意思是每天删除日志文件。&lt;/p>
-&lt;h2 id="更改时区">更改时区&lt;/h2>
-&lt;p>如果你不知道服务器当前时间，可以使用下面的命令，查看当前时间：&lt;/p>
+&lt;h2 id="更改时区">更改时区
+&lt;/h2>&lt;p>如果你不知道服务器当前时间，可以使用下面的命令，查看当前时间：&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -2919,8 +3045,8 @@ alt="dropbox_uploader"
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">timedatectl
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h2 id="版本升级">版本升级&lt;/h2>
-&lt;blockquote>
+&lt;/div>&lt;h2 id="版本升级">版本升级
+&lt;/h2>&lt;blockquote>
 &lt;p>我们假设你存放运行包的路径为 ~/app，运行包的文件名为 halo.jar，且使用了 systemd 进行进程管理，如有不同，下列命令请按需修改。&lt;/p>
 &lt;/blockquote>
 &lt;ol>
@@ -2995,16 +3121,16 @@ alt="dropbox_uploader"
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">service halo start
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h2 id="备份迁移">备份迁移&lt;/h2>
-&lt;p>目前 Halo 在后台的小工具中提供了数据导出的功能，此功能的作用为导出数据库的所有数据，格式为 JSON。通常可以作为切换数据库类型的时候使用。需要注意的是，此备份仅仅为备份数据，不包含其他诸如主题、附件等资料。如下图：&lt;/p>
-&lt;h3 id="整站备份">整站备份&lt;/h3>
-&lt;p>通过 《写在前面》 的名词解释部分我们可以知道，Halo 的所有数据都是存放在当前用户目录的工作目录（.halo）下的（使用 MySQL 数据库除外，你还需要导出 MySQL 数据）。所以我们备份整站的数据仅需备份这个目录即可，不管你使用何种方式。不过，为了操作方便，我们也在后台的小工具中提供了备份整站数据的功能，和上面所说的数据备份一致，点击备份按钮即可打包工作目录文件夹。如下图：&lt;/p>
-&lt;h3 id="导入数据">导入数据&lt;/h3>
-&lt;p>此功能为导入上面所说的数据备份产生的数据文件（JSON 格式），并非整站备份的工作目录文件。需要注意的是，此功能仅在站点初始化的时候支持。如下图：&lt;/p>
-&lt;h3 id="整站迁移">整站迁移&lt;/h3>
-&lt;p>此操作通常用于迁移服务器，基于上面 整站备份 所说，Halo 的所有数据都是存放于当前用户目录的工作目录（.halo）下的。当然，这仅限于使用 H2 Database 的情况下，如果你使用的 MySQL，那么还需要手动导出 MySQL 数据。所以，我们迁移服务器仅仅需要需要将工作目录的备份文件上传到新服务器的用户目录下解压，然后按照 《安装指南》 重新安装即可。MySQL 用户还需要做的就是手动导出 MySQL 数据，并在新服务器上导入。&lt;/p>
-&lt;h2 id="常见问题">常见问题&lt;/h2>
-&lt;p>1.忘记了管理员密码，如何重置？&lt;/p>
+&lt;/div>&lt;h2 id="备份迁移">备份迁移
+&lt;/h2>&lt;p>目前 Halo 在后台的小工具中提供了数据导出的功能，此功能的作用为导出数据库的所有数据，格式为 JSON。通常可以作为切换数据库类型的时候使用。需要注意的是，此备份仅仅为备份数据，不包含其他诸如主题、附件等资料。如下图：&lt;/p>
+&lt;h3 id="整站备份">整站备份
+&lt;/h3>&lt;p>通过 《写在前面》 的名词解释部分我们可以知道，Halo 的所有数据都是存放在当前用户目录的工作目录（.halo）下的（使用 MySQL 数据库除外，你还需要导出 MySQL 数据）。所以我们备份整站的数据仅需备份这个目录即可，不管你使用何种方式。不过，为了操作方便，我们也在后台的小工具中提供了备份整站数据的功能，和上面所说的数据备份一致，点击备份按钮即可打包工作目录文件夹。如下图：&lt;/p>
+&lt;h3 id="导入数据">导入数据
+&lt;/h3>&lt;p>此功能为导入上面所说的数据备份产生的数据文件（JSON 格式），并非整站备份的工作目录文件。需要注意的是，此功能仅在站点初始化的时候支持。如下图：&lt;/p>
+&lt;h3 id="整站迁移">整站迁移
+&lt;/h3>&lt;p>此操作通常用于迁移服务器，基于上面 整站备份 所说，Halo 的所有数据都是存放于当前用户目录的工作目录（.halo）下的。当然，这仅限于使用 H2 Database 的情况下，如果你使用的 MySQL，那么还需要手动导出 MySQL 数据。所以，我们迁移服务器仅仅需要需要将工作目录的备份文件上传到新服务器的用户目录下解压，然后按照 《安装指南》 重新安装即可。MySQL 用户还需要做的就是手动导出 MySQL 数据，并在新服务器上导入。&lt;/p>
+&lt;h2 id="常见问题">常见问题
+&lt;/h2>&lt;p>1.忘记了管理员密码，如何重置？&lt;/p>
 &lt;p>目前在登录页面含有隐藏的 找回密码 链接，点击即可进入找回密码页面，具体可参考以下步骤：&lt;/p>
 &lt;ol>
 &lt;li>在登录页面按下键盘快捷键（Windows / Linux：Shift + Alt + H，macOS：Shift + Command + H）即可显示 找回密码 链接。&lt;/li>
@@ -3014,8 +3140,8 @@ alt="dropbox_uploader"
 &lt;blockquote>
 &lt;p>需要注意的是，第 2 步中的获取验证码需要事先配置了 SMTP 发信设置，否则无法发送验证码。但你可以登录服务器查看 Halo 运行日志，搜索 Got reset password code 关键字即可获取到验证码。&lt;/p>
 &lt;/blockquote>
-&lt;h2 id="附修改-nginx-配置文件">附：修改 Nginx 配置文件&lt;/h2>
-&lt;ol>
+&lt;h2 id="附修改-nginx-配置文件">附：修改 Nginx 配置文件
+&lt;/h2>&lt;ol>
 &lt;li>使用你熟悉的工具打开配置文件，此教程使用 vi。&lt;/li>
 &lt;/ol>
 &lt;div class="highlight">&lt;div class="chroma">
@@ -3248,8 +3374,8 @@ alt="dropbox_uploader"
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>}&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h2 id="https-www跳转">https www跳转&lt;/h2>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;/div>&lt;h2 id="https-www跳转">https www跳转
+&lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
 &lt;/span>&lt;span class="lnt"> 2
@@ -3279,8 +3405,8 @@ alt="dropbox_uploader"
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="gi">+ }
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h2 id="参考链接">参考链接&lt;/h2>
-&lt;ul>
+&lt;/div>&lt;h2 id="参考链接">参考链接
+&lt;/h2>&lt;ul>
 &lt;li>&lt;a class="link" href="https://docs.halo.run/getting-started/install/linux" target="_blank" rel="noopener"
 >1.在 Linux 服务器部署 Halo&lt;/a>&lt;/li>
 &lt;li>&lt;a class="link" href="https://halo.run/archives/install-reverse-proxy.html" target="_blank" rel="noopener"

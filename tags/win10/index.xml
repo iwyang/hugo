@@ -1,5 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Win10 on Bore's Notes</title><link>/tags/win10/</link><description>Recent content in Win10 on Bore's Notes</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sun, 13 Mar 2022 20:21:47 +0000</lastBuildDate><atom:link href="/tags/win10/index.xml" rel="self" type="application/rss+xml"/><item><title>查看Windows和Office激活状态的方法</title><link>/archives/%E6%9F%A5%E7%9C%8Bwindows%E5%92%8Coffice%E6%BF%80%E6%B4%BB%E7%8A%B6%E6%80%81%E7%9A%84%E6%96%B9%E6%B3%95/</link><pubDate>Sun, 13 Mar 2022 20:21:47 +0000</pubDate><guid>/archives/%E6%9F%A5%E7%9C%8Bwindows%E5%92%8Coffice%E6%BF%80%E6%B4%BB%E7%8A%B6%E6%80%81%E7%9A%84%E6%96%B9%E6%B3%95/</guid><description>&lt;h2 id="win10">win10&lt;/h2>
-&lt;p>使用命令查看Windows 10激活状态：&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Win10 on Bore's Notes</title><link>/tags/win10/</link><description>Recent content in Win10 on Bore's Notes</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>Example Person</copyright><lastBuildDate>Sun, 03 Sep 2023 20:41:26 +0000</lastBuildDate><atom:link href="/tags/win10/index.xml" rel="self" type="application/rss+xml"/><item><title>彻底卸载onedrive</title><link>/archives/%E5%BD%BB%E5%BA%95%E5%8D%B8%E8%BD%BDonedrive/</link><pubDate>Sun, 03 Sep 2023 20:41:26 +0000</pubDate><guid>/archives/%E5%BD%BB%E5%BA%95%E5%8D%B8%E8%BD%BDonedrive/</guid><description>&lt;p>1、通过组策略编辑器来禁用OneDrive。点击任务栏上的Contana搜索框并输入“组策略”，在最佳匹配结果中选择“编辑组策略”控制面板项，进入到本地组策略编辑器环境，如图：&lt;/p>
+&lt;p>2、在组策略编辑器窗口左侧栏内，依次定位到“计算机配置→管理模板→Windows组件→OneDrive”，可看到右侧窗格内的5个相关选项，如图所示：&lt;/p>
+&lt;p>3、将右侧的5个选项并将它们设置为“已禁用”状态，如图：&lt;/p>
+&lt;p>4、右键单击任务栏空白处，调出任务管理器。切换到“启动”。在进程管理列表中找到OneDrive进程，右键单击并选择“禁用”。&lt;/p>
+&lt;p>随后，在Windows资源管理器中，点击“查看”功能面板，将“显示/隐藏”分组中的“隐藏的项目”复选框选中。最后进入到当前Windows用户所在的“AppData→Local→Microsoft”文件夹，找到Onedrive子文件夹，将其删除即可。&lt;/p>
+&lt;p>若无法直接删除，可利用Unlocker工具或360右键强力删除命令进行删除。&lt;/p>
+&lt;p>参考：&lt;a class="link" href="https://office.tqzw.net.cn/computer/computer/229566.html" target="_blank" rel="noopener"
+>教你彻底卸载OneDrive图文操作方法&lt;/a>&lt;/p></description></item><item><title>查看Windows和Office激活状态的方法</title><link>/archives/%E6%9F%A5%E7%9C%8Bwindows%E5%92%8Coffice%E6%BF%80%E6%B4%BB%E7%8A%B6%E6%80%81%E7%9A%84%E6%96%B9%E6%B3%95/</link><pubDate>Sun, 13 Mar 2022 20:21:47 +0000</pubDate><guid>/archives/%E6%9F%A5%E7%9C%8Bwindows%E5%92%8Coffice%E6%BF%80%E6%B4%BB%E7%8A%B6%E6%80%81%E7%9A%84%E6%96%B9%E6%B3%95/</guid><description>&lt;h2 id="win10">win10
+&lt;/h2>&lt;p>使用命令查看Windows 10激活状态：&lt;/p>
 &lt;p>当然，对于系统管理员来说，最传统的方式就是使用命令行的方式来查看系统激活状态。管理员只需按下 Windows + R 快捷键 — 输入并执行 CMD 打开命令提示符。&lt;/p>
 &lt;p>输入并执行如下命令：&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
@@ -10,22 +17,27 @@
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">slmgr /xpr
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h2 id="office">Office&lt;/h2>
-&lt;p>命令行查看office激活期限：&lt;/p>
+&lt;/div>&lt;h2 id="office">Office
+&lt;/h2>&lt;p>命令行查看office激活期限：&lt;/p>
 &lt;p>1、首先找到office安装目录，我的是C:\Program Files\Microsoft Office\Office16
-（咱也不知道为啥显示16，装的是19，其实感觉功能也差不多，先不管它）
 2、打开终端：win+R
-3、输入：cmd
-4、输入：cd C:\Program Files\Microsoft Office\Office16
-5、按回车
-6、输入：cscript ospp.vbs /dstatus
-7、显示&lt;/p>
+&lt;del>3、输入：cmd&lt;/del>
+&lt;del>4、输入：cd C:\Program Files\Microsoft Office\Office16&lt;/del>
+&lt;del>5、按回车&lt;/del>
+&lt;del>6、输入：&lt;code>cscript ospp.vbs /dstatus&lt;/code>&lt;/del>&lt;/p>
+&lt;p>7、直接输入&lt;code>cscript “C:\Program Files\Microsoft Office\Office16\ospp.vbs” /dstatus&lt;/code>&lt;/p>
+&lt;p>8、显示&lt;/p>
 &lt;p>&lt;img src="/img/%E6%9F%A5%E7%9C%8BWindows%E5%92%8COffice%E6%BF%80%E6%B4%BB%E7%8A%B6%E6%80%81%E7%9A%84%E6%96%B9%E6%B3%95/202203132026632.png"
 loading="lazy"
 >&lt;/p>
 &lt;p>可以看到还剩179天到期，到期可以再jh。&lt;/p>
-&lt;h2 id="参考链接">参考链接&lt;/h2>
-&lt;ul>
+&lt;p>9.如果上面图片末尾未显示jh相关信息，复制图中的&lt;code>SKU ID&lt;/code>&lt;/p>
+&lt;p>10.然后输入&lt;code>slmgr /xpr xxxxxxxxxxxxxxxxxxxxx(sku id)&lt;/code> ，回车。显示：&lt;/p>
+&lt;p>&lt;img src="/img/%E6%9F%A5%E7%9C%8BWindows%E5%92%8COffice%E6%BF%80%E6%B4%BB%E7%8A%B6%E6%80%81%E7%9A%84%E6%96%B9%E6%B3%95/jihuo.png"
+loading="lazy"
+>&lt;/p>
+&lt;h2 id="参考链接">参考链接
+&lt;/h2>&lt;ul>
 &lt;li>
 &lt;p>&lt;a class="link" href="https://www.office26.com/windows/check-windows-10-active-status.html" target="_blank" rel="noopener"
 >如何查看Windows 10激活状态的几种方式&lt;/a>&lt;/p>
@@ -33,6 +45,10 @@ loading="lazy"
 &lt;li>
 &lt;p>&lt;a class="link" href="https://blog.csdn.net/qq_36659185/article/details/105184356?utm_medium=distribute.pc_aggpage_search_result.none-task-blog-2~aggregatepage~first_rank_ecpm_v1~rank_v31_ecpm-1-105184356.pc_agg_new_rank&amp;amp;utm_term=office%E6%BF%80%E6%B4%BB%E6%9F%A5%E7%9C%8B&amp;amp;spm=1000.2123.3001.4430" target="_blank" rel="noopener"
 >命令行查看office激活期限&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a class="link" href="https://new.qq.com/rain/a/20220601A0CT4F00" target="_blank" rel="noopener"
+>office Windows永久激活状态查询方法&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ul></description></item><item><title>联想笔记本电脑升级bios</title><link>/archives/%E8%81%94%E6%83%B3%E7%AC%94%E8%AE%B0%E6%9C%AC%E7%94%B5%E8%84%91%E5%8D%87%E7%BA%A7bios/</link><pubDate>Tue, 26 May 2020 10:25:25 +0000</pubDate><guid>/archives/%E8%81%94%E6%83%B3%E7%AC%94%E8%AE%B0%E6%9C%AC%E7%94%B5%E8%84%91%E5%8D%87%E7%BA%A7bios/</guid><description>&lt;p>2020.5.26　已升级安装最新bios版本：&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
@@ -51,9 +67,9 @@ loading="lazy"
 >小新 700-15ISK&lt;/a>&lt;/p>
 &lt;p>2.在驱动列表中找到bios驱动，下载安装即可，当然，这个界面的所有驱动你都可以下载安装。&lt;/p>
 &lt;p>总结：如果升级完bios，每回重启完电脑声音总是静音的话，下载&lt;a class="link" href="https://www.160.com/" target="_blank" rel="noopener"
->驱动人生&lt;/a>，重新安装声卡驱动。此外升级bios后，可解决小新700无故自动休眠问题。&lt;/p></description></item><item><title>Win10重装系统&amp;清灰记录&amp;整机</title><link>/archives/win10%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F%E6%B8%85%E7%81%B0%E8%AE%B0%E5%BD%95%E6%95%B4%E6%9C%BA/</link><pubDate>Sun, 24 May 2020 06:36:25 +0000</pubDate><guid>/archives/win10%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F%E6%B8%85%E7%81%B0%E8%AE%B0%E5%BD%95%E6%95%B4%E6%9C%BA/</guid><description>&lt;div class="note primary">Fn+F2进入bios，Fn+F12选择启动顺序。&lt;/div>
-&lt;h3 id="原版系统">&lt;del>原版系统&lt;/del>&lt;/h3>
-&lt;ol>
+>驱动人生&lt;/a>，重新安装声卡驱动。此外升级bios后，可解决小新700无故自动休眠问题。&lt;/p></description></item><item><title>Win10重装系统&amp;清灰记录&amp;整机&amp;护眼</title><link>/archives/win10%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F%E6%B8%85%E7%81%B0%E8%AE%B0%E5%BD%95%E6%95%B4%E6%9C%BA%E6%8A%A4%E7%9C%BC/</link><pubDate>Sun, 24 May 2020 06:36:25 +0000</pubDate><guid>/archives/win10%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F%E6%B8%85%E7%81%B0%E8%AE%B0%E5%BD%95%E6%95%B4%E6%9C%BA%E6%8A%A4%E7%9C%BC/</guid><description>&lt;div class="note primary">Fn+F2进入bios，Fn+F12选择启动顺序。&lt;/div>
+&lt;h3 id="原版系统">&lt;del>原版系统&lt;/del>
+&lt;/h3>&lt;ol>
 &lt;li>
 &lt;p>&lt;del>备份E盘文件到移动硬盘。&lt;/del>&lt;/p>
 &lt;/li>
@@ -73,16 +89,16 @@ loading="lazy"
 &lt;/ul>
 &lt;/li>
 &lt;/ol>
-&lt;h3 id="精简系统">精简系统&lt;/h3>
-&lt;ol>
+&lt;h3 id="精简系统">精简系统
+&lt;/h3>&lt;ol>
 &lt;li>备份E盘文件到移动硬盘。&lt;/li>
 &lt;li>进PE，这里使用&lt;a class="link" href="http://www.wepe.com.cn/" target="_blank" rel="noopener"
 >微pe工具箱&lt;/a>。&lt;/li>
 &lt;li>用DiskGenius分区，C盘80G，D盘70G，剩余给E盘。注意给C盘分区时，勾选&lt;code>建立ESP分区&lt;/code>和&lt;code>建立MSR分区&lt;/code>，勾选&lt;code>对齐到此扇区的整数倍&lt;/code>，选择&lt;code>2048扇区&lt;/code>。给D盘和E盘分区时也要勾选对齐到&lt;code>2048扇区&lt;/code>。&lt;/li>
 &lt;li>用windows安装器安装系统。注意&lt;code>选择安装驱动器的位置&lt;/code>为&lt;code>C盘&lt;/code>，还有选择相应的安装版本。&lt;/li>
 &lt;/ol>
-&lt;h3 id="系统安装记录">系统安装记录&lt;/h3>
-&lt;table>
+&lt;h3 id="系统安装记录">系统安装记录
+&lt;/h3>&lt;table>
 &lt;thead>
 &lt;tr>
 &lt;th style="text-align:center">序号&lt;/th>
@@ -106,10 +122,15 @@ loading="lazy"
 &lt;td style="text-align:center">2022.3.4&lt;/td>
 &lt;td style="text-align:center">win10 21H2&lt;/td>
 &lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">4&lt;/td>
+&lt;td style="text-align:center">2023.2.19&lt;/td>
+&lt;td style="text-align:center">win11 22H2&lt;/td>
+&lt;/tr>
 &lt;/tbody>
 &lt;/table>
-&lt;h3 id="笔记本清灰记录">笔记本清灰记录&lt;/h3>
-&lt;table>
+&lt;h3 id="笔记本清灰记录">笔记本清灰记录
+&lt;/h3>&lt;table>
 &lt;thead>
 &lt;tr>
 &lt;th style="text-align:center">序号&lt;/th>
@@ -130,12 +151,15 @@ loading="lazy"
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
-&lt;h3 id="常见问题">常见问题&lt;/h3>
-&lt;p>办公室旧电脑安装精简版Win7，出现错误&lt;code>Windows could not start the installation process&lt;/code>，解决方法：删除分区，重新分区。&lt;/p>
-&lt;h3 id="整机">整机&lt;/h3>
-&lt;p>&lt;code>2022年3月13号购入&lt;/code>&lt;/p>
+&lt;h3 id="常见问题">常见问题
+&lt;/h3>&lt;p>办公室旧电脑安装精简版Win7，出现错误&lt;code>Windows could not start the installation process&lt;/code>，解决方法：删除分区，重新分区。&lt;/p>
+&lt;h3 id="整机">整机
+&lt;/h3>&lt;p>&lt;code>2022年3月13号购入&lt;/code>&lt;/p>
+&lt;p>0.分区：C盘100G D盘200G E盘剩下&lt;/p>
 &lt;p>1.微星主板按&lt;code>F11&lt;/code>选择启动顺序，按&lt;code>Delete&lt;/code>进入bios。&lt;/p>
-&lt;p>2.蓝宝石北极狐机箱尺寸：392×185×303（长×宽×高 mm）&lt;/p>
+&lt;p>&lt;del>2.蓝宝石北极狐机箱尺寸：392×185×303（长×宽×高 mm）&lt;/del>&lt;/p>
+&lt;p>机箱玻璃摔破了，新机箱尺寸：335×182×423 MM&lt;/p>
+&lt;p>包装尺寸：460×231×390MM&lt;/p>
 &lt;p>3.AOC 23.8寸显示器尺寸：长550mm，宽200mm,高430mm&lt;/p>
 &lt;p>4.aoc键盘 446×143×34&lt;/p>
 &lt;p>5.调显存大小，重启黑屏。解决方法：拔掉主板电池（拔掉电池的方法见bibi收藏夹，直接将挡板往外按，电池会自动弹起。注意不要用手挡住电池，否则电池无法弹出），5分钟后再装上去。买之前 应该说清楚，不用搞高频，正常使用就好；不用调显存大小，默认就行。默认内建显示配置：&lt;/p>
@@ -151,7 +175,22 @@ loading="lazy"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">UMA Frame Butter Size [自动]
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>估计是直接将显存由&lt;code>4g&lt;/code>直接改成&lt;code>自动&lt;/code>，第二项没有设置为&lt;code>Game Mode&lt;/code>而导致黑屏，无法点亮。&lt;/p></description></item><item><title>Win10 修改host文件的方法</title><link>/archives/win10-%E4%BF%AE%E6%94%B9host%E6%96%87%E4%BB%B6%E7%9A%84%E6%96%B9%E6%B3%95/</link><pubDate>Fri, 15 May 2020 17:04:25 +0000</pubDate><guid>/archives/win10-%E4%BF%AE%E6%94%B9host%E6%96%87%E4%BB%B6%E7%9A%84%E6%96%B9%E6%B3%95/</guid><description>&lt;p>1.鼠标右键点击桌面左下角的开始菜单，选择“命令提示符（管理员）&lt;/p>
+&lt;/div>&lt;p>估计是直接将显存由&lt;code>4g&lt;/code>直接改成&lt;code>自动&lt;/code>，第二项没有设置为&lt;code>Game Mode&lt;/code>而导致黑屏，无法点亮。&lt;/p>
+&lt;h3 id="护眼模式">护眼模式
+&lt;/h3>&lt;p>一、显示设置—夜间模式强度调到30左右。&lt;/p>
+&lt;p>二、调整颜色：&lt;/p>
+&lt;p>1、鼠标右键点击【开始】菜单按钮选择【运行】，
+2、输入 regedit 点击【确定】，
+3、展开注册表路径至：HKEY_CURRENT_USER\Control Panel, 点击【Colors】文件夹，
+4、在右侧找到 Window，鼠标右击【Window】选择【修改】，
+5、将数值数据改为【202 234 206】（豆沙绿）点击【确定】，（初始：255 255 255）&lt;/p>
+&lt;p>6、定位：&lt;code>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\DefaultColors\Standard&lt;/code>，找到Window，双击Window，更改数值：&lt;code>caeace&lt;/code> (默认值为ffffff)，选择：十六进制&lt;/p>
+&lt;p>7、重启电脑，设置生效。&lt;/p>
+&lt;p>三、右键—个性化—颜色—浅色—打开透明效果—自定义颜色（202 234 206)—勾选&lt;code>在标题栏和窗口边框&lt;/code>显示主颜色。&lt;/p>
+&lt;p>三、浏览器安装保护眼睛插件。&lt;a class="link" href="https://chrome.google.com/webstore/detail/eye-protector/fgadnbmmolnmbkbklpaojbogcopipopl" target="_blank" rel="noopener"
+>保护眼睛&lt;/a>&lt;/p>
+&lt;h3 id="常见问题-1">常见问题
+&lt;/h3>&lt;p>Windows开始菜单绝对路径：&lt;code>C:\ProgramData\Microsoft\Windows\Start Menu\Programs&lt;/code>&lt;/p></description></item><item><title>Win10 修改host文件的方法</title><link>/archives/win10-%E4%BF%AE%E6%94%B9host%E6%96%87%E4%BB%B6%E7%9A%84%E6%96%B9%E6%B3%95/</link><pubDate>Fri, 15 May 2020 17:04:25 +0000</pubDate><guid>/archives/win10-%E4%BF%AE%E6%94%B9host%E6%96%87%E4%BB%B6%E7%9A%84%E6%96%B9%E6%B3%95/</guid><description>&lt;p>1.鼠标右键点击桌面左下角的开始菜单，选择“命令提示符（管理员）&lt;/p>
 &lt;p>2.在打开的黑色命令提示符窗口中输入 notepad，敲回车；&lt;/p>
 &lt;p>3.打开的记事本页面中点右上角的文件，然后点打开&lt;/p>
 &lt;p>&lt;code>C:\Windows\System32\drivers\etc\hosts&lt;/code>&lt;/p>
