@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Pages on Bore&#39;s Notes</title>
+        <link>//localhost:1313/page/</link>
+        <description>Recent content in Pages on Bore&#39;s Notes</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-CN</language>
+        <copyright>Example Person</copyright>
+        <lastBuildDate>Sat, 25 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:1313/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>关于</title>
+        <link>//localhost:1313/about/</link>
+        <pubDate>Sat, 25 Apr 2020 00:00:00 +0000</pubDate>
+        
+        <guid>//localhost:1313/about/</guid>
+        <description>&lt;style&gt;
+.article-header {
+    display: none;
+  }
+&lt;/style&gt;
+&lt;h3 id=&#34;-关于本站&#34;&gt;💻 关于本站
+&lt;/h3&gt;&lt;p&gt;本站主要用来收集整理资料、记录笔记，方便自己查询使用。&lt;/p&gt;
+&lt;h3 id=&#34;-关于我&#34;&gt;👋 关于我
+&lt;/h3&gt;&lt;p&gt;6666&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>归档</title>
+        <link>//localhost:1313/archives/</link>
+        <pubDate>Sat, 25 Apr 2020 00:00:00 +0000</pubDate>
+        
+        <guid>//localhost:1313/archives/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>说说</title>
+        <link>//localhost:1313/say/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>//localhost:1313/say/</guid>
+        <description>&lt;h2 id=&#34;说说&#34;&gt;说说
+&lt;/h2&gt;&lt;style&gt;
+.article-header {
+    display: none;
+  }
+&lt;/style&gt;
+&lt;div class=&#34;js-pjax&#34; id=&#34;tip&#34; style=&#34;text-align:center;&#34;&gt;ipseak加载中&lt;/div&gt;
+&lt;div class=&#34;js-pjax&#34; id=&#34;ispeak&#34;&gt;&lt;/div&gt;
+&lt;link
+  rel=&#34;stylesheet&#34;
+  href=&#34;https://cdn.staticfile.org/highlight.js/10.6.0/styles/atom-one-dark.min.css&#34;
+/&gt;
+&lt;link
+  rel=&#34;stylesheet&#34;
+  href=&#34;https://cdn1.tianli0.top/npm/ispeak@4.3.2/style.css&#34;
+/&gt;
+&lt;style&gt;
+  #article-container .D-avatar {
+    margin: 0 10px 0 0;
+  }
+  .D-footer {
+    display: none;
+  }
+&lt;/style&gt;
+&lt;script src=&#34;https://cdn.staticfile.org/highlight.js/10.6.0/highlight.min.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://cdn.staticfile.org/marked/2.0.0/marked.min.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://cdn1.tianli0.top/npm/discuss@1.1.4/dist/discuss.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://cdn1.tianli0.top/npm/ispeak@4.3.2/ispeak.umd.js&#34;&gt;&lt;/script&gt;
+&lt;script&gt;
+  var head = document.getElementsByTagName(&#39;head&#39;)[0]
+  var meta = document.createElement(&#39;meta&#39;)
+  meta.name = &#39;referrer&#39;
+  meta.content = &#39;no-referrer&#39;
+  head.appendChild(meta)
+  if (ispeak) {
+    ispeak
+      .init({
+        el: &#39;#ispeak&#39;,
+        api: &#39;https://kkapi-dev.vercel.app/&#39;,
+        author: &#39;61fe93508fd621d39a155725&#39;,
+        pageSize: 10,
+        loading_img: &#39;https://bu.dusays.com/2022/05/01/626e88f349943.gif&#39;,
+        speakPage: &#39;/say&#39;,
+        githubClientId: &#39;Iv1.c90b52a4e197df3c&#39;,
+        initCommentName: &#39;discuss&#39;,
+        initCommentOptions: {
+          serverURLs: &#39;https://discuss-umber.vercel.app/&#39;
+        }
+      })
+      .then(function () {
+        console.log(&#39;ispeak 加载完成&#39;)
+        document.getElementById(&#39;tip&#39;).style.display = &#39;none&#39;
+      })
+  } else {
+    document.getElementById(&#39;tip&#39;).innerHTML = &#39;ipseak依赖加载失败！&#39;
+  }
+&lt;/script&gt;
+</description>
+        </item>
+        <item>
+        <title>搜索</title>
+        <link>//localhost:1313/search/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>//localhost:1313/search/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>友情链接</title>
+        <link>//localhost:1313/links/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>//localhost:1313/links/</guid>
+        <description>&lt;style&gt;
+.article-header {
+    display: none;
+  }
+&lt;/style&gt;
+&lt;h3 id=&#34;欢迎交换友情链接本站信息&#34;&gt;欢迎交换友情链接，本站信息：
+&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;网站名称：Bore&amp;rsquo;s Notes&lt;/p&gt;
+&lt;p&gt;网站链接：https://bore.vip&lt;/p&gt;
+&lt;p&gt;网站图像：https://cdn.jsdelivr.net/gh/iwyang/pic/avatar.jpg&lt;/p&gt;
+&lt;p&gt;网站描述：博观而约取，厚积而薄发。&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

@@ -50,11 +50,11 @@ jobs:
           PUBLISH_DIR: ./public  
         # cname:
         
-      # - name: Deploy Hugo to Server
-        # uses: SamKirkland/FTP-Deploy-Action@4.3.0
-        # with:
-          # server: 104.224.191.88
-          # username: admin
-          # password: ${{ secrets.FTP_MIRROR_PASSWORD }}
-          # local-dir: ./public/
-          # server-dir: /var/www/speak/
+      - name: Deploy Hugo to Server
+        uses: SamKirkland/FTP-Deploy-Action@4.3.5
+        with:
+          server: 142.171.177.173
+          username: admin
+          password: ${{ secrets.FTP_MIRROR_PASSWORD }}
+          local-dir: ./public/
+          server-dir: /home/admin/

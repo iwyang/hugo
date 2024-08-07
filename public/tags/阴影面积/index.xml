@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>阴影面积 on Bore&#39;s Notes</title>
+        <link>//localhost:1313/tags/%E9%98%B4%E5%BD%B1%E9%9D%A2%E7%A7%AF/</link>
+        <description>Recent content in 阴影面积 on Bore&#39;s Notes</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-CN</language>
+        <copyright>Example Person</copyright>
+        <lastBuildDate>Tue, 28 Jun 2022 23:18:14 +0000</lastBuildDate><atom:link href="//localhost:1313/tags/%E9%98%B4%E5%BD%B1%E9%9D%A2%E7%A7%AF/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>求阴影部分面积</title>
+        <link>//localhost:1313/archives/%E6%B1%82%E9%98%B4%E5%BD%B1%E9%83%A8%E5%88%86%E9%9D%A2%E7%A7%AF/</link>
+        <pubDate>Tue, 28 Jun 2022 23:18:14 +0000</pubDate>
+        
+        <guid>//localhost:1313/archives/%E6%B1%82%E9%98%B4%E5%BD%B1%E9%83%A8%E5%88%86%E9%9D%A2%E7%A7%AF/</guid>
+        <description>&lt;h2 id=&#34;题型一&#34;&gt;题型一
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;//localhost:1313/img/%E6%B1%82%E9%98%B4%E5%BD%B1%E9%83%A8%E5%88%86%E9%9D%A2%E7%A7%AF/1.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;此题用相似三角形最简单，3/a=b/8，ab=24    但小学阶段就用上图方法为好。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;题型二&#34;&gt;题型二
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;//localhost:1313/img/%E6%B1%82%E9%98%B4%E5%BD%B1%E9%83%A8%E5%88%86%E9%9D%A2%E7%A7%AF/1-16604674519182.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;题型三&#34;&gt;题型三
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;//localhost:1313/img/%E6%B1%82%E9%98%B4%E5%BD%B1%E9%83%A8%E5%88%86%E9%9D%A2%E7%A7%AF/1-16604674769534.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;如图将圆柱斜切一刀求体积。将圆柱补齐，所求图形的体积为高5cm圆柱体积的一半。&lt;/p&gt;
+&lt;p&gt;PS：可先用希沃白板画出图形，利用克隆等小工具展示拼接图形的过程。&lt;/p&gt;
+&lt;p&gt;参考：&lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com/video/BV1T94y1174i?spm_id_from=333.999.0.0&amp;amp;vd_source=cb4a6ad8978ef3ac986f741316ee2cc3&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;六年级：巧求阴影部分面积&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
